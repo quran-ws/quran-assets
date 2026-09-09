@@ -1,0 +1,131 @@
+{
+  "mushaf": "qalon",
+  "asset": "ayah-marker",
+  "page": 300,
+  "source": "qalon.pdf",
+  "riwaya": "Qalun 'an Nafi'",
+  "generated": "2026-09-09 20:06",
+  "page_px": [
+    1531,
+    2189
+  ],
+  "boxes": [
+    [
+      564,
+      1051,
+      631,
+      1142
+    ],
+    [
+      193,
+      1790,
+      260,
+      1882
+    ],
+    [
+      936,
+      627,
+      1003,
+      719
+    ],
+    [
+      419,
+      1366,
+      486,
+      1458
+    ],
+    [
+      691,
+      1579,
+      758,
+      1671
+    ],
+    [
+      515,
+      1685,
+      582,
+      1777
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "qalon",
+    "riwaya": "Qalun 'an Nafi'",
+    "file": "qalon.pdf",
+    "sha256": "cbbb52b2a195fd43f9e8ac167a8e9a4173593e9b3dc22a83298550be27aef8de",
+    "url": "https://dn760102.eu.archive.org/0/items/quran-qalon/%D9%85%D8%B5%D8%AD%D9%81%20%D9%82%D8%A7%D9%84%D9%88%D9%86.pdf",
+    "archive_item": "quran-qalon",
+    "archive_url": "https://archive.org/details/quran-qalon",
+    "pdf_page": 300,
+    "crop_box_px": [
+      564,
+      1051,
+      631,
+      1142
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 6,
+    "pipeline": "quran-surah-header 9eb856e",
+    "extracted": "2026-09-09T20:06:34+0000"
+  },
+  "slot_px": [
+    12,
+    21,
+    54,
+    70
+  ],
+  "slot_fill": "#e1e6ec",
+  "symmetry": {
+    "folds": 2,
+    "deskew_deg": -0.462,
+    "axes_px": [
+      33.166666666666664,
+      45.333333333333336
+    ],
+    "residual": {
+      "lr": 16.24,
+      "ud": 15.69,
+      "both": 8.54
+    },
+    "baseline": 136.91
+  },
+  "stroke_widths_px": [
+    1.67
+  ],
+  "viewBox": "0 0 73.1618 100",
+  "slot": "13.2353 23.1618 46.3235 54.0441",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#dfe6ed",
+      "paths": 8
+    },
+    {
+      "class": "c2",
+      "hex": "#c7cbce",
+      "paths": 3
+    },
+    {
+      "class": "c3",
+      "hex": "#eb8eba",
+      "paths": 2
+    },
+    {
+      "class": "c4",
+      "hex": "#00649b",
+      "paths": 2
+    },
+    {
+      "class": "line",
+      "hex": "#303641",
+      "paths": 14,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 1
+}

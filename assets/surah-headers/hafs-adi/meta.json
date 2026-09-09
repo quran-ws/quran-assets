@@ -1,0 +1,123 @@
+{
+  "mushaf": "hafs-adi",
+  "asset": "surah-header",
+  "page": 607,
+  "source": "hafs-adi.pdf",
+  "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+  "generated": "2026-09-09 18:55",
+  "page_px": [
+    1174,
+    1942
+  ],
+  "boxes": [
+    [
+      87,
+      169,
+      1087,
+      284
+    ],
+    [
+      87,
+      607,
+      1087,
+      722
+    ],
+    [
+      87,
+      1150,
+      1087,
+      1266
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "hafs-adi",
+    "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+    "file": "hafs-adi.pdf",
+    "sha256": "1cd2a1544860791a0b795e904680f4ad51bee0f692c35c1f764dc833bd1fe5f8",
+    "url": "https://dn720703.ca.archive.org/0/items/quran-pdf-download-hafs/%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20-%20%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D8%B9%D8%A7%D8%AF%D9%8A.pdf",
+    "archive_item": "quran-pdf-download-hafs",
+    "archive_url": "https://archive.org/details/quran-pdf-download-hafs",
+    "pdf_page": 607,
+    "crop_box_px": [
+      87,
+      169,
+      1087,
+      284
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 3,
+    "pipeline": "quran-surah-header 9eb856e",
+    "extracted": "2026-09-09T18:55:10+0000"
+  },
+  "slot_px": [
+    275,
+    11,
+    726,
+    104
+  ],
+  "slot_fill": "#e0e9db",
+  "symmetry": {
+    "folds": 4,
+    "deskew_deg": 0.0,
+    "axes_px": [
+      500.3333333333333,
+      57.333333333333336
+    ],
+    "residual": {
+      "lr": 3.87,
+      "ud": 4.59,
+      "both": 6.9
+    },
+    "baseline": 53.29
+  },
+  "stroke_widths_px": [
+    1.46
+  ],
+  "viewBox": "0 0 872.6744 100",
+  "slot": "239.8256 9.593 393.314 81.1047",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#ffffff",
+      "paths": 4
+    },
+    {
+      "class": "c2",
+      "hex": "#dfe8db",
+      "paths": 2
+    },
+    {
+      "class": "c3",
+      "hex": "#bed2b5",
+      "paths": 2
+    },
+    {
+      "class": "c4",
+      "hex": "#e98ab7",
+      "paths": 9
+    },
+    {
+      "class": "c5",
+      "hex": "#5fa629",
+      "paths": 11
+    },
+    {
+      "class": "c6",
+      "hex": "#4d8522",
+      "paths": 6
+    },
+    {
+      "class": "line",
+      "hex": "#3d4539",
+      "paths": 156,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 3
+}

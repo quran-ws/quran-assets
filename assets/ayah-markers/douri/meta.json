@@ -1,0 +1,137 @@
+{
+  "mushaf": "douri",
+  "asset": "ayah-marker",
+  "page": 300,
+  "source": "douri.pdf",
+  "riwaya": "al-Duri 'an Abi 'Amr",
+  "generated": "2026-09-09 20:06",
+  "page_px": [
+    1532,
+    2189
+  ],
+  "boxes": [
+    [
+      908,
+      627,
+      980,
+      715
+    ],
+    [
+      174,
+      1808,
+      246,
+      1897
+    ],
+    [
+      500,
+      1701,
+      572,
+      1789
+    ],
+    [
+      287,
+      1056,
+      359,
+      1145
+    ],
+    [
+      349,
+      1379,
+      421,
+      1467
+    ],
+    [
+      614,
+      949,
+      686,
+      1037
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "douri",
+    "riwaya": "al-Duri 'an Abi 'Amr",
+    "file": "douri.pdf",
+    "sha256": "918f24f92104407712224ebb0f3172f8c18f33dbddd1db85d16c3705e4644ea0",
+    "url": "https://dn720805.ca.archive.org/0/items/douri-HD/douri-1.pdf",
+    "archive_item": "douri-HD",
+    "archive_url": "https://archive.org/details/douri-HD",
+    "pdf_page": 300,
+    "crop_box_px": [
+      908,
+      627,
+      980,
+      715
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 6,
+    "pipeline": "quran-surah-header 9eb856e",
+    "extracted": "2026-09-09T20:06:41+0000"
+  },
+  "slot_px": [
+    13,
+    32,
+    59,
+    62
+  ],
+  "slot_fill": "#e6e3e2",
+  "symmetry": {
+    "folds": 2,
+    "deskew_deg": -0.284,
+    "axes_px": [
+      36.0,
+      46.666666666666664
+    ],
+    "residual": {
+      "lr": 13.75,
+      "ud": 34.44,
+      "both": 34.12
+    },
+    "baseline": 96.46
+  },
+  "stroke_widths_px": [
+    1.06,
+    1.77
+  ],
+  "viewBox": "0 0 77.1429 100",
+  "slot": "13.9286 34.2857 49.2857 32.1429",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#e3e3e3",
+      "paths": 8
+    },
+    {
+      "class": "c2",
+      "hex": "#cdcdcd",
+      "paths": 2
+    },
+    {
+      "class": "c3",
+      "hex": "#6ac6f6",
+      "paths": 2
+    },
+    {
+      "class": "c4",
+      "hex": "#adaeaf",
+      "paths": 8
+    },
+    {
+      "class": "c5",
+      "hex": "#35aee7",
+      "paths": 3
+    },
+    {
+      "class": "line",
+      "hex": "#4e555a",
+      "paths": 22,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 1
+}

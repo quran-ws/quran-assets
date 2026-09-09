@@ -1,0 +1,7 @@
+sources/*.pdf
+sources/*.done
+work/
+__pycache__/
+node_modules/
+*.pyc
+.DS_Store

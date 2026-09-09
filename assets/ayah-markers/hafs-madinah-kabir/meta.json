@@ -1,0 +1,149 @@
+{
+  "mushaf": "hafs-madinah-kabir",
+  "asset": "ayah-marker",
+  "page": 300,
+  "source": "hafs-madinah-kabir.pdf",
+  "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+  "generated": "2026-09-09 20:06",
+  "page_px": [
+    1153,
+    1654
+  ],
+  "boxes": [
+    [
+      132,
+      1136,
+      191,
+      1208
+    ],
+    [
+      621,
+      1049,
+      679,
+      1121
+    ],
+    [
+      587,
+      538,
+      646,
+      610
+    ],
+    [
+      260,
+      367,
+      318,
+      440
+    ],
+    [
+      503,
+      794,
+      561,
+      867
+    ],
+    [
+      449,
+      282,
+      508,
+      354
+    ],
+    [
+      342,
+      1307,
+      401,
+      1379
+    ],
+    [
+      132,
+      1392,
+      191,
+      1464
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "hafs-madinah-kabir",
+    "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+    "file": "hafs-madinah-kabir.pdf",
+    "sha256": "369fc3ef1df33320a53554c25a6ba1b860a3882e63b12ed00bcf215d68e07cb3",
+    "url": "https://dn721901.ca.archive.org/0/items/20240716_20240716_0926/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A8%D8%AD%D8%AC%D9%85%20%D9%83%D8%A8%D9%8A%D8%B1.pdf",
+    "archive_item": "20240716_20240716_0926",
+    "archive_url": "https://archive.org/details/20240716_20240716_0926",
+    "pdf_page": 300,
+    "crop_box_px": [
+      132,
+      1136,
+      191,
+      1208
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 8,
+    "pipeline": "quran-surah-header 9eb856e",
+    "extracted": "2026-09-09T20:06:36+0000"
+  },
+  "slot_px": [
+    10,
+    26,
+    48,
+    50
+  ],
+  "slot_fill": "#e4f3f8",
+  "symmetry": {
+    "folds": 2,
+    "deskew_deg": 0.349,
+    "axes_px": [
+      29.166666666666668,
+      38.0
+    ],
+    "residual": {
+      "lr": 11.61,
+      "ud": 32.43,
+      "both": 31.93
+    },
+    "baseline": 92.99
+  },
+  "stroke_widths_px": [
+    1.17,
+    1.8
+  ],
+  "viewBox": "0 0 76.7544 100",
+  "slot": "13.1579 34.2105 50 31.5789",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#e3f2f7",
+      "paths": 4
+    },
+    {
+      "class": "c2",
+      "hex": "#dadce0",
+      "paths": 3
+    },
+    {
+      "class": "c3",
+      "hex": "#c5c3ca",
+      "paths": 2
+    },
+    {
+      "class": "c4",
+      "hex": "#a8afb5",
+      "paths": 7
+    },
+    {
+      "class": "c5",
+      "hex": "#d17da4",
+      "paths": 2
+    },
+    {
+      "class": "line",
+      "hex": "#6e616d",
+      "paths": 19,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 1
+}

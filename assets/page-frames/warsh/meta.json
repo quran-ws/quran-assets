@@ -1,0 +1,97 @@
+{
+  "mushaf": "warsh",
+  "asset": "page-frame",
+  "page": 300,
+  "source": "warsh.pdf",
+  "riwaya": "Warsh 'an Nafi'",
+  "generated": "2026-09-09 20:05",
+  "page_px": [
+    1531,
+    2189
+  ],
+  "boxes": [
+    [
+      65,
+      185,
+      1307,
+      2004
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "warsh",
+    "riwaya": "Warsh 'an Nafi'",
+    "file": "warsh.pdf",
+    "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
+    "url": "https://dn711007.ca.archive.org/0/items/Warsh-HD/warsh39-1.pdf",
+    "archive_item": "Warsh-HD",
+    "archive_url": "https://archive.org/details/Warsh-HD",
+    "pdf_page": 300,
+    "crop_box_px": [
+      65,
+      185,
+      1307,
+      2004
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 1,
+    "pipeline": "quran-surah-header 9eb856e",
+    "extracted": "2026-09-09T20:05:52+0000"
+  },
+  "slot_px": [
+    99,
+    97,
+    1143,
+    1721
+  ],
+  "slot_fill": "#ffffff",
+  "symmetry": {
+    "folds": 4,
+    "deskew_deg": 0.0,
+    "axes_px": [
+      621.0,
+      909.0
+    ],
+    "residual": {
+      "lr": 1.12,
+      "ud": 4.17,
+      "both": 4.24
+    },
+    "baseline": 50.01
+  },
+  "stroke_widths_px": [
+    2.0,
+    5.0
+  ],
+  "viewBox": "0 0 68.3168 100",
+  "slot": "5.4455 5.3355 57.4257 89.3289",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#dbdbdb",
+      "paths": 43
+    },
+    {
+      "class": "c2",
+      "hex": "#e9b1c2",
+      "paths": 13
+    },
+    {
+      "class": "c3",
+      "hex": "#65c4f5",
+      "paths": 1
+    },
+    {
+      "class": "line",
+      "hex": "#5f5c60",
+      "paths": 1442,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 1
+}

@@ -1,0 +1,117 @@
+{
+  "mushaf": "hafs-madinah-mumtaza",
+  "asset": "page-frame",
+  "page": 300,
+  "source": "hafs-madinah-mumtaza.pdf",
+  "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+  "generated": "2026-09-09 20:02",
+  "page_px": [
+    1816,
+    2609
+  ],
+  "boxes": [
+    [
+      72,
+      202,
+      1596,
+      2408
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "hafs-madinah-mumtaza",
+    "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+    "file": "hafs-madinah-mumtaza.pdf",
+    "sha256": "e90a6c6285a77400e4316b775f1badbb66d72a5a6f2d1722bc482ef702b4903a",
+    "url": "https://dn721909.ca.archive.org/0/items/20240718_20240718_0417/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A7%D9%84%D9%85%D9%85%D8%AA%D8%A7%D8%B2%D8%A9.pdf",
+    "archive_item": "20240718_20240718_0417",
+    "archive_url": "https://archive.org/details/20240718_20240718_0417",
+    "pdf_page": 300,
+    "crop_box_px": [
+      72,
+      202,
+      1596,
+      2408
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 1,
+    "pipeline": "quran-surah-header 9eb856e",
+    "extracted": "2026-09-09T20:02:39+0000"
+  },
+  "slot_px": [
+    206,
+    206,
+    1318,
+    1998
+  ],
+  "slot_fill": "#ffffff",
+  "symmetry": {
+    "folds": 1,
+    "deskew_deg": 0.282,
+    "axes_px": [
+      762.0,
+      1100.5
+    ],
+    "residual": {
+      "lr": 48.59,
+      "ud": 48.35,
+      "both": 37.47
+    },
+    "baseline": 75.98
+  },
+  "stroke_widths_px": [
+    2.19,
+    5.0
+  ],
+  "viewBox": "0 0 69.2413 100",
+  "slot": "9.3594 9.3594 50.5225 81.4175",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#dae6df",
+      "paths": 30
+    },
+    {
+      "class": "c2",
+      "hex": "#fbea60",
+      "paths": 275
+    },
+    {
+      "class": "c3",
+      "hex": "#bbcbbd",
+      "paths": 120
+    },
+    {
+      "class": "c4",
+      "hex": "#d39993",
+      "paths": 71
+    },
+    {
+      "class": "c5",
+      "hex": "#71b697",
+      "paths": 136
+    },
+    {
+      "class": "c6",
+      "hex": "#dc8221",
+      "paths": 30
+    },
+    {
+      "class": "c7",
+      "hex": "#d16b5c",
+      "paths": 181
+    },
+    {
+      "class": "line",
+      "hex": "#3f453c",
+      "paths": 4326,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 95
+}

@@ -1,0 +1,138 @@
+{
+  "mushaf": "hafs-madinah-mumtaza",
+  "asset": "ayah-marker",
+  "page": 300,
+  "source": "hafs-madinah-mumtaza.pdf",
+  "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+  "generated": "2026-09-09 20:06",
+  "page_px": [
+    1816,
+    2609
+  ],
+  "boxes": [
+    [
+      727,
+      555,
+      806,
+      652
+    ],
+    [
+      916,
+      908,
+      995,
+      1005
+    ],
+    [
+      800,
+      1260,
+      879,
+      1358
+    ],
+    [
+      289,
+      1730,
+      368,
+      1828
+    ],
+    [
+      963,
+      1611,
+      1042,
+      1708
+    ],
+    [
+      289,
+      2084,
+      368,
+      2181
+    ],
+    [
+      579,
+      1966,
+      658,
+      2063
+    ],
+    [
+      466,
+      672,
+      545,
+      770
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "hafs-madinah-mumtaza",
+    "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+    "file": "hafs-madinah-mumtaza.pdf",
+    "sha256": "e90a6c6285a77400e4316b775f1badbb66d72a5a6f2d1722bc482ef702b4903a",
+    "url": "https://dn721909.ca.archive.org/0/items/20240718_20240718_0417/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A7%D9%84%D9%85%D9%85%D8%AA%D8%A7%D8%B2%D8%A9.pdf",
+    "archive_item": "20240718_20240718_0417",
+    "archive_url": "https://archive.org/details/20240718_20240718_0417",
+    "pdf_page": 300,
+    "crop_box_px": [
+      727,
+      555,
+      806,
+      652
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 8,
+    "pipeline": "quran-surah-header 9eb856e",
+    "extracted": "2026-09-09T20:06:40+0000"
+  },
+  "slot_px": [
+    13,
+    34,
+    65,
+    69
+  ],
+  "slot_fill": "#e9f1ed",
+  "symmetry": {
+    "folds": 2,
+    "deskew_deg": -0.26,
+    "axes_px": [
+      39.5,
+      51.5
+    ],
+    "residual": {
+      "lr": 14.01,
+      "ud": 35.75,
+      "both": 35.53
+    },
+    "baseline": 96.18
+  },
+  "stroke_widths_px": [
+    1.33
+  ],
+  "viewBox": "0 0 76.699 100",
+  "slot": "12.6214 33.0097 50.4854 33.9806",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#c6c9c8",
+      "paths": 4
+    },
+    {
+      "class": "c2",
+      "hex": "#72b895",
+      "paths": 2
+    },
+    {
+      "class": "c3",
+      "hex": "#c83b17",
+      "paths": 1
+    },
+    {
+      "class": "line",
+      "hex": "#5f6c68",
+      "paths": 21,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 1
+}

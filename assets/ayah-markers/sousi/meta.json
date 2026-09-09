@@ -1,0 +1,125 @@
+{
+  "mushaf": "sousi",
+  "asset": "ayah-marker",
+  "page": 300,
+  "source": "sousi.pdf",
+  "riwaya": "al-Susi 'an Abi 'Amr",
+  "generated": "2026-09-09 20:06",
+  "page_px": [
+    1532,
+    2189
+  ],
+  "boxes": [
+    [
+      181,
+      1806,
+      254,
+      1895
+    ],
+    [
+      510,
+      1703,
+      583,
+      1792
+    ],
+    [
+      354,
+      1377,
+      427,
+      1466
+    ],
+    [
+      909,
+      629,
+      982,
+      719
+    ],
+    [
+      617,
+      950,
+      689,
+      1039
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "sousi",
+    "riwaya": "al-Susi 'an Abi 'Amr",
+    "file": "sousi.pdf",
+    "sha256": "265b50e718bedec3df1a9ece77480baeec22f73137fa3a01ab6efc071a65005a",
+    "url": "https://ia600502.us.archive.org/27/items/Susi-HD/sousi-1.pdf",
+    "archive_item": "Susi-HD",
+    "archive_url": "https://archive.org/details/Susi-HD",
+    "pdf_page": 300,
+    "crop_box_px": [
+      181,
+      1806,
+      254,
+      1895
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 5,
+    "pipeline": "quran-surah-header 9eb856e",
+    "extracted": "2026-09-09T20:06:37+0000"
+  },
+  "slot_px": [
+    13,
+    31,
+    60,
+    64
+  ],
+  "slot_fill": "#d3d6dc",
+  "symmetry": {
+    "folds": 2,
+    "deskew_deg": -0.281,
+    "axes_px": [
+      36.5,
+      47.333333333333336
+    ],
+    "residual": {
+      "lr": 7.81,
+      "ud": 19.19,
+      "both": 18.98
+    },
+    "baseline": 64.0
+  },
+  "stroke_widths_px": [
+    1.0
+  ],
+  "viewBox": "0 0 77.1127 100",
+  "slot": "13.7324 32.7465 49.6479 34.8592",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#f9cdbd",
+      "paths": 2
+    },
+    {
+      "class": "c2",
+      "hex": "#d3d6db",
+      "paths": 4
+    },
+    {
+      "class": "c3",
+      "hex": "#c2c3c5",
+      "paths": 1
+    },
+    {
+      "class": "c4",
+      "hex": "#aca6a6",
+      "paths": 9
+    },
+    {
+      "class": "line",
+      "hex": "#57565c",
+      "paths": 20,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 1
+}

@@ -1,0 +1,137 @@
+{
+  "mushaf": "warsh",
+  "asset": "ayah-marker",
+  "page": 300,
+  "source": "warsh.pdf",
+  "riwaya": "Warsh 'an Nafi'",
+  "generated": "2026-09-09 20:06",
+  "page_px": [
+    1531,
+    2189
+  ],
+  "boxes": [
+    [
+      409,
+      1367,
+      476,
+      1460
+    ],
+    [
+      564,
+      1051,
+      631,
+      1142
+    ],
+    [
+      193,
+      1790,
+      260,
+      1882
+    ],
+    [
+      936,
+      627,
+      1003,
+      719
+    ],
+    [
+      691,
+      1579,
+      758,
+      1671
+    ],
+    [
+      733,
+      945,
+      800,
+      1036
+    ],
+    [
+      515,
+      1685,
+      582,
+      1777
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "warsh",
+    "riwaya": "Warsh 'an Nafi'",
+    "file": "warsh.pdf",
+    "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
+    "url": "https://dn711007.ca.archive.org/0/items/Warsh-HD/warsh39-1.pdf",
+    "archive_item": "Warsh-HD",
+    "archive_url": "https://archive.org/details/Warsh-HD",
+    "pdf_page": 300,
+    "crop_box_px": [
+      409,
+      1367,
+      476,
+      1460
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 7,
+    "pipeline": "quran-surah-header 9eb856e",
+    "extracted": "2026-09-09T20:06:39+0000"
+  },
+  "slot_px": [
+    12,
+    21,
+    55,
+    72
+  ],
+  "slot_fill": "#faeff2",
+  "symmetry": {
+    "folds": 2,
+    "deskew_deg": 0.0,
+    "axes_px": [
+      33.5,
+      46.5
+    ],
+    "residual": {
+      "lr": 11.0,
+      "ud": 3.28,
+      "both": 11.02
+    },
+    "baseline": 117.25
+  },
+  "stroke_widths_px": [
+    1.46
+  ],
+  "viewBox": "0 0 72.043 100",
+  "slot": "12.9032 22.5806 46.2366 54.8387",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#eab2c4",
+      "paths": 2
+    },
+    {
+      "class": "c2",
+      "hex": "#bebcbe",
+      "paths": 2
+    },
+    {
+      "class": "c3",
+      "hex": "#79ccf9",
+      "paths": 2
+    },
+    {
+      "class": "c4",
+      "hex": "#6ab5df",
+      "paths": 1
+    },
+    {
+      "class": "line",
+      "hex": "#3d3c40",
+      "paths": 11,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 1
+}

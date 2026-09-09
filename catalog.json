@@ -1,0 +1,2110 @@
+{
+  "generated": "2026-09-09",
+  "schema": "quran-assets/catalog@1",
+  "count": 24,
+  "assets": [
+    {
+      "id": "ayah-markers/douri",
+      "type": "ayah-markers",
+      "style": "douri",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "al-Duri 'an Abi 'Amr",
+      "viewBox": "0 0 77.1429 100",
+      "variants": {
+        "color": "assets/ayah-markers/douri/color.svg",
+        "mono": "assets/ayah-markers/douri/mono.svg",
+        "line": "assets/ayah-markers/douri/line.svg"
+      },
+      "source_crop": "assets/ayah-markers/douri/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#e3e3e3"
+        },
+        {
+          "name": "c2",
+          "hex": "#cdcdcd"
+        },
+        {
+          "name": "c3",
+          "hex": "#6ac6f6"
+        },
+        {
+          "name": "c4",
+          "hex": "#adaeaf"
+        },
+        {
+          "name": "c5",
+          "hex": "#35aee7"
+        },
+        {
+          "name": "line",
+          "hex": "#4e555a",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.06,
+        1.77
+      ],
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 13.9286,
+          "y": 34.2857,
+          "w": 49.2857,
+          "h": 32.1429,
+          "cx": 38.57145,
+          "cy": 50.35715
+        }
+      ],
+      "symmetry": 2,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "douri",
+          "riwaya": "al-Duri 'an Abi 'Amr",
+          "file": "douri.pdf",
+          "sha256": "918f24f92104407712224ebb0f3172f8c18f33dbddd1db85d16c3705e4644ea0",
+          "url": "https://dn720805.ca.archive.org/0/items/douri-HD/douri-1.pdf",
+          "archive_item": "douri-HD",
+          "archive_url": "https://archive.org/details/douri-HD",
+          "pdf_page": 300,
+          "crop_box_px": [
+            908,
+            627,
+            980,
+            715
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 6,
+          "extracted": "2026-09-09T20:06:41+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "ayah-markers/hafs-adi",
+      "type": "ayah-markers",
+      "style": "hafs-adi",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+      "viewBox": "0 0 76.1404 100",
+      "variants": {
+        "color": "assets/ayah-markers/hafs-adi/color.svg",
+        "mono": "assets/ayah-markers/hafs-adi/mono.svg",
+        "line": "assets/ayah-markers/hafs-adi/line.svg"
+      },
+      "source_crop": "assets/ayah-markers/hafs-adi/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#e0e9dd"
+        },
+        {
+          "name": "c2",
+          "hex": "#d2d7d4"
+        },
+        {
+          "name": "c3",
+          "hex": "#a2b890"
+        },
+        {
+          "name": "c4",
+          "hex": "#ea84b4"
+        },
+        {
+          "name": "c5",
+          "hex": "#df5d9d"
+        },
+        {
+          "name": "line",
+          "hex": "#635960",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.33,
+        2.2
+      ],
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 13.6842,
+          "y": 33.6842,
+          "w": 49.4737,
+          "h": 32.6316,
+          "cx": 38.42105,
+          "cy": 50.0
+        }
+      ],
+      "symmetry": 2,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "hafs-adi",
+          "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+          "file": "hafs-adi.pdf",
+          "sha256": "1cd2a1544860791a0b795e904680f4ad51bee0f692c35c1f764dc833bd1fe5f8",
+          "url": "https://dn720703.ca.archive.org/0/items/quran-pdf-download-hafs/%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20-%20%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D8%B9%D8%A7%D8%AF%D9%8A.pdf",
+          "archive_item": "quran-pdf-download-hafs",
+          "archive_url": "https://archive.org/details/quran-pdf-download-hafs",
+          "pdf_page": 300,
+          "crop_box_px": [
+            827,
+            509,
+            899,
+            598
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 7,
+          "extracted": "2026-09-09T20:06:35+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "ayah-markers/hafs-madinah-kabir",
+      "type": "ayah-markers",
+      "style": "hafs-madinah-kabir",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+      "viewBox": "0 0 76.7544 100",
+      "variants": {
+        "color": "assets/ayah-markers/hafs-madinah-kabir/color.svg",
+        "mono": "assets/ayah-markers/hafs-madinah-kabir/mono.svg",
+        "line": "assets/ayah-markers/hafs-madinah-kabir/line.svg"
+      },
+      "source_crop": "assets/ayah-markers/hafs-madinah-kabir/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#e3f2f7"
+        },
+        {
+          "name": "c2",
+          "hex": "#dadce0"
+        },
+        {
+          "name": "c3",
+          "hex": "#c5c3ca"
+        },
+        {
+          "name": "c4",
+          "hex": "#a8afb5"
+        },
+        {
+          "name": "c5",
+          "hex": "#d17da4"
+        },
+        {
+          "name": "line",
+          "hex": "#6e616d",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.17,
+        1.8
+      ],
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 13.1579,
+          "y": 34.2105,
+          "w": 50.0,
+          "h": 31.5789,
+          "cx": 38.1579,
+          "cy": 49.999950000000005
+        }
+      ],
+      "symmetry": 2,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "hafs-madinah-kabir",
+          "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+          "file": "hafs-madinah-kabir.pdf",
+          "sha256": "369fc3ef1df33320a53554c25a6ba1b860a3882e63b12ed00bcf215d68e07cb3",
+          "url": "https://dn721901.ca.archive.org/0/items/20240716_20240716_0926/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A8%D8%AD%D8%AC%D9%85%20%D9%83%D8%A8%D9%8A%D8%B1.pdf",
+          "archive_item": "20240716_20240716_0926",
+          "archive_url": "https://archive.org/details/20240716_20240716_0926",
+          "pdf_page": 300,
+          "crop_box_px": [
+            132,
+            1136,
+            191,
+            1208
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 8,
+          "extracted": "2026-09-09T20:06:36+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "ayah-markers/hafs-madinah-mumtaza",
+      "type": "ayah-markers",
+      "style": "hafs-madinah-mumtaza",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+      "viewBox": "0 0 76.699 100",
+      "variants": {
+        "color": "assets/ayah-markers/hafs-madinah-mumtaza/color.svg",
+        "mono": "assets/ayah-markers/hafs-madinah-mumtaza/mono.svg",
+        "line": "assets/ayah-markers/hafs-madinah-mumtaza/line.svg"
+      },
+      "source_crop": "assets/ayah-markers/hafs-madinah-mumtaza/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#c6c9c8"
+        },
+        {
+          "name": "c2",
+          "hex": "#72b895"
+        },
+        {
+          "name": "c3",
+          "hex": "#c83b17"
+        },
+        {
+          "name": "line",
+          "hex": "#5f6c68",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.33
+      ],
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 12.6214,
+          "y": 33.0097,
+          "w": 50.4854,
+          "h": 33.9806,
+          "cx": 37.8641,
+          "cy": 50.0
+        }
+      ],
+      "symmetry": 2,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "hafs-madinah-mumtaza",
+          "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+          "file": "hafs-madinah-mumtaza.pdf",
+          "sha256": "e90a6c6285a77400e4316b775f1badbb66d72a5a6f2d1722bc482ef702b4903a",
+          "url": "https://dn721909.ca.archive.org/0/items/20240718_20240718_0417/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A7%D9%84%D9%85%D9%85%D8%AA%D8%A7%D8%B2%D8%A9.pdf",
+          "archive_item": "20240718_20240718_0417",
+          "archive_url": "https://archive.org/details/20240718_20240718_0417",
+          "pdf_page": 300,
+          "crop_box_px": [
+            727,
+            555,
+            806,
+            652
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 8,
+          "extracted": "2026-09-09T20:06:40+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "ayah-markers/qalon",
+      "type": "ayah-markers",
+      "style": "qalon",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Qalun 'an Nafi'",
+      "viewBox": "0 0 73.1618 100",
+      "variants": {
+        "color": "assets/ayah-markers/qalon/color.svg",
+        "mono": "assets/ayah-markers/qalon/mono.svg",
+        "line": "assets/ayah-markers/qalon/line.svg"
+      },
+      "source_crop": "assets/ayah-markers/qalon/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#dfe6ed"
+        },
+        {
+          "name": "c2",
+          "hex": "#c7cbce"
+        },
+        {
+          "name": "c3",
+          "hex": "#eb8eba"
+        },
+        {
+          "name": "c4",
+          "hex": "#00649b"
+        },
+        {
+          "name": "line",
+          "hex": "#303641",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.67
+      ],
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 13.2353,
+          "y": 23.1618,
+          "w": 46.3235,
+          "h": 54.0441,
+          "cx": 36.39705,
+          "cy": 50.18385
+        }
+      ],
+      "symmetry": 2,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "qalon",
+          "riwaya": "Qalun 'an Nafi'",
+          "file": "qalon.pdf",
+          "sha256": "cbbb52b2a195fd43f9e8ac167a8e9a4173593e9b3dc22a83298550be27aef8de",
+          "url": "https://dn760102.eu.archive.org/0/items/quran-qalon/%D9%85%D8%B5%D8%AD%D9%81%20%D9%82%D8%A7%D9%84%D9%88%D9%86.pdf",
+          "archive_item": "quran-qalon",
+          "archive_url": "https://archive.org/details/quran-qalon",
+          "pdf_page": 300,
+          "crop_box_px": [
+            564,
+            1051,
+            631,
+            1142
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 6,
+          "extracted": "2026-09-09T20:06:34+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "ayah-markers/shubah",
+      "type": "ayah-markers",
+      "style": "shubah",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Shu'bah 'an 'Asim",
+      "viewBox": "0 0 76.4085 100",
+      "variants": {
+        "color": "assets/ayah-markers/shubah/color.svg",
+        "mono": "assets/ayah-markers/shubah/mono.svg",
+        "line": "assets/ayah-markers/shubah/line.svg"
+      },
+      "source_crop": "assets/ayah-markers/shubah/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#e5dddd"
+        },
+        {
+          "name": "c2",
+          "hex": "#fbbf86"
+        },
+        {
+          "name": "c3",
+          "hex": "#f3aa5f"
+        },
+        {
+          "name": "c4",
+          "hex": "#b3afae"
+        },
+        {
+          "name": "line",
+          "hex": "#5c514c",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.06
+      ],
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 13.7324,
+          "y": 33.8028,
+          "w": 49.6479,
+          "h": 32.7465,
+          "cx": 38.55635,
+          "cy": 50.17605
+        }
+      ],
+      "symmetry": 2,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "shubah",
+          "riwaya": "Shu'bah 'an 'Asim",
+          "file": "shubah.pdf",
+          "sha256": "bb74604d31b3a983aa75d5bb41261ae92c40946be9fbf73452f1206c8a2a4d2b",
+          "url": "https://dn721608.ca.archive.org/0/items/20240908_20240908_1247/%D9%85%D8%B5%D8%AD%D9%81%20%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%B4%D8%B9%D8%A8%D8%A9%20%D8%B9%D9%86%20%D8%B9%D8%A7%D8%B5%D9%85%20%D8%B9%D9%86%20%D8%B2%D8%B1%20%20%D8%B9%D9%86%20%D8%B9%D9%84%D9%8A%20%D9%88%D8%B9%D8%AB%D9%85%D8%A7%D9%86%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%86%D8%A8%D9%8A%20%D8%B5%D9%84%D9%89%20%D8%A7%D9%84%D9%84%D9%87%20%D8%B9%D9%84%D9%8A%D9%87%20%D9%88%D8%B3%D9%84%D9%85.pdf",
+          "archive_item": "20240908_20240908_1247",
+          "archive_url": "https://archive.org/details/20240908_20240908_1247",
+          "pdf_page": 300,
+          "crop_box_px": [
+            912,
+            627,
+            984,
+            716
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 7,
+          "extracted": "2026-09-09T20:06:42+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "ayah-markers/sousi",
+      "type": "ayah-markers",
+      "style": "sousi",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "al-Susi 'an Abi 'Amr",
+      "viewBox": "0 0 77.1127 100",
+      "variants": {
+        "color": "assets/ayah-markers/sousi/color.svg",
+        "mono": "assets/ayah-markers/sousi/mono.svg",
+        "line": "assets/ayah-markers/sousi/line.svg"
+      },
+      "source_crop": "assets/ayah-markers/sousi/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#f9cdbd"
+        },
+        {
+          "name": "c2",
+          "hex": "#d3d6db"
+        },
+        {
+          "name": "c3",
+          "hex": "#c2c3c5"
+        },
+        {
+          "name": "c4",
+          "hex": "#aca6a6"
+        },
+        {
+          "name": "line",
+          "hex": "#57565c",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.0
+      ],
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 13.7324,
+          "y": 32.7465,
+          "w": 49.6479,
+          "h": 34.8592,
+          "cx": 38.55635,
+          "cy": 50.1761
+        }
+      ],
+      "symmetry": 2,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "sousi",
+          "riwaya": "al-Susi 'an Abi 'Amr",
+          "file": "sousi.pdf",
+          "sha256": "265b50e718bedec3df1a9ece77480baeec22f73137fa3a01ab6efc071a65005a",
+          "url": "https://ia600502.us.archive.org/27/items/Susi-HD/sousi-1.pdf",
+          "archive_item": "Susi-HD",
+          "archive_url": "https://archive.org/details/Susi-HD",
+          "pdf_page": 300,
+          "crop_box_px": [
+            181,
+            1806,
+            254,
+            1895
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 5,
+          "extracted": "2026-09-09T20:06:37+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "ayah-markers/warsh",
+      "type": "ayah-markers",
+      "style": "warsh",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Warsh 'an Nafi'",
+      "viewBox": "0 0 72.043 100",
+      "variants": {
+        "color": "assets/ayah-markers/warsh/color.svg",
+        "mono": "assets/ayah-markers/warsh/mono.svg",
+        "line": "assets/ayah-markers/warsh/line.svg"
+      },
+      "source_crop": "assets/ayah-markers/warsh/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#eab2c4"
+        },
+        {
+          "name": "c2",
+          "hex": "#bebcbe"
+        },
+        {
+          "name": "c3",
+          "hex": "#79ccf9"
+        },
+        {
+          "name": "c4",
+          "hex": "#6ab5df"
+        },
+        {
+          "name": "line",
+          "hex": "#3d3c40",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.46
+      ],
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 12.9032,
+          "y": 22.5806,
+          "w": 46.2366,
+          "h": 54.8387,
+          "cx": 36.0215,
+          "cy": 49.99995
+        }
+      ],
+      "symmetry": 2,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "warsh",
+          "riwaya": "Warsh 'an Nafi'",
+          "file": "warsh.pdf",
+          "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
+          "url": "https://dn711007.ca.archive.org/0/items/Warsh-HD/warsh39-1.pdf",
+          "archive_item": "Warsh-HD",
+          "archive_url": "https://archive.org/details/Warsh-HD",
+          "pdf_page": 300,
+          "crop_box_px": [
+            409,
+            1367,
+            476,
+            1460
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 7,
+          "extracted": "2026-09-09T20:06:39+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "page-frames/douri",
+      "type": "page-frames",
+      "style": "douri",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "al-Duri 'an Abi 'Amr",
+      "viewBox": "0 0 65.5908 100",
+      "variants": {
+        "color": "assets/page-frames/douri/color.svg",
+        "mono": "assets/page-frames/douri/mono.svg",
+        "line": "assets/page-frames/douri/line.svg"
+      },
+      "source_crop": "assets/page-frames/douri/source.jpg",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#dbd8d9"
+        },
+        {
+          "name": "c2",
+          "hex": "#96d5f9"
+        },
+        {
+          "name": "c3",
+          "hex": "#c1b7b6"
+        },
+        {
+          "name": "c4",
+          "hex": "#5bbef2"
+        },
+        {
+          "name": "c5",
+          "hex": "#1dacec"
+        },
+        {
+          "name": "c6",
+          "hex": "#73402d"
+        },
+        {
+          "name": "c7",
+          "hex": "#5d3325"
+        },
+        {
+          "name": "line",
+          "hex": "#3e3538",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        2.0,
+        4.0
+      ],
+      "slots": [
+        {
+          "role": "text-area",
+          "x": 4.9234,
+          "y": 5.0875,
+          "w": 55.6893,
+          "h": 89.7702,
+          "cx": 32.76805,
+          "cy": 49.9726
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "douri",
+          "riwaya": "al-Duri 'an Abi 'Amr",
+          "file": "douri.pdf",
+          "sha256": "918f24f92104407712224ebb0f3172f8c18f33dbddd1db85d16c3705e4644ea0",
+          "url": "https://dn720805.ca.archive.org/0/items/douri-HD/douri-1.pdf",
+          "archive_item": "douri-HD",
+          "archive_url": "https://archive.org/details/douri-HD",
+          "pdf_page": 300,
+          "crop_box_px": [
+            74,
+            180,
+            1273,
+            2008
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 1,
+          "extracted": "2026-09-09T20:00:52+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "page-frames/hafs-adi",
+      "type": "page-frames",
+      "style": "hafs-adi",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+      "viewBox": "0 0 64.4189 100",
+      "variants": {
+        "color": "assets/page-frames/hafs-adi/color.svg",
+        "mono": "assets/page-frames/hafs-adi/mono.svg",
+        "line": "assets/page-frames/hafs-adi/line.svg"
+      },
+      "source_crop": "assets/page-frames/hafs-adi/source.jpg",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#d9e7d9"
+        },
+        {
+          "name": "c2",
+          "hex": "#bdd3b6"
+        },
+        {
+          "name": "c3",
+          "hex": "#eaa7c6"
+        },
+        {
+          "name": "c4",
+          "hex": "#e379ad"
+        },
+        {
+          "name": "c5",
+          "hex": "#5fa629"
+        },
+        {
+          "name": "c6",
+          "hex": "#df4a97"
+        },
+        {
+          "name": "c7",
+          "hex": "#4f8522"
+        },
+        {
+          "name": "line",
+          "hex": "#31382e",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        2.0
+      ],
+      "slots": [
+        {
+          "role": "text-area",
+          "x": 4.2763,
+          "y": 4.989,
+          "w": 55.8114,
+          "h": 89.9671,
+          "cx": 32.182,
+          "cy": 49.97255
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "hafs-adi",
+          "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+          "file": "hafs-adi.pdf",
+          "sha256": "1cd2a1544860791a0b795e904680f4ad51bee0f692c35c1f764dc833bd1fe5f8",
+          "url": "https://dn720703.ca.archive.org/0/items/quran-pdf-download-hafs/%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20-%20%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D8%B9%D8%A7%D8%AF%D9%8A.pdf",
+          "archive_item": "quran-pdf-download-hafs",
+          "archive_url": "https://archive.org/details/quran-pdf-download-hafs",
+          "pdf_page": 300,
+          "crop_box_px": [
+            0,
+            64,
+            1185,
+            1888
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 1,
+          "extracted": "2026-09-09T19:56:55+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "page-frames/hafs-madinah-kabir",
+      "type": "page-frames",
+      "style": "hafs-madinah-kabir",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+      "viewBox": "0 0 63.7896 100",
+      "variants": {
+        "color": "assets/page-frames/hafs-madinah-kabir/color.svg",
+        "mono": "assets/page-frames/hafs-madinah-kabir/mono.svg",
+        "line": "assets/page-frames/hafs-madinah-kabir/line.svg"
+      },
+      "source_crop": "assets/page-frames/hafs-madinah-kabir/source.jpg",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#d6c4cc"
+        },
+        {
+          "name": "c2",
+          "hex": "#18a3df"
+        },
+        {
+          "name": "c3",
+          "hex": "#009fef"
+        },
+        {
+          "name": "line",
+          "hex": "#235a75",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        2.0,
+        4.0
+      ],
+      "slots": [
+        {
+          "role": "text-area",
+          "x": 4.4504,
+          "y": 5.8665,
+          "w": 54.8887,
+          "h": 88.5367,
+          "cx": 31.894750000000002,
+          "cy": 50.13485
+        }
+      ],
+      "symmetry": "c2",
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "hafs-madinah-kabir",
+          "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+          "file": "hafs-madinah-kabir.pdf",
+          "sha256": "369fc3ef1df33320a53554c25a6ba1b860a3882e63b12ed00bcf215d68e07cb3",
+          "url": "https://dn721901.ca.archive.org/0/items/20240716_20240716_0926/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A8%D8%AD%D8%AC%D9%85%20%D9%83%D8%A8%D9%8A%D8%B1.pdf",
+          "archive_item": "20240716_20240716_0926",
+          "archive_url": "https://archive.org/details/20240716_20240716_0926",
+          "pdf_page": 300,
+          "crop_box_px": [
+            55,
+            86,
+            1002,
+            1571
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 1,
+          "extracted": "2026-09-09T19:58:17+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "page-frames/hafs-madinah-mumtaza",
+      "type": "page-frames",
+      "style": "hafs-madinah-mumtaza",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+      "viewBox": "0 0 69.2413 100",
+      "variants": {
+        "color": "assets/page-frames/hafs-madinah-mumtaza/color.svg",
+        "mono": "assets/page-frames/hafs-madinah-mumtaza/mono.svg",
+        "line": "assets/page-frames/hafs-madinah-mumtaza/line.svg"
+      },
+      "source_crop": "assets/page-frames/hafs-madinah-mumtaza/source.jpg",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#dae6df"
+        },
+        {
+          "name": "c2",
+          "hex": "#fbea60"
+        },
+        {
+          "name": "c3",
+          "hex": "#bbcbbd"
+        },
+        {
+          "name": "c4",
+          "hex": "#d39993"
+        },
+        {
+          "name": "c5",
+          "hex": "#71b697"
+        },
+        {
+          "name": "c6",
+          "hex": "#dc8221"
+        },
+        {
+          "name": "c7",
+          "hex": "#d16b5c"
+        },
+        {
+          "name": "line",
+          "hex": "#3f453c",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        2.19,
+        5.0
+      ],
+      "slots": [
+        {
+          "role": "text-area",
+          "x": 9.3594,
+          "y": 9.3594,
+          "w": 50.5225,
+          "h": 81.4175,
+          "cx": 34.62065,
+          "cy": 50.06815
+        }
+      ],
+      "symmetry": 1,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "hafs-madinah-mumtaza",
+          "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+          "file": "hafs-madinah-mumtaza.pdf",
+          "sha256": "e90a6c6285a77400e4316b775f1badbb66d72a5a6f2d1722bc482ef702b4903a",
+          "url": "https://dn721909.ca.archive.org/0/items/20240718_20240718_0417/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A7%D9%84%D9%85%D9%85%D8%AA%D8%A7%D8%B2%D8%A9.pdf",
+          "archive_item": "20240718_20240718_0417",
+          "archive_url": "https://archive.org/details/20240718_20240718_0417",
+          "pdf_page": 300,
+          "crop_box_px": [
+            72,
+            202,
+            1596,
+            2408
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 1,
+          "extracted": "2026-09-09T20:02:39+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "page-frames/qalon",
+      "type": "page-frames",
+      "style": "qalon",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Qalun 'an Nafi'",
+      "viewBox": "0 0 68.3168 100",
+      "variants": {
+        "color": "assets/page-frames/qalon/color.svg",
+        "mono": "assets/page-frames/qalon/mono.svg",
+        "line": "assets/page-frames/qalon/line.svg"
+      },
+      "source_crop": "assets/page-frames/qalon/source.jpg",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#d4d5d6"
+        },
+        {
+          "name": "c2",
+          "hex": "#a3b6cc"
+        },
+        {
+          "name": "c3",
+          "hex": "#00659d"
+        },
+        {
+          "name": "line",
+          "hex": "#42454e",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        2.0,
+        4.0
+      ],
+      "slots": [
+        {
+          "role": "text-area",
+          "x": 5.3905,
+          "y": 5.3355,
+          "w": 57.4807,
+          "h": 89.2739,
+          "cx": 34.13085,
+          "cy": 49.972449999999995
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "qalon",
+          "riwaya": "Qalun 'an Nafi'",
+          "file": "qalon.pdf",
+          "sha256": "cbbb52b2a195fd43f9e8ac167a8e9a4173593e9b3dc22a83298550be27aef8de",
+          "url": "https://dn760102.eu.archive.org/0/items/quran-qalon/%D9%85%D8%B5%D8%AD%D9%81%20%D9%82%D8%A7%D9%84%D9%88%D9%86.pdf",
+          "archive_item": "quran-qalon",
+          "archive_url": "https://archive.org/details/quran-qalon",
+          "pdf_page": 300,
+          "crop_box_px": [
+            65,
+            185,
+            1307,
+            2004
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 1,
+          "extracted": "2026-09-09T19:56:36+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "page-frames/shubah",
+      "type": "page-frames",
+      "style": "shubah",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Shu'bah 'an 'Asim",
+      "viewBox": "0 0 65.7002 100",
+      "variants": {
+        "color": "assets/page-frames/shubah/color.svg",
+        "mono": "assets/page-frames/shubah/mono.svg",
+        "line": "assets/page-frames/shubah/line.svg"
+      },
+      "source_crop": "assets/page-frames/shubah/source.jpg",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#f1dace"
+        },
+        {
+          "name": "c2",
+          "hex": "#feb97b"
+        },
+        {
+          "name": "c3",
+          "hex": "#ceb5b5"
+        },
+        {
+          "name": "c4",
+          "hex": "#fea53d"
+        },
+        {
+          "name": "c5",
+          "hex": "#9b2e26"
+        },
+        {
+          "name": "c6",
+          "hex": "#7e251e"
+        },
+        {
+          "name": "line",
+          "hex": "#494041",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        2.0
+      ],
+      "slots": [
+        {
+          "role": "text-area",
+          "x": 4.9781,
+          "y": 4.9781,
+          "w": 55.6893,
+          "h": 89.9891,
+          "cx": 32.82275,
+          "cy": 49.972649999999994
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "shubah",
+          "riwaya": "Shu'bah 'an 'Asim",
+          "file": "shubah.pdf",
+          "sha256": "bb74604d31b3a983aa75d5bb41261ae92c40946be9fbf73452f1206c8a2a4d2b",
+          "url": "https://dn721608.ca.archive.org/0/items/20240908_20240908_1247/%D9%85%D8%B5%D8%AD%D9%81%20%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%B4%D8%B9%D8%A8%D8%A9%20%D8%B9%D9%86%20%D8%B9%D8%A7%D8%B5%D9%85%20%D8%B9%D9%86%20%D8%B2%D8%B1%20%20%D8%B9%D9%86%20%D8%B9%D9%84%D9%8A%20%D9%88%D8%B9%D8%AB%D9%85%D8%A7%D9%86%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%86%D8%A8%D9%8A%20%D8%B5%D9%84%D9%89%20%D8%A7%D9%84%D9%84%D9%87%20%D8%B9%D9%84%D9%8A%D9%87%20%D9%88%D8%B3%D9%84%D9%85.pdf",
+          "archive_item": "20240908_20240908_1247",
+          "archive_url": "https://archive.org/details/20240908_20240908_1247",
+          "pdf_page": 300,
+          "crop_box_px": [
+            72,
+            180,
+            1273,
+            2008
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 1,
+          "extracted": "2026-09-09T20:01:09+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "page-frames/sousi",
+      "type": "page-frames",
+      "style": "sousi",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "al-Susi 'an Abi 'Amr",
+      "viewBox": "0 0 66.5203 100",
+      "variants": {
+        "color": "assets/page-frames/sousi/color.svg",
+        "mono": "assets/page-frames/sousi/mono.svg",
+        "line": "assets/page-frames/sousi/line.svg"
+      },
+      "source_crop": "assets/page-frames/sousi/source.jpg",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#fdc8b4"
+        },
+        {
+          "name": "c2",
+          "hex": "#bbc3cb"
+        },
+        {
+          "name": "c3",
+          "hex": "#003b6d"
+        },
+        {
+          "name": "line",
+          "hex": "#30313e",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.7,
+        4.0
+      ],
+      "slots": [
+        {
+          "role": "text-area",
+          "x": 5.2689,
+          "y": 5.3238,
+          "w": 55.9824,
+          "h": 89.2975,
+          "cx": 33.2601,
+          "cy": 49.97255
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "sousi",
+          "riwaya": "al-Susi 'an Abi 'Amr",
+          "file": "sousi.pdf",
+          "sha256": "265b50e718bedec3df1a9ece77480baeec22f73137fa3a01ab6efc071a65005a",
+          "url": "https://ia600502.us.archive.org/27/items/Susi-HD/sousi-1.pdf",
+          "archive_item": "Susi-HD",
+          "archive_url": "https://archive.org/details/Susi-HD",
+          "pdf_page": 300,
+          "crop_box_px": [
+            67,
+            183,
+            1280,
+            2006
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 1,
+          "extracted": "2026-09-09T19:57:36+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "page-frames/warsh",
+      "type": "page-frames",
+      "style": "warsh",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Warsh 'an Nafi'",
+      "viewBox": "0 0 68.3168 100",
+      "variants": {
+        "color": "assets/page-frames/warsh/color.svg",
+        "mono": "assets/page-frames/warsh/mono.svg",
+        "line": "assets/page-frames/warsh/line.svg"
+      },
+      "source_crop": "assets/page-frames/warsh/source.jpg",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#dbdbdb"
+        },
+        {
+          "name": "c2",
+          "hex": "#e9b1c2"
+        },
+        {
+          "name": "c3",
+          "hex": "#65c4f5"
+        },
+        {
+          "name": "line",
+          "hex": "#5f5c60",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        2.0,
+        5.0
+      ],
+      "slots": [
+        {
+          "role": "text-area",
+          "x": 5.4455,
+          "y": 5.3355,
+          "w": 57.4257,
+          "h": 89.3289,
+          "cx": 34.15835,
+          "cy": 49.99995
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "warsh",
+          "riwaya": "Warsh 'an Nafi'",
+          "file": "warsh.pdf",
+          "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
+          "url": "https://dn711007.ca.archive.org/0/items/Warsh-HD/warsh39-1.pdf",
+          "archive_item": "Warsh-HD",
+          "archive_url": "https://archive.org/details/Warsh-HD",
+          "pdf_page": 300,
+          "crop_box_px": [
+            65,
+            185,
+            1307,
+            2004
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 1,
+          "extracted": "2026-09-09T20:05:52+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "surah-headers/douri",
+      "type": "surah-headers",
+      "style": "douri",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "al-Duri 'an Abi 'Amr",
+      "viewBox": "0 0 857.7143 100",
+      "variants": {
+        "color": "assets/surah-headers/douri/color.svg",
+        "mono": "assets/surah-headers/douri/mono.svg",
+        "line": "assets/surah-headers/douri/line.svg"
+      },
+      "source_crop": "assets/surah-headers/douri/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "c2",
+          "hex": "#e4e4e4"
+        },
+        {
+          "name": "c3",
+          "hex": "#c4bbb9"
+        },
+        {
+          "name": "c4",
+          "hex": "#78c7f4"
+        },
+        {
+          "name": "c5",
+          "hex": "#73402d"
+        },
+        {
+          "name": "c6",
+          "hex": "#5e3426"
+        },
+        {
+          "name": "line",
+          "hex": "#433c3f",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.87,
+        3.33
+      ],
+      "slots": [
+        {
+          "role": "surah-name",
+          "x": 235.7143,
+          "y": 10.2857,
+          "w": 386.5714,
+          "h": 79.7143,
+          "cx": 429.0,
+          "cy": 50.142849999999996
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "douri",
+          "riwaya": "al-Duri 'an Abi 'Amr",
+          "file": "douri.pdf",
+          "sha256": "918f24f92104407712224ebb0f3172f8c18f33dbddd1db85d16c3705e4644ea0",
+          "url": "https://dn720805.ca.archive.org/0/items/douri-HD/douri-1.pdf",
+          "archive_item": "douri-HD",
+          "archive_url": "https://archive.org/details/douri-HD",
+          "pdf_page": 607,
+          "crop_box_px": [
+            359,
+            282,
+            1359,
+            398
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 3,
+          "extracted": "2026-09-09T18:55:19+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "surah-headers/hafs-adi",
+      "type": "surah-headers",
+      "style": "hafs-adi",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+      "viewBox": "0 0 872.6744 100",
+      "variants": {
+        "color": "assets/surah-headers/hafs-adi/color.svg",
+        "mono": "assets/surah-headers/hafs-adi/mono.svg",
+        "line": "assets/surah-headers/hafs-adi/line.svg"
+      },
+      "source_crop": "assets/surah-headers/hafs-adi/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "c2",
+          "hex": "#dfe8db"
+        },
+        {
+          "name": "c3",
+          "hex": "#bed2b5"
+        },
+        {
+          "name": "c4",
+          "hex": "#e98ab7"
+        },
+        {
+          "name": "c5",
+          "hex": "#5fa629"
+        },
+        {
+          "name": "c6",
+          "hex": "#4d8522"
+        },
+        {
+          "name": "line",
+          "hex": "#3d4539",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.46
+      ],
+      "slots": [
+        {
+          "role": "surah-name",
+          "x": 239.8256,
+          "y": 9.593,
+          "w": 393.314,
+          "h": 81.1047,
+          "cx": 436.48260000000005,
+          "cy": 50.14534999999999
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "hafs-adi",
+          "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+          "file": "hafs-adi.pdf",
+          "sha256": "1cd2a1544860791a0b795e904680f4ad51bee0f692c35c1f764dc833bd1fe5f8",
+          "url": "https://dn720703.ca.archive.org/0/items/quran-pdf-download-hafs/%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20-%20%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D8%B9%D8%A7%D8%AF%D9%8A.pdf",
+          "archive_item": "quran-pdf-download-hafs",
+          "archive_url": "https://archive.org/details/quran-pdf-download-hafs",
+          "pdf_page": 607,
+          "crop_box_px": [
+            87,
+            169,
+            1087,
+            284
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 3,
+          "extracted": "2026-09-09T18:55:10+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "surah-headers/hafs-madinah-kabir",
+      "type": "surah-headers",
+      "style": "hafs-madinah-kabir",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+      "viewBox": "0 0 811.4094 100",
+      "variants": {
+        "color": "assets/surah-headers/hafs-madinah-kabir/color.svg",
+        "mono": "assets/surah-headers/hafs-madinah-kabir/mono.svg",
+        "line": "assets/surah-headers/hafs-madinah-kabir/line.svg"
+      },
+      "source_crop": "assets/surah-headers/hafs-madinah-kabir/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "c2",
+          "hex": "#e0f2fc"
+        },
+        {
+          "name": "c3",
+          "hex": "#cac9cd"
+        },
+        {
+          "name": "c4",
+          "hex": "#3fa2ca"
+        },
+        {
+          "name": "c5",
+          "hex": "#00a1e7"
+        },
+        {
+          "name": "line",
+          "hex": "#295469",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.67,
+        2.67
+      ],
+      "slots": [
+        {
+          "role": "surah-name",
+          "x": 234.5638,
+          "y": 13.0872,
+          "w": 342.2819,
+          "h": 74.4966,
+          "cx": 405.70475,
+          "cy": 50.335499999999996
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "hafs-madinah-kabir",
+          "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+          "file": "hafs-madinah-kabir.pdf",
+          "sha256": "369fc3ef1df33320a53554c25a6ba1b860a3882e63b12ed00bcf215d68e07cb3",
+          "url": "https://dn721901.ca.archive.org/0/items/20240716_20240716_0926/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A8%D8%AD%D8%AC%D9%85%20%D9%83%D8%A8%D9%8A%D8%B1.pdf",
+          "archive_item": "20240716_20240716_0926",
+          "archive_url": "https://archive.org/details/20240716_20240716_0926",
+          "pdf_page": 605,
+          "crop_box_px": [
+            222,
+            177,
+            1028,
+            276
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 3,
+          "extracted": "2026-09-09T18:55:12+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "surah-headers/hafs-madinah-mumtaza",
+      "type": "surah-headers",
+      "style": "hafs-madinah-mumtaza",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+      "viewBox": "0 0 854.6875 100",
+      "variants": {
+        "color": "assets/surah-headers/hafs-madinah-mumtaza/color.svg",
+        "mono": "assets/surah-headers/hafs-madinah-mumtaza/mono.svg",
+        "line": "assets/surah-headers/hafs-madinah-mumtaza/line.svg"
+      },
+      "source_crop": "assets/surah-headers/hafs-madinah-mumtaza/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "c2",
+          "hex": "#e3f0eb"
+        },
+        {
+          "name": "c3",
+          "hex": "#fae760"
+        },
+        {
+          "name": "c4",
+          "hex": "#70b693"
+        },
+        {
+          "name": "c5",
+          "hex": "#e18f32"
+        },
+        {
+          "name": "line",
+          "hex": "#393f35",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        2.0,
+        4.83
+      ],
+      "slots": [
+        {
+          "role": "surah-name",
+          "x": 256.25,
+          "y": 7.8125,
+          "w": 342.1875,
+          "h": 83.5938,
+          "cx": 427.34375,
+          "cy": 49.6094
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "hafs-madinah-mumtaza",
+          "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+          "file": "hafs-madinah-mumtaza.pdf",
+          "sha256": "e90a6c6285a77400e4316b775f1badbb66d72a5a6f2d1722bc482ef702b4903a",
+          "url": "https://dn721909.ca.archive.org/0/items/20240718_20240718_0417/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A7%D9%84%D9%85%D9%85%D8%AA%D8%A7%D8%B2%D8%A9.pdf",
+          "archive_item": "20240718_20240718_0417",
+          "archive_url": "https://archive.org/details/20240718_20240718_0417",
+          "pdf_page": 605,
+          "crop_box_px": [
+            435,
+            418,
+            1528,
+            546
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 3,
+          "extracted": "2026-09-09T18:55:17+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "surah-headers/qalon",
+      "type": "surah-headers",
+      "style": "qalon",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Qalun 'an Nafi'",
+      "viewBox": "0 0 863.4286 100",
+      "variants": {
+        "color": "assets/surah-headers/qalon/color.svg",
+        "mono": "assets/surah-headers/qalon/mono.svg",
+        "line": "assets/surah-headers/qalon/line.svg"
+      },
+      "source_crop": "assets/surah-headers/qalon/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#dfe6ed"
+        },
+        {
+          "name": "c2",
+          "hex": "#cecfd1"
+        },
+        {
+          "name": "c3",
+          "hex": "#e1abc8"
+        },
+        {
+          "name": "c4",
+          "hex": "#00659d"
+        },
+        {
+          "name": "line",
+          "hex": "#343f49",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.46
+      ],
+      "slots": [
+        {
+          "role": "surah-name",
+          "x": 180.8571,
+          "y": 8.5714,
+          "w": 501.4286,
+          "h": 83.1429,
+          "cx": 431.57140000000004,
+          "cy": 50.142849999999996
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "qalon",
+          "riwaya": "Qalun 'an Nafi'",
+          "file": "qalon.pdf",
+          "sha256": "cbbb52b2a195fd43f9e8ac167a8e9a4173593e9b3dc22a83298550be27aef8de",
+          "url": "https://dn760102.eu.archive.org/0/items/quran-qalon/%D9%85%D8%B5%D8%AD%D9%81%20%D9%82%D8%A7%D9%84%D9%88%D9%86.pdf",
+          "archive_item": "quran-qalon",
+          "archive_url": "https://archive.org/details/quran-qalon",
+          "pdf_page": 607,
+          "crop_box_px": [
+            341,
+            300,
+            1348,
+            416
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 3,
+          "extracted": "2026-09-09T21:55:29+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-assets uncommitted"
+    },
+    {
+      "id": "surah-headers/shubah",
+      "type": "surah-headers",
+      "style": "shubah",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Shu'bah 'an 'Asim",
+      "viewBox": "0 0 872.6744 100",
+      "variants": {
+        "color": "assets/surah-headers/shubah/color.svg",
+        "mono": "assets/surah-headers/shubah/mono.svg",
+        "line": "assets/surah-headers/shubah/line.svg"
+      },
+      "source_crop": "assets/surah-headers/shubah/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "c2",
+          "hex": "#e6dcdb"
+        },
+        {
+          "name": "c3",
+          "hex": "#d5b4a5"
+        },
+        {
+          "name": "c4",
+          "hex": "#9b2e26"
+        },
+        {
+          "name": "c5",
+          "hex": "#7e251e"
+        },
+        {
+          "name": "line",
+          "hex": "#4b4344",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.46,
+        2.67
+      ],
+      "slots": [
+        {
+          "role": "surah-name",
+          "x": 239.8256,
+          "y": 8.7209,
+          "w": 393.314,
+          "h": 82.8488,
+          "cx": 436.48260000000005,
+          "cy": 50.1453
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "shubah",
+          "riwaya": "Shu'bah 'an 'Asim",
+          "file": "shubah.pdf",
+          "sha256": "bb74604d31b3a983aa75d5bb41261ae92c40946be9fbf73452f1206c8a2a4d2b",
+          "url": "https://dn721608.ca.archive.org/0/items/20240908_20240908_1247/%D9%85%D8%B5%D8%AD%D9%81%20%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%B4%D8%B9%D8%A8%D8%A9%20%D8%B9%D9%86%20%D8%B9%D8%A7%D8%B5%D9%85%20%D8%B9%D9%86%20%D8%B2%D8%B1%20%20%D8%B9%D9%86%20%D8%B9%D9%84%D9%8A%20%D9%88%D8%B9%D8%AB%D9%85%D8%A7%D9%86%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%86%D8%A8%D9%8A%20%D8%B5%D9%84%D9%89%20%D8%A7%D9%84%D9%84%D9%87%20%D8%B9%D9%84%D9%8A%D9%87%20%D9%88%D8%B3%D9%84%D9%85.pdf",
+          "archive_item": "20240908_20240908_1247",
+          "archive_url": "https://archive.org/details/20240908_20240908_1247",
+          "pdf_page": 607,
+          "crop_box_px": [
+            359,
+            283,
+            1359,
+            398
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 3,
+          "extracted": "2026-09-09T18:55:20+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "surah-headers/sousi",
+      "type": "surah-headers",
+      "style": "sousi",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "al-Susi 'an Abi 'Amr",
+      "viewBox": "0 0 782.5397 100",
+      "variants": {
+        "color": "assets/surah-headers/sousi/color.svg",
+        "mono": "assets/surah-headers/sousi/mono.svg",
+        "line": "assets/surah-headers/sousi/line.svg"
+      },
+      "source_crop": "assets/surah-headers/sousi/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "c2",
+          "hex": "#fdc9b7"
+        },
+        {
+          "name": "c3",
+          "hex": "#d3d6db"
+        },
+        {
+          "name": "c4",
+          "hex": "#b4bac4"
+        },
+        {
+          "name": "c5",
+          "hex": "#003e73"
+        },
+        {
+          "name": "line",
+          "hex": "#313342",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.33,
+        2.67
+      ],
+      "slots": [
+        {
+          "role": "surah-name",
+          "x": 226.1905,
+          "y": 9.5238,
+          "w": 330.9524,
+          "h": 80.9524,
+          "cx": 391.6667,
+          "cy": 50.0
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "sousi",
+          "riwaya": "al-Susi 'an Abi 'Amr",
+          "file": "sousi.pdf",
+          "sha256": "265b50e718bedec3df1a9ece77480baeec22f73137fa3a01ab6efc071a65005a",
+          "url": "https://ia600502.us.archive.org/27/items/Susi-HD/sousi-1.pdf",
+          "archive_item": "Susi-HD",
+          "archive_url": "https://archive.org/details/Susi-HD",
+          "pdf_page": 607,
+          "crop_box_px": [
+            367,
+            292,
+            1352,
+            418
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 3,
+          "extracted": "2026-09-09T18:55:13+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    },
+    {
+      "id": "surah-headers/warsh",
+      "type": "surah-headers",
+      "style": "warsh",
+      "lineage": "scan",
+      "units": "normalized-100",
+      "riwaya": "Warsh 'an Nafi'",
+      "viewBox": "0 0 863.4286 100",
+      "variants": {
+        "color": "assets/surah-headers/warsh/color.svg",
+        "mono": "assets/surah-headers/warsh/mono.svg",
+        "line": "assets/surah-headers/warsh/line.svg"
+      },
+      "source_crop": "assets/surah-headers/warsh/source.png",
+      "palette": [
+        {
+          "name": "slot",
+          "hex": "none"
+        },
+        {
+          "name": "c1",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e5eb"
+        },
+        {
+          "name": "c3",
+          "hex": "#9ed7f8"
+        },
+        {
+          "name": "c4",
+          "hex": "#c6c5c7"
+        },
+        {
+          "name": "c5",
+          "hex": "#e5afc0"
+        },
+        {
+          "name": "line",
+          "hex": "#4c454a",
+          "stroke": true
+        }
+      ],
+      "stroke_widths_px": [
+        1.46,
+        2.67
+      ],
+      "slots": [
+        {
+          "role": "surah-name",
+          "x": 180.8571,
+          "y": 8.5714,
+          "w": 501.4286,
+          "h": 83.1429,
+          "cx": 431.57140000000004,
+          "cy": 50.142849999999996
+        }
+      ],
+      "symmetry": 4,
+      "sources": [
+        {
+          "kind": "mushaf-scan",
+          "mushaf": "warsh",
+          "riwaya": "Warsh 'an Nafi'",
+          "file": "warsh.pdf",
+          "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
+          "url": "https://dn711007.ca.archive.org/0/items/Warsh-HD/warsh39-1.pdf",
+          "archive_item": "Warsh-HD",
+          "archive_url": "https://archive.org/details/Warsh-HD",
+          "pdf_page": 607,
+          "crop_box_px": [
+            341,
+            300,
+            1348,
+            416
+          ],
+          "occurrence": 0,
+          "occurrences_on_page": 3,
+          "extracted": "2026-09-09T18:55:15+0000"
+        }
+      ],
+      "license": {
+        "id": "TBD",
+        "status": "pending"
+      },
+      "pipeline_commit": "quran-surah-header 9eb856e"
+    }
+  ]
+}

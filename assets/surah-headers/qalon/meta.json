@@ -1,0 +1,113 @@
+{
+  "mushaf": "qalon",
+  "asset": "surah-header",
+  "page": 607,
+  "source": "qalon.pdf",
+  "riwaya": "Qalun 'an Nafi'",
+  "generated": "2026-09-09 21:55",
+  "page_px": [
+    1531,
+    2189
+  ],
+  "boxes": [
+    [
+      341,
+      300,
+      1348,
+      416
+    ],
+    [
+      342,
+      735,
+      1349,
+      851
+    ],
+    [
+      342,
+      1270,
+      1349,
+      1386
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "qalon",
+    "riwaya": "Qalun 'an Nafi'",
+    "file": "qalon.pdf",
+    "sha256": "cbbb52b2a195fd43f9e8ac167a8e9a4173593e9b3dc22a83298550be27aef8de",
+    "url": "https://dn760102.eu.archive.org/0/items/quran-qalon/%D9%85%D8%B5%D8%AD%D9%81%20%D9%82%D8%A7%D9%84%D9%88%D9%86.pdf",
+    "archive_item": "quran-qalon",
+    "archive_url": "https://archive.org/details/quran-qalon",
+    "pdf_page": 607,
+    "crop_box_px": [
+      341,
+      300,
+      1348,
+      416
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 3,
+    "pipeline": "quran-assets uncommitted",
+    "extracted": "2026-09-09T21:55:29+0000"
+  },
+  "slot_px": [
+    211,
+    10,
+    796,
+    107
+  ],
+  "slot_fill": "#e1e6ec",
+  "symmetry": {
+    "folds": 4,
+    "deskew_deg": 0.0,
+    "axes_px": [
+      503.6666666666667,
+      58.333333333333336
+    ],
+    "residual": {
+      "lr": 2.78,
+      "ud": 12.13,
+      "both": 12.95
+    },
+    "baseline": 81.6
+  },
+  "stroke_widths_px": [
+    1.46
+  ],
+  "viewBox": "0 0 863.4286 100",
+  "slot": "180.8571 8.5714 501.4286 83.1429",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#dfe6ed",
+      "paths": 3
+    },
+    {
+      "class": "c2",
+      "hex": "#cecfd1",
+      "paths": 7
+    },
+    {
+      "class": "c3",
+      "hex": "#e1abc8",
+      "paths": 10
+    },
+    {
+      "class": "c4",
+      "hex": "#00659d",
+      "paths": 6
+    },
+    {
+      "class": "line",
+      "hex": "#343f49",
+      "paths": 101,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 2
+}

@@ -1,0 +1,119 @@
+{
+  "mushaf": "sousi",
+  "asset": "surah-header",
+  "page": 607,
+  "source": "sousi.pdf",
+  "riwaya": "al-Susi 'an Abi 'Amr",
+  "generated": "2026-09-09 18:55",
+  "page_px": [
+    1532,
+    2189
+  ],
+  "boxes": [
+    [
+      367,
+      292,
+      1352,
+      418
+    ],
+    [
+      367,
+      716,
+      1352,
+      842
+    ],
+    [
+      367,
+      1255,
+      1352,
+      1382
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "sousi",
+    "riwaya": "al-Susi 'an Abi 'Amr",
+    "file": "sousi.pdf",
+    "sha256": "265b50e718bedec3df1a9ece77480baeec22f73137fa3a01ab6efc071a65005a",
+    "url": "https://ia600502.us.archive.org/27/items/Susi-HD/sousi-1.pdf",
+    "archive_item": "Susi-HD",
+    "archive_url": "https://archive.org/details/Susi-HD",
+    "pdf_page": 607,
+    "crop_box_px": [
+      367,
+      292,
+      1352,
+      418
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 3,
+    "pipeline": "quran-surah-header 9eb856e",
+    "extracted": "2026-09-09T18:55:13+0000"
+  },
+  "slot_px": [
+    285,
+    12,
+    702,
+    114
+  ],
+  "slot_fill": "#d3d6dc",
+  "symmetry": {
+    "folds": 4,
+    "deskew_deg": 0.0,
+    "axes_px": [
+      493.0,
+      63.0
+    ],
+    "residual": {
+      "lr": 3.37,
+      "ud": 5.52,
+      "both": 7.04
+    },
+    "baseline": 66.8
+  },
+  "stroke_widths_px": [
+    1.33,
+    2.67
+  ],
+  "viewBox": "0 0 782.5397 100",
+  "slot": "226.1905 9.5238 330.9524 80.9524",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#ffffff",
+      "paths": 2
+    },
+    {
+      "class": "c2",
+      "hex": "#fdc9b7",
+      "paths": 9
+    },
+    {
+      "class": "c3",
+      "hex": "#d3d6db",
+      "paths": 2
+    },
+    {
+      "class": "c4",
+      "hex": "#b4bac4",
+      "paths": 3
+    },
+    {
+      "class": "c5",
+      "hex": "#003e73",
+      "paths": 15
+    },
+    {
+      "class": "line",
+      "hex": "#313342",
+      "paths": 157,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 3
+}

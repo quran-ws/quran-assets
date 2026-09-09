@@ -1,0 +1,119 @@
+{
+  "mushaf": "warsh",
+  "asset": "surah-header",
+  "page": 607,
+  "source": "warsh.pdf",
+  "riwaya": "Warsh 'an Nafi'",
+  "generated": "2026-09-09 18:55",
+  "page_px": [
+    1531,
+    2189
+  ],
+  "boxes": [
+    [
+      341,
+      300,
+      1348,
+      416
+    ],
+    [
+      342,
+      735,
+      1349,
+      851
+    ],
+    [
+      342,
+      1270,
+      1349,
+      1386
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "warsh",
+    "riwaya": "Warsh 'an Nafi'",
+    "file": "warsh.pdf",
+    "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
+    "url": "https://dn711007.ca.archive.org/0/items/Warsh-HD/warsh39-1.pdf",
+    "archive_item": "Warsh-HD",
+    "archive_url": "https://archive.org/details/Warsh-HD",
+    "pdf_page": 607,
+    "crop_box_px": [
+      341,
+      300,
+      1348,
+      416
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 3,
+    "pipeline": "quran-surah-header 9eb856e",
+    "extracted": "2026-09-09T18:55:15+0000"
+  },
+  "slot_px": [
+    211,
+    10,
+    796,
+    107
+  ],
+  "slot_fill": "#f5e4e9",
+  "symmetry": {
+    "folds": 4,
+    "deskew_deg": 0.0,
+    "axes_px": [
+      503.6666666666667,
+      58.333333333333336
+    ],
+    "residual": {
+      "lr": 3.28,
+      "ud": 7.81,
+      "both": 9.11
+    },
+    "baseline": 47.02
+  },
+  "stroke_widths_px": [
+    1.46,
+    2.67
+  ],
+  "viewBox": "0 0 863.4286 100",
+  "slot": "180.8571 8.5714 501.4286 83.1429",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#ffffff",
+      "paths": 7
+    },
+    {
+      "class": "c2",
+      "hex": "#f4e5eb",
+      "paths": 3
+    },
+    {
+      "class": "c3",
+      "hex": "#9ed7f8",
+      "paths": 6
+    },
+    {
+      "class": "c4",
+      "hex": "#c6c5c7",
+      "paths": 4
+    },
+    {
+      "class": "c5",
+      "hex": "#e5afc0",
+      "paths": 11
+    },
+    {
+      "class": "line",
+      "hex": "#4c454a",
+      "paths": 110,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 2
+}
