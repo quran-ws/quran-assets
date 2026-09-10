@@ -40,6 +40,7 @@ jobs:
     needs: check
     runs-on: ubuntu-latest
     permissions:
+      contents: read      # a permissions block replaces the defaults, so checkout needs this back
       pages: write
       id-token: write
     environment:
