@@ -1,31 +1,23 @@
 #!/usr/bin/env python3
-"""Run the ornament pipeline.
+"""Scan lineage: render -> detect -> clean -> symmetry -> vectorize -> svgout.
 
-  python3 -m pipeline.run                      # every job in assets.json
-  python3 -m pipeline.run --mushaf qalon       # one mushaf
-  python3 -m pipeline.run --asset ayah-marker  # one asset type
-  python3 -m pipeline.run --to detect          # stop after a step (render|detect|clean|vectorize)
-  python3 -m pipeline.run --force              # ignore cached page renders
+Driven by `python -m qa build` (see `python -m qa build --help`); one job per
+(mushaf, asset type) in qa/jobs/<type>.json.
 
 Outputs land in assets/<type>/<style>/  (type = surah-headers | page-frames | ayah-markers, style = mushaf id):
   source.png   raw crop (title included)          clean.png   title removed (what gets traced)
   mono.svg     single-colour (currentColor)       color.svg   multi-colour layers
   meta.json    page, boxes, palette, slot, viewBox candidates/  every detected occurrence (raw)
 """
-import argparse, json, sys, time, hashlib, subprocess, re, os
+import json, time, hashlib, re
 from pathlib import Path
 import cv2, numpy as np
-from . import render, detect, clean, vectorize, svgout, symmetry
-
-ROOT = Path(__file__).resolve().parent.parent
-SOURCES = Path(os.environ.get("QA_SOURCES_DIR", ROOT / "sources"))   # where the mushaf PDFs live (not committed)
-
-TYPE_DIR = {"surah-header": "surah-headers", "page-frame": "page-frames", "ayah-marker": "ayah-markers"}
+from qa import ROOT, SOURCES, TYPE_DIR, JOBS_DIR, git_rev, load_jobs
+from . import render, detect, clean, slicer, vectorize, svgout, symmetry
 
 def load():
-    cfg = json.load(open(ROOT / "jobs.json"))
     src = {s["id"]: s for s in json.load(open(ROOT / "sources" / "mushafs.json"))["sources"]}
-    return cfg, src
+    return load_jobs(), src
 
 def file_sha256(path: Path) -> str:
     """sha256 of a source PDF, cached next to the page renders (PDFs are ~250 MB)."""
@@ -38,9 +30,13 @@ def file_sha256(path: Path) -> str:
     cache.parent.mkdir(parents=True, exist_ok=True); cache.write_text(h.hexdigest())
     return h.hexdigest()
 
-def git_rev() -> str:
-    try: return subprocess.check_output(["git", "-C", str(ROOT), "rev-parse", "--short", "HEAD"], stderr=subprocess.DEVNULL).decode().strip()
-    except Exception: return "uncommitted"
+def pipeline_digest() -> str:
+    """Identify the actual local pipeline, including changes not yet committed."""
+    digest = hashlib.sha256()
+    for path in sorted((ROOT / "qa").rglob("*.py")) + sorted(JOBS_DIR.glob("*.json")):
+        digest.update(path.relative_to(ROOT).as_posix().encode())
+        digest.update(b"\0" + path.read_bytes())
+    return digest.hexdigest()
 
 def provenance(job, s, box, pick, boxes):
     m = re.search(r"/items/([^/]+)/", s["url"])
@@ -50,32 +46,9 @@ def provenance(job, s, box, pick, boxes):
         "url": s["url"], "archive_item": m.group(1) if m else None,
         "archive_url": f"https://archive.org/details/{m.group(1)}" if m else None,
         "pdf_page": job["page"], "crop_box_px": list(map(int, box)), "occurrence": pick, "occurrences_on_page": len(boxes),
-        "pipeline": "quran-assets " + git_rev(), "extracted": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+        "pipeline": "quran-assets " + git_rev(), "pipeline_sha256": pipeline_digest(),
+        "extracted": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
     }
-
-def write_catalog():
-    """assets/catalog.json: every generated asset with its provenance, for apps and audits."""
-    items = []
-    for meta in sorted((ROOT / "assets").glob("*/*/meta.json")):
-        m = json.load(open(meta)); d = "assets/" + str(meta.parent.relative_to(ROOT / "assets"))
-        typ, style = meta.parent.parent.name, meta.parent.name
-        crop = "source.jpg" if (meta.parent / "source.jpg").exists() else "source.png"
-        sx = [float(v) for v in m["slot"].split()] if m.get("slot") else None
-        items.append({"id": f"{typ}/{style}", "type": typ, "style": style, "lineage": "scan", "units": "normalized-100",
-                      "riwaya": m.get("riwaya"), "viewBox": m.get("viewBox"),
-                      "variants": {k: f"{d}/{k}.svg" for k in ("color", "mono", "line") if (meta.parent / f"{k}.svg").exists()},
-                      "source_crop": f"{d}/{crop}",
-                      "palette": [{"name": p["class"], "hex": p["hex"], **({"stroke": True} if p.get("stroke") else {})} for p in m.get("palette", [])],
-                      "stroke_widths_px": m.get("stroke_widths_px"),
-                      "slots": [{"role": {"surah-headers": "surah-name", "page-frames": "text-area", "ayah-markers": "ayah-number"}[typ],
-                                 "x": sx[0], "y": sx[1], "w": sx[2], "h": sx[3], "cx": sx[0] + sx[2] / 2, "cy": sx[1] + sx[3] / 2}] if sx else [],
-                      "symmetry": m.get("symmetry", {}).get("folds"),
-                      "sources": [{"kind": "mushaf-scan", **{k: v for k, v in (m.get("provenance") or {}).items() if k != "pipeline"}}],
-                      "license": {"id": "TBD", "status": "pending"},
-                      "pipeline_commit": (m.get("provenance") or {}).get("pipeline")})
-    json.dump({"generated": time.strftime("%Y-%m-%d"), "schema": "quran-assets/catalog@1", "count": len(items), "assets": items},
-              open(ROOT / "catalog.json", "w"), indent=2, ensure_ascii=False)
-    return len(items)
 
 def run_job(job, cfg, src, to="vectorize", force=False, log=print):
     mushaf, asset = job["mushaf"], job["asset"]
@@ -104,7 +77,8 @@ def run_job(job, cfg, src, to="vectorize", force=False, log=print):
     x0, y0, x1, y1 = boxes[pick]; meta["pick"] = pick
     meta["provenance"] = provenance(job, src[mushaf], boxes[pick], pick, boxes)
     crop = bgr[y0:y1, x0:x1]
-    cv2.imwrite(str(out / "source.png"), crop)
+    source_crop = out / ("source.jpg" if (out / "source.jpg").exists() else "source.png")
+    cv2.imwrite(str(source_crop), crop)
     log(f"  detected {len(boxes)} x {asset}; using #{pick} {crop.shape[1]}x{crop.shape[0]}px")
     if to == "detect": json.dump(meta, open(out / "meta.json", "w"), indent=2, ensure_ascii=False); return meta
     # 3 clean
@@ -114,6 +88,7 @@ def run_job(job, cfg, src, to="vectorize", force=False, log=print):
     meta["slot_px"] = slot; meta["slot_fill"] = "#%02x%02x%02x" % bg if bg else None
     if to == "clean": json.dump(meta, open(out / "meta.json", "w"), indent=2, ensure_ascii=False); return meta
     # 4 vectorize + 5 standardize
+    full_clean, full_slot_mask = cleaned.copy(), None if slot_mask is None else slot_mask.copy()
     vk = {**at.get("vectorize", {}), **job.get("vectorize", {})}
     scale = vk.pop("scale", 2); k = vk.pop("k", 6)
     h, w = cleaned.shape[:2]
@@ -141,25 +116,64 @@ def run_job(job, cfg, src, to="vectorize", force=False, log=print):
     meta["viewBox"] = m1["viewBox"]; meta["slot"] = m1["slot"]
     meta["palette"] = [{"class": l["cls"], "hex": l["hex"], "paths": len(l["paths"]), **({"stroke": True} if l.get("stroke") else {})} for l in layers]
     meta["mono_paths"] = len(mono)
+    if asset == "page-frame":
+        meta["slices"] = write_slices(out, full_clean, full_slot_mask, meta, k, scale, vk, log)
     json.dump(meta, open(out / "meta.json", "w"), indent=2, ensure_ascii=False)
     log(f"  mono {len(mono)} paths, color {len(layers)} layers -> {out.relative_to(ROOT)}")
     return meta
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--mushaf"); ap.add_argument("--asset")
-    ap.add_argument("--to", default="vectorize", choices=["render", "detect", "clean", "vectorize"])
-    ap.add_argument("--force", action="store_true")
-    ap.add_argument("--catalog-only", action="store_true", help="just rebuild catalog.json from existing meta.json files")
-    a = ap.parse_args()
-    if a.catalog_only:
-        print(f"catalog: {write_catalog()} assets -> catalog.json"); return
+MIN_RECONSTRUCTION_IOU = 0.70   # below this the pieces do not rebuild the frame; ship it whole
+
+
+def write_slices(out, cleaned, slot_mask, meta, k, scale, vk, log):
+    """9-slice pieces for a page frame, or None when the border does not tile.
+
+    The pieces are checked before they are written: cut them out of the cleaned scan,
+    reassemble the frame the way the `frame()` helper does, and compare the ink with the
+    original. A border whose corner or repeat we read wrongly fails here and ships whole.
+    """
+    geometry = slicer.analyse(cleaned, meta["slot_px"], meta.get("symmetry", {}).get("folds"))
+    if geometry is None:
+        log("  slices: border is not periodic enough to slice; shipping the frame whole")
+        return None
+    boxes = {"corner": geometry["corner_px"], "edge-h": geometry["edge_h_px"], "edge-v": geometry["edge_v_px"]}
+    pieces = {name: cleaned[b[1]:b[3], b[0]:b[2]] for name, b in boxes.items()}
+    rebuilt = slicer.assemble(pieces, tuple(geometry["frame_px"]), geometry)
+    ink = lambda image: cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) < 210
+    a, b = ink(cleaned), ink(rebuilt)
+    iou = float((a & b).sum() / max(1, (a | b).sum()))
+    geometry["reconstruction_iou"] = round(iou, 4)
+    if iou < MIN_RECONSTRUCTION_IOU:
+        log(f"  slices: reconstruction IoU {iou:.3f} < {MIN_RECONSTRUCTION_IOU}; shipping the frame whole")
+        return None
+    traced = vectorize.trace_color(cleaned, k=k, scale=scale, slot_mask=slot_mask, crops=boxes,
+                                  **{a_: b_ for a_, b_ in vk.items() if a_ in vectorize.COLOR_KEYS or a_ in vectorize.VTRACER_KEYS})
+    directory = out / "slices"; directory.mkdir(exist_ok=True)
+    height_px = geometry["frame_px"][1]
+    written = {}
+    for name, box in boxes.items():
+        x0, y0, x1, y1 = box
+        extra = {"data-slice": name, "data-frame-viewbox": meta["viewBox"]}
+        if name != "corner":
+            extra["data-repeat"] = _fmt_units((x1 - x0) if name == "edge-h" else (y1 - y0), height_px)
+        svgout.write_svg(directory / f"{name}.svg", traced[name], x1 - x0, y1 - y0, scale,
+                         meta["mushaf"], meta["asset"], "color", None, extra_attrs=extra,
+                         provenance=meta["provenance"], norm_h=height_px)
+        written[name] = f"slices/{name}.svg"
+    log(f"  slices: corner {boxes['corner'][2]}x{boxes['corner'][3]}px, repeat {geometry['repeat_px']}, reconstruction IoU {iou:.3f}")
+    return {"files": written, **geometry}
+
+
+def _fmt_units(value, height_px):
+    return round(value * 100.0 / height_px, 4)
+
+
+def build(mushaf=None, asset=None, to="vectorize", force=False):
     cfg, src = load()
-    jobs = [j for j in cfg["jobs"] if (not a.mushaf or j["mushaf"] == a.mushaf) and (not a.asset or j["asset"] == a.asset)]
+    jobs = [j for j in cfg["jobs"] if (not mushaf or j["mushaf"] == mushaf) and (not asset or j["asset"] == asset)]
+    if not jobs:
+        raise SystemExit("no jobs match that --mushaf/--asset selection")
     for j in jobs:
         print(f"[{j['mushaf']} / {j['asset']} p{j['page']}]")
-        t = time.time(); run_job(j, cfg, src, to=a.to, force=a.force); print(f"  {time.time()-t:.1f}s")
-    print(f"catalog: {write_catalog()} assets -> catalog.json")
-
-if __name__ == "__main__":
-    main()
+        t = time.time(); run_job(j, cfg, src, to=to, force=force); print(f"  {time.time()-t:.1f}s")
+    return jobs

@@ -1,0 +1,35 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: sudo apt-get update && sudo apt-get install -y libcairo2 poppler-utils
+      - run: pip install -r requirements.txt
+      - run: python -m qa validate
+      - run: python -m pytest -q
+      - run: npm install --no-save svgo@3 && python -m qa dist
+      - name: Refuse to release assets whose license is unconfirmed
+        # `qa dist` marks the package private in that case; releasing it would publish
+        # assets we do not yet have permission to redistribute (docs/PLAN.md §6).
+        run: |
+          python - <<'PY'
+          import json, sys
+          package = json.load(open("dist/package.json"))
+          if package.get("private"):
+              sys.exit("dist/package.json is private: " + ", ".join(package["quranAssets"]["unconfirmedLicenses"]))
+          PY
+      - run: cd dist && zip -r ../quran-assets-${{ github.ref_name }}.zip .
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: quran-assets-${{ github.ref_name }}.zip
+          generate_release_notes: true

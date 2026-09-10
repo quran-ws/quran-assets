@@ -1,0 +1,401 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://assets.quran.ws/catalog.schema.json",
+  "title": "quran-assets catalog",
+  "description": "One entry per style x type, for both lineages: scan-derived (mushaf PDFs) and font-derived (OFL fonts).",
+  "type": "object",
+  "required": [
+    "generated",
+    "schema",
+    "count",
+    "assets"
+  ],
+  "properties": {
+    "generated": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "schema": {
+      "const": "quran-assets/catalog@1"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    }
+  },
+  "$defs": {
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "style",
+        "lineage",
+        "units",
+        "viewBox",
+        "aspect",
+        "variants",
+        "palette",
+        "slots",
+        "sources",
+        "license"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z-]+/[a-z0-9-]+$"
+        },
+        "type": {
+          "enum": [
+            "surah-headers",
+            "page-frames",
+            "ayah-markers"
+          ]
+        },
+        "style": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "lineage": {
+          "enum": [
+            "scan",
+            "font"
+          ]
+        },
+        "units": {
+          "enum": [
+            "normalized-100",
+            "font-upem"
+          ]
+        },
+        "riwaya": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "viewBox": {
+          "type": "string",
+          "pattern": "^0 0 [0-9.]+ [0-9.]+$"
+        },
+        "aspect": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "variants": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": false,
+          "properties": {
+            "color": {
+              "$ref": "#/$defs/path"
+            },
+            "mono": {
+              "$ref": "#/$defs/path"
+            },
+            "line": {
+              "$ref": "#/$defs/path"
+            }
+          }
+        },
+        "source_crop": {
+          "$ref": "#/$defs/path"
+        },
+        "palette": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "hex"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "pattern": "^(slot|line|ink|c[0-9]+)$"
+              },
+              "hex": {
+                "type": "string",
+                "pattern": "^(#[0-9a-f]{6}|none|currentColor)$"
+              },
+              "stroke": {
+                "const": true
+              }
+            }
+          }
+        },
+        "stroke_widths_px": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        },
+        "slots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "role",
+              "x",
+              "y",
+              "w",
+              "h",
+              "cx",
+              "cy"
+            ],
+            "properties": {
+              "role": {
+                "enum": [
+                  "surah-name",
+                  "text-area",
+                  "ayah-number"
+                ]
+              },
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              },
+              "w": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "h": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "cx": {
+                "type": "number"
+              },
+              "cy": {
+                "type": "number"
+              },
+              "r": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            }
+          }
+        },
+        "symmetry": {
+          "enum": [
+            1,
+            2,
+            4,
+            "c2",
+            null
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "license": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "status"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "status": {
+              "enum": [
+                "confirmed",
+                "provisional",
+                "pending"
+              ]
+            },
+            "attribution": {
+              "type": "string"
+            },
+            "note": {
+              "type": "string"
+            },
+            "redistributable": {
+              "type": "boolean"
+            }
+          }
+        },
+        "pipeline_commit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "slices": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "files",
+            "corner",
+            "repeat",
+            "corner_mode",
+            "reconstruction_iou"
+          ],
+          "description": "9-slice pieces of a page frame, in frame units (100 = frame height). Absent when the border does not tile.",
+          "properties": {
+            "files": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/$defs/path"
+              },
+              "required": [
+                "corner",
+                "edge-h",
+                "edge-v"
+              ]
+            },
+            "corner": {
+              "type": "object",
+              "required": [
+                "w",
+                "h"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "w": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "h": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              }
+            },
+            "repeat": {
+              "type": "object",
+              "required": [
+                "h",
+                "v"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "h": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "v": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              }
+            },
+            "corner_mode": {
+              "enum": [
+                "mirror",
+                "rotate"
+              ]
+            },
+            "reconstruction_iou": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "mushaf-scan",
+            "font"
+          ]
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "pdf_page": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "crop_box_px": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "integer"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "mushaf-scan"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "mushaf",
+              "file",
+              "sha256",
+              "url",
+              "pdf_page",
+              "crop_box_px"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "font"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "family",
+              "license"
+            ]
+          }
+        }
+      ]
+    },
+    "path": {
+      "type": "string",
+      "pattern": "^(assets|dist)/[^\\\\ ]+$"
+    }
+  }
+}

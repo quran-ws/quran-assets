@@ -1,0 +1,55 @@
+name: build
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    # Validates and tests the committed assets. It does not re-run the scan pipeline:
+    # that needs ~2 GB of mushaf PDFs, so regenerating assets stays a local job.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install system libraries
+        run: sudo apt-get update && sudo apt-get install -y libcairo2 poppler-utils
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Validate the catalog and the SVG contract
+        run: python -m qa validate
+      - name: Tests
+        run: python -m pytest -q
+      - name: Build dist
+        run: |
+          npm install --no-save svgo@3
+          python -m qa dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  pages:
+    # The demo is a committed standalone file; publishing it is a copy, not a build.
+    if: github.ref == 'refs/heads/main'
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: demo
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -15,11 +15,22 @@ Trace coordinates come from vtracer at `scale`x the crop; we fold that into one 
 """
 def _fmt(v): return f"{v:.4f}".rstrip("0").rstrip(".")
 
+def part(cls, prop="fill", default=None, extra=""):
+    """One recolourable group, addressable as `.cls` or `[data-part=cls]`.
+
+    The colour is a presentation attribute, not an inline `style`/`var()`: a CSS rule of any
+    kind overrides it, and rasterizers without CSS-variable support (cairosvg, resvg, most
+    mobile SVG libraries) still render the traced colours. See docs/CONVENTIONS.md.
+    """
+    return f'<g class="{cls}" data-part="{cls}" {prop}="{default}"{extra}'
+
 import json as _json
 
-def write_svg(path, paths_or_layers, w_px, h_px, scale, mushaf, asset, variant, slot=None, extra_attrs=None, slot_paths=None, provenance=None, sym=None):
-    vb_h = 100.0
-    s = vb_h / h_px
+def write_svg(path, paths_or_layers, w_px, h_px, scale, mushaf, asset, variant, slot=None, extra_attrs=None, slot_paths=None, provenance=None, sym=None, norm_h=None):
+    # `norm_h` is the height that maps to 100 units: the piece's own height normally, the
+    # whole frame's for a 9-slice piece, so the pieces share the frame's coordinate system.
+    s = 100.0 / (norm_h or h_px)
+    vb_h = h_px * s
     vb_w = w_px * s
     attrs = {"xmlns": "http://www.w3.org/2000/svg", "viewBox": f"0 0 {_fmt(vb_w)} {_fmt(vb_h)}",
              "data-mushaf": mushaf, "data-asset": asset, "data-variant": variant}
@@ -42,19 +53,19 @@ def write_svg(path, paths_or_layers, w_px, h_px, scale, mushaf, asset, variant, 
         out.append(f"<g {t}>")
     if variant == "line":
         if slot_paths:
-            out.append('<g class="slot" fill="none">')
+            out.append(part("slot", default="none") + ">")
             out += [f'<path d="{d}"/>' for d in slot_paths]
             out.append("</g>")
-        out.append('<g class="line" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">')
+        out.append(part("line", "stroke", "currentColor", ' fill="none"') + ' stroke-linecap="round" stroke-linejoin="round">')
         for g in paths_or_layers:
             out.append(f'<g stroke-width="{g["width"]}">' + "".join(f'<path d="{d}"/>' for d in g["paths"]) + "</g>")
         out.append("</g>")
     elif variant == "mono":
         if slot_paths:
-            out.append('<g class="slot" fill="none">')
+            out.append(part("slot", default="none") + ">")
             out += [f'<path d="{d}"/>' for d in slot_paths]
             out.append("</g>")
-        out.append('<g class="ink" fill="currentColor">')
+        out.append(part("ink", default="currentColor") + ">")
         out += [f'<path d="{d}"/>' for d in paths_or_layers]
         out.append("</g>")
     else:
@@ -65,12 +76,12 @@ def write_svg(path, paths_or_layers, w_px, h_px, scale, mushaf, asset, variant, 
             l["cls"] = cls
             if l.get("stroke"):
                 cls = "line"; l["cls"] = cls
-                out.append(f'<g class="{cls}" fill="none" stroke="{l["hex"]}" stroke-linecap="round" stroke-linejoin="round">')
+                out.append(part(cls, "stroke", l["hex"], ' fill="none"') + ' stroke-linecap="round" stroke-linejoin="round">')
                 for g in l["groups"]:
                     out.append(f'<g stroke-width="{g["width"]}">' + "".join(f'<path d="{d}"/>' for d in g["paths"]) + "</g>")
                 out.append("</g>")
                 continue
-            out.append(f'<g class="{cls}" fill="{l["hex"]}">')
+            out.append(part(cls, default=l["hex"]) + ">")
             out += [f'<path d="{d}"/>' for d in l["paths"]]
             out.append("</g>")
     out.append("</g>")

@@ -1,0 +1,60 @@
+{
+  "_doc": "Jobs for `python -m qa build`. One job = one (mushaf, asset type). 'page' is the PDF page (1-based). 'pick' = which detected occurrence becomes the canonical asset (0 = top-most). 'box' = manual [x0,y0,x1,y1] in page pixels to bypass detection. Per-job 'detect'/'clean'/'vectorize' dicts override the defaults below.",
+  "asset": "page-frame",
+  "defaults": {
+    "detector": "page_frame",
+    "cleaner": "frame_interior",
+    "symmetry": "auto",
+    "vectorize": {
+      "k": 7,
+      "scale": 2,
+      "min_frac": 0.02,
+      "stroke_prune_factor": 0.75
+    },
+    "detect": {
+      "s_min": 12
+    }
+  },
+  "jobs": [
+    {
+      "mushaf": "qalon",
+      "page": 300
+    },
+    {
+      "mushaf": "hafs-adi",
+      "page": 300
+    },
+    {
+      "mushaf": "hafs-madinah-kabir",
+      "page": 300,
+      "symmetry": "c2",
+      "_note": "Running vine has 180-degree rotational symmetry; preserve its handedness after cleaning."
+    },
+    {
+      "mushaf": "sousi",
+      "page": 300
+    },
+    {
+      "mushaf": "warsh",
+      "page": 300
+    },
+    {
+      "mushaf": "hafs-madinah-mumtaza",
+      "page": 300,
+      "vectorize": {
+        "line_mode": "threshold",
+        "line_dark": 165,
+        "line_s_max": 70,
+        "stroke_prune_factor": 1.5
+      }
+    },
+    {
+      "mushaf": "douri",
+      "page": 300
+    },
+    {
+      "mushaf": "shubah",
+      "page": 300
+    }
+  ]
+}

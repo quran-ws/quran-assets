@@ -1,0 +1,16 @@
+{
+  "_doc": "Redistribution position per lineage, stamped into catalog.json and dist/LICENSES.md. `status` is the evidence level, not a wish: 'confirmed' needs a written permission or an OFL/CC file in sources/licenses/; 'provisional' is our own release position while permission is pending; 'pending' means we have nothing yet. `qa dist` marks the npm package private while any bundled asset is not 'confirmed'.",
+  "scan": {
+    "id": "CC-BY-NC-SA-4.0",
+    "status": "provisional",
+    "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+    "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+    "redistributable": false
+  },
+  "font": {
+    "id": "OFL-1.1",
+    "status": "pending",
+    "note": "Font-derived markers: OFL only once the family's licence file is captured in sources/licenses/. Families from fonts.quran.ws stay 'pending' until written confirmation.",
+    "redistributable": false
+  }
+}

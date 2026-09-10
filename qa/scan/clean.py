@@ -74,6 +74,15 @@ def frame_interior(bgr, **_):
     out = bgr.copy(); out[top:bot, left:right] = 255
     slot = np.zeros((H, W), bool); slot[top:bot, left:right] = True
     out = strip_cartouches(out, exclude=slot)
+    # The border is one connected ornament. Disconnected scan flecks outside it
+    # must not turn into floating coloured strokes in the exported frame.
+    ink = (out.min(axis=2) < 235).astype(np.uint8)
+    joined = cv2.morphologyEx(ink, cv2.MORPH_CLOSE, np.ones((3, 3), np.uint8))
+    count, labels, stats, _ = cv2.connectedComponentsWithStats(joined, 8)
+    if count > 1:
+        largest = 1 + int(stats[1:, cv2.CC_STAT_AREA].argmax())
+        keep = cv2.dilate((labels == largest).astype(np.uint8), np.ones((5, 5), np.uint8)) > 0
+        out[~keep] = 255
     return out, (int(left), int(top), int(right), int(bot)), (255, 255, 255), slot
 
 def _cartouche_boxes(bgr, exclude, min_area_frac=0.0008, light=200):

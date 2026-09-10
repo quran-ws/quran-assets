@@ -168,6 +168,8 @@ def trace_strokes(mask, err=1.1, min_len=2, smooth_win=7, width_split=1.6, prune
     """mask: bool HxW linework. Returns list of stroke groups:
        [{"width": w, "paths": ["M.. C..", ...]}] with 1-2 groups (thin / thick)."""
     m = mask.astype(np.uint8)
+    if not m.any():
+        return []
     skel = skeletonize(m > 0)
     dist = cv2.distanceTransform(m, cv2.DIST_L2, 5)
     w_global = 2 * float(np.median(dist[skel]))

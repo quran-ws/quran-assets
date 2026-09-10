@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Generate the recolouring demo page (demo/index.html) from assets/*/*/{color,mono,line}.svg
-+ meta.json. Usage: python3 pipeline/build_demo.py  [assets_dir out_body.html out_full.html]
-out_body = page without <html>/<head> wrapper (for hosted artifacts); out_full = standalone file.
+"""Generate the demo page (demo/index.html) from assets/*/*/{color,mono,line}.svg + meta.json.
+
+Run with `python -m qa demo`. It writes the standalone demo/index.html and, in work/, the
+same page without the <html>/<head> wrapper for hosted artifacts.
 """
-import json, re, sys, html
+import json, re, html
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-A = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "assets"
-out_body = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "work" / "demo_body.html"
-out_full = Path(sys.argv[3]) if len(sys.argv) > 3 else ROOT / "demo" / "index.html"
+from qa import ROOT
+A = ROOT / "assets"
+out_body = ROOT / "work" / "demo_body.html"     # the page without <html>/<head>, for hosted artifacts
+out_full = ROOT / "demo" / "index.html"         # the standalone file
 out_body.parent.mkdir(parents=True, exist_ok=True)
 GLYPH = (Path(__file__).resolve().parent / "surah_name_glyph.txt").read_text().strip()
 ORDER = ["hafs-madinah-mumtaza", "hafs-madinah-kabir", "hafs-adi", "shubah", "warsh", "qalon", "douri", "sousi"]
@@ -38,6 +39,56 @@ def orig_data_uri(path, max_h=900):
         if im.height > max_h: im = im.resize((int(im.width * max_h / im.height), max_h), Image.LANCZOS)
         buf = io.BytesIO(); im.save(buf, "JPEG", quality=82); return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
     return "data:image/png;base64," + base64.b64encode(raw).decode()
+
+
+# --- live mushaf page ---------------------------------------------------------
+# A real typeset page (quran-svg-pipeline, KFGQPC Hafs, page 604) with its ayah-mark
+# ornaments replaced by ours, our header frame placed behind each surah name, and a
+# 9-sliced page frame tiled to the page's own aspect. This is the honest test of the
+# assets: they have to sit on a page, not only look good on a swatch.
+PAGE_SVG = ROOT / "demo/page/604.svg"
+
+
+def page_section(assets_dir):
+    if not PAGE_SVG.exists():
+        return ""
+    page = re.sub(r"<\?xml[^>]*\?>", "", PAGE_SVG.read_text()).strip()
+    page = page.replace("<svg ", '<svg id="page-svg" ', 1)
+    slices = []
+    for mushaf in ORDER:
+        directory = assets_dir / "page-frames" / mushaf
+        meta = json.loads((directory / "meta.json").read_text()) if (directory / "meta.json").exists() else {}
+        geometry = meta.get("slices")
+        if not geometry:
+            continue
+        unit = 100.0 / geometry["frame_px"][1]
+        pieces = "".join(load_svg(directory / "slices" / f"{name}.svg", f"sl-{mushaf}-{name}")
+                         for name in ("corner", "edge-h", "edge-v"))
+        slices.append(f'<div class="slice-set" data-m="{mushaf}" data-corner-w="{geometry["corner_px"][2]*unit:.4f}" '
+                      f'data-corner-h="{geometry["corner_px"][3]*unit:.4f}" data-repeat-h="{geometry["repeat_px"]["h"]*unit:.4f}" '
+                      f'data-repeat-v="{geometry["repeat_px"]["v"]*unit:.4f}" data-corner-mode="{geometry["corner_mode"]}" '
+                      f'data-band="{geometry["band_px"]["top"]/geometry["frame_px"][1]:.5f}" '
+                      f'data-band-px="{geometry["band_px"]["left"]}" data-frame-w="{geometry["frame_px"][0]}" '
+                      f'data-frame-h="{geometry["frame_px"][1]}">{pieces}</div>')
+    options = "".join(f'<option value="{m}">{NAMES.get(m, m)}</option>' for m in ORDER)
+    return f"""
+<h2 class="sec"><span>On a real page</span> <small>KFGQPC Hafs, page 604</small></h2>
+<p class="lead">The same page, dressed in each mushaf's ornaments: ayah marks swapped for ours (the page keeps its
+own numbers), our surah-header frame placed behind each name from <code>data-slot</code>, and the page border
+assembled from its <code>slices/</code> — corner, horizontal unit, vertical unit — tiled to <em>this</em> page's
+aspect, not stretched to it. Page geometry and text are the mushaf's own.</p>
+<section class="pagedemo">
+  <div class="pagectl">
+    <label>Ornaments <select id="page-style">{options}</select></label>
+    <label><input type="checkbox" id="page-markers" checked> ayah marks</label>
+    <label><input type="checkbox" id="page-headers" checked> surah headers</label>
+    <label><input type="checkbox" id="page-frame" checked> page frame</label>
+    <label>Breathing space <input type="range" id="page-inset" min="0" max="30" step="1" value="4"></label>
+    <span class="hint" id="page-note"></span>
+  </div>
+  <div class="pagestage">{page}</div>
+</section>
+<div class="slices" hidden>{"".join(slices)}</div>"""
 
 sections = []
 for asset, title, blurb in TYPES:
@@ -127,6 +178,12 @@ h2{{font:700 24px/1.2 Amiri,Georgia,serif;margin:0}} .meta{{margin:2px 0 0;color
 button.reset,button.copy{{font:500 13px "IBM Plex Sans";padding:6px 12px;border:1px solid var(--line);border-radius:4px;background:var(--bg2);color:var(--ink);cursor:pointer}} button.copy{{border-color:var(--acc);color:var(--acc)}}
 button.copy.done{{background:var(--acc);color:#fff}} .act{{display:flex;gap:10px;align-items:center}} .hint{{font-size:12px;color:var(--mute)}}
 button:focus-visible,input:focus-visible{{outline:2px solid var(--focus);outline-offset:2px}}
+.pagedemo{{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:14px;margin:0 0 34px}}
+.pagectl{{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:12px;font-size:13px}}
+.pagectl select{{font:13px "IBM Plex Sans";padding:4px 6px;border:1px solid var(--line);border-radius:4px;background:#fff;color:var(--ink)}}
+.pagestage{{background:var(--stage-bg,#fbf9f3);border:1px solid var(--line);border-radius:6px;padding:10px;display:flex;justify-content:center}}
+.pagestage svg{{width:min(560px,100%);height:auto;display:block}}
+.slices{{display:none}}
 .how{{margin-top:36px;border-top:1px solid var(--line);padding-top:20px;color:var(--mute);max-width:75ch}} .how code{{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink)}}
 .how h3{{font:700 20px Amiri,serif;color:var(--ink);margin:0 0 6px}}
 @media (max-width:640px){{.ph{{flex-direction:column}} .stage{{margin:0 10px;padding:10px 2%}} .name span{{font-size:14px}}}}
@@ -141,10 +198,11 @@ button:focus-visible,input:focus-visible{{outline:2px solid var(--focus);outline
     <label><input type="checkbox" id="shownm" checked> show name in slot</label>
   </div>
 </div>
+{page_section(A)}
 {''.join(sections)}
 <div class="how"><h3>Using the files</h3>
-<p>Every file records where it came from: <code>data-source-file</code> / <code>-page</code> / <code>-box</code> / <code>-url</code> on the root and a full JSON record in <code>&lt;metadata&gt;</code> (archive.org item, PDF sha256, crop box, pipeline commit). <code>assets/catalog.json</code> lists all of it in one place.</p>
-<p>Each frame is traced once as a quadrant and mirrored with <code>&lt;use&gt;</code> (<code>data-symmetry="4"</code>), so it is exactly symmetric and small. Linework is drawn as constant-width strokes (<code>&lt;g class="line" stroke=…&gt;</code>, widths in <code>meta.json</code>) with the fills extended underneath — no gaps at any zoom. <code>line.svg</code> is the strokes alone.</p>
+<p>Every file records where it came from: <code>data-source-file</code> / <code>-page</code> / <code>-box</code> / <code>-url</code> on the root and a full JSON record in <code>&lt;metadata&gt;</code> (archive.org item, PDF sha256, crop box, pipeline commit). <code>catalog.json</code> lists all of it in one place.</p>
+<p>Symmetric ornaments share paths with <code>&lt;use&gt;</code>; each asset declares its mirror or rotational symmetry in <code>data-symmetry</code>. Linework uses constant-width strokes (<code>&lt;g class="line" stroke=…&gt;</code>, widths in <code>meta.json</code>), with fills extended under the ink while preserving white channels and the transparent slot. <code>line.svg</code> contains the strokes alone.</p>
 <p><code>color.svg</code>: one <code>&lt;g class="cN"&gt;</code> per printed colour (bottom to top, black linework last) plus <code>&lt;g class="slot" fill="none"&gt;</code>. Recolour with CSS <code>.c2{{fill:#…}}</code> or by setting the group's <code>fill</code>. <code>mono.svg</code>: one <code>&lt;g class="ink" fill="currentColor"&gt;</code> — set CSS <code>color</code>. Both carry <code>data-slot="x y w h"</code> in viewBox units (height = 100) so an app can place the surah name exactly where the calligrapher left room for it.</p></div>
 </div>
 <script>
@@ -192,6 +250,149 @@ $$('.panel').forEach(p=>{{
 }});
 applyGlobal(); if(document.fonts) document.fonts.ready.then(fitNames);
 }})();
+
+/* ---- the live page: dress a typeset mushaf page in the selected ornaments ---- */
+(function(){{
+  const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+  const page=$('#page-svg'); if(!page) return;
+  const NS='http://www.w3.org/2000/svg';
+  const note=$('#page-note');
+  const overlayId='qa-overlay';
+  const assetOf=(type,style)=>$(`.panel[data-asset="${{type}}"][data-m="${{style}}"] .v-color svg`);
+  let uid=0;
+  function cloneAsset(src){{
+    const c=src.cloneNode(true); c.removeAttribute('id'); const tag='p'+(++uid);
+    c.querySelectorAll('[id]').forEach(el=>{{
+      const old=el.id, next=old+'-'+tag;
+      c.querySelectorAll('use[href="#'+old+'"]').forEach(u=>u.setAttribute('href','#'+next));
+      el.id=next;
+    }});
+    return c;
+  }}
+  /* an asset placed as a nested <svg>: it keeps its own viewBox, we only give it a box */
+  function nested(src,x,y,w,h,fit){{
+    const box=document.createElementNS(NS,'svg');
+    box.setAttribute('viewBox',src.getAttribute('viewBox'));
+    box.setAttribute('x',x); box.setAttribute('y',y); box.setAttribute('width',w); box.setAttribute('height',h);
+    box.setAttribute('preserveAspectRatio',fit||'xMidYMid meet');
+    while(src.firstChild) box.appendChild(src.firstChild);
+    return box;
+  }}
+  /* element bbox in the page's own viewBox units */
+  function boxOf(el){{
+    const m=page.getScreenCTM().inverse().multiply(el.getScreenCTM()), b=el.getBBox();
+    const pts=[[b.x,b.y],[b.x+b.width,b.y],[b.x,b.y+b.height],[b.x+b.width,b.y+b.height]].map(([x,y])=>{{
+      const p=page.createSVGPoint(); p.x=x; p.y=y; return p.matrixTransform(m);
+    }});
+    const xs=pts.map(p=>p.x), ys=pts.map(p=>p.y);
+    return {{x:Math.min(...xs),y:Math.min(...ys),w:Math.max(...xs)-Math.min(...xs),h:Math.max(...ys)-Math.min(...ys)}};
+  }}
+  /* Frames whose border does not tile have no slices: stretch the whole frame instead,
+     and say so — that is what an app would have to do with them. */
+  function wholeFrame(style,W,H,gap){{
+    const src=assetOf('page-frame',style); if(!src) return null;
+    const slot=(src.getAttribute('data-slot')||'').split(/\s+/).map(Number);
+    const band=slot.length===4?slot[1]/100:0.05;
+    const margin=(band*H+gap)/Math.max(0.2,1-2*band);
+    const node=nested(cloneAsset(src),-margin,-margin,W+2*margin,H+2*margin,'none');
+    return {{node,margin,stretched:true}};
+  }}
+  function frameFrom(style,W,H,gap){{
+    const set=$(`.slice-set[data-m="${{style}}"]`); if(!set) return wholeFrame(style,W,H,gap);
+    const d=set.dataset, cw=+d.cornerW, ch=+d.cornerH, rh=+d.repeatH, rv=+d.repeatV, rotate=d.cornerMode==='rotate';
+    /* Match the mushaf's own scale: its border is a band of one thickness around a text
+       block, so map this page's text block onto that mushaf's interior and the band
+       follows. Everything is placed at one uniform scale — stretching the frame to the
+       page box is what made the side borders fatter than the top and bottom. */
+    const bandUnits=(+d.band)*100;                                  /* band in frame units (100 = frame height) */
+    const interior=(+d.frameW)-2*(+d.bandPx);
+    const scale=(W+2*gap)/interior;                                 /* page units per source pixel */
+    const margin=(+d.bandPx)*scale+gap;
+    const perUnit=((+d.bandPx)*scale)/bandUnits;                    /* page units per frame unit */
+    const boxW=W+2*margin, boxH=H+2*margin;
+    const unitW=boxW/perUnit, unitH=boxH/perUnit;                   /* same aspect as the box: no distortion */
+    const inner=document.createElementNS(NS,'svg');
+    inner.setAttribute('viewBox',`0 0 ${{unitW.toFixed(4)}} ${{unitH.toFixed(4)}}`);
+    inner.setAttribute('x',-margin); inner.setAttribute('y',-margin);
+    inner.setAttribute('width',boxW); inner.setAttribute('height',boxH);
+    inner.setAttribute('preserveAspectRatio','none');
+    const defs=document.createElementNS(NS,'defs');
+    const ids=['qa-corner','qa-edge-h','qa-edge-v'];
+    [...set.querySelectorAll('svg')].forEach((piece,i)=>{{
+      const holder=document.createElementNS(NS,'g'); holder.id=ids[i]+'-'+style;
+      const c=cloneAsset(piece);
+      while(c.firstChild) holder.appendChild(c.firstChild);
+      defs.appendChild(holder);
+    }});
+    inner.appendChild(defs);
+    const place=(id,t)=>{{ const u=document.createElementNS(NS,'use'); u.setAttribute('href','#'+id+'-'+style); u.setAttribute('transform',t); inner.appendChild(u); }};
+    place('qa-corner','translate(0 0)');
+    place('qa-corner',rotate?`matrix(-1 0 0 -1 ${{unitW}} ${{ch}})`:`translate(${{unitW}} 0) scale(-1 1)`);
+    place('qa-corner',rotate?`matrix(-1 0 0 -1 ${{cw}} ${{unitH}})`:`translate(0 ${{unitH}}) scale(1 -1)`);
+    place('qa-corner',rotate?`translate(${{unitW-cw}} ${{unitH-ch}})`:`matrix(-1 0 0 -1 ${{unitW}} ${{unitH}})`);
+    const run=(total,unit)=>{{ const n=Math.max(1,Math.round(total/unit)); return {{n,step:total/n}}; }};
+    const across=run(unitW-2*cw,rh);
+    for(let i=0;i<across.n;i++){{ const x=cw+i*across.step, sc=across.step/rh;
+      place('qa-edge-h',`translate(${{x}} 0) scale(${{sc}} 1)`);
+      place('qa-edge-h',`translate(${{x}} ${{unitH}}) scale(${{sc}} -1)`); }}
+    const down=run(unitH-2*ch,rv);
+    for(let i=0;i<down.n;i++){{ const y=ch+i*down.step, sc=down.step/rv;
+      place('qa-edge-v',`translate(0 ${{y}}) scale(1 ${{sc}})`);
+      place('qa-edge-v',`translate(${{unitW}} ${{y}}) scale(-1 ${{sc}})`); }}
+    return {{node:inner,margin}};
+  }}
+  const BASE_VIEWBOX=page.getAttribute('viewBox');
+  function dress(){{
+    const style=$('#page-style').value, gap=+$('#page-inset').value;
+    page.setAttribute('viewBox',BASE_VIEWBOX);
+    $$('#'+overlayId,page).forEach(n=>n.remove());
+    page.querySelectorAll('[data-kind="ayah_mark_ornament"]').forEach(p=>{{ p.style.display=''; }});
+    const overlay=document.createElementNS(NS,'g'); overlay.id=overlayId;
+    const [vx,vy,W,H]=BASE_VIEWBOX.split(/\s+/).map(Number);
+    const missing=[];
+    if($('#page-frame').checked){{
+      const built=frameFrom(style,W,H,gap);
+      if(built){{
+        overlay.appendChild(built.node);
+        const m=built.margin;   /* the page grows around its text; the border never covers a word */
+        page.setAttribute('viewBox',`${{vx-m}} ${{vy-m}} ${{W+2*m}} ${{H+2*m}}`);
+      }} else missing.push('page frame for this mushaf');
+      if(built&&built.stretched) missing.push('slices for this border — the whole frame is stretched to the page');
+    }}
+    if($('#page-headers').checked){{
+      const src=assetOf('surah-header',style);
+      const slotAttr=src&&src.getAttribute('data-slot');
+      const column=boxOf(page.querySelector('#content'));
+      page.querySelectorAll('g.surah-name').forEach(name=>{{
+        if(!src||!slotAttr) return;
+        const b=boxOf(name), [sx,sy,sw,sh]=slotAttr.split(/\s+/).map(Number);
+        const vbw=Number(src.getAttribute('viewBox').split(/\s+/)[2]);
+        /* In the mushaf the header band spans the text column (Qalun: 1007 px of a 1044 px
+           column), so size it to the column and let the name sit inside the slot. */
+        const scale=column.w/vbw;
+        const x=column.x, y=b.y+b.h/2-(sy+sh/2)*scale;
+        overlay.appendChild(nested(cloneAsset(src),x,y,vbw*scale,100*scale,'none'));
+      }});
+    }}
+    if($('#page-markers').checked){{
+      const src=assetOf('ayah-marker',style);
+      page.querySelectorAll('g.ayah-mark').forEach(mark=>{{
+        const ornament=mark.querySelector('[data-kind="ayah_mark_ornament"]'); if(!src||!ornament) return;
+        const b=boxOf(ornament);
+        ornament.style.display='none';
+        const vbw=Number(src.getAttribute('viewBox').split(/\s+/)[2]);
+        const h=b.h, w=h*vbw/100;
+        overlay.appendChild(nested(cloneAsset(src),b.x+b.w/2-w/2,b.y,w,h));
+      }});
+    }}
+    /* ornaments go under the text, the page's own numbers stay on top */
+    page.insertBefore(overlay,page.firstChild);
+    note.textContent=missing.length?('no '+missing.join('; ')):'';
+  }}
+  $$('#page-style,#page-markers,#page-headers,#page-frame,#page-inset').forEach(i=>i.addEventListener('input',dress));
+  dress();
+}})();
+
 </script>
 """
 out_body.write_text(body)

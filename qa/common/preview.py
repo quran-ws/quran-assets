@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Build demo/review.html: a review sheet of every generated asset (source crop, clean
 crop, colour SVG, mono SVG tinted via CSS `color`), with a live recolour demo per layer.
-Run:  python3 -m pipeline.preview
+Run:  python -m qa preview
 """
 import json
 from pathlib import Path
-ROOT = Path(__file__).resolve().parent.parent
+from qa import ROOT
 rows = []
 for meta in sorted((ROOT / "assets").glob("*/*/meta.json")):
     m = json.load(open(meta)); d = Path("..") / "assets" / meta.parent.relative_to(ROOT / "assets")
