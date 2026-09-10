@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09",
+  "generated": "2026-09-10",
   "schema": "quran-assets/catalog@1",
   "count": 24,
   "assets": [
@@ -10,7 +10,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Duri 'an Abi 'Amr",
-      "viewBox": "0 0 77.1429 100",
+      "viewBox": "0 0 77.143 100",
+      "aspect": 0.77143,
       "variants": {
         "color": "assets/ayah-markers/douri/color.svg",
         "mono": "assets/ayah-markers/douri/mono.svg",
@@ -24,33 +25,37 @@
         },
         {
           "name": "c1",
-          "hex": "#e3e3e3"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#cdcdcd"
+          "hex": "#65c4f5"
         },
         {
           "name": "c3",
-          "hex": "#6ac6f6"
+          "hex": "#39a9e1"
         },
         {
           "name": "c4",
-          "hex": "#adaeaf"
+          "hex": "#297ea7"
         },
         {
           "name": "c5",
-          "hex": "#35aee7"
+          "hex": "#6e3c29"
+        },
+        {
+          "name": "c6",
+          "hex": "#1d4e68"
         },
         {
           "name": "line",
-          "hex": "#4e555a",
+          "hex": "#636467",
           "stroke": true
         }
       ],
       "stroke_widths_px": [
-        1.06,
-        1.77
+        1.33,
+        2.33
       ],
       "slots": [
         {
@@ -83,14 +88,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 6,
-          "extracted": "2026-09-09T20:06:41+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:05:58+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "ayah-markers/hafs-adi",
@@ -99,7 +108,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (al-'Adi)",
-      "viewBox": "0 0 76.1404 100",
+      "viewBox": "0 0 76.14 100",
+      "aspect": 0.7614,
       "variants": {
         "color": "assets/ayah-markers/hafs-adi/color.svg",
         "mono": "assets/ayah-markers/hafs-adi/mono.svg",
@@ -113,33 +123,37 @@
         },
         {
           "name": "c1",
-          "hex": "#e0e9dd"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#d2d7d4"
+          "hex": "#eb81b5"
         },
         {
           "name": "c3",
-          "hex": "#a2b890"
+          "hex": "#dc5a9a"
         },
         {
           "name": "c4",
-          "hex": "#ea84b4"
+          "hex": "#5ea229"
         },
         {
           "name": "c5",
-          "hex": "#df5d9d"
+          "hex": "#983c6d"
+        },
+        {
+          "name": "c6",
+          "hex": "#3e6e1f"
         },
         {
           "name": "line",
-          "hex": "#635960",
+          "hex": "#666265",
           "stroke": true
         }
       ],
       "stroke_widths_px": [
-        1.33,
-        2.2
+        1.4,
+        2.33
       ],
       "slots": [
         {
@@ -172,14 +186,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 7,
-          "extracted": "2026-09-09T20:06:35+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:05:55+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "ayah-markers/hafs-madinah-kabir",
@@ -188,7 +206,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, large)",
-      "viewBox": "0 0 76.7544 100",
+      "viewBox": "0 0 76.754 100",
+      "aspect": 0.76754,
       "variants": {
         "color": "assets/ayah-markers/hafs-madinah-kabir/color.svg",
         "mono": "assets/ayah-markers/hafs-madinah-kabir/mono.svg",
@@ -202,33 +221,33 @@
         },
         {
           "name": "c1",
-          "hex": "#e3f2f7"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#dadce0"
+          "hex": "#e07ea9"
         },
         {
           "name": "c3",
-          "hex": "#c5c3ca"
+          "hex": "#2689b1"
         },
         {
           "name": "c4",
-          "hex": "#a8afb5"
+          "hex": "#a84e79"
         },
         {
           "name": "c5",
-          "hex": "#d17da4"
+          "hex": "#6a3456"
         },
         {
           "name": "line",
-          "hex": "#6e616d",
+          "hex": "#777178",
           "stroke": true
         }
       ],
       "stroke_widths_px": [
-        1.17,
-        1.8
+        1.2,
+        2.0
       ],
       "slots": [
         {
@@ -261,14 +280,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 8,
-          "extracted": "2026-09-09T20:06:36+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:05:55+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "ayah-markers/hafs-madinah-mumtaza",
@@ -278,6 +301,7 @@
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
       "viewBox": "0 0 76.699 100",
+      "aspect": 0.76699,
       "variants": {
         "color": "assets/ayah-markers/hafs-madinah-mumtaza/color.svg",
         "mono": "assets/ayah-markers/hafs-madinah-mumtaza/mono.svg",
@@ -291,7 +315,7 @@
         },
         {
           "name": "c1",
-          "hex": "#c6c9c8"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
@@ -299,16 +323,21 @@
         },
         {
           "name": "c3",
-          "hex": "#c83b17"
+          "hex": "#cf3d19"
+        },
+        {
+          "name": "c4",
+          "hex": "#aa2e11"
         },
         {
           "name": "line",
-          "hex": "#5f6c68",
+          "hex": "#606c68",
           "stroke": true
         }
       ],
       "stroke_widths_px": [
-        1.33
+        1.33,
+        2.33
       ],
       "slots": [
         {
@@ -341,14 +370,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 8,
-          "extracted": "2026-09-09T20:06:40+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:05:57+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "ayah-markers/qalon",
@@ -357,7 +390,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Qalun 'an Nafi'",
-      "viewBox": "0 0 73.1618 100",
+      "viewBox": "0 0 73.162 100",
+      "aspect": 0.73162,
       "variants": {
         "color": "assets/ayah-markers/qalon/color.svg",
         "mono": "assets/ayah-markers/qalon/mono.svg",
@@ -371,18 +405,14 @@
         },
         {
           "name": "c1",
-          "hex": "#dfe6ed"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#c7cbce"
-        },
-        {
-          "name": "c3",
           "hex": "#eb8eba"
         },
         {
-          "name": "c4",
+          "name": "c3",
           "hex": "#00649b"
         },
         {
@@ -392,7 +422,7 @@
         }
       ],
       "stroke_widths_px": [
-        1.67
+        1.73
       ],
       "slots": [
         {
@@ -425,14 +455,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 6,
-          "extracted": "2026-09-09T20:06:34+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:05:54+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "ayah-markers/shubah",
@@ -441,7 +475,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Shu'bah 'an 'Asim",
-      "viewBox": "0 0 76.4085 100",
+      "viewBox": "0 0 76.409 100",
+      "aspect": 0.76409,
       "variants": {
         "color": "assets/ayah-markers/shubah/color.svg",
         "mono": "assets/ayah-markers/shubah/mono.svg",
@@ -455,7 +490,7 @@
         },
         {
           "name": "c1",
-          "hex": "#e5dddd"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
@@ -463,20 +498,29 @@
         },
         {
           "name": "c3",
-          "hex": "#f3aa5f"
+          "hex": "#f9ae61"
         },
         {
           "name": "c4",
-          "hex": "#b3afae"
+          "hex": "#cb8e54"
+        },
+        {
+          "name": "c5",
+          "hex": "#9a6a3c"
+        },
+        {
+          "name": "c6",
+          "hex": "#7e3022"
         },
         {
           "name": "line",
-          "hex": "#5c514c",
+          "hex": "#676363",
           "stroke": true
         }
       ],
       "stroke_widths_px": [
-        1.06
+        1.4,
+        2.33
       ],
       "slots": [
         {
@@ -509,14 +553,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 7,
-          "extracted": "2026-09-09T20:06:42+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:05:58+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "ayah-markers/sousi",
@@ -525,7 +573,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Susi 'an Abi 'Amr",
-      "viewBox": "0 0 77.1127 100",
+      "viewBox": "0 0 77.113 100",
+      "aspect": 0.77113,
       "variants": {
         "color": "assets/ayah-markers/sousi/color.svg",
         "mono": "assets/ayah-markers/sousi/mono.svg",
@@ -539,28 +588,29 @@
         },
         {
           "name": "c1",
-          "hex": "#f9cdbd"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#d3d6db"
+          "hex": "#fcd0bf"
         },
         {
           "name": "c3",
-          "hex": "#c2c3c5"
+          "hex": "#edc3b4"
         },
         {
           "name": "c4",
-          "hex": "#aca6a6"
+          "hex": "#013e70"
         },
         {
           "name": "line",
-          "hex": "#57565c",
+          "hex": "#6b6a6b",
           "stroke": true
         }
       ],
       "stroke_widths_px": [
-        1.0
+        1.4,
+        2.33
       ],
       "slots": [
         {
@@ -593,14 +643,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 5,
-          "extracted": "2026-09-09T20:06:37+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:05:56+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "ayah-markers/warsh",
@@ -610,6 +664,7 @@
       "units": "normalized-100",
       "riwaya": "Warsh 'an Nafi'",
       "viewBox": "0 0 72.043 100",
+      "aspect": 0.72043,
       "variants": {
         "color": "assets/ayah-markers/warsh/color.svg",
         "mono": "assets/ayah-markers/warsh/mono.svg",
@@ -623,19 +678,23 @@
         },
         {
           "name": "c1",
-          "hex": "#eab2c4"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#bebcbe"
+          "hex": "#eab2c4"
         },
         {
           "name": "c3",
-          "hex": "#79ccf9"
+          "hex": "#7acdfa"
         },
         {
           "name": "c4",
-          "hex": "#6ab5df"
+          "hex": "#d09eae"
+        },
+        {
+          "name": "c5",
+          "hex": "#6bb6e0"
         },
         {
           "name": "line",
@@ -677,14 +736,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 7,
-          "extracted": "2026-09-09T20:06:39+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:05:56+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "page-frames/douri",
@@ -693,7 +756,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Duri 'an Abi 'Amr",
-      "viewBox": "0 0 65.5908 100",
+      "viewBox": "0 0 65.591 100",
+      "aspect": 0.65591,
       "variants": {
         "color": "assets/page-frames/douri/color.svg",
         "mono": "assets/page-frames/douri/mono.svg",
@@ -707,7 +771,7 @@
         },
         {
           "name": "c1",
-          "hex": "#dbd8d9"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
@@ -747,14 +811,31 @@
         {
           "role": "text-area",
           "x": 4.9234,
-          "y": 5.0875,
-          "w": 55.6893,
+          "y": 5.1422,
+          "w": 55.744,
           "h": 89.7702,
-          "cx": 32.76805,
-          "cy": 49.9726
+          "cx": 32.7954,
+          "cy": 50.027300000000004
         }
       ],
       "symmetry": 4,
+      "slices": {
+        "files": {
+          "corner": "assets/page-frames/douri/slices/corner.svg",
+          "edge-h": "assets/page-frames/douri/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/douri/slices/edge-v.svg"
+        },
+        "corner": {
+          "w": 13.1291,
+          "h": 8.5886
+        },
+        "repeat": {
+          "h": 9.8468,
+          "v": 10.3392
+        },
+        "corner_mode": "mirror",
+        "reconstruction_iou": 0.9584
+      },
       "sources": [
         {
           "kind": "mushaf-scan",
@@ -774,14 +855,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "extracted": "2026-09-09T20:00:52+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:09:02+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "page-frames/hafs-adi",
@@ -790,7 +875,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (al-'Adi)",
-      "viewBox": "0 0 64.4189 100",
+      "viewBox": "0 0 64.419 100",
+      "aspect": 0.64419,
       "variants": {
         "color": "assets/page-frames/hafs-adi/color.svg",
         "mono": "assets/page-frames/hafs-adi/mono.svg",
@@ -804,7 +890,7 @@
         },
         {
           "name": "c1",
-          "hex": "#d9e7d9"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
@@ -837,20 +923,38 @@
         }
       ],
       "stroke_widths_px": [
-        2.0
+        2.0,
+        3.6
       ],
       "slots": [
         {
           "role": "text-area",
           "x": 4.2763,
-          "y": 4.989,
-          "w": 55.8114,
+          "y": 5.0439,
+          "w": 55.8662,
           "h": 89.9671,
-          "cx": 32.182,
-          "cy": 49.97255
+          "cx": 32.2094,
+          "cy": 50.02745
         }
       ],
       "symmetry": 4,
+      "slices": {
+        "files": {
+          "corner": "assets/page-frames/hafs-adi/slices/corner.svg",
+          "edge-h": "assets/page-frames/hafs-adi/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/hafs-adi/slices/edge-v.svg"
+        },
+        "corner": {
+          "w": 12.7193,
+          "h": 8.6075
+        },
+        "repeat": {
+          "h": 9.8684,
+          "v": 10.3618
+        },
+        "corner_mode": "mirror",
+        "reconstruction_iou": 0.7423
+      },
       "sources": [
         {
           "kind": "mushaf-scan",
@@ -870,14 +974,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "extracted": "2026-09-09T19:56:55+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:06:31+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "page-frames/hafs-madinah-kabir",
@@ -886,7 +994,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, large)",
-      "viewBox": "0 0 63.7896 100",
+      "viewBox": "0 0 63.79 100",
+      "aspect": 0.6379,
       "variants": {
         "color": "assets/page-frames/hafs-madinah-kabir/color.svg",
         "mono": "assets/page-frames/hafs-madinah-kabir/mono.svg",
@@ -900,19 +1009,23 @@
         },
         {
           "name": "c1",
-          "hex": "#d6c4cc"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#18a3df"
+          "hex": "#bea2ad"
         },
         {
           "name": "c3",
+          "hex": "#00a4e1"
+        },
+        {
+          "name": "c4",
           "hex": "#009fef"
         },
         {
           "name": "line",
-          "hex": "#235a75",
+          "hex": "#235b75",
           "stroke": true
         }
       ],
@@ -951,14 +1064,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "extracted": "2026-09-09T19:58:17+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:07:04+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "page-frames/hafs-madinah-mumtaza",
@@ -967,7 +1084,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
-      "viewBox": "0 0 69.2413 100",
+      "viewBox": "0 0 69.084 100",
+      "aspect": 0.69084,
       "variants": {
         "color": "assets/page-frames/hafs-madinah-mumtaza/color.svg",
         "mono": "assets/page-frames/hafs-madinah-mumtaza/mono.svg",
@@ -981,54 +1099,71 @@
         },
         {
           "name": "c1",
-          "hex": "#dae6df"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#fbea60"
+          "hex": "#f7e45d"
         },
         {
           "name": "c3",
-          "hex": "#bbcbbd"
+          "hex": "#d4ded5"
         },
         {
           "name": "c4",
-          "hex": "#d39993"
+          "hex": "#75b695"
         },
         {
           "name": "c5",
-          "hex": "#71b697"
+          "hex": "#d97c71"
         },
         {
           "name": "c6",
-          "hex": "#dc8221"
+          "hex": "#d98222"
         },
         {
           "name": "c7",
-          "hex": "#d16b5c"
+          "hex": "#4c7257"
         },
         {
           "name": "line",
-          "hex": "#3f453c",
+          "hex": "#373b39",
           "stroke": true
         }
       ],
       "stroke_widths_px": [
-        2.19,
+        2.0,
         5.0
       ],
       "slots": [
         {
           "role": "text-area",
-          "x": 9.3594,
-          "y": 9.3594,
-          "w": 50.5225,
-          "h": 81.4175,
-          "cx": 34.62065,
-          "cy": 50.06815
+          "x": 9.3382,
+          "y": 9.3382,
+          "w": 50.408,
+          "h": 81.233,
+          "cx": 34.5422,
+          "cy": 49.9547
         }
       ],
-      "symmetry": 1,
+      "symmetry": 4,
+      "slices": {
+        "files": {
+          "corner": "assets/page-frames/hafs-madinah-mumtaza/slices/corner.svg",
+          "edge-h": "assets/page-frames/hafs-madinah-mumtaza/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/hafs-madinah-mumtaza/slices/edge-v.svg"
+        },
+        "corner": {
+          "w": 15.5485,
+          "h": 10.8794
+        },
+        "repeat": {
+          "h": 9.4742,
+          "v": 9.7915
+        },
+        "corner_mode": "mirror",
+        "reconstruction_iou": 0.9063
+      },
       "sources": [
         {
           "kind": "mushaf-scan",
@@ -1048,14 +1183,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "extracted": "2026-09-09T20:02:39+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:08:21+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "page-frames/qalon",
@@ -1064,7 +1203,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Qalun 'an Nafi'",
-      "viewBox": "0 0 68.3168 100",
+      "viewBox": "0 0 68.317 100",
+      "aspect": 0.68317,
       "variants": {
         "color": "assets/page-frames/qalon/color.svg",
         "mono": "assets/page-frames/qalon/mono.svg",
@@ -1078,14 +1218,22 @@
         },
         {
           "name": "c1",
-          "hex": "#d4d5d6"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#a3b6cc"
+          "hex": "#d4d5d6"
         },
         {
           "name": "c3",
+          "hex": "#a3b6cc"
+        },
+        {
+          "name": "c4",
+          "hex": "#e887b5"
+        },
+        {
+          "name": "c5",
           "hex": "#00659d"
         },
         {
@@ -1101,15 +1249,32 @@
       "slots": [
         {
           "role": "text-area",
-          "x": 5.3905,
+          "x": 5.4455,
           "y": 5.3355,
-          "w": 57.4807,
-          "h": 89.2739,
-          "cx": 34.13085,
-          "cy": 49.972449999999995
+          "w": 57.4257,
+          "h": 89.3289,
+          "cx": 34.15835,
+          "cy": 49.99995
         }
       ],
       "symmetry": 4,
+      "slices": {
+        "files": {
+          "corner": "assets/page-frames/qalon/slices/corner.svg",
+          "edge-h": "assets/page-frames/qalon/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/qalon/slices/edge-v.svg"
+        },
+        "corner": {
+          "w": 9.4557,
+          "h": 6.4871
+        },
+        "repeat": {
+          "h": 6.1572,
+          "v": 6.2122
+        },
+        "corner_mode": "mirror",
+        "reconstruction_iou": 0.8073
+      },
       "sources": [
         {
           "kind": "mushaf-scan",
@@ -1129,14 +1294,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "extracted": "2026-09-09T19:56:36+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:05:58+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "page-frames/shubah",
@@ -1145,7 +1314,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Shu'bah 'an 'Asim",
-      "viewBox": "0 0 65.7002 100",
+      "viewBox": "0 0 65.7 100",
+      "aspect": 0.657,
       "variants": {
         "color": "assets/page-frames/shubah/color.svg",
         "mono": "assets/page-frames/shubah/mono.svg",
@@ -1159,7 +1329,7 @@
         },
         {
           "name": "c1",
-          "hex": "#f1dace"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
@@ -1188,20 +1358,38 @@
         }
       ],
       "stroke_widths_px": [
-        2.0
+        2.0,
+        3.6
       ],
       "slots": [
         {
           "role": "text-area",
           "x": 4.9781,
           "y": 4.9781,
-          "w": 55.6893,
-          "h": 89.9891,
-          "cx": 32.82275,
-          "cy": 49.972649999999994
+          "w": 55.744,
+          "h": 90.0438,
+          "cx": 32.8501,
+          "cy": 50.0
         }
       ],
       "symmetry": 4,
+      "slices": {
+        "files": {
+          "corner": "assets/page-frames/shubah/slices/corner.svg",
+          "edge-h": "assets/page-frames/shubah/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/shubah/slices/edge-v.svg"
+        },
+        "corner": {
+          "w": 13.1838,
+          "h": 8.5886
+        },
+        "repeat": {
+          "h": 9.7921,
+          "v": 10.3392
+        },
+        "corner_mode": "mirror",
+        "reconstruction_iou": 0.8639
+      },
       "sources": [
         {
           "kind": "mushaf-scan",
@@ -1221,14 +1409,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "extracted": "2026-09-09T20:01:09+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:09:31+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "page-frames/sousi",
@@ -1237,7 +1429,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Susi 'an Abi 'Amr",
-      "viewBox": "0 0 66.5203 100",
+      "viewBox": "0 0 66.52 100",
+      "aspect": 0.6652,
       "variants": {
         "color": "assets/page-frames/sousi/color.svg",
         "mono": "assets/page-frames/sousi/mono.svg",
@@ -1251,14 +1444,18 @@
         },
         {
           "name": "c1",
-          "hex": "#fdc8b4"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#bbc3cb"
+          "hex": "#fdc8b4"
         },
         {
           "name": "c3",
+          "hex": "#bbc3cb"
+        },
+        {
+          "name": "c4",
           "hex": "#003b6d"
         },
         {
@@ -1268,21 +1465,38 @@
         }
       ],
       "stroke_widths_px": [
-        1.7,
+        2.0,
         4.0
       ],
       "slots": [
         {
           "role": "text-area",
           "x": 5.2689,
-          "y": 5.3238,
+          "y": 5.3787,
           "w": 55.9824,
           "h": 89.2975,
           "cx": 33.2601,
-          "cy": 49.97255
+          "cy": 50.02745
         }
       ],
       "symmetry": 4,
+      "slices": {
+        "files": {
+          "corner": "assets/page-frames/sousi/slices/corner.svg",
+          "edge-h": "assets/page-frames/sousi/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/sousi/slices/edge-v.svg"
+        },
+        "corner": {
+          "w": 11.7389,
+          "h": 8.7767
+        },
+        "repeat": {
+          "h": 9.9835,
+          "v": 10.3127
+        },
+        "corner_mode": "mirror",
+        "reconstruction_iou": 0.7775
+      },
       "sources": [
         {
           "kind": "mushaf-scan",
@@ -1302,14 +1516,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "extracted": "2026-09-09T19:57:36+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:07:20+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "page-frames/warsh",
@@ -1318,7 +1536,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Warsh 'an Nafi'",
-      "viewBox": "0 0 68.3168 100",
+      "viewBox": "0 0 68.317 100",
+      "aspect": 0.68317,
       "variants": {
         "color": "assets/page-frames/warsh/color.svg",
         "mono": "assets/page-frames/warsh/mono.svg",
@@ -1332,14 +1551,18 @@
         },
         {
           "name": "c1",
-          "hex": "#dbdbdb"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#e9b1c2"
+          "hex": "#dbdbdb"
         },
         {
           "name": "c3",
+          "hex": "#e9b1c2"
+        },
+        {
+          "name": "c4",
           "hex": "#65c4f5"
         },
         {
@@ -1350,7 +1573,7 @@
       ],
       "stroke_widths_px": [
         2.0,
-        5.0
+        5.2
       ],
       "slots": [
         {
@@ -1364,6 +1587,23 @@
         }
       ],
       "symmetry": 4,
+      "slices": {
+        "files": {
+          "corner": "assets/page-frames/warsh/slices/corner.svg",
+          "edge-h": "assets/page-frames/warsh/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/warsh/slices/edge-v.svg"
+        },
+        "corner": {
+          "w": 9.4557,
+          "h": 6.4871
+        },
+        "repeat": {
+          "h": 6.1572,
+          "v": 6.2122
+        },
+        "corner_mode": "mirror",
+        "reconstruction_iou": 0.8082
+      },
       "sources": [
         {
           "kind": "mushaf-scan",
@@ -1383,14 +1623,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "extracted": "2026-09-09T20:05:52+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:07:47+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "surah-headers/douri",
@@ -1399,7 +1643,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Duri 'an Abi 'Amr",
-      "viewBox": "0 0 857.7143 100",
+      "viewBox": "0 0 857.714 100",
+      "aspect": 8.57714,
       "variants": {
         "color": "assets/surah-headers/douri/color.svg",
         "mono": "assets/surah-headers/douri/mono.svg",
@@ -1417,22 +1662,26 @@
         },
         {
           "name": "c2",
-          "hex": "#e4e4e4"
+          "hex": "#a8ddfb"
         },
         {
           "name": "c3",
-          "hex": "#c4bbb9"
+          "hex": "#86cef7"
         },
         {
           "name": "c4",
-          "hex": "#78c7f4"
+          "hex": "#c1b7b6"
         },
         {
           "name": "c5",
-          "hex": "#73402d"
+          "hex": "#3db2ed"
         },
         {
           "name": "c6",
+          "hex": "#73402d"
+        },
+        {
+          "name": "c7",
           "hex": "#5e3426"
         },
         {
@@ -1476,14 +1725,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 3,
-          "extracted": "2026-09-09T18:55:19+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:10:12+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "surah-headers/hafs-adi",
@@ -1492,7 +1745,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (al-'Adi)",
-      "viewBox": "0 0 872.6744 100",
+      "viewBox": "0 0 872.674 100",
+      "aspect": 8.72674,
       "variants": {
         "color": "assets/surah-headers/hafs-adi/color.svg",
         "mono": "assets/surah-headers/hafs-adi/mono.svg",
@@ -1510,15 +1764,15 @@
         },
         {
           "name": "c2",
-          "hex": "#dfe8db"
+          "hex": "#bfd4b9"
         },
         {
           "name": "c3",
-          "hex": "#bed2b5"
+          "hex": "#eeaacb"
         },
         {
           "name": "c4",
-          "hex": "#e98ab7"
+          "hex": "#e46ea7"
         },
         {
           "name": "c5",
@@ -1568,14 +1822,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 3,
-          "extracted": "2026-09-09T18:55:10+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:10:01+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "surah-headers/hafs-madinah-kabir",
@@ -1584,7 +1842,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, large)",
-      "viewBox": "0 0 811.4094 100",
+      "viewBox": "0 0 811.409 100",
+      "aspect": 8.11409,
       "variants": {
         "color": "assets/surah-headers/hafs-madinah-kabir/color.svg",
         "mono": "assets/surah-headers/hafs-madinah-kabir/mono.svg",
@@ -1602,28 +1861,28 @@
         },
         {
           "name": "c2",
-          "hex": "#e0f2fc"
+          "hex": "#e3afc9"
         },
         {
           "name": "c3",
-          "hex": "#cac9cd"
+          "hex": "#1fb3e8"
         },
         {
           "name": "c4",
-          "hex": "#3fa2ca"
+          "hex": "#10a8d1"
         },
         {
           "name": "c5",
-          "hex": "#00a1e7"
+          "hex": "#12a2e5"
         },
         {
           "name": "line",
-          "hex": "#295469",
+          "hex": "#2a5568",
           "stroke": true
         }
       ],
       "stroke_widths_px": [
-        1.67,
+        1.46,
         2.67
       ],
       "slots": [
@@ -1657,14 +1916,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 3,
-          "extracted": "2026-09-09T18:55:12+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:10:03+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "surah-headers/hafs-madinah-mumtaza",
@@ -1673,7 +1936,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
-      "viewBox": "0 0 854.6875 100",
+      "viewBox": "0 0 854.688 100",
+      "aspect": 8.54688,
       "variants": {
         "color": "assets/surah-headers/hafs-madinah-mumtaza/color.svg",
         "mono": "assets/surah-headers/hafs-madinah-mumtaza/mono.svg",
@@ -1691,19 +1955,39 @@
         },
         {
           "name": "c2",
-          "hex": "#e3f0eb"
+          "hex": "#dfeae3"
         },
         {
           "name": "c3",
-          "hex": "#fae760"
+          "hex": "#fbea60"
         },
         {
           "name": "c4",
-          "hex": "#70b693"
+          "hex": "#dcb847"
         },
         {
           "name": "c5",
-          "hex": "#e18f32"
+          "hex": "#9ec0af"
+        },
+        {
+          "name": "c6",
+          "hex": "#e29330"
+        },
+        {
+          "name": "c7",
+          "hex": "#70b693"
+        },
+        {
+          "name": "c8",
+          "hex": "#da786d"
+        },
+        {
+          "name": "c9",
+          "hex": "#d66e12"
+        },
+        {
+          "name": "c10",
+          "hex": "#ce4502"
         },
         {
           "name": "line",
@@ -1746,14 +2030,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 3,
-          "extracted": "2026-09-09T18:55:17+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:10:09+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "surah-headers/qalon",
@@ -1762,7 +2050,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Qalun 'an Nafi'",
-      "viewBox": "0 0 863.4286 100",
+      "viewBox": "0 0 863.429 100",
+      "aspect": 8.63429,
       "variants": {
         "color": "assets/surah-headers/qalon/color.svg",
         "mono": "assets/surah-headers/qalon/mono.svg",
@@ -1776,18 +2065,26 @@
         },
         {
           "name": "c1",
-          "hex": "#dfe6ed"
+          "hex": "#ffffff"
         },
         {
           "name": "c2",
-          "hex": "#cecfd1"
+          "hex": "#cfd0d2"
         },
         {
           "name": "c3",
-          "hex": "#e1abc8"
+          "hex": "#f0b4d1"
         },
         {
           "name": "c4",
+          "hex": "#8ea1b6"
+        },
+        {
+          "name": "c5",
+          "hex": "#e473aa"
+        },
+        {
+          "name": "c6",
           "hex": "#00659d"
         },
         {
@@ -1830,14 +2127,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 3,
-          "extracted": "2026-09-09T21:55:29+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:09:59+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-assets uncommitted"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "surah-headers/shubah",
@@ -1846,7 +2147,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Shu'bah 'an 'Asim",
-      "viewBox": "0 0 872.6744 100",
+      "viewBox": "0 0 872.674 100",
+      "aspect": 8.72674,
       "variants": {
         "color": "assets/surah-headers/shubah/color.svg",
         "mono": "assets/surah-headers/shubah/mono.svg",
@@ -1864,18 +2166,26 @@
         },
         {
           "name": "c2",
-          "hex": "#e6dcdb"
+          "hex": "#fdc291"
         },
         {
           "name": "c3",
-          "hex": "#d5b4a5"
+          "hex": "#cdb4b4"
         },
         {
           "name": "c4",
-          "hex": "#9b2e26"
+          "hex": "#fbaa52"
         },
         {
           "name": "c5",
+          "hex": "#b39c9a"
+        },
+        {
+          "name": "c6",
+          "hex": "#9b2e26"
+        },
+        {
+          "name": "c7",
           "hex": "#7e251e"
         },
         {
@@ -1919,14 +2229,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 3,
-          "extracted": "2026-09-09T18:55:20+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:10:14+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "surah-headers/sousi",
@@ -1935,7 +2249,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Susi 'an Abi 'Amr",
-      "viewBox": "0 0 782.5397 100",
+      "viewBox": "0 0 782.54 100",
+      "aspect": 7.8254,
       "variants": {
         "color": "assets/surah-headers/sousi/color.svg",
         "mono": "assets/surah-headers/sousi/mono.svg",
@@ -1957,14 +2272,10 @@
         },
         {
           "name": "c3",
-          "hex": "#d3d6db"
+          "hex": "#b7bdc8"
         },
         {
           "name": "c4",
-          "hex": "#b4bac4"
-        },
-        {
-          "name": "c5",
           "hex": "#003e73"
         },
         {
@@ -2008,14 +2319,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 3,
-          "extracted": "2026-09-09T18:55:13+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:10:05+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     },
     {
       "id": "surah-headers/warsh",
@@ -2024,7 +2339,8 @@
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Warsh 'an Nafi'",
-      "viewBox": "0 0 863.4286 100",
+      "viewBox": "0 0 863.429 100",
+      "aspect": 8.63429,
       "variants": {
         "color": "assets/surah-headers/warsh/color.svg",
         "mono": "assets/surah-headers/warsh/mono.svg",
@@ -2042,19 +2358,23 @@
         },
         {
           "name": "c2",
-          "hex": "#f4e5eb"
+          "hex": "#ecd6dd"
         },
         {
           "name": "c3",
-          "hex": "#9ed7f8"
+          "hex": "#a6dbf9"
         },
         {
           "name": "c4",
-          "hex": "#c6c5c7"
+          "hex": "#e9b1c2"
         },
         {
           "name": "c5",
-          "hex": "#e5afc0"
+          "hex": "#b4b5b7"
+        },
+        {
+          "name": "c6",
+          "hex": "#54bbf0"
         },
         {
           "name": "line",
@@ -2097,14 +2417,18 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 3,
-          "extracted": "2026-09-09T18:55:15+0000"
+          "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+          "extracted": "2026-09-10T02:10:07+0300"
         }
       ],
       "license": {
-        "id": "TBD",
-        "status": "pending"
+        "id": "CC-BY-NC-SA-4.0",
+        "status": "provisional",
+        "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
+        "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
+        "redistributable": false
       },
-      "pipeline_commit": "quran-surah-header 9eb856e"
+      "pipeline_commit": "quran-assets 3011d73"
     }
   ]
 }

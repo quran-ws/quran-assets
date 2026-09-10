@@ -4,7 +4,7 @@
   "page": 300,
   "source": "shubah.pdf",
   "riwaya": "Shu'bah 'an 'Asim",
-  "generated": "2026-09-09 20:06",
+  "generated": "2026-09-10 02:05",
   "page_px": [
     1531,
     2189
@@ -71,8 +71,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 7,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T20:06:42+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:05:58+0300"
   },
   "slot_px": [
     13,
@@ -96,9 +97,10 @@
     "baseline": 68.79
   },
   "stroke_widths_px": [
-    1.06
+    1.4,
+    2.33
   ],
-  "viewBox": "0 0 76.4085 100",
+  "viewBox": "0 0 76.409 100",
   "slot": "13.7324 33.8028 49.6479 32.7465",
   "palette": [
     {
@@ -108,28 +110,38 @@
     },
     {
       "class": "c1",
-      "hex": "#e5dddd",
-      "paths": 5
+      "hex": "#ffffff",
+      "paths": 1
     },
     {
       "class": "c2",
       "hex": "#fbbf86",
-      "paths": 2
+      "paths": 1
     },
     {
       "class": "c3",
-      "hex": "#f3aa5f",
-      "paths": 3
+      "hex": "#f9ae61",
+      "paths": 2
     },
     {
       "class": "c4",
-      "hex": "#b3afae",
-      "paths": 4
+      "hex": "#cb8e54",
+      "paths": 1
+    },
+    {
+      "class": "c5",
+      "hex": "#9a6a3c",
+      "paths": 1
+    },
+    {
+      "class": "c6",
+      "hex": "#7e3022",
+      "paths": 1
     },
     {
       "class": "line",
-      "hex": "#5c514c",
-      "paths": 16,
+      "hex": "#676363",
+      "paths": 4,
       "stroke": true
     }
   ],

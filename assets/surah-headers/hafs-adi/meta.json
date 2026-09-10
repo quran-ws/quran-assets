@@ -4,7 +4,7 @@
   "page": 607,
   "source": "hafs-adi.pdf",
   "riwaya": "Hafs 'an 'Asim (al-'Adi)",
-  "generated": "2026-09-09 18:55",
+  "generated": "2026-09-10 02:10",
   "page_px": [
     1174,
     1942
@@ -47,8 +47,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 3,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T18:55:10+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:10:01+0300"
   },
   "slot_px": [
     275,
@@ -65,16 +66,16 @@
       57.333333333333336
     ],
     "residual": {
-      "lr": 3.87,
-      "ud": 4.59,
-      "both": 6.9
+      "lr": 3.01,
+      "ud": 5.38,
+      "both": 6.78
     },
-    "baseline": 53.29
+    "baseline": 63.12
   },
   "stroke_widths_px": [
     1.46
   ],
-  "viewBox": "0 0 872.6744 100",
+  "viewBox": "0 0 872.674 100",
   "slot": "239.8256 9.593 393.314 81.1047",
   "palette": [
     {
@@ -85,39 +86,39 @@
     {
       "class": "c1",
       "hex": "#ffffff",
-      "paths": 4
+      "paths": 1
     },
     {
       "class": "c2",
-      "hex": "#dfe8db",
+      "hex": "#bfd4b9",
       "paths": 2
     },
     {
       "class": "c3",
-      "hex": "#bed2b5",
-      "paths": 2
+      "hex": "#eeaacb",
+      "paths": 1
     },
     {
       "class": "c4",
-      "hex": "#e98ab7",
-      "paths": 9
+      "hex": "#e46ea7",
+      "paths": 1
     },
     {
       "class": "c5",
       "hex": "#5fa629",
-      "paths": 11
+      "paths": 5
     },
     {
       "class": "c6",
       "hex": "#4d8522",
-      "paths": 6
+      "paths": 2
     },
     {
       "class": "line",
       "hex": "#3d4539",
-      "paths": 156,
+      "paths": 9,
       "stroke": true
     }
   ],
-  "mono_paths": 3
+  "mono_paths": 2
 }

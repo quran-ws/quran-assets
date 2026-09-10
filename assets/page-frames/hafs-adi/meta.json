@@ -4,7 +4,7 @@
   "page": 300,
   "source": "hafs-adi.pdf",
   "riwaya": "Hafs 'an 'Asim (al-'Adi)",
-  "generated": "2026-09-09 19:56",
+  "generated": "2026-09-10 02:06",
   "page_px": [
     1345,
     1938
@@ -35,14 +35,15 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 1,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T19:56:55+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:06:31+0300"
   },
   "slot_px": [
     78,
-    91,
-    1096,
-    1732
+    92,
+    1097,
+    1733
   ],
   "slot_fill": "#ffffff",
   "symmetry": {
@@ -53,64 +54,108 @@
       912.0
     ],
     "residual": {
-      "lr": 8.85,
-      "ud": 9.67,
-      "both": 13.23
+      "lr": 3.94,
+      "ud": 3.24,
+      "both": 5.03
     },
-    "baseline": 94.24
+    "baseline": 74.66
   },
   "stroke_widths_px": [
-    2.0
+    2.0,
+    3.6
   ],
-  "viewBox": "0 0 64.4189 100",
-  "slot": "4.2763 4.989 55.8114 89.9671",
+  "viewBox": "0 0 64.419 100",
+  "slot": "4.2763 5.0439 55.8662 89.9671",
   "palette": [
     {
       "class": "slot",
       "hex": "none",
-      "paths": 2
+      "paths": 1
     },
     {
       "class": "c1",
-      "hex": "#d9e7d9",
-      "paths": 30
+      "hex": "#ffffff",
+      "paths": 3
     },
     {
       "class": "c2",
       "hex": "#bdd3b6",
-      "paths": 2
+      "paths": 4
     },
     {
       "class": "c3",
       "hex": "#eaa7c6",
-      "paths": 27
+      "paths": 1
     },
     {
       "class": "c4",
       "hex": "#e379ad",
-      "paths": 23
+      "paths": 2
     },
     {
       "class": "c5",
       "hex": "#5fa629",
-      "paths": 16
+      "paths": 1
     },
     {
       "class": "c6",
       "hex": "#df4a97",
-      "paths": 16
+      "paths": 1
     },
     {
       "class": "c7",
       "hex": "#4f8522",
-      "paths": 38
+      "paths": 12
     },
     {
       "class": "line",
       "hex": "#31382e",
-      "paths": 823,
+      "paths": 27,
       "stroke": true
     }
   ],
-  "mono_paths": 1
+  "mono_paths": 1,
+  "slices": {
+    "files": {
+      "corner": "slices/corner.svg",
+      "edge-h": "slices/edge-h.svg",
+      "edge-v": "slices/edge-v.svg"
+    },
+    "corner_px": [
+      0,
+      0,
+      232,
+      157
+    ],
+    "edge_h_px": [
+      232,
+      0,
+      412,
+      92
+    ],
+    "edge_v_px": [
+      0,
+      157,
+      78,
+      346
+    ],
+    "repeat_px": {
+      "h": 180,
+      "v": 189
+    },
+    "repeats": {
+      "h": 4,
+      "v": 7
+    },
+    "band_px": {
+      "top": 92,
+      "left": 78
+    },
+    "frame_px": [
+      1185,
+      1824
+    ],
+    "corner_mode": "mirror",
+    "reconstruction_iou": 0.7423
+  }
 }

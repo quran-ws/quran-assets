@@ -4,7 +4,7 @@
   "page": 300,
   "source": "warsh.pdf",
   "riwaya": "Warsh 'an Nafi'",
-  "generated": "2026-09-09 20:06",
+  "generated": "2026-09-10 02:05",
   "page_px": [
     1531,
     2189
@@ -71,8 +71,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 7,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T20:06:39+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:05:56+0300"
   },
   "slot_px": [
     12,
@@ -108,28 +109,33 @@
     },
     {
       "class": "c1",
-      "hex": "#eab2c4",
-      "paths": 2
+      "hex": "#ffffff",
+      "paths": 1
     },
     {
       "class": "c2",
-      "hex": "#bebcbe",
-      "paths": 2
+      "hex": "#eab2c4",
+      "paths": 1
     },
     {
       "class": "c3",
-      "hex": "#79ccf9",
-      "paths": 2
+      "hex": "#7acdfa",
+      "paths": 1
     },
     {
       "class": "c4",
-      "hex": "#6ab5df",
+      "hex": "#d09eae",
+      "paths": 1
+    },
+    {
+      "class": "c5",
+      "hex": "#6bb6e0",
       "paths": 1
     },
     {
       "class": "line",
       "hex": "#3d3c40",
-      "paths": 11,
+      "paths": 1,
       "stroke": true
     }
   ],

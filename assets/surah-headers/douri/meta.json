@@ -4,7 +4,7 @@
   "page": 607,
   "source": "douri.pdf",
   "riwaya": "al-Duri 'an Abi 'Amr",
-  "generated": "2026-09-09 18:55",
+  "generated": "2026-09-10 02:10",
   "page_px": [
     1532,
     2189
@@ -47,8 +47,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 3,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T18:55:19+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:10:12+0300"
   },
   "slot_px": [
     275,
@@ -65,17 +66,17 @@
       58.333333333333336
     ],
     "residual": {
-      "lr": 3.52,
-      "ud": 7.81,
-      "both": 8.75
+      "lr": 2.71,
+      "ud": 7.21,
+      "both": 7.75
     },
-    "baseline": 61.24
+    "baseline": 76.96
   },
   "stroke_widths_px": [
     1.87,
     3.33
   ],
-  "viewBox": "0 0 857.7143 100",
+  "viewBox": "0 0 857.714 100",
   "slot": "235.7143 10.2857 386.5714 79.7143",
   "palette": [
     {
@@ -86,39 +87,44 @@
     {
       "class": "c1",
       "hex": "#ffffff",
-      "paths": 3
+      "paths": 1
     },
     {
       "class": "c2",
-      "hex": "#e4e4e4",
-      "paths": 3
-    },
-    {
-      "class": "c3",
-      "hex": "#c4bbb9",
+      "hex": "#a8ddfb",
       "paths": 2
     },
     {
+      "class": "c3",
+      "hex": "#86cef7",
+      "paths": 1
+    },
+    {
       "class": "c4",
-      "hex": "#78c7f4",
-      "paths": 9
+      "hex": "#c1b7b6",
+      "paths": 2
     },
     {
       "class": "c5",
-      "hex": "#73402d",
-      "paths": 10
+      "hex": "#3db2ed",
+      "paths": 1
     },
     {
       "class": "c6",
+      "hex": "#73402d",
+      "paths": 5
+    },
+    {
+      "class": "c7",
       "hex": "#5e3426",
-      "paths": 4
+      "paths": 1
     },
     {
       "class": "line",
       "hex": "#433c3f",
-      "paths": 151,
+      "paths": 11,
       "stroke": true
     }
   ],
-  "mono_paths": 3
+  "mono_paths": 2
 }

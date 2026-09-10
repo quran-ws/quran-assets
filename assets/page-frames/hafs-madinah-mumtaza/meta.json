@@ -4,7 +4,7 @@
   "page": 300,
   "source": "hafs-madinah-mumtaza.pdf",
   "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
-  "generated": "2026-09-09 20:02",
+  "generated": "2026-09-10 02:08",
   "page_px": [
     1816,
     2609
@@ -35,8 +35,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 1,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T20:02:39+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:08:21+0300"
   },
   "slot_px": [
     206,
@@ -46,25 +47,25 @@
   ],
   "slot_fill": "#ffffff",
   "symmetry": {
-    "folds": 1,
-    "deskew_deg": 0.282,
+    "folds": 4,
+    "deskew_deg": 0.0,
     "axes_px": [
       762.0,
-      1100.5
+      1103.0
     ],
     "residual": {
-      "lr": 48.59,
-      "ud": 48.35,
-      "both": 37.47
+      "lr": 1.52,
+      "ud": 2.87,
+      "both": 3.36
     },
-    "baseline": 75.98
+    "baseline": 73.87
   },
   "stroke_widths_px": [
-    2.19,
+    2.0,
     5.0
   ],
-  "viewBox": "0 0 69.2413 100",
-  "slot": "9.3594 9.3594 50.5225 81.4175",
+  "viewBox": "0 0 69.084 100",
+  "slot": "9.3382 9.3382 50.408 81.233",
   "palette": [
     {
       "class": "slot",
@@ -73,45 +74,88 @@
     },
     {
       "class": "c1",
-      "hex": "#dae6df",
-      "paths": 30
+      "hex": "#ffffff",
+      "paths": 1
     },
     {
       "class": "c2",
-      "hex": "#fbea60",
-      "paths": 275
+      "hex": "#f7e45d",
+      "paths": 2
     },
     {
       "class": "c3",
-      "hex": "#bbcbbd",
-      "paths": 120
+      "hex": "#d4ded5",
+      "paths": 1
     },
     {
       "class": "c4",
-      "hex": "#d39993",
-      "paths": 71
+      "hex": "#75b695",
+      "paths": 6
     },
     {
       "class": "c5",
-      "hex": "#71b697",
-      "paths": 136
+      "hex": "#d97c71",
+      "paths": 1
     },
     {
       "class": "c6",
-      "hex": "#dc8221",
-      "paths": 30
+      "hex": "#d98222",
+      "paths": 1
     },
     {
       "class": "c7",
-      "hex": "#d16b5c",
-      "paths": 181
+      "hex": "#4c7257",
+      "paths": 1
     },
     {
       "class": "line",
-      "hex": "#3f453c",
-      "paths": 4326,
+      "hex": "#373b39",
+      "paths": 33,
       "stroke": true
     }
   ],
-  "mono_paths": 95
+  "mono_paths": 5,
+  "slices": {
+    "files": {
+      "corner": "slices/corner.svg",
+      "edge-h": "slices/edge-h.svg",
+      "edge-v": "slices/edge-v.svg"
+    },
+    "corner_px": [
+      0,
+      0,
+      343,
+      240
+    ],
+    "edge_h_px": [
+      343,
+      0,
+      552,
+      206
+    ],
+    "edge_v_px": [
+      0,
+      240,
+      206,
+      456
+    ],
+    "repeat_px": {
+      "h": 209,
+      "v": 216
+    },
+    "repeats": {
+      "h": 4,
+      "v": 7
+    },
+    "band_px": {
+      "top": 206,
+      "left": 206
+    },
+    "frame_px": [
+      1524,
+      2206
+    ],
+    "corner_mode": "mirror",
+    "reconstruction_iou": 0.9063
+  }
 }

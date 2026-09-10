@@ -4,7 +4,7 @@
   "page": 300,
   "source": "warsh.pdf",
   "riwaya": "Warsh 'an Nafi'",
-  "generated": "2026-09-09 20:05",
+  "generated": "2026-09-10 02:07",
   "page_px": [
     1531,
     2189
@@ -35,8 +35,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 1,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T20:05:52+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:07:47+0300"
   },
   "slot_px": [
     99,
@@ -61,9 +62,9 @@
   },
   "stroke_widths_px": [
     2.0,
-    5.0
+    5.2
   ],
-  "viewBox": "0 0 68.3168 100",
+  "viewBox": "0 0 68.317 100",
   "slot": "5.4455 5.3355 57.4257 89.3289",
   "palette": [
     {
@@ -73,25 +74,73 @@
     },
     {
       "class": "c1",
-      "hex": "#dbdbdb",
-      "paths": 43
+      "hex": "#ffffff",
+      "paths": 1
     },
     {
       "class": "c2",
-      "hex": "#e9b1c2",
-      "paths": 13
+      "hex": "#dbdbdb",
+      "paths": 1
     },
     {
       "class": "c3",
+      "hex": "#e9b1c2",
+      "paths": 2
+    },
+    {
+      "class": "c4",
       "hex": "#65c4f5",
       "paths": 1
     },
     {
       "class": "line",
       "hex": "#5f5c60",
-      "paths": 1442,
+      "paths": 31,
       "stroke": true
     }
   ],
-  "mono_paths": 1
+  "mono_paths": 1,
+  "slices": {
+    "files": {
+      "corner": "slices/corner.svg",
+      "edge-h": "slices/edge-h.svg",
+      "edge-v": "slices/edge-v.svg"
+    },
+    "corner_px": [
+      0,
+      0,
+      172,
+      118
+    ],
+    "edge_h_px": [
+      172,
+      0,
+      284,
+      97
+    ],
+    "edge_v_px": [
+      0,
+      118,
+      99,
+      231
+    ],
+    "repeat_px": {
+      "h": 112,
+      "v": 113
+    },
+    "repeats": {
+      "h": 8,
+      "v": 14
+    },
+    "band_px": {
+      "top": 97,
+      "left": 99
+    },
+    "frame_px": [
+      1242,
+      1819
+    ],
+    "corner_mode": "mirror",
+    "reconstruction_iou": 0.8082
+  }
 }

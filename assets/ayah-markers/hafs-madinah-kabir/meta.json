@@ -4,7 +4,7 @@
   "page": 300,
   "source": "hafs-madinah-kabir.pdf",
   "riwaya": "Hafs 'an 'Asim (Madinah, large)",
-  "generated": "2026-09-09 20:06",
+  "generated": "2026-09-10 02:05",
   "page_px": [
     1153,
     1654
@@ -77,8 +77,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 8,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T20:06:36+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:05:55+0300"
   },
   "slot_px": [
     10,
@@ -102,10 +103,10 @@
     "baseline": 92.99
   },
   "stroke_widths_px": [
-    1.17,
-    1.8
+    1.2,
+    2.0
   ],
-  "viewBox": "0 0 76.7544 100",
+  "viewBox": "0 0 76.754 100",
   "slot": "13.1579 34.2105 50 31.5789",
   "palette": [
     {
@@ -115,33 +116,33 @@
     },
     {
       "class": "c1",
-      "hex": "#e3f2f7",
-      "paths": 4
+      "hex": "#ffffff",
+      "paths": 1
     },
     {
       "class": "c2",
-      "hex": "#dadce0",
-      "paths": 3
+      "hex": "#e07ea9",
+      "paths": 1
     },
     {
       "class": "c3",
-      "hex": "#c5c3ca",
-      "paths": 2
+      "hex": "#2689b1",
+      "paths": 1
     },
     {
       "class": "c4",
-      "hex": "#a8afb5",
-      "paths": 7
-    },
-    {
-      "class": "c5",
-      "hex": "#d17da4",
+      "hex": "#a84e79",
       "paths": 2
     },
     {
+      "class": "c5",
+      "hex": "#6a3456",
+      "paths": 1
+    },
+    {
       "class": "line",
-      "hex": "#6e616d",
-      "paths": 19,
+      "hex": "#777178",
+      "paths": 4,
       "stroke": true
     }
   ],

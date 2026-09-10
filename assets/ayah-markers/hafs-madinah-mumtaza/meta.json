@@ -4,7 +4,7 @@
   "page": 300,
   "source": "hafs-madinah-mumtaza.pdf",
   "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
-  "generated": "2026-09-09 20:06",
+  "generated": "2026-09-10 02:05",
   "page_px": [
     1816,
     2609
@@ -77,8 +77,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 8,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T20:06:40+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:05:57+0300"
   },
   "slot_px": [
     13,
@@ -102,7 +103,8 @@
     "baseline": 96.18
   },
   "stroke_widths_px": [
-    1.33
+    1.33,
+    2.33
   ],
   "viewBox": "0 0 76.699 100",
   "slot": "12.6214 33.0097 50.4854 33.9806",
@@ -114,23 +116,28 @@
     },
     {
       "class": "c1",
-      "hex": "#c6c9c8",
-      "paths": 4
+      "hex": "#ffffff",
+      "paths": 1
     },
     {
       "class": "c2",
       "hex": "#72b895",
-      "paths": 2
+      "paths": 1
     },
     {
       "class": "c3",
-      "hex": "#c83b17",
+      "hex": "#cf3d19",
+      "paths": 1
+    },
+    {
+      "class": "c4",
+      "hex": "#aa2e11",
       "paths": 1
     },
     {
       "class": "line",
-      "hex": "#5f6c68",
-      "paths": 21,
+      "hex": "#606c68",
+      "paths": 5,
       "stroke": true
     }
   ],

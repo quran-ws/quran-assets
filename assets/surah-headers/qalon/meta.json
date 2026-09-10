@@ -4,7 +4,7 @@
   "page": 607,
   "source": "qalon.pdf",
   "riwaya": "Qalun 'an Nafi'",
-  "generated": "2026-09-09 21:55",
+  "generated": "2026-09-10 02:09",
   "page_px": [
     1531,
     2189
@@ -47,8 +47,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 3,
-    "pipeline": "quran-assets uncommitted",
-    "extracted": "2026-09-09T21:55:29+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:09:59+0300"
   },
   "slot_px": [
     211,
@@ -74,7 +75,7 @@
   "stroke_widths_px": [
     1.46
   ],
-  "viewBox": "0 0 863.4286 100",
+  "viewBox": "0 0 863.429 100",
   "slot": "180.8571 8.5714 501.4286 83.1429",
   "palette": [
     {
@@ -84,28 +85,38 @@
     },
     {
       "class": "c1",
-      "hex": "#dfe6ed",
+      "hex": "#ffffff",
       "paths": 3
     },
     {
       "class": "c2",
-      "hex": "#cecfd1",
-      "paths": 7
+      "hex": "#cfd0d2",
+      "paths": 1
     },
     {
       "class": "c3",
-      "hex": "#e1abc8",
-      "paths": 10
+      "hex": "#f0b4d1",
+      "paths": 1
     },
     {
       "class": "c4",
+      "hex": "#8ea1b6",
+      "paths": 1
+    },
+    {
+      "class": "c5",
+      "hex": "#e473aa",
+      "paths": 1
+    },
+    {
+      "class": "c6",
       "hex": "#00659d",
-      "paths": 6
+      "paths": 1
     },
     {
       "class": "line",
       "hex": "#343f49",
-      "paths": 101,
+      "paths": 8,
       "stroke": true
     }
   ],

@@ -4,7 +4,7 @@
   "page": 300,
   "source": "douri.pdf",
   "riwaya": "al-Duri 'an Abi 'Amr",
-  "generated": "2026-09-09 20:00",
+  "generated": "2026-09-10 02:09",
   "page_px": [
     1532,
     2189
@@ -35,14 +35,15 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 1,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T20:00:52+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:09:02+0300"
   },
   "slot_px": [
     90,
-    93,
-    1108,
-    1734
+    94,
+    1109,
+    1735
   ],
   "slot_fill": "#ffffff",
   "symmetry": {
@@ -53,18 +54,18 @@
       914.0
     ],
     "residual": {
-      "lr": 8.4,
-      "ud": 9.14,
-      "both": 12.53
+      "lr": 4.0,
+      "ud": 3.24,
+      "both": 5.12
     },
-    "baseline": 103.59
+    "baseline": 85.75
   },
   "stroke_widths_px": [
     2.0,
     4.0
   ],
-  "viewBox": "0 0 65.5908 100",
-  "slot": "4.9234 5.0875 55.6893 89.7702",
+  "viewBox": "0 0 65.591 100",
+  "slot": "4.9234 5.1422 55.744 89.7702",
   "palette": [
     {
       "class": "slot",
@@ -73,13 +74,13 @@
     },
     {
       "class": "c1",
-      "hex": "#dbd8d9",
-      "paths": 30
+      "hex": "#ffffff",
+      "paths": 3
     },
     {
       "class": "c2",
       "hex": "#96d5f9",
-      "paths": 24
+      "paths": 1
     },
     {
       "class": "c3",
@@ -89,29 +90,72 @@
     {
       "class": "c4",
       "hex": "#5bbef2",
-      "paths": 16
+      "paths": 2
     },
     {
       "class": "c5",
       "hex": "#1dacec",
-      "paths": 16
+      "paths": 1
     },
     {
       "class": "c6",
       "hex": "#73402d",
-      "paths": 16
+      "paths": 1
     },
     {
       "class": "c7",
       "hex": "#5d3325",
-      "paths": 8
+      "paths": 12
     },
     {
       "class": "line",
       "hex": "#3e3538",
-      "paths": 863,
+      "paths": 17,
       "stroke": true
     }
   ],
-  "mono_paths": 1
+  "mono_paths": 1,
+  "slices": {
+    "files": {
+      "corner": "slices/corner.svg",
+      "edge-h": "slices/edge-h.svg",
+      "edge-v": "slices/edge-v.svg"
+    },
+    "corner_px": [
+      0,
+      0,
+      240,
+      157
+    ],
+    "edge_h_px": [
+      240,
+      0,
+      420,
+      94
+    ],
+    "edge_v_px": [
+      0,
+      157,
+      90,
+      346
+    ],
+    "repeat_px": {
+      "h": 180,
+      "v": 189
+    },
+    "repeats": {
+      "h": 3,
+      "v": 8
+    },
+    "band_px": {
+      "top": 94,
+      "left": 90
+    },
+    "frame_px": [
+      1199,
+      1828
+    ],
+    "corner_mode": "mirror",
+    "reconstruction_iou": 0.9584
+  }
 }

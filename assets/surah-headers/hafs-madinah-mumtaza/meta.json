@@ -4,7 +4,7 @@
   "page": 605,
   "source": "hafs-madinah-mumtaza.pdf",
   "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
-  "generated": "2026-09-09 18:55",
+  "generated": "2026-09-10 02:10",
   "page_px": [
     1816,
     2609
@@ -47,8 +47,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 3,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T18:55:17+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:10:09+0300"
   },
   "slot_px": [
     328,
@@ -65,17 +66,17 @@
       64.0
     ],
     "residual": {
-      "lr": 2.42,
-      "ud": 8.5,
-      "both": 9.07
+      "lr": 2.65,
+      "ud": 8.52,
+      "both": 9.28
     },
-    "baseline": 54.04
+    "baseline": 63.7
   },
   "stroke_widths_px": [
     2.0,
     4.83
   ],
-  "viewBox": "0 0 854.6875 100",
+  "viewBox": "0 0 854.688 100",
   "slot": "256.25 7.8125 342.1875 83.5938",
   "palette": [
     {
@@ -86,34 +87,59 @@
     {
       "class": "c1",
       "hex": "#ffffff",
-      "paths": 6
+      "paths": 2
     },
     {
       "class": "c2",
-      "hex": "#e3f0eb",
-      "paths": 4
+      "hex": "#dfeae3",
+      "paths": 1
     },
     {
       "class": "c3",
-      "hex": "#fae760",
-      "paths": 8
+      "hex": "#fbea60",
+      "paths": 1
     },
     {
       "class": "c4",
-      "hex": "#70b693",
-      "paths": 7
+      "hex": "#dcb847",
+      "paths": 1
     },
     {
       "class": "c5",
-      "hex": "#e18f32",
-      "paths": 5
+      "hex": "#9ec0af",
+      "paths": 2
+    },
+    {
+      "class": "c6",
+      "hex": "#e29330",
+      "paths": 1
+    },
+    {
+      "class": "c7",
+      "hex": "#70b693",
+      "paths": 4
+    },
+    {
+      "class": "c8",
+      "hex": "#da786d",
+      "paths": 1
+    },
+    {
+      "class": "c9",
+      "hex": "#d66e12",
+      "paths": 1
+    },
+    {
+      "class": "c10",
+      "hex": "#ce4502",
+      "paths": 2
     },
     {
       "class": "line",
       "hex": "#393f35",
-      "paths": 127,
+      "paths": 8,
       "stroke": true
     }
   ],
-  "mono_paths": 4
+  "mono_paths": 2
 }

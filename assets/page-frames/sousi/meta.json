@@ -4,7 +4,7 @@
   "page": 300,
   "source": "sousi.pdf",
   "riwaya": "al-Susi 'an Abi 'Amr",
-  "generated": "2026-09-09 19:57",
+  "generated": "2026-09-10 02:07",
   "page_px": [
     1532,
     2189
@@ -35,14 +35,15 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 1,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T19:57:36+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:07:20+0300"
   },
   "slot_px": [
     96,
-    97,
+    98,
     1116,
-    1724
+    1725
   ],
   "slot_fill": "#ffffff",
   "symmetry": {
@@ -53,18 +54,18 @@
       911.0
     ],
     "residual": {
-      "lr": 13.4,
-      "ud": 14.47,
-      "both": 17.38
+      "lr": 5.37,
+      "ud": 6.1,
+      "both": 6.75
     },
-    "baseline": 102.39
+    "baseline": 85.27
   },
   "stroke_widths_px": [
-    1.7,
+    2.0,
     4.0
   ],
-  "viewBox": "0 0 66.5203 100",
-  "slot": "5.2689 5.3238 55.9824 89.2975",
+  "viewBox": "0 0 66.52 100",
+  "slot": "5.2689 5.3787 55.9824 89.2975",
   "palette": [
     {
       "class": "slot",
@@ -73,25 +74,73 @@
     },
     {
       "class": "c1",
-      "hex": "#fdc8b4",
-      "paths": 16
+      "hex": "#ffffff",
+      "paths": 7
     },
     {
       "class": "c2",
-      "hex": "#bbc3cb",
-      "paths": 27
+      "hex": "#fdc8b4",
+      "paths": 1
     },
     {
       "class": "c3",
+      "hex": "#bbc3cb",
+      "paths": 2
+    },
+    {
+      "class": "c4",
       "hex": "#003b6d",
-      "paths": 37
+      "paths": 11
     },
     {
       "class": "line",
       "hex": "#30313e",
-      "paths": 809,
+      "paths": 19,
       "stroke": true
     }
   ],
-  "mono_paths": 1
+  "mono_paths": 1,
+  "slices": {
+    "files": {
+      "corner": "slices/corner.svg",
+      "edge-h": "slices/edge-h.svg",
+      "edge-v": "slices/edge-v.svg"
+    },
+    "corner_px": [
+      0,
+      0,
+      214,
+      160
+    ],
+    "edge_h_px": [
+      214,
+      0,
+      396,
+      98
+    ],
+    "edge_v_px": [
+      0,
+      160,
+      96,
+      348
+    ],
+    "repeat_px": {
+      "h": 182,
+      "v": 188
+    },
+    "repeats": {
+      "h": 4,
+      "v": 7
+    },
+    "band_px": {
+      "top": 98,
+      "left": 96
+    },
+    "frame_px": [
+      1213,
+      1823
+    ],
+    "corner_mode": "mirror",
+    "reconstruction_iou": 0.7775
+  }
 }

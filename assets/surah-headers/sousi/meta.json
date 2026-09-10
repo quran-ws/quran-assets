@@ -4,7 +4,7 @@
   "page": 607,
   "source": "sousi.pdf",
   "riwaya": "al-Susi 'an Abi 'Amr",
-  "generated": "2026-09-09 18:55",
+  "generated": "2026-09-10 02:10",
   "page_px": [
     1532,
     2189
@@ -47,8 +47,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 3,
-    "pipeline": "quran-surah-header 9eb856e",
-    "extracted": "2026-09-09T18:55:13+0000"
+    "pipeline": "quran-assets 3011d73",
+    "pipeline_sha256": "cb8d14caa65815e6eb7c1ba1137bdbc9c5f4ed1c90b89aad7ee822a28981c3e2",
+    "extracted": "2026-09-10T02:10:05+0300"
   },
   "slot_px": [
     285,
@@ -65,17 +66,17 @@
       63.0
     ],
     "residual": {
-      "lr": 3.37,
-      "ud": 5.52,
-      "both": 7.04
+      "lr": 2.54,
+      "ud": 4.52,
+      "both": 5.7
     },
-    "baseline": 66.8
+    "baseline": 60.57
   },
   "stroke_widths_px": [
     1.33,
     2.67
   ],
-  "viewBox": "0 0 782.5397 100",
+  "viewBox": "0 0 782.54 100",
   "slot": "226.1905 9.5238 330.9524 80.9524",
   "palette": [
     {
@@ -86,34 +87,29 @@
     {
       "class": "c1",
       "hex": "#ffffff",
-      "paths": 2
+      "paths": 1
     },
     {
       "class": "c2",
       "hex": "#fdc9b7",
-      "paths": 9
+      "paths": 2
     },
     {
       "class": "c3",
-      "hex": "#d3d6db",
+      "hex": "#b7bdc8",
       "paths": 2
     },
     {
       "class": "c4",
-      "hex": "#b4bac4",
-      "paths": 3
-    },
-    {
-      "class": "c5",
       "hex": "#003e73",
-      "paths": 15
+      "paths": 5
     },
     {
       "class": "line",
       "hex": "#313342",
-      "paths": 157,
+      "paths": 12,
       "stroke": true
     }
   ],
-  "mono_paths": 3
+  "mono_paths": 2
 }
