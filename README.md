@@ -1,65 +1,139 @@
 # quran-assets
 
-Decorative assets for Quran apps — **surah-header frames, page frames and ayah markers** —
-vectorized from scanned mushaf PDFs into clean, recolourable, standardized SVGs.
+Surah headers, page frames and ayah markers from eight printed mushafs, traced into
+recolourable SVGs — with the scan they came from recorded in every file.
 
-Private repo of the quran.ws non-profit. Status: **alpha — 24 assets from 8 mushafs, a
-regression-gated pipeline, a 9-slice page-frame build and an npm package that is deliberately
-`private` until the licensing question in [`docs/PLAN.md`](docs/PLAN.md) §6 is settled.**
+![A printed surah header and the SVG traced from it](docs/img/scan-to-svg.png)
+
+The name is gone, the gradient bands are gone, the paper is gone. What is left is one
+group per printed ink, a transparent slot where the calligrapher left room for the surah
+name, and this on the root element:
 
 ```
-assets/<type>/<style>/        the product: color.svg  mono.svg  line.svg  meta.json  source.*  clean.*
-   type  = surah-headers | page-frames | ayah-markers
-   style = mushaf id: qalon hafs-adi hafs-madinah-kabir sousi warsh hafs-madinah-mumtaza douri shubah
-   page frames also carry slices/{corner,edge-h,edge-v}.svg when their border tiles
-catalog.json                  one machine-readable index of every asset (+ provenance, palette, slots, slices)
-demo/index.html               standalone demo: a real mushaf page dressed in any mushaf's ornaments, plus
-                              per-asset Colour / Mono / Line / Original and recolouring
-demo/review.html              quick review sheet (needs a local http server for the object tags)
-qa/                           the toolchain: qa/scan (render → … → slice), qa/common, qa/jobs
-tests/                        catalog schema, SVG contract, slice geometry, tracer unit tests
-docs/                         HANDOVER · METHOD · CONVENTIONS · USAGE · QUALITY · SESSION-LOG · PLAN
+data-source-file="qalon.pdf"  data-source-page="607"  data-source-box="341 300 1348 416"
 ```
 
-## Run it
+---
+
+**زخارف المصاحف، جاهزة للتطبيقات.** عناوين السور، وإطارات الصفحات، وعلامات الآيات،
+مستخرَجة من ثمانية مصاحف مطبوعة ومحوَّلة إلى ملفات SVG نظيفة قابلة لإعادة التلوين، لكل
+رواية زخرفتها. كل ملف يحمل مصدره: اسم المصحف، ورقم الصفحة، وبصمة sha256 للملف الأصلي.
+الأصول **لم تُرخَّص للنشر بعد** — انظر [LICENSE.md](LICENSE.md).
+
+---
+
+## What's here
+
+Three types × eight mushafs = 24 assets — a set per riwāyah, not one generic set:
+Qālūn, Warsh, al-Dūrī, al-Sūsī, Shuʿbah, and Hafs in three printings (ʿĀdī, Madinah
+mumtāza, Madinah kabīr).
+
+Each in `assets/<type>/<style>/`: `color.svg` (26 KB for a header, 6 KB for a marker),
+`mono.svg`, `line.svg`, `meta.json`, and the source and cleaned crops. Page frames also
+carry `slices/` — see below.
+
+## On a page
+
+![The same mushaf page dressed in two different mushafs' ornaments](docs/img/page-in-use.png)
+
+One typeset page, wearing two mushafs' ornaments. Open `demo/index.html` to switch
+between all eight, recolour any group, and copy the SVG.
+
+The border is not one fixed shape. Where a border tiles, it ships as three pieces —
+corner, horizontal unit, vertical unit — and assembles to whatever page you have:
+
+```js
+import { get, frame } from "@quran-ws/assets";        // built by `python -m qa dist`
+
+const svg = await frame(get("page-frames", "qalon"), { width: 210, height: 297 });
+```
+
+The corner keeps its shape; only the edge runs repeat. Seven of the eight tile;
+`hafs-madinah-kabir` does not, has no `slices` entry, and ships whole — the build
+measures that rather than guessing (below).
+
+## The contract
+
+Every file, every type, same shape. viewBox height is 100, so width is the aspect.
+
+```svg
+<svg viewBox="0 0 863.429 100" data-mushaf="qalon" data-asset="surah-header"
+     data-slot="180.8571 8.5714 501.4286 83.1429">
+  <g fill="none"    class="slot" data-part="slot">…</g>   <!-- where the name goes -->
+  <g fill="#fff"    class="c1"   data-part="c1">…</g>     <!-- fills, light → dark -->
+  <g fill="#cfd0d2" class="c2"   data-part="c2">…</g>
+  <g fill="none" stroke="#343f49" class="line" data-part="line">…</g>
+</svg>
+```
+
+Colours are presentation attributes, never inline `style`, so `.c2{fill:var(--brand)}`
+wins and a rasterizer with no CSS at all still renders the file correctly. `data-slot`
+is in viewBox units: place the surah name, the ayah number or the page text there.
+
+`catalog.json` says the same thing to a machine, and adds where it came from:
+
+```json
+{
+  "id": "surah-headers/qalon", "lineage": "scan", "aspect": 8.63429,
+  "slots": [{ "role": "surah-name", "x": 180.86, "y": 8.57, "w": 501.43, "h": 83.14 }],
+  "sources": [{ "kind": "mushaf-scan", "riwaya": "Qalun 'an Nafi'", "pdf_page": 607,
+                "sha256": "cbbb52b2…aef8de", "crop_box_px": [341, 300, 1348, 416],
+                "archive_url": "https://archive.org/details/quran-qalon" }],
+  "license": { "id": "CC-BY-NC-SA-4.0", "status": "provisional", "redistributable": false }
+}
+```
+
+## Rebuild it
+
+The PDFs are not committed — fetch them and the 24 assets regenerate from scratch.
 
 ```bash
-bash sources/fetch_mushafs.sh              # ~2 GB of PDFs into sources/ (re-run until ALL_DONE)
-pip install -r requirements.txt            # also needs poppler + cairo on PATH; npm i svgo for the optimize pass
+bash sources/fetch_mushafs.sh     # ~2 GB from archive.org
+pip install -r requirements.txt   # + poppler and cairo on PATH
 
-python -m qa build                         # every job (headers ~3 s, frames ~35 s each)
-python -m qa build --type page-frames --style qalon --to clean   # one job, stop after a stage
-python -m qa optimize                      # svgo pass, then refresh meta.json to describe the delivered files
-python -m qa catalog                       # rebuild catalog.json from the meta.json files
-python -m qa validate                      # catalog schema + SVG contract + license traceability
-python -m qa quality --baseline tests/quality-baseline.json --out work/quality    # raster regression gate
-python -m qa demo                          # demo/index.html
-python -m qa dist                          # dist/ for npm and the CDN
-python -m pytest -q                        # 54 tests
+python -m qa build                # render → detect → clean → symmetry → vectorize → slice
+python -m qa optimize             # svgo, then rewrite meta.json to match the delivered file
+python -m qa validate             # catalog schema, SVG contract, licence traceability
+python -m qa quality --baseline tests/quality-baseline.json --out work/quality
 ```
 
-PDFs can live elsewhere: `QA_SOURCES_DIR=/path/to/pdfs python -m qa build …`.
-On Apple Silicon, cairo needs `DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib`.
+No manual crop boxes: the headers, frames and markers are found on the page by their own
+geometry, and per-job overrides live in `qa/jobs/<type>.json`.
 
-## Using the SVGs
+## How good is it, actually
 
-Every file follows the same contract (details in [`docs/CONVENTIONS.md`](docs/CONVENTIONS.md)):
-viewBox height 100; one `<g class="cN" data-part="cN">` per printed colour, `<g class="line">`
-constant-width strokes on top, `<g class="slot">` transparent by default where the surah name /
-text / ayah number goes; `data-slot="x y w h"` on the root; provenance in `data-source-*` and
-`<metadata>`; symmetric designs are one quadrant plus `<use>` mirrors. Colours are presentation
-attributes, so any CSS rule of yours wins and every rasterizer still renders the file correctly.
+Not a claim — a gate. `qa quality` renders every asset at 360, 1000 and 4000 px, diffs
+the ink against the cleaned scan, and fails on any deterioration against
+`tests/quality-baseline.json`. The 4000 px pass is the one that earns its keep: it caught
+broken marker outlines that looked perfect at app size.
 
-A page frame is not one fixed shape: where the border tiles, `slices/` holds the corner and the
-two repeat units, and `frame()` in `@quran-ws/assets` assembles them at your page's aspect —
-the corner keeps its shape, only the edge runs repeat. See [`docs/USAGE.md`](docs/USAGE.md).
+Frame slices are checked the same way — cut, reassembled, compared with the frame they
+came from. Qālūn scores 0.81; the seven that ship range 0.74–0.96; Kabir fails at 0.49
+and is therefore not sliced.
 
-## Licensing
+`hafs-madinah-kabir` is a 150 dpi source and is the weakest of the eight throughout.
+[`docs/QUALITY.md`](docs/QUALITY.md) says what the numbers mean and what they cannot tell
+you.
 
-**Not settled — do not redistribute yet.** The repo's position is recorded in
-`qa/licenses.json` and stamped into every catalog entry: scan-derived assets are marked
-`CC-BY-NC-SA-4.0`, status `provisional`, while written permission is sought from the mushaf
-publishers ([`docs/PLAN.md`](docs/PLAN.md) §6). `python -m qa dist` marks the npm package
-`"private": true` while any bundled asset is not `confirmed`, and the release workflow refuses
-to publish it — the legal decision stays a human one. Every asset carries its source (mushaf,
-archive.org item, PDF sha256, page, crop) so it can be made per-asset.
+## Licence — read this before using anything
+
+**Not cleared for redistribution.** These are tracings of ornaments printed in mushafs
+whose designs belong to their publishers. The working position is CC BY-NC-SA 4.0,
+status `provisional`, while written permission is sought.
+
+That position is enforced, not just stated: `qa validate` refuses to let an asset claim
+`confirmed` without written evidence in `sources/licenses/`, `qa dist` marks the npm
+package `"private": true` while anything is unconfirmed, and the release workflow refuses
+to publish it. Every asset carries its own source, so the decision can be made per
+mushaf. See [LICENSE.md](LICENSE.md) and [`docs/PLAN.md`](docs/PLAN.md) §6.
+
+## Next
+
+| | |
+|---|---|
+| Using the assets in an app | [`docs/USAGE.md`](docs/USAGE.md) |
+| The SVG contract in full | [`docs/CONVENTIONS.md`](docs/CONVENTIONS.md) |
+| How each stage works | [`docs/METHOD.md`](docs/METHOD.md) |
+| What is decided and what is open | [`docs/PLAN.md`](docs/PLAN.md), [`docs/HANDOVER.md`](docs/HANDOVER.md) |
+
+A quran.ws project. Alpha: the assets and the pipeline are real, nothing is published.
