@@ -36,7 +36,12 @@ jobs:
 
   pages:
     # The demo is a committed standalone file; publishing it is a copy, not a build.
-    if: github.ref == 'refs/heads/main'
+    #
+    # Off until someone turns it on: publishing the demo publishes the assets with it,
+    # and they are not cleared for redistribution (docs/PLAN.md §6, LICENSE.md). To
+    # enable, switch the repo to Pages-from-Actions and set the repository variable
+    # PUBLISH_DEMO=true.
+    if: github.ref == 'refs/heads/main' && vars.PUBLISH_DEMO == 'true'
     needs: check
     runs-on: ubuntu-latest
     permissions:
