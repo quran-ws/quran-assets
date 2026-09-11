@@ -63,6 +63,9 @@ def main(argv=None):
         if lineage in (None, "scan"):
             from qa.scan.build import build as run_scan
             run_scan(mushaf=(name if args.style else None), asset=ASSET_OF_TYPE.get(args.type), to=args.to, force=args.force)
+        if lineage == "font" and args.type not in (None, "ayah-markers"):
+            # Say so rather than exiting 0 having built nothing.
+            raise SystemExit(f"the font lineage only produces ayah-markers, not {args.type}")
         if lineage in (None, "font") and args.type in (None, "ayah-markers"):
             from qa.font.build import build as run_font
             print(f"font: {run_font(style=args.style)} markers")
