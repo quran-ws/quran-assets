@@ -3,13 +3,13 @@
 
 `derive_number_font.py` shapes U+06DD in each marker's OWN source font, so it
 needs the real font files -- the FULL TTF/OTF, not the gstatic woff2 subsets
-recorded in `collection.json`, because a subset can drop the very lookups that
+recorded in `selection.json`, because a subset can drop the very lookups that
 implement the enclosure.
 
 The OFL families come from `google/fonts`; the rest from `fonts.quran.ws`,
-which serves complete files at the URLs already recorded in `collection.json`.
+which serves complete files at the URLs already recorded in `qa/font/data/selection.json`.
 
-    python3 scripts/fetch_source_fonts.py [target-dir]     # default /tmp/amfonts
+    python3 sources/fetch_fonts.py [target-dir]     # default work/fonts
 
 Nothing here is committed: the fonts are inputs, not artefacts.
 """
@@ -73,7 +73,8 @@ def get(url, dest):
 
 
 def main():
-    root = sys.argv[1] if len(sys.argv) > 1 else "/tmp/amfonts"
+    root = sys.argv[1] if len(sys.argv) > 1 else os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "work", "fonts")
     for sub in ("gf", "ws"):
         os.makedirs(os.path.join(root, sub), exist_ok=True)
     for slug, name in GF:

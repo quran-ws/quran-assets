@@ -26,7 +26,7 @@ repeat, which is what stretching the whole frame gets wrong:
 ```js
 import { get, frame } from "@quran-ws/assets";
 
-const asset = get("page-frames", "qalon");
+const asset = get("page-frames", "mushaf-qalon");
 if (asset.slices) {
   const svg = await frame(asset, { width: 210, height: 297 });   // any box, e.g. A4
   page.append(svg);                                              // size it with CSS
@@ -42,20 +42,69 @@ read `slots[0].y` (the text area's inset) from the catalog. Colours work exactly
 quantization of the frame.
 
 ## Ayah marker
-`data-slot` is the number disc. Draw the ayah number centred at `cx, cy` from `catalog.json`
-(`slots[0]`), font-size ≈ 0.6 × slot height. `.slot{fill:…}` fills the disc.
+55 of them: 8 traced from mushaf scans (`mushaf-qalon`…, one per riwāyah) and 47 taken from the
+`U+06DD` glyph of OFL fonts (`font-003-regular`…, a design number and a weight). Same contract,
+same units; `ofType("ayah-markers", "scan" | "font")` separates them.
+
+`data-slot` is where the number goes. Draw it centred at `cx, cy` from `catalog.json`
+(`slots[0]`) and **size it by `h`, never by `w`** — `w` is the widest box the marker holds,
+which is the three-digit case, and stretching one digit to it draws it about 2.7× too wide.
+One centre per marker: the number sits in the same place whether it is one digit or three.
+
+Two differences on the font-derived ones, both deliberate:
+
+* `slots[0].r` is the largest circle that fits the marker's interior, if you would rather place
+  a round badge than a box.
+* there is no `slot` *group* and no `line.svg`. A traced cartouche leaves its middle empty, so a
+  transparent group there is real geometry `.slot{fill:…}` can tint; a font marker's interior is
+  painted solid by its base fill, so the number box ships as `data-slot` and `slots[]` only.
+  Check `variants` rather than assuming three files.
+
+The 47 centres were placed by hand and none of the boxes touches the marker's own ink.
+
+## Ayah markers as a font
+The font-derived markers also ship as a PUA font, for text runs where an inline SVG per ayah is
+too much. It is outline only — one colour, no layers, and it contains no number.
+
+```css
+@font-face { font-family: "Ayah Markers"; src: url("./fonts/AyahMarkers.otf") format("opentype"); }
+.ayah-mark { font-family: "Ayah Markers"; }
+```
+```html
+<span class="ayah-mark">&#xE000;</span>
+```
+
+`dist/fonts/font-map.json` maps each glyph to its catalog `style`, so the SVG and the glyph for a
+design are the same lookup:
+
+```js
+const map = await (await fetch('fonts/font-map.json')).json();
+map.glyphs.find(g => g.style === 'font-003-regular')   // {style, marker, codepoint:'U+E00A', character}
+```
+
+Codepoints are fixed per marker, so a build that excludes some markers leaves gaps rather than
+shifting the rest.
 
 ## catalog.json
 ```js
 const cat = await (await fetch('catalog.json')).json();
-const qalonHeader = cat.assets.find(a => a.id === 'surah-headers/qalon');
-qalonHeader.variants.color  // "assets/surah-headers/qalon/color.svg"
+// A style id is always `<lineage>-<name>`: `mushaf-qalon`, `font-003-regular`.
+const qalonHeader = cat.assets.find(a => a.id === 'surah-headers/mushaf-qalon');
+qalonHeader.variants.color   // "assets/surah-headers/mushaf-qalon/color.svg"
 qalonHeader.palette          // [{name:'slot',hex:'none'},{name:'c1',hex:'#ffffff'},…,{name:'line',hex:'#353941',stroke:true}]
 qalonHeader.slots[0]         // {role:'surah-name', x,y,w,h,cx,cy}
+qalonHeader.lineage          // 'scan'  — always equals the style id's prefix
 qalonHeader.sources[0]       // {kind:'mushaf-scan', mushaf, riwaya, file, sha256, archive_url, pdf_page, crop_box_px, …}
 qalonHeader.license          // {id:'CC-BY-NC-SA-4.0', status:'provisional', redistributable:false, …}
-cat.assets.find(a => a.id === 'page-frames/qalon').slices
+cat.assets.find(a => a.id === 'page-frames/mushaf-qalon').slices
                              // {files:{corner,'edge-h','edge-v'}, corner:{w,h}, repeat:{h,v}, corner_mode, reconstruction_iou}
+
+const marker = cat.assets.find(a => a.id === 'ayah-markers/font-003-regular');
+marker.variants              // {color, mono} — no `line`: a font marker has no linework
+marker.slots[0]              // {role:'ayah-number', x,y,w,h,cx,cy,r}
+marker.font                  // {upem:1000, advance, upem_scale, codepoint:'U+E00A', glyph:'U+06DD'}
+marker.sources[0]            // {kind:'font', source, family, variant, source_url, upem, advance, license}
+marker.license               // {id:'OFL-1.1', status:'confirmed', redistributable:true, …}
 ```
 
 The same data ships as a typed module: `import { assets, byId, get, ofType, url, slot, frame }

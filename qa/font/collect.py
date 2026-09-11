@@ -84,7 +84,7 @@ def extract_quran(item, cache):
     return extract_binary("fonts.quran.ws", item[0], "regular", item[1], cache)
 
 def main():
-    parser = argparse.ArgumentParser(); parser.add_argument("--output", type=Path, default=Path("collection")); parser.add_argument("--cache", type=Path, default=Path(".cache/fonts")); parser.add_argument("--workers", type=int, default=8); parser.add_argument("--limit", type=int)
+    parser = argparse.ArgumentParser(); parser.add_argument("--output", type=Path, default=Path("work/collection")); parser.add_argument("--cache", type=Path, default=Path("work/fonts-cache")); parser.add_argument("--workers", type=int, default=8); parser.add_argument("--limit", type=int)
     args = parser.parse_args(); args.output.mkdir(parents=True, exist_ok=True); args.cache.mkdir(parents=True, exist_ok=True)
     google = work_items(); quran = quran_items()
     items = [("google", x) for x in google] + [("quran", x) for x in quran]

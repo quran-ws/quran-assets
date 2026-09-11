@@ -22,6 +22,27 @@ NAMES = {style_id("scan", k): v for k, v in
           "hafs-adi": "Hafs · ʿĀdī", "shubah": "Shuʿbah", "warsh": "Warsh", "qalon": "Qālūn",
           "douri": "al-Dūrī", "sousi": "al-Sūsī"}.items()}
 
+FONT_WEIGHTS = {"thin": "Thin", "extralight": "ExtraLight", "light": "Light", "regular": "Regular",
+                "medium": "Medium", "semibold": "SemiBold", "bold": "Bold", "extrabold": "ExtraBold",
+                "black": "Black", "regular-bold": "Regular–Bold", "regular-black": "Regular–Black"}
+
+
+def font_name(style):
+    """`font-010-regular-bold` -> `Design 010 · Regular–Bold`. A double suffix is a weight
+    *range*: one outline shared by every weight between the two, not two weights."""
+    design, _, weight = style[len("font-"):].partition("-")
+    return f"Design {design} · {FONT_WEIGHTS.get(weight, weight.title())}"
+
+
+def styles_for(asset_type):
+    """Every style of a type that has been built, scan first, then font by design number."""
+    directory = A / asset_type
+    if not directory.exists():
+        return []
+    built = {d.name for d in directory.iterdir() if (d / "meta.json").exists()}
+    return [m for m in ORDER if m in built] + sorted(m for m in built if m.startswith("font-"))
+
+
 def load_svg(p, uid):
     s = p.read_text()
     s = re.sub(r'<\?xml[^>]*\?>', '', s)
@@ -98,15 +119,18 @@ aspect, not stretched to it. Page geometry and text are the mushaf's own.</p>
 sections = []
 for asset, title, blurb in TYPES:
   panels = []
-  for m in ORDER:
-    d = A / {"surah-header": "surah-headers", "page-frame": "page-frames", "ayah-marker": "ayah-markers"}[asset] / m
-    if not (d / "meta.json").exists(): continue
+  type_dir = {"surah-header": "surah-headers", "page-frame": "page-frames", "ayah-marker": "ayah-markers"}[asset]
+  for m in styles_for(type_dir):
+    d = A / type_dir / m
     meta = json.loads((d / "meta.json").read_text())
+    lineage = "font" if m.startswith("font-") else "scan"
     uid = f"{asset}-{m}"
     color = load_svg(d / "color.svg", f"c-{uid}")
     mono = load_svg(d / "mono.svg", f"m-{uid}")
     line = load_svg(d / "line.svg", f"l-{uid}") if (d / "line.svg").exists() else ""
-    orig = orig_data_uri(d / ("source.jpg" if (d / "source.jpg").exists() else "source.png"))
+    # A font marker has no constant-width linework and no scan to show beside it: its
+    # "original" is the outline, which is what the colour variant already draws.
+    orig = orig_data_uri(d / ("source.jpg" if (d / "source.jpg").exists() else "source.png")) if lineage == "scan" else ""
     pal = [p for p in meta["palette"]]
     chips = "".join(
         f'<label class="chip" data-cls="{p["class"]}"><input type="color" value="{"#ffffff" if p["hex"]=="none" else p["hex"]}" data-cls="{p["class"]}" data-default="{p["hex"]}">'
@@ -114,8 +138,15 @@ for asset, title, blurb in TYPES:
         for p in pal)
     sx, sy, sw, sh = [float(v) for v in meta["slot"].split()]
     pv = meta.get("provenance", {})
-    srcline = (f'<a href="{html.escape(pv.get("archive_url",""))}" target="_blank" rel="noopener">archive.org/{html.escape(pv.get("archive_item",""))}</a> · {html.escape(pv.get("file",""))} p.{pv.get("pdf_page")} · crop {" ".join(map(str, pv.get("crop_box_px",[])))} px · sha256 {pv.get("sha256","")[:12]}…'
-               if pv else f"source {meta['source']} p.{meta['page']}")
+    if lineage == "font":
+        families = html.escape(pv.get("family", ""))
+        licences = sorted({src["license"]["id"] for src in pv.get("sources", [])})
+        srcline = (f'{families} · glyph {html.escape(pv.get("glyph", ""))} · {html.escape(pv.get("codepoint", ""))} · '
+                   f'{html.escape(", ".join(licences))}')
+    elif pv:
+        srcline = (f'<a href="{html.escape(pv.get("archive_url",""))}" target="_blank" rel="noopener">archive.org/{html.escape(pv.get("archive_item",""))}</a> · {html.escape(pv.get("file",""))} p.{pv.get("pdf_page")} · crop {" ".join(map(str, pv.get("crop_box_px",[])))} px · sha256 {pv.get("sha256","")[:12]}…')
+    else:
+        srcline = f"source {meta['source']} p.{meta['page']}"
     vbw = float(meta['viewBox'].split()[2])
     if asset == "surah-header":
         slot_html = '<svg viewBox="95.6 28.3 49.7 16.1" preserveAspectRatio="xMidYMid meet"><use href="#surah-name-glyph"/></svg>'
@@ -126,10 +157,10 @@ for asset, title, blurb in TYPES:
     folds = meta.get('symmetry',{}).get('folds','–')
     folds_txt = {4: '4-fold mirror', 2: 'left/right mirror', 'c2': '180° rotation', 1: 'no symmetry'}.get(folds, folds)
     panels.append(f"""
-<section class="panel p-{asset}" data-m="{m}" data-asset="{asset}" data-slot="{meta['slot']}">
+<section class="panel p-{asset}" data-m="{m}" data-asset="{asset}" data-lineage="{lineage}" data-slot="{meta['slot']}">
   <header class="ph">
-    <div><h2>{NAMES.get(m, m)}</h2><p class="meta">{html.escape(meta.get('riwaya',''))} · viewBox {meta['viewBox']} · {len(pal)} groups · {folds_txt}</p><p class="meta src">{srcline}</p></div>
-    <div class="seg" role="group" aria-label="Variant"><button class="on" data-v="color">Colour</button><button data-v="mono">Mono</button><button data-v="line">Line</button><button data-v="orig">Original</button></div>
+    <div><h2>{NAMES.get(m) or font_name(m)}</h2><p class="meta">{html.escape(meta.get('riwaya') or '')}{' · ' if meta.get('riwaya') else ''}viewBox {meta['viewBox']} · {len(pal)} groups · {folds_txt}</p><p class="meta src">{srcline}</p></div>
+    <div class="seg" role="group" aria-label="Variant"><button class="on" data-v="color">Colour</button><button data-v="mono">Mono</button>{'<button data-v="line">Line</button>' if line else ''}{'<button data-v="orig">Original</button>' if orig else ''}</div>
   </header>
   <div class="stage">
     <div class="v v-color">{color}</div>
@@ -145,11 +176,22 @@ for asset, title, blurb in TYPES:
     <div class="chips chips-orig" hidden><span class="hint">source scan crop, title included — what the pipeline started from</span></div>
     <div class="chips chips-line" hidden><label class="chip"><input type="color" value="#1e2126" data-line><span class="sw" style="background:#1e2126"></span><span class="cn">stroke</span><code>currentColor</code></label>
       <label class="chip"><input type="color" value="#ffffff" data-lslot data-default="none"><span class="sw" style="background:transparent"></span><span class="cn">slot</span><code>none</code></label>
-      <span class="hint">stroke widths {" / ".join(str(v) for v in meta.get("stroke_widths_px", []))} px of source</span></div>
+      <span class="hint">stroke widths {" / ".join(str(v) for v in (meta.get("stroke_widths_px") or []))} px of source</span></div>
     <div class="act"><button class="copy" type="button">Copy SVG</button><span class="hint">copies the frame with the colours above (name text not included)</span></div>
   </div>
 </section>""")
-  sections.append(f'<h2 class="sec"><span>{title}</span> <small>{len(panels)} mushafs</small></h2><p class="lead">{blurb}</p>' + "".join(panels))
+  # Two lineages only ever meet inside ayah-markers, so only that section needs the filter.
+  scan_count = sum(1 for m in styles_for(type_dir) if not m.startswith("font-"))
+  font_count = len(panels) - scan_count
+  if font_count:
+    count = f'{len(panels)} designs'
+    filt = ('<div class="seg lineage" role="group" aria-label="Lineage">'
+            f'<button class="on" data-lin="all">All {len(panels)}</button>'
+            f'<button data-lin="scan">From mushafs {scan_count}</button>'
+            f'<button data-lin="font">From fonts {font_count}</button></div>')
+  else:
+    count, filt = f'{len(panels)} mushafs', ''
+  sections.append(f'<h2 class="sec"><span>{title}</span> <small>{count}</small>{filt}</h2><p class="lead">{blurb}</p>' + "".join(panels))
 
 body = f"""<title>Mushaf Ornaments</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -171,7 +213,7 @@ input[type=color]{{width:26px;height:26px;border:1px solid var(--line);border-ra
 h2{{font:700 24px/1.2 Amiri,Georgia,serif;margin:0}} .meta{{margin:2px 0 0;color:var(--mute);font-size:12.5px;font-family:"IBM Plex Mono",monospace}}
 .seg{{display:flex;border:1px solid var(--line);border-radius:4px;overflow:hidden;flex:none}} .seg button{{font:500 13px "IBM Plex Sans";padding:6px 12px;border:0;background:transparent;color:var(--mute);cursor:pointer}} .seg button.on{{background:var(--acc);color:#fff}}
 .stage{{position:relative;margin:0 20px;background:var(--stage-bg,var(--stage));border:1px solid var(--line);border-radius:4px;padding:18px 3%}}
-.stage svg,.stage img{{width:100%;height:auto;display:block}} .p-page-frame .stage{{padding:0;width:min(100%,480px);margin:0 auto;border:0;background:transparent}} .p-page-frame .stage svg,.p-page-frame .stage img{{width:100%}} .p-ayah-marker .stage{{padding:0;width:200px;margin:0 auto;border:0;background:transparent}} .p-ayah-marker .stage svg,.p-ayah-marker .stage img{{width:100%}} .num{{font:700 var(--nsz,28px) Amiri,serif;color:var(--name-color,#1e2126);line-height:1}} h2.sec{{font:700 28px/1.2 Amiri,Georgia,serif;margin:34px 0 4px;border-bottom:1px solid var(--line);padding-bottom:8px}} h2.sec small{{font:13px 'IBM Plex Sans';color:var(--mute)}} .v-mono{{color:#1d3f6e}} .v-line{{color:#1e2126}}
+.stage svg,.stage img{{width:100%;height:auto;display:block}} .p-page-frame .stage{{padding:0;width:min(100%,480px);margin:0 auto;border:0;background:transparent}} .p-page-frame .stage svg,.p-page-frame .stage img{{width:100%}} .p-ayah-marker .stage{{padding:0;width:200px;margin:0 auto;border:0;background:transparent}} .p-ayah-marker .stage svg,.p-ayah-marker .stage img{{width:100%}} .num{{font:700 var(--nsz,28px) Amiri,serif;color:var(--name-color,#1e2126);line-height:1}} h2.sec{{font:700 28px/1.2 Amiri,Georgia,serif;margin:34px 0 4px;border-bottom:1px solid var(--line);padding-bottom:8px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}} h2.sec small{{font:13px 'IBM Plex Sans';color:var(--mute)}} h2.sec .seg.lineage{{margin-left:auto;align-self:center}} .v-mono{{color:#1d3f6e}} .v-line{{color:#1e2126}}
 .name{{position:absolute;display:flex;align-items:center;justify-content:center;pointer-events:none;box-sizing:border-box}}
 .stage .name{{left:calc(3% + var(--nx,0%) * 0.94)}}
 .name svg{{width:56%;height:58%;display:block;fill:var(--name-color,#1e2126)}}
@@ -221,6 +263,17 @@ function applyGlobal(){{
   $$('.panel .name').forEach(n=>n.style.display=show?'':'none');
 }}
 function fitNames(){{ $$('.panel .name .num').forEach(n=>{{ const h=n.parentElement.getBoundingClientRect().height; n.style.fontSize=(h*0.62)+'px'; }}); }}
+// Lineage filter. The two lineages only meet inside ayah-markers, so the buttons live on
+// that section's heading and hide panels between it and the next heading.
+$$('.seg.lineage button').forEach(b=>b.addEventListener('click',()=>{{
+  const seg=b.parentElement, want=b.dataset.lin;
+  $$('button',seg).forEach(x=>x.classList.toggle('on',x===b));
+  let n=seg.closest('h2.sec').nextElementSibling;
+  for(; n && n.tagName!=='H2'; n=n.nextElementSibling){{
+    if(n.classList.contains('panel')) n.hidden = want!=='all' && n.dataset.lineage!==want;
+  }}
+  fitNames();
+}}));
 $$('#bg,#nc,#shownm').forEach(i=>i.addEventListener('input',applyGlobal));
 addEventListener('resize',fitNames);
 $$('.panel').forEach(p=>{{

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Merge the two number-box sources into `collection.json` and build the sheets.
+"""Merge the two number-box sources into `selection.json` and build the sheets.
 
 Precedence:
 
@@ -541,7 +541,7 @@ def render_sheets(coll):
         coll, "docs/number-placement.html",
         "Ayah marker number placement",
         "Each marker drawn with one, two and three digits centred where "
-        "<code>collection.json</code> says the number goes, inside the box it "
+        "<code>selection.json</code> says the number goes, inside the box it "
         "records (dashed outline). Click a marker part to select it, then centre "
         "the number on that part.",
         "digits",

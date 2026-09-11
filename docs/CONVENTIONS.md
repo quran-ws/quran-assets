@@ -33,6 +33,11 @@ The bare names stay bare where they are not asset ids: `sources/mushafs.json` an
 | `clean.png` / `clean.jpg` | the cleaned crop that was traced |
 | `slices/` | page frames only, when the border tiles: `corner.svg`, `edge-h.svg`, `edge-v.svg` |
 
+Not every asset has every file, so read `catalog.json → variants` rather than assuming three.
+A font-derived marker ships `color.svg`, `mono.svg`, `meta.json` and `source.svg` (the extracted
+glyph outline, its provenance crop): it has no constant-width linework, so no `line.svg`, and no
+scan, so no `clean.png`.
+
 ## Root element
 
 ```svg
@@ -73,6 +78,15 @@ The bare names stay bare where they are not asset ids: `sources/mushafs.json` an
 
 `mono.svg`: `<g class="slot">` + `<g class="ink" data-part="ink" fill="currentColor">`.
 `line.svg`: `<g class="slot">` + `<g class="line" data-part="line" stroke="currentColor">`.
+
+**The slot group is a scan thing.** A traced cartouche leaves its middle empty, so a transparent
+group there is real geometry and `.slot{fill:…}` tints it. A font-derived marker's interior is
+painted solid by its base fill, so a rect behind the artwork is invisible and one in front would
+cover it — measured, not assumed. Those ship the number box as `data-slot` and
+`catalog.json → slots[]` only, and `slots[].r`, the largest circle fitting the interior, for an
+app that wants a round badge instead of a box. `qa validate` requires the group for scan assets
+alone. Every asset carries `data-slot` either way, so placing something in the slot is the same
+code for all 79.
 
 Every group carries **both** `class` and `data-part` with the same name — pick whichever your
 tooling prefers (`.c2 {…}`, `[data-part="c2"] {…}`).

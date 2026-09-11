@@ -20,7 +20,7 @@ def main(selection_path: str, source_manifest_path: str) -> None:
     # One number per design group, densely renumbered from the gappy upstream
     # group numbers, and the weight tells the variants of a group apart. The id
     # IS the file name, so the number a reader sees in the demo, in the file
-    # list and in `collection.json` is always the same number.
+    # list and in `selection.json` is always the same number.
     upstream = [selected["id"] for selected in selection["selected"]]
     groups = {group: f"{index + 1:03d}" for index, group
               in enumerate(sorted({mid.split("-")[0] for mid in upstream}))}

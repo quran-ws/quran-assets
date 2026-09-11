@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-"""Build demo/review.html: a review sheet of every generated asset (source crop, clean
-crop, colour SVG, mono SVG tinted via CSS `color`), with a live recolour demo per layer.
+"""Build demo/review.html: a review sheet of every generated asset (what it was made from,
+colour SVG, mono SVG tinted via CSS `color`), with a live recolour demo per layer.
+
+Both lineages: a scan asset shows its source and cleaned crops, a font-derived one the
+extracted glyph outline it was normalised from, which is the comparison `qa quality` scores.
 Run:  python -m qa preview
 """
 import json
@@ -9,13 +12,22 @@ from qa import ROOT
 rows = []
 for meta in sorted((ROOT / "assets").glob("*/*/meta.json")):
     m = json.load(open(meta)); d = Path("..") / "assets" / meta.parent.relative_to(ROOT / "assets")
-    src = "source.jpg" if (meta.parent / "source.jpg").exists() else "source.png"
+    style = meta.parent.name
+    font = m.get("font")
     pal = "".join(f'<label><input type="color" value="{p["hex"]}" data-cls="{p["class"]}"> {p["class"]}</label>' for p in m.get("palette", []))
+    if font:   # a font asset has no scan: it came from one glyph of one family
+        where = f"{m['provenance']['family']} · {m['provenance']['glyph']} · {font['codepoint']}"
+        before = (f'<figure class="svgwrap"><object data="{d}/source.svg" type="image/svg+xml"></object>'
+                  f'<figcaption>source.svg — the extracted outline</figcaption></figure>')
+    else:
+        src = "source.jpg" if (meta.parent / "source.jpg").exists() else "source.png"
+        where = f"{m.get('riwaya','')} · p{m['page']}"
+        before = (f'<figure><img src="{d}/{src}"><figcaption>source crop</figcaption></figure>'
+                  f'<figure><img src="{d}/clean.png"><figcaption>clean (title removed)</figcaption></figure>')
     rows.append(f"""
-<section data-dir="{d}"><h2>{m['mushaf']} <small>{m.get('riwaya','')} · {m['asset']} · p{m['page']} · viewBox {m.get('viewBox')}</small></h2>
+<section data-dir="{d}"><h2>{style} <small>{where} · {m['asset']} · viewBox {m.get('viewBox')}</small></h2>
 <div class="grid">
- <figure><img src="{d}/{src}"><figcaption>source crop</figcaption></figure>
- <figure><img src="{d}/clean.png"><figcaption>clean (title removed)</figcaption></figure>
+ {before}
  <figure class="svgwrap"><object data="{d}/color.svg" type="image/svg+xml"></object><figcaption>color.svg — {len(m.get('palette',[]))} layers <span class="pal">{pal}</span></figcaption></figure>
  <figure><img class="mono" src="{d}/mono.svg" style="color:#1b3a5c"><figcaption>mono.svg (currentColor)  <input type="color" value="#1b3a5c" data-mono></figcaption></figure>
 </div></section>""")

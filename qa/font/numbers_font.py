@@ -12,7 +12,7 @@ rather than inventing one from the outline.
 Method, per marker:
 
   1. Find the source font for the marker (family + weight from
-     `collection.json`), instantiated at that weight if it is variable.
+     `selection.json`), instantiated at that weight if it is variable.
   2. Shape `U+06DD`, and `U+06DD` + one, two and three Arabic-Indic digits.
      The glyph carrying the advance is the marker; every zero-advance glyph is
      part of the number.
@@ -44,7 +44,7 @@ from fontTools.ttLib import TTFont
 from fontTools.varLib import instancer
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repo root
-FONTDIR = os.environ.get("AYAH_FONT_DIR", "/tmp/amfonts")
+FONTDIR = os.environ.get("AYAH_FONT_DIR", os.path.join(ROOT, "work", "fonts"))
 
 AYAH = "۝"
 DIGITS = {1: "٧", 2: "٤٨", 3: "٢٥٥"}

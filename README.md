@@ -24,14 +24,22 @@ data-source-file="qalon.pdf"  data-source-page="607"  data-source-box="341 300 1
 
 ## What's here
 
-Three types × eight mushafs = 24 assets — a set per riwāyah, not one generic set:
-Qālūn, Warsh, al-Dūrī, al-Sūsī, Shuʿbah, and Hafs in three printings (ʿĀdī, Madinah
-mumtāza, Madinah kabīr).
+**79 assets from two lineages, under one contract.**
 
-Each in `assets/<type>/<style>/`, where a style id is always `<lineage>-<name>`
-(`mushaf-qalon`): `color.svg` (26 KB for a header, 6 KB for a marker),
-`mono.svg`, `line.svg`, `meta.json`, and the source and cleaned crops. Page frames also
-carry `slices/` — see below.
+*Traced from eight printed mushafs* — three types × eight mushafs = 24, a set per riwāyah
+rather than one generic set: Qālūn, Warsh, al-Dūrī, al-Sūsī, Shuʿbah, and Hafs in three
+printings (ʿĀdī, Madinah mumtāza, Madinah kabīr).
+
+*Taken from the `U+06DD` glyph of 26 Arabic fonts* — 47 more ayah markers, 20 designs across
+their weights, each layered into recolourable groups by hand and carrying a hand-placed box for
+the ayah number. They also ship as a PUA font. 40 of the 47 are OFL-1.1 verified and are the
+only things here currently clear to redistribute.
+
+A style id says which is which: `mushaf-qalon`, `font-003-regular`. One rule, every type.
+
+Each in `assets/<type>/<style>/`: `color.svg` (26 KB for a header, 6 KB for a marker),
+`mono.svg`, `meta.json`, and the crop or outline it came from. Scan assets add `line.svg`;
+page frames also carry `slices/` — see below.
 
 ## On a page
 
@@ -86,7 +94,7 @@ is in viewBox units: place the surah name, the ayah number or the page text ther
 
 ## Rebuild it
 
-The PDFs are not committed — fetch them and the 24 assets regenerate from scratch.
+The PDFs are not committed — fetch them and the 24 scan assets regenerate from scratch.
 
 ```bash
 bash sources/fetch_mushafs.sh     # ~2 GB from archive.org
@@ -101,12 +109,23 @@ python -m qa quality --baseline tests/quality-baseline.json --out work/quality
 No manual crop boxes: the headers, frames and markers are found on the page by their own
 geometry, and per-job overrides live in `qa/jobs/<type>.json`.
 
+The font-derived markers need none of that — `python -m qa build --lineage font` rebuilds all 47
+offline from what is committed, in a second. The expensive half (scraping the families,
+deduplicating the outlines, deriving the number boxes with HarfBuzz) ran once; its output, and
+the two things that were done by hand — the contour-to-layer assignment and the 47 number
+centres — live in `qa/font/data/`.
+
 ## How good is it, actually
 
 Not a claim — a gate. `qa quality` renders every asset at 360, 1000 and 4000 px, diffs
 the ink against the cleaned scan, and fails on any deterioration against
 `tests/quality-baseline.json`. The 4000 px pass is the one that earns its keep: it caught
 broken marker outlines that looked perfect at app size.
+
+A font marker is vector in and vector out, so it is compared with the outline it was extracted
+from instead of a scan. That check earns its keep: it scored one design family at 0.22 because
+the layering had silently dropped a base fill drawn as an `<ellipse>` rather than a `<path>`.
+All 47 now score ≥ 0.99.
 
 Frame slices are checked the same way — cut, reassembled, compared with the frame they
 came from. Qālūn scores 0.81; the seven that ship range 0.74–0.96; Kabir fails at 0.49
@@ -118,9 +137,17 @@ you.
 
 ## Licence — read this before using anything
 
-**Not cleared for redistribution.** These are tracings of ornaments printed in mushafs
-whose designs belong to their publishers. The working position is CC BY-NC-SA 4.0,
-status `provisional`, while written permission is sought.
+**The scan-derived assets are not cleared for redistribution.** They are tracings of ornaments
+printed in mushafs whose designs belong to their publishers. The working position is
+CC BY-NC-SA 4.0, status `provisional`, while written permission is sought.
+
+**40 of the 47 font-derived markers are OFL-1.1 and may be redistributed**, with the licence and
+each family's copyright notice travelling with them — `qa dist` writes both into
+`dist/LICENSES.md` in full, because the OFL requires it. Marker ids are numeric on purpose: the
+OFL forbids a Reserved Font Name (Alkalami, SIL, Scheherazade, Plex, Source) naming a modified
+version, and nothing here carries a family name. The remaining 7 (designs 014–020, from
+`fonts.quran.ws`) have terms nobody has confirmed; they ship flagged `pending`, and it is they
+and the scan assets that keep the npm package private.
 
 That position is enforced, not just stated: `qa validate` refuses to let an asset claim
 `confirmed` without written evidence in `sources/licenses/`, `qa dist` marks the npm
@@ -133,8 +160,8 @@ mushaf. See [LICENSE.md](LICENSE.md) and [`docs/PLAN.md`](docs/PLAN.md) §6.
 | | |
 |---|---|
 | Using the assets in an app | [`docs/USAGE.md`](docs/USAGE.md) |
+| The two lineages, stage by stage | [`docs/METHOD.md`](docs/METHOD.md) |
 | The SVG contract in full | [`docs/CONVENTIONS.md`](docs/CONVENTIONS.md) |
-| How each stage works | [`docs/METHOD.md`](docs/METHOD.md) |
 | What is decided and what is open | [`docs/PLAN.md`](docs/PLAN.md), [`docs/HANDOVER.md`](docs/HANDOVER.md) |
 
 A quran.ws project. Alpha: the assets and the pipeline are real, nothing is published.

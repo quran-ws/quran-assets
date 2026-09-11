@@ -1,9 +1,19 @@
 # How the pipeline works
 
-`python -m qa build` executes, per job in `qa/jobs/<type>.json`: **render → detect → clean →
-symmetry → vectorize → svgout → (page frames only) slice**, then rewrites `catalog.json`. Each
-stage is one module in `qa/scan/`; every stage's parameters can be overridden per asset type
-(`defaults` in the job file) or per job.
+Two lineages produce assets that obey one contract.
+
+* **scan** — traced from mushaf PDFs. `qa/scan/`, driven by `qa/jobs/<type>.json`. §1–§7 below.
+* **font** — taken from the `U+06DD` glyph of Arabic fonts. `qa/font/`. §F1–§F5 below.
+
+`python -m qa build` runs both; `--lineage scan|font` runs one. Either way `catalog.json` is
+rewritten afterwards and `qa validate` holds both to `docs/CONVENTIONS.md`.
+
+# The scan lineage
+
+`python -m qa build --lineage scan` executes, per job in `qa/jobs/<type>.json`: **render →
+detect → clean → symmetry → vectorize → svgout → (page frames only) slice**, then rewrites
+`catalog.json`. Each stage is one module in `qa/scan/`; every stage's parameters can be
+overridden per asset type (`defaults` in the job file) or per job.
 
 ## 1. render (`qa/scan/render.py`)
 `pdfimages` pulls the page's embedded scan at native resolution (288 dpi for most of these
@@ -106,3 +116,62 @@ classification and reduced spur pruning to retain their short curved outlines.
 Frame cleaning retains the connected border and removes detached scan marks.
 `pipeline.optimize` updates path counts after SVGO. See QUALITY.md for the
 raster comparisons, diagnostic limits, and regression command.
+
+
+# The font lineage
+
+47 markers from 26 Arabic font families. The first three stages are rare, need the network or
+the source fonts, and re-mint ids; their output is committed, so the daily build is §F4 alone.
+
+## F1. collect (`qa/font/collect.py`, `select.py`) — network, rarely run
+Every Arabic family in Google Fonts (`primaryScript == "Arab"`) plus the `fonts.quran.ws`
+catalogue; extract `U+06DD` from each; deduplicate the outlines by a scale-normalised path hash.
+47 distinct outlines across 20 design families survive. Ids are minted here and are a public
+contract: `NNN` is the design family, densely renumbered 1–20, and the suffix is a CSS weight
+name. A **double suffix is a weight range, not two weights** — `010-regular-bold` is one outline
+that Noto Naskh Arabic draws identically at 400/500/600/700, so it carries four `sources[]`.
+
+## F2. layer (`qa/font/layer.py`)
+A glyph is one flat set of contours; the product is one group per colour. `qa/font/data/
+annotations.json` says which part each contour belongs to — made by hand, and not
+reproducible. Where a contour of an earlier part lies inside one of a later part's, it is
+redrawn in that part with `fill-rule="evenodd"` so the hole is punched again; containment is
+tested by real point-in-path testing, not bounding boxes. Each path keeps `data-contours`, so
+the original outline is recoverable and the stage is idempotent over its own output. A design
+whose interior has no contour of its own gets a synthetic shape (`generatedFills`; only the 012
+family, an `<ellipse>`).
+
+## F3. number boxes (`qa/font/numbers*.py`) — needs the source fonts and uharfbuzz
+Where the ayah number goes, which is rarely the middle of the bounding box: a design with a
+flourish below the disc puts the number well above centre. Two derivations, then a hand pass.
+`numbers_font.py` shapes `U+06DD` with the Arabic-Indic digits in the marker's *own* source font
+with HarfBuzz and reads where that font puts them (24 markers); `numbers_geometry.py` rasterises
+at 600², finds the enclosed counter overlapping the base fill, and takes its centre, inscribed
+circle and largest fitting rectangle (23). `numbers.py` merges them and applies
+`qa/font/data/number_placement.json` **last** — the 47 hand-placed centres, which move a centre
+and never resize a box, so the derived width/height/`r` survive. Delete an entry and that marker
+falls back to its derived centre.
+
+## F4. svgout (`qa/font/svgout.py`) — every build
+Normalisation to `docs/CONVENTIONS.md`, and the only stage `qa build --lineage font` runs:
+
+* `<g data-part="fill-1" style="fill:var(--fill-1,#f4e9bc)">` → `<g class="c2" data-part="c2"
+  fill="#f4e9bc">`. The `var()` form is rejected for the reason CONVENTIONS gives, which is not
+  theoretical: cairosvg raises `invalid literal for int() with base 16: 'ar'` on these files.
+  Parts keep their order, so `c1…cN` still runs light → dark, and which of them came from an
+  `ink-*` part is kept in `meta.json` — that is what `mono.svg` is generated from.
+* the glyph's own box, origin wherever the font left it, becomes `0 0 <w> 100`. One uniform
+  scale for artwork and number box together, so the hand-placed centres stay correct. The
+  source font's UPEM — 1000, 2048 or 3000 — is kept in `meta.json` for §F5.
+* the number box becomes `data-slot` and `catalog.json → slots[]`, with no slot group. A font
+  marker's interior is painted solid by its base fill rather than left as a counter, so a rect
+  behind it is invisible and one in front would cover the artwork; measured before assuming.
+
+## F5. font build (`qa/font/fontbuild.py`, called by `qa dist`)
+`dist/fonts/AyahMarkers.{ttf,otf}` at UPEM 1000, PUA from `U+E000`. Glyphs come from each asset's
+`source.svg`, not the normalised `color.svg`: a font wants UPEM units and one flat contour set,
+not a height-100 viewBox and one group per colour. `data-contours` is used to take each contour
+exactly once, or the duplicated hole contours would double their winding and fill the counters
+in. Codepoints come from `selection.json`, so a subset build leaves gaps rather than shifting
+every glyph off the codepoints the catalog advertises. No Reserved Font Name appears in the
+font's names or glyph names — the OFL forbids one naming a modified version.

@@ -8,7 +8,9 @@ on:
 jobs:
   check:
     # Validates and tests the committed assets. It does not re-run the scan pipeline:
-    # that needs ~2 GB of mushaf PDFs, so regenerating assets stays a local job.
+    # that needs ~2 GB of mushaf PDFs, so regenerating assets stays a local job. The font
+    # lineage could be rebuilt here (`qa build --lineage font` is offline), but the same
+    # rule applies: CI checks what is committed rather than regenerating it.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,6 +28,7 @@ jobs:
       - name: Tests
         run: python -m pytest -q
       - name: Build dist
+        # Also builds dist/fonts/AyahMarkers.{otf,ttf} from the font-derived markers.
         run: |
           npm install --no-save svgo@3
           python -m qa dist
