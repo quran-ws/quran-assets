@@ -7,6 +7,7 @@ Three groups, all of them cheap and offline:
 Geometry and rendering quality are not checked here — that is `qa quality`.
 """
 import json
+import re
 import xml.etree.ElementTree as ET
 
 from jsonschema import Draft202012Validator
@@ -72,7 +73,12 @@ def check_svg(asset, problems):
             cls = group.get("class")
             if cls and group.get("data-part") != cls:
                 problems.append(f"{asset['id']}/{variant}: <g class=\"{cls}\"> is missing a matching data-part")
-        if "slot" not in classes and asset["slots"]:
+        # A slot *group* is a scan thing. A traced cartouche leaves its middle empty, so a
+        # transparent group there is real geometry the app can fill. A font marker's interior
+        # is painted solid by its base fill, so a rect behind the artwork is invisible and one
+        # in front would cover it -- measured, not assumed: 0 of 5 probed designs showed any of
+        # it. Those ship the number box as data-slot and catalog slots[] only.
+        if asset["lineage"] == "scan" and "slot" not in classes and asset["slots"]:
             problems.append(f"{asset['id']}/{variant}: no slot group")
         if variant == "color":
             expected = {p["name"] for p in asset["palette"]}
@@ -85,11 +91,29 @@ def check_svg(asset, problems):
             problems.append(f"{asset['id']}/line: no line group")
 
 
+def evidence_for(asset):
+    """Where a 'confirmed' claim has to be backed up, and whether it is.
+
+    Per style for a scan asset -- written permission is per mushaf. Per source family for a
+    font one: one OFL text covers every weight and every design taken from that family, and
+    40 copies of the same licence would be 40 chances to let them drift apart. Every source
+    must be covered, so one unverified family in a multi-source outline cannot hide behind
+    a verified sibling.
+    """
+    directory = ROOT / "sources/licenses"
+    if asset["lineage"] == "scan":
+        return [f"{asset['style']}.txt"], (directory / f"{asset['style']}.txt").exists()
+    wanted = [f"{re.sub(r'[^a-z0-9]+', '', s['family'].lower())}.txt" for s in asset["sources"] if s.get("family")]
+    wanted = sorted(set(wanted))
+    return wanted, bool(wanted) and all((directory / name).exists() for name in wanted)
+
+
 def check_license(asset, problems):
     licence = asset["license"]
-    evidence = ROOT / "sources/licenses" / f"{asset['style']}.txt"
-    if licence["status"] == "confirmed" and not evidence.exists():
-        problems.append(f"{asset['id']}: license claims 'confirmed' but sources/licenses/{asset['style']}.txt is missing")
+    wanted, satisfied = evidence_for(asset)
+    if licence["status"] == "confirmed" and not satisfied:
+        missing = ", ".join(n for n in wanted if not (ROOT / "sources/licenses" / n).exists()) or "no source family named"
+        problems.append(f"{asset['id']}: license claims 'confirmed' but sources/licenses/{{{missing}}} is missing")
     if licence["status"] != "confirmed" and licence.get("redistributable"):
         problems.append(f"{asset['id']}: redistributable is only allowed once the license is confirmed")
     if not asset["sources"]:

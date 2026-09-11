@@ -1,0 +1,78 @@
+{
+ "asset": "ayah-marker",
+ "style": "font-007-regular",
+ "lineage": "font",
+ "riwaya": null,
+ "viewBox": "0 0 100 100",
+ "slot": "21.9975 35.5042 56.0049 28.9916",
+ "slot_circle": {
+  "cx": "50",
+  "cy": "50",
+  "r": "24.1509"
+ },
+ "palette": [
+  {
+   "class": "c1",
+   "hex": "#fff8e7",
+   "paths": 1
+  },
+  {
+   "class": "c2",
+   "hex": "#083a3a",
+   "paths": 1
+  },
+  {
+   "class": "c3",
+   "hex": "#0b7771",
+   "paths": 1
+  }
+ ],
+ "source_parts": {
+  "c1": "fill-base",
+  "c2": "ink-base",
+  "c3": "ink-1"
+ },
+ "mono_paths": 2,
+ "mono_classes": [
+  "c2",
+  "c3"
+ ],
+ "stroke_widths_px": null,
+ "symmetry": {
+  "folds": 1
+ },
+ "font": {
+  "upem": 1000,
+  "advance": 1160,
+  "upem_scale": 0.08753501,
+  "codepoint": "U+E015",
+  "glyph": "U+06DD"
+ },
+ "provenance": {
+  "family": "Kufam",
+  "glyph": "U+06DD",
+  "codepoint": "U+E015",
+  "sources": [
+   {
+    "kind": "font",
+    "source": "Google Fonts",
+    "family": "Kufam",
+    "variant": "400",
+    "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3lqkLqwqILvI.woff2",
+    "upem": 1000,
+    "advance": 1160,
+    "license": {
+     "id": "OFL-1.1",
+     "name": "SIL Open Font License, Version 1.1",
+     "copyright": "Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam)",
+     "reserved_font_names": [],
+     "url": "https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt",
+     "note": null
+    }
+   }
+  ],
+  "extracted": "2026-09-11T23:04:07+0300",
+  "pipeline": "quran-assets 3c62644"
+ },
+ "license_key": "font-ofl"
+}

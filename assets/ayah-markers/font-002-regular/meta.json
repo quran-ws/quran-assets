@@ -1,0 +1,101 @@
+{
+ "asset": "ayah-marker",
+ "style": "font-002-regular",
+ "lineage": "font",
+ "riwaya": null,
+ "viewBox": "0 0 109.2553 100",
+ "slot": "22.0006 34.438 65.2541 31.1241",
+ "slot_circle": {
+  "cx": "54.6277",
+  "cy": "50",
+  "r": "23.0318"
+ },
+ "palette": [
+  {
+   "class": "c1",
+   "hex": "#fff8e7",
+   "paths": 1
+  },
+  {
+   "class": "c2",
+   "hex": "#f4e9bc",
+   "paths": 1
+  },
+  {
+   "class": "c3",
+   "hex": "#083a3a",
+   "paths": 1
+  },
+  {
+   "class": "c4",
+   "hex": "#0b7771",
+   "paths": 1
+  }
+ ],
+ "source_parts": {
+  "c1": "fill-base",
+  "c2": "fill-1",
+  "c3": "ink-base",
+  "c4": "ink-1"
+ },
+ "mono_paths": 2,
+ "mono_classes": [
+  "c3",
+  "c4"
+ ],
+ "stroke_widths_px": null,
+ "symmetry": {
+  "folds": 1
+ },
+ "font": {
+  "upem": 1000,
+  "advance": 1279,
+  "upem_scale": 0.08190545,
+  "codepoint": "U+E001",
+  "glyph": "U+06DD"
+ },
+ "provenance": {
+  "family": "Amiri, Amiri Quran",
+  "glyph": "U+06DD",
+  "codepoint": "U+E001",
+  "sources": [
+   {
+    "kind": "font",
+    "source": "Google Fonts",
+    "family": "Amiri",
+    "variant": "400",
+    "source_url": "https://fonts.gstatic.com/s/amiri/v30/J7aRnpd8CGxBHpUrtLMA7w.woff2",
+    "upem": 1000,
+    "advance": 1279,
+    "license": {
+     "id": "OFL-1.1",
+     "name": "SIL Open Font License, Version 1.1",
+     "copyright": "Copyright 2010-2022 The Amiri Project Authors (https://github.com/aliftype/amiri).",
+     "reserved_font_names": [],
+     "url": "https://github.com/google/fonts/blob/main/ofl/amiri/OFL.txt",
+     "note": null
+    }
+   },
+   {
+    "kind": "font",
+    "source": "Google Fonts",
+    "family": "Amiri Quran",
+    "variant": "400",
+    "source_url": "https://fonts.gstatic.com/s/amiriquran/v19/_Xmo-Hk0rD6DbUL4_vH8Zp5v5i2ssg.woff2",
+    "upem": 1000,
+    "advance": 1279,
+    "license": {
+     "id": "OFL-1.1",
+     "name": "SIL Open Font License, Version 1.1",
+     "copyright": "Copyright 2010-2022 The Amiri Quran Project Authors (https://github.com/aliftype/amiri).",
+     "reserved_font_names": [],
+     "url": "https://github.com/google/fonts/blob/main/ofl/amiriquran/OFL.txt",
+     "note": null
+    }
+   }
+  ],
+  "extracted": "2026-09-11T23:04:07+0300",
+  "pipeline": "quran-assets 3c62644"
+ },
+ "license_key": "font-ofl"
+}

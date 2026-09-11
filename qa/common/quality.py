@@ -20,6 +20,7 @@ from scipy.spatial import cKDTree
 from svgpathtools import parse_path
 
 from qa import ROOT
+from qa.font.svgout import VAR_FILL
 NS = "{http://www.w3.org/2000/svg}"
 ET.register_namespace("", NS[1:-1])
 
@@ -98,14 +99,33 @@ def endpoint_diagnostics(root):
     return {"open_ends": len(points), "isolated_ends": int((distances > widths).sum())}
 
 
+def reference_image(directory):
+    """What the delivered SVG is compared against.
+
+    A scan asset is compared with the cleaned crop it was traced from. A font asset has no
+    such thing -- it is vector in, vector out -- so it is compared with the extracted glyph
+    outline in source.svg. That is still the check worth running: it is what catches a part
+    dropped by the layering or a viewBox normalised wrongly, which is exactly how the 012
+    family's synthetic <ellipse> base fill was caught going missing.
+    """
+    for name in ("clean.png", "clean.jpg"):
+        if (directory / name).exists():
+            return np.asarray(Image.open(directory / name).convert("RGB"))
+    source = (directory / "source.svg").read_text()
+    # cairosvg raises on style="fill:var(--x,#hex)" -- it reads `var` as a hex colour.
+    source = VAR_FILL.sub(r'fill="\1"', source)
+    png = cairosvg.svg2png(bytestring=source.encode(), output_height=2000, background_color="white")
+    return np.asarray(Image.open(io.BytesIO(png)).convert("RGB"))
+
+
 def review_asset(directory, out, widths):
     meta = json.loads((directory / "meta.json").read_text())
     root = ET.parse(directory / "color.svg").getroot()
-    clean_path = directory / "clean.png"
-    if not clean_path.exists():
-        clean_path = directory / "clean.jpg"
-    clean = np.asarray(Image.open(clean_path).convert("RGB"))
-    report = {"sizes": {}, "continuity": endpoint_diagnostics(ET.parse(directory / "line.svg").getroot())}
+    clean = reference_image(directory)
+    has_lines = (directory / "line.svg").exists()
+    report = {"sizes": {}}
+    if has_lines:   # constant-width linework is a scan thing; font markers have none
+        report["continuity"] = endpoint_diagnostics(ET.parse(directory / "line.svg").getroot())
     out.mkdir(parents=True, exist_ok=True)
     for width in widths:
         rgba = raster(root, width)
@@ -117,7 +137,7 @@ def review_asset(directory, out, widths):
         if width == 4000:
             actual, reference, valid = actual[:1000, :1000], reference[:1000, :1000], valid[:1000, :1000]
         result = compare_images(actual, reference, valid, meta["palette"])
-        if width == 1000:
+        if width == 1000 and has_lines:
             fills = raster(root, width, "fills")[..., 3]
             lines = raster(root, width, "lines")[..., 3] > 200
             # Outer stroke edges and the text slot intentionally have no fill.

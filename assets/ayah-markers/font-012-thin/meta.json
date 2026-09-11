@@ -1,0 +1,91 @@
+{
+ "asset": "ayah-marker",
+ "style": "font-012-thin",
+ "lineage": "font",
+ "riwaya": null,
+ "viewBox": "0 0 99.9238 100",
+ "slot": "21.2929 36.9236 58.6343 26.3054",
+ "slot_circle": {
+  "cx": "50.61",
+  "cy": "50.0762",
+  "r": "28.9969"
+ },
+ "palette": [
+  {
+   "class": "c1",
+   "hex": "#fff8e7",
+   "paths": 1
+  },
+  {
+   "class": "c2",
+   "hex": "#f4e9bc",
+   "paths": 1
+  },
+  {
+   "class": "c3",
+   "hex": "#083a3a",
+   "paths": 1
+  },
+  {
+   "class": "c4",
+   "hex": "#0b7771",
+   "paths": 1
+  },
+  {
+   "class": "c5",
+   "hex": "#48a39b",
+   "paths": 1
+  }
+ ],
+ "source_parts": {
+  "c1": "fill-base",
+  "c2": "fill-1",
+  "c3": "ink-base",
+  "c4": "ink-1",
+  "c5": "ink-2"
+ },
+ "mono_paths": 3,
+ "mono_classes": [
+  "c3",
+  "c4",
+  "c5"
+ ],
+ "stroke_widths_px": null,
+ "symmetry": {
+  "folds": 1
+ },
+ "font": {
+  "upem": 1000,
+  "advance": 1410,
+  "upem_scale": 0.07624741,
+  "codepoint": "U+E020",
+  "glyph": "U+06DD"
+ },
+ "provenance": {
+  "family": "Noto Sans Arabic",
+  "glyph": "U+06DD",
+  "codepoint": "U+E020",
+  "sources": [
+   {
+    "kind": "font",
+    "source": "Google Fonts",
+    "family": "Noto Sans Arabic",
+    "variant": "100",
+    "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyG2fuXqAJQI.woff2",
+    "upem": 1000,
+    "advance": 1410,
+    "license": {
+     "id": "OFL-1.1",
+     "name": "SIL Open Font License, Version 1.1",
+     "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+     "reserved_font_names": [],
+     "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+     "note": null
+    }
+   }
+  ],
+  "extracted": "2026-09-11T23:04:08+0300",
+  "pipeline": "quran-assets 3c62644"
+ },
+ "license_key": "font-ofl"
+}

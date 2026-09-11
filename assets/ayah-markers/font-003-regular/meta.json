@@ -1,0 +1,78 @@
+{
+ "asset": "ayah-marker",
+ "style": "font-003-regular",
+ "lineage": "font",
+ "riwaya": null,
+ "viewBox": "0 0 94.0423 100",
+ "slot": "16.2663 42.8749 61.5097 25.5217",
+ "slot_circle": {
+  "cx": "47.0211",
+  "cy": "55.6357",
+  "r": "35.4486"
+ },
+ "palette": [
+  {
+   "class": "c1",
+   "hex": "#fff8e7",
+   "paths": 1
+  },
+  {
+   "class": "c2",
+   "hex": "#083a3a",
+   "paths": 1
+  },
+  {
+   "class": "c3",
+   "hex": "#0b7771",
+   "paths": 1
+  }
+ ],
+ "source_parts": {
+  "c1": "fill-base",
+  "c2": "ink-base",
+  "c3": "ink-1"
+ },
+ "mono_paths": 2,
+ "mono_classes": [
+  "c2",
+  "c3"
+ ],
+ "stroke_widths_px": null,
+ "symmetry": {
+  "folds": 1
+ },
+ "font": {
+  "upem": 1000,
+  "advance": 1123,
+  "upem_scale": 0.08051011,
+  "codepoint": "U+E006",
+  "glyph": "U+06DD"
+ },
+ "provenance": {
+  "family": "Estedad",
+  "glyph": "U+06DD",
+  "codepoint": "U+E006",
+  "sources": [
+   {
+    "kind": "font",
+    "source": "Google Fonts",
+    "family": "Estedad",
+    "variant": "400",
+    "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_6JqghUhuQaA.woff2",
+    "upem": 1000,
+    "advance": 1123,
+    "license": {
+     "id": "OFL-1.1",
+     "name": "SIL Open Font License, Version 1.1",
+     "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+     "reserved_font_names": [],
+     "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+     "note": null
+    }
+   }
+  ],
+  "extracted": "2026-09-11T23:04:07+0300",
+  "pipeline": "quran-assets 3c62644"
+ },
+ "license_key": "font-ofl"
+}

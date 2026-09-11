@@ -1,0 +1,80 @@
+{
+ "asset": "ayah-marker",
+ "style": "font-004-regular",
+ "lineage": "font",
+ "riwaya": null,
+ "viewBox": "0 0 100 100",
+ "slot": "20.4657 35.3729 59.0686 29.2542",
+ "slot_circle": {
+  "cx": "50",
+  "cy": "50",
+  "r": "26.7419"
+ },
+ "palette": [
+  {
+   "class": "c1",
+   "hex": "#fff8e7",
+   "paths": 1
+  },
+  {
+   "class": "c2",
+   "hex": "#083a3a",
+   "paths": 1
+  },
+  {
+   "class": "c3",
+   "hex": "#0b7771",
+   "paths": 1
+  }
+ ],
+ "source_parts": {
+  "c1": "fill-base",
+  "c2": "ink-base",
+  "c3": "ink-1"
+ },
+ "mono_paths": 2,
+ "mono_classes": [
+  "c2",
+  "c3"
+ ],
+ "stroke_widths_px": null,
+ "symmetry": {
+  "folds": 1
+ },
+ "font": {
+  "upem": 1000,
+  "advance": 1140,
+  "upem_scale": 0.08753501,
+  "codepoint": "U+E00F",
+  "glyph": "U+06DD"
+ },
+ "provenance": {
+  "family": "IBM Plex Sans Arabic",
+  "glyph": "U+06DD",
+  "codepoint": "U+E00F",
+  "sources": [
+   {
+    "kind": "font",
+    "source": "Google Fonts",
+    "family": "IBM Plex Sans Arabic",
+    "variant": "400",
+    "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3CZRtWPQCuHme67tEYUIx3Kh0PHR9N6Ys43PWrfQ.woff2",
+    "upem": 1000,
+    "advance": 1140,
+    "license": {
+     "id": "OFL-1.1",
+     "name": "SIL Open Font License, Version 1.1",
+     "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+     "reserved_font_names": [
+      "Plex"
+     ],
+     "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+     "note": null
+    }
+   }
+  ],
+  "extracted": "2026-09-11T23:04:07+0300",
+  "pipeline": "quran-assets 3c62644"
+ },
+ "license_key": "font-ofl"
+}

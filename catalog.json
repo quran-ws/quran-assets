@@ -1,8 +1,4068 @@
 {
   "generated": "2026-09-11",
   "schema": "quran-assets/catalog@1",
-  "count": 24,
+  "count": 71,
   "assets": [
+    {
+      "id": "ayah-markers/font-001-regular",
+      "type": "ayah-markers",
+      "style": "font-001-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 99.456 100",
+      "aspect": 0.99456,
+      "variants": {
+        "color": "assets/ayah-markers/font-001-regular/color.svg",
+        "mono": "assets/ayah-markers/font-001-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-001-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#d6ad43"
+        },
+        {
+          "name": "c4",
+          "hex": "#fffdf5"
+        },
+        {
+          "name": "c5",
+          "hex": "#083a3a"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 32.7218,
+          "y": 40.5624,
+          "w": 34.1679,
+          "h": 19.1082,
+          "cx": 49.80575,
+          "cy": 50.116499999999995,
+          "r": 24.0271
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1250,
+        "upem_scale": 0.07770732,
+        "codepoint": "U+E000",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Alkalami",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/alkalami/v8/zOL_4pfDmqRL95WXi6eJycF8ug.woff2",
+          "upem": 1000,
+          "advance": 1250,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright (c) 2015-2023, SIL International (http://www.sil.org/), with Reserved Font Names \"Alkalami\" and \"SIL\".",
+            "reserved_font_names": [
+              "Alkalami",
+              "SIL"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/alkalami/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-002-bold",
+      "type": "ayah-markers",
+      "style": "font-002-bold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 109.1572 100",
+      "aspect": 1.091572,
+      "variants": {
+        "color": "assets/ayah-markers/font-002-bold/color.svg",
+        "mono": "assets/ayah-markers/font-002-bold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-002-bold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 21.7861,
+          "y": 33.7631,
+          "w": 65.5043,
+          "h": 32.4496,
+          "cx": 54.538250000000005,
+          "cy": 49.987899999999996,
+          "r": 22.0257
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1279,
+        "upem_scale": 0.0806803,
+        "codepoint": "U+E002",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Amiri",
+          "variant": "700",
+          "source_url": "https://fonts.gstatic.com/s/amiri/v30/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2",
+          "upem": 1000,
+          "advance": 1279,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2010-2022 The Amiri Project Authors (https://github.com/aliftype/amiri).",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/amiri/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-002-regular",
+      "type": "ayah-markers",
+      "style": "font-002-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 109.2553 100",
+      "aspect": 1.092553,
+      "variants": {
+        "color": "assets/ayah-markers/font-002-regular/color.svg",
+        "mono": "assets/ayah-markers/font-002-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-002-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 22.0006,
+          "y": 34.438,
+          "w": 65.2541,
+          "h": 31.1241,
+          "cx": 54.627649999999996,
+          "cy": 50.00005,
+          "r": 23.0318
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1279,
+        "upem_scale": 0.08190545,
+        "codepoint": "U+E001",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Amiri",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/amiri/v30/J7aRnpd8CGxBHpUrtLMA7w.woff2",
+          "upem": 1000,
+          "advance": 1279,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2010-2022 The Amiri Project Authors (https://github.com/aliftype/amiri).",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/amiri/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Amiri Quran",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/amiriquran/v19/_Xmo-Hk0rD6DbUL4_vH8Zp5v5i2ssg.woff2",
+          "upem": 1000,
+          "advance": 1279,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2010-2022 The Amiri Quran Project Authors (https://github.com/aliftype/amiri).",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/amiriquran/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-003-black",
+      "type": "ayah-markers",
+      "style": "font-003-black",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 91.5949 100",
+      "aspect": 0.915949,
+      "variants": {
+        "color": "assets/ayah-markers/font-003-black/color.svg",
+        "mono": "assets/ayah-markers/font-003-black/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-003-black/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.7851,
+          "y": 44.6915,
+          "w": 58.0247,
+          "h": 24.0356,
+          "cx": 45.79745,
+          "cy": 56.7093,
+          "r": 32.4555
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1123,
+        "upem_scale": 0.07372891,
+        "codepoint": "U+E00B",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "900",
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX9TIaghUhuQaA.woff2",
+          "upem": 1000,
+          "advance": 1123,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-003-bold",
+      "type": "ayah-markers",
+      "style": "font-003-bold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 92.5977 100",
+      "aspect": 0.925977,
+      "variants": {
+        "color": "assets/ayah-markers/font-003-bold/color.svg",
+        "mono": "assets/ayah-markers/font-003-bold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-003-bold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.6514,
+          "y": 43.9713,
+          "w": 59.2949,
+          "h": 24.649,
+          "cx": 46.29885,
+          "cy": 56.2958,
+          "r": 33.5928
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1123,
+        "upem_scale": 0.07631258,
+        "codepoint": "U+E009",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "700",
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX8dIaghUhuQaA.woff2",
+          "upem": 1000,
+          "advance": 1123,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-003-extrabold",
+      "type": "ayah-markers",
+      "style": "font-003-extrabold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 92.0535 100",
+      "aspect": 0.920535,
+      "variants": {
+        "color": "assets/ayah-markers/font-003-extrabold/color.svg",
+        "mono": "assets/ayah-markers/font-003-extrabold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-003-extrabold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.7146,
+          "y": 44.3775,
+          "w": 58.6242,
+          "h": 24.2893,
+          "cx": 46.026700000000005,
+          "cy": 56.522149999999996,
+          "r": 33.0005
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1123,
+        "upem_scale": 0.07496701,
+        "codepoint": "U+E00A",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "800",
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX96IaghUhuQaA.woff2",
+          "upem": 1000,
+          "advance": 1123,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-003-extralight",
+      "type": "ayah-markers",
+      "style": "font-003-extralight",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 95.1466 100",
+      "aspect": 0.951466,
+      "variants": {
+        "color": "assets/ayah-markers/font-003-extralight/color.svg",
+        "mono": "assets/ayah-markers/font-003-extralight/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-003-extralight/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 15.9844,
+          "y": 42.0923,
+          "w": 63.1778,
+          "h": 26.1916,
+          "cx": 47.5733,
+          "cy": 55.188100000000006,
+          "r": 36.8356
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1123,
+        "upem_scale": 0.08367921,
+        "codepoint": "U+E004",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "200",
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX96JqghUhuQaA.woff2",
+          "upem": 1000,
+          "advance": 1123,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-003-light",
+      "type": "ayah-markers",
+      "style": "font-003-light",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 94.5887 100",
+      "aspect": 0.945887,
+      "variants": {
+        "color": "assets/ayah-markers/font-003-light/color.svg",
+        "mono": "assets/ayah-markers/font-003-light/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-003-light/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.1797,
+          "y": 42.539,
+          "w": 62.2294,
+          "h": 25.8264,
+          "cx": 47.294399999999996,
+          "cy": 55.452200000000005,
+          "r": 36.0504
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1123,
+        "upem_scale": 0.08198872,
+        "codepoint": "U+E005",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "300",
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX-kJqghUhuQaA.woff2",
+          "upem": 1000,
+          "advance": 1123,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-003-medium",
+      "type": "ayah-markers",
+      "style": "font-003-medium",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 93.5151 100",
+      "aspect": 0.935151,
+      "variants": {
+        "color": "assets/ayah-markers/font-003-medium/color.svg",
+        "mono": "assets/ayah-markers/font-003-medium/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-003-medium/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.3498,
+          "y": 43.2779,
+          "w": 60.8155,
+          "h": 25.2278,
+          "cx": 46.757549999999995,
+          "cy": 55.8918,
+          "r": 34.8365
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1123,
+        "upem_scale": 0.07908389,
+        "codepoint": "U+E007",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "500",
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_IJqghUhuQaA.woff2",
+          "upem": 1000,
+          "advance": 1123,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-003-regular",
+      "type": "ayah-markers",
+      "style": "font-003-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 94.0423 100",
+      "aspect": 0.940423,
+      "variants": {
+        "color": "assets/ayah-markers/font-003-regular/color.svg",
+        "mono": "assets/ayah-markers/font-003-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-003-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.2663,
+          "y": 42.8749,
+          "w": 61.5097,
+          "h": 25.5217,
+          "cx": 47.021150000000006,
+          "cy": 55.635749999999994,
+          "r": 35.4486
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1123,
+        "upem_scale": 0.08051011,
+        "codepoint": "U+E006",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_6JqghUhuQaA.woff2",
+          "upem": 1000,
+          "advance": 1123,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-003-semibold",
+      "type": "ayah-markers",
+      "style": "font-003-semibold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 92.9348 100",
+      "aspect": 0.929348,
+      "variants": {
+        "color": "assets/ayah-markers/font-003-semibold/color.svg",
+        "mono": "assets/ayah-markers/font-003-semibold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-003-semibold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.4208,
+          "y": 43.6724,
+          "w": 60.0932,
+          "h": 24.8447,
+          "cx": 46.4674,
+          "cy": 56.094750000000005,
+          "r": 34.146
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1123,
+        "upem_scale": 0.07763975,
+        "codepoint": "U+E008",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "600",
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX8kIaghUhuQaA.woff2",
+          "upem": 1000,
+          "advance": 1123,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-003-thin",
+      "type": "ayah-markers",
+      "style": "font-003-thin",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 95.7361 100",
+      "aspect": 0.957361,
+      "variants": {
+        "color": "assets/ayah-markers/font-003-thin/color.svg",
+        "mono": "assets/ayah-markers/font-003-thin/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-003-thin/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 15.8889,
+          "y": 41.6854,
+          "w": 63.9582,
+          "h": 26.5214,
+          "cx": 47.867999999999995,
+          "cy": 54.9461,
+          "r": 37.5136
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1123,
+        "upem_scale": 0.08527766,
+        "codepoint": "U+E003",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "100",
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_6J6ghUhuQaA.woff2",
+          "upem": 1000,
+          "advance": 1123,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-004-bold",
+      "type": "ayah-markers",
+      "style": "font-004-bold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 100 100",
+      "aspect": 1.0,
+      "variants": {
+        "color": "assets/ayah-markers/font-004-bold/color.svg",
+        "mono": "assets/ayah-markers/font-004-bold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-004-bold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 21.8706,
+          "y": 36.3489,
+          "w": 56.2588,
+          "h": 27.3022,
+          "cx": 50.0,
+          "cy": 50.0,
+          "r": 22.8817
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1120,
+        "upem_scale": 0.08753501,
+        "codepoint": "U+E012",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "700",
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOG-eCRXMR5Kw.woff2",
+          "upem": 1000,
+          "advance": 1120,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-004-extralight",
+      "type": "ayah-markers",
+      "style": "font-004-extralight",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 100 100",
+      "aspect": 1.0,
+      "variants": {
+        "color": "assets/ayah-markers/font-004-extralight/color.svg",
+        "mono": "assets/ayah-markers/font-004-extralight/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-004-extralight/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 19.7041,
+          "y": 33.8761,
+          "w": 60.5042,
+          "h": 32.2479,
+          "cx": 49.956199999999995,
+          "cy": 50.00005,
+          "r": 33.4996
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1155,
+        "upem_scale": 0.08753501,
+        "codepoint": "U+E00D",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "200",
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCRXMR5Kw.woff2",
+          "upem": 1000,
+          "advance": 1155,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-004-light",
+      "type": "ayah-markers",
+      "style": "font-004-light",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 100 100",
+      "aspect": 1.0,
+      "variants": {
+        "color": "assets/ayah-markers/font-004-light/color.svg",
+        "mono": "assets/ayah-markers/font-004-light/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-004-light/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 20.2512,
+          "y": 34.5938,
+          "w": 59.4975,
+          "h": 30.8123,
+          "cx": 49.99995,
+          "cy": 49.99995,
+          "r": 30.1558
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1148,
+        "upem_scale": 0.08753501,
+        "codepoint": "U+E00E",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "300",
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOW_uCRXMR5Kw.woff2",
+          "upem": 1000,
+          "advance": 1148,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-004-medium",
+      "type": "ayah-markers",
+      "style": "font-004-medium",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 100 100",
+      "aspect": 1.0,
+      "variants": {
+        "color": "assets/ayah-markers/font-004-medium/color.svg",
+        "mono": "assets/ayah-markers/font-004-medium/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-004-medium/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 21.0609,
+          "y": 35.7624,
+          "w": 57.7906,
+          "h": 28.4751,
+          "cx": 49.956199999999995,
+          "cy": 49.99995,
+          "r": 25.0788
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1131,
+        "upem_scale": 0.08753501,
+        "codepoint": "U+E010",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "500",
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPO_-CRXMR5Kw.woff2",
+          "upem": 1000,
+          "advance": 1131,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-004-regular",
+      "type": "ayah-markers",
+      "style": "font-004-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 100 100",
+      "aspect": 1.0,
+      "variants": {
+        "color": "assets/ayah-markers/font-004-regular/color.svg",
+        "mono": "assets/ayah-markers/font-004-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-004-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 20.4657,
+          "y": 35.3729,
+          "w": 59.0686,
+          "h": 29.2542,
+          "cx": 50.0,
+          "cy": 50.0,
+          "r": 26.7419
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1140,
+        "upem_scale": 0.08753501,
+        "codepoint": "U+E00F",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3CZRtWPQCuHme67tEYUIx3Kh0PHR9N6Ys43PWrfQ.woff2",
+          "upem": 1000,
+          "advance": 1140,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-004-semibold",
+      "type": "ayah-markers",
+      "style": "font-004-semibold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 100 100",
+      "aspect": 1.0,
+      "variants": {
+        "color": "assets/ayah-markers/font-004-semibold/color.svg",
+        "mono": "assets/ayah-markers/font-004-semibold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-004-semibold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 21.4855,
+          "y": 36.0863,
+          "w": 57.0291,
+          "h": 27.8274,
+          "cx": 50.00005,
+          "cy": 50.0,
+          "r": 24.0109
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1126,
+        "upem_scale": 0.08753501,
+        "codepoint": "U+E011",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "600",
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPi-OCRXMR5Kw.woff2",
+          "upem": 1000,
+          "advance": 1126,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-004-thin",
+      "type": "ayah-markers",
+      "style": "font-004-thin",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 100 100",
+      "aspect": 1.0,
+      "variants": {
+        "color": "assets/ayah-markers/font-004-thin/color.svg",
+        "mono": "assets/ayah-markers/font-004-thin/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-004-thin/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 19.0826,
+          "y": 33.3596,
+          "w": 61.8347,
+          "h": 33.2808,
+          "cx": 49.99995,
+          "cy": 50.0,
+          "r": 35.7055
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1160,
+        "upem_scale": 0.08753501,
+        "codepoint": "U+E00C",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "100",
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PKzeflA.woff2",
+          "upem": 1000,
+          "advance": 1160,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-005-regular",
+      "type": "ayah-markers",
+      "style": "font-005-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 88.8904 100",
+      "aspect": 0.888904,
+      "variants": {
+        "color": "assets/ayah-markers/font-005-regular/color.svg",
+        "mono": "assets/ayah-markers/font-005-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-005-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 26.2832,
+          "y": 41.6709,
+          "w": 36.4058,
+          "h": 16.7196,
+          "cx": 44.4861,
+          "cy": 50.0307,
+          "r": 21.366
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 3000,
+        "advance": 4071,
+        "upem_scale": 0.0204596,
+        "codepoint": "U+E013",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Jomhuria",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/jomhuria/v23/Dxxp8j-TMXf-llKur1b3OuCrCw.woff2",
+          "upem": 3000,
+          "advance": 4071,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015 KB-Studio (www.k-b-studio.com|tarobish@gmail.com). Copyright 2015 Lasse Fister (lasse@graphicore.de). Copyright 2015 Sorkin Type Co (www.sorkintype.com). Copyright 2010-2015 Khaled Hosny (khaledhosny@eglug.org).",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/jomhuria/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-006-regular",
+      "type": "ayah-markers",
+      "style": "font-006-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 94.8833 100",
+      "aspect": 0.948833,
+      "variants": {
+        "color": "assets/ayah-markers/font-006-regular/color.svg",
+        "mono": "assets/ayah-markers/font-006-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-006-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 22.8604,
+          "y": 35.7117,
+          "w": 49.1626,
+          "h": 27.0415,
+          "cx": 47.4417,
+          "cy": 49.23245,
+          "r": 26.564
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1047,
+        "upem_scale": 0.08527766,
+        "codepoint": "U+E014",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Katibeh",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/katibeh/v22/ZGjXol5MQJog4bxDWC9bVQNd.woff2",
+          "upem": 1000,
+          "advance": 1047,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015, 2016 KB-Studio (www.k-b-studio.com|tarobish@gmail.com). Copyright 2015, 2016 Lasse Fister (lasse@graphicore.de). Copyright 2015, 2016 Eduardo Tunni(edu@tipo.net.ar).",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/katibeh/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-007-bold",
+      "type": "ayah-markers",
+      "style": "font-007-bold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 106.0827 100",
+      "aspect": 1.060827,
+      "variants": {
+        "color": "assets/ayah-markers/font-007-bold/color.svg",
+        "mono": "assets/ayah-markers/font-007-bold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-007-bold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 28.4889,
+          "y": 39.125,
+          "w": 49.105,
+          "h": 21.7501,
+          "cx": 53.041399999999996,
+          "cy": 50.00005,
+          "r": 16.797
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1146,
+        "upem_scale": 0.08689607,
+        "codepoint": "U+E017",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "700",
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3ca4LqwqILvI.woff2",
+          "upem": 1000,
+          "advance": 1146,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-007-medium",
+      "type": "ayah-markers",
+      "style": "font-007-medium",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 101.4854 100",
+      "aspect": 1.014854,
+      "variants": {
+        "color": "assets/ayah-markers/font-007-medium/color.svg",
+        "mono": "assets/ayah-markers/font-007-medium/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-007-medium/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 23.6203,
+          "y": 36.0456,
+          "w": 54.2449,
+          "h": 27.9088,
+          "cx": 50.74275,
+          "cy": 50.0,
+          "r": 22.2467
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1157,
+        "upem_scale": 0.08737898,
+        "codepoint": "U+E016",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "500",
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3pKkLqwqILvI.woff2",
+          "upem": 1000,
+          "advance": 1157,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-007-regular",
+      "type": "ayah-markers",
+      "style": "font-007-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 100 100",
+      "aspect": 1.0,
+      "variants": {
+        "color": "assets/ayah-markers/font-007-regular/color.svg",
+        "mono": "assets/ayah-markers/font-007-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-007-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c3",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 21.9975,
+          "y": 35.5042,
+          "w": 56.0049,
+          "h": 28.9916,
+          "cx": 49.99995,
+          "cy": 50.0,
+          "r": 24.1509
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1160,
+        "upem_scale": 0.08753501,
+        "codepoint": "U+E015",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3lqkLqwqILvI.woff2",
+          "upem": 1000,
+          "advance": 1160,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-008-black",
+      "type": "ayah-markers",
+      "style": "font-008-black",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 108.9445 100",
+      "aspect": 1.089445,
+      "variants": {
+        "color": "assets/ayah-markers/font-008-black/color.svg",
+        "mono": "assets/ayah-markers/font-008-black/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-008-black/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 20.9023,
+          "y": 40.1211,
+          "w": 67.14,
+          "h": 19.7579,
+          "cx": 54.472300000000004,
+          "cy": 50.00005,
+          "r": 25.4201
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1298,
+        "upem_scale": 0.079862,
+        "codepoint": "U+E01C",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "900",
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFlnl0ky0eiNxw.woff2",
+          "upem": 1000,
+          "advance": 1298,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
+            "reserved_font_names": [
+              "Source"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-008-bold",
+      "type": "ayah-markers",
+      "style": "font-008-bold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 107.6104 100",
+      "aspect": 1.076104,
+      "variants": {
+        "color": "assets/ayah-markers/font-008-bold/color.svg",
+        "mono": "assets/ayah-markers/font-008-bold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-008-bold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 20.3672,
+          "y": 40.0669,
+          "w": 66.876,
+          "h": 19.8662,
+          "cx": 53.8052,
+          "cy": 50.0,
+          "r": 25.4867
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1292,
+        "upem_scale": 0.07927448,
+        "codepoint": "U+E01B",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "700",
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFkpl0ky0eiNxw.woff2",
+          "upem": 1000,
+          "advance": 1292,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
+            "reserved_font_names": [
+              "Source"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-008-extralight",
+      "type": "ayah-markers",
+      "style": "font-008-extralight",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 104.103 100",
+      "aspect": 1.04103,
+      "variants": {
+        "color": "assets/ayah-markers/font-008-extralight/color.svg",
+        "mono": "assets/ayah-markers/font-008-extralight/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-008-extralight/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 17.7085,
+          "y": 39.6123,
+          "w": 68.6861,
+          "h": 20.7755,
+          "cx": 52.05155,
+          "cy": 50.00005,
+          "r": 26.717
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1258,
+        "upem_scale": 0.07890418,
+        "codepoint": "U+E018",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "200",
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFlOkEky0eiNxw.woff2",
+          "upem": 1000,
+          "advance": 1258,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
+            "reserved_font_names": [
+              "Source"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-008-light",
+      "type": "ayah-markers",
+      "style": "font-008-light",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 104.1668 100",
+      "aspect": 1.041668,
+      "variants": {
+        "color": "assets/ayah-markers/font-008-light/color.svg",
+        "mono": "assets/ayah-markers/font-008-light/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-008-light/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 17.9864,
+          "y": 39.7049,
+          "w": 68.194,
+          "h": 20.5903,
+          "cx": 52.0834,
+          "cy": 50.00005,
+          "r": 26.5024
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1263,
+        "upem_scale": 0.07861882,
+        "codepoint": "U+E019",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "300",
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFmQkEky0eiNxw.woff2",
+          "upem": 1000,
+          "advance": 1263,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
+            "reserved_font_names": [
+              "Source"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-008-medium",
+      "type": "ayah-markers",
+      "style": "font-008-medium",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 105 100",
+      "aspect": 1.05,
+      "variants": {
+        "color": "assets/ayah-markers/font-008-medium/color.svg",
+        "mono": "assets/ayah-markers/font-008-medium/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-008-medium/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 19.0664,
+          "y": 40.0352,
+          "w": 66.8672,
+          "h": 19.9297,
+          "cx": 52.5,
+          "cy": 50.00005,
+          "r": 25.5781
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1280,
+        "upem_scale": 0.078125,
+        "codepoint": "U+E01A",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "500",
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFn8kEky0eiNxw.woff2",
+          "upem": 1000,
+          "advance": 1280,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
+            "reserved_font_names": [
+              "Source"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-009-medium",
+      "type": "ayah-markers",
+      "style": "font-009-medium",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 94.9008 100",
+      "aspect": 0.949008,
+      "variants": {
+        "color": "assets/ayah-markers/font-009-medium/color.svg",
+        "mono": "assets/ayah-markers/font-009-medium/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-009-medium/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 30.0332,
+          "y": 37.9719,
+          "w": 34.8344,
+          "h": 24.0562,
+          "cx": 47.4504,
+          "cy": 50.0,
+          "r": 18.1671
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 929,
+        "upem_scale": 0.099984,
+        "codepoint": "U+E01D",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Mirza",
+          "variant": "500",
+          "source_url": "https://fonts.gstatic.com/s/mirza/v19/co3FmWlikiN5EtIpAdO6k6bxog.woff2",
+          "upem": 1000,
+          "advance": 929,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015 The Mirza Project Authors (https://github.com/Tarobish/Mirza)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mirza/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-010-regular-bold",
+      "type": "ayah-markers",
+      "style": "font-010-regular-bold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 85.9377 100",
+      "aspect": 0.859377,
+      "variants": {
+        "color": "assets/ayah-markers/font-010-regular-bold/color.svg",
+        "mono": "assets/ayah-markers/font-010-regular-bold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-010-regular-bold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#d6ad43"
+        },
+        {
+          "name": "c4",
+          "hex": "#083a3a"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.6272,
+          "y": 37.5525,
+          "w": 52.6833,
+          "h": 24.5586,
+          "cx": 42.96885,
+          "cy": 49.8318,
+          "r": 28.1987
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1260,
+        "upem_scale": 0.06728388,
+        "codepoint": "U+E01E",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwvc5Urqcyx_M.woff2",
+          "upem": 1000,
+          "advance": 1260,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "500",
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwj85Urqcyx_M.woff2",
+          "upem": 1000,
+          "advance": 1260,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "600",
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwY8lUrqcyx_M.woff2",
+          "upem": 1000,
+          "advance": 1260,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "700",
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwWslUrqcyx_M.woff2",
+          "upem": 1000,
+          "advance": 1260,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-011-regular-bold",
+      "type": "ayah-markers",
+      "style": "font-011-regular-bold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 80.5112 100",
+      "aspect": 0.805112,
+      "variants": {
+        "color": "assets/ayah-markers/font-011-regular-bold/color.svg",
+        "mono": "assets/ayah-markers/font-011-regular-bold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-011-regular-bold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#d6ad43"
+        },
+        {
+          "name": "c4",
+          "hex": "#fffdf5"
+        },
+        {
+          "name": "c5",
+          "hex": "#0b7771"
+        },
+        {
+          "name": "c6",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 19.6055,
+          "y": 31.531,
+          "w": 41.357,
+          "h": 17.2793,
+          "cx": 40.284,
+          "cy": 40.170649999999995,
+          "r": 27.4089
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1724,
+        "upem_scale": 0.05665337,
+        "codepoint": "U+E01F",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qt_-PK-V2t_8.woff2",
+          "upem": 1000,
+          "advance": 1724,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "500",
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qu3-PK-V2t_8.woff2",
+          "upem": 1000,
+          "advance": 1724,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "600",
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3QgH5PK-V2t_8.woff2",
+          "upem": 1000,
+          "advance": 1724,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "700",
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qjj5PK-V2t_8.woff2",
+          "upem": 1000,
+          "advance": 1724,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-012-extralight",
+      "type": "ayah-markers",
+      "style": "font-012-extralight",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 99.9238 100",
+      "aspect": 0.999238,
+      "variants": {
+        "color": "assets/ayah-markers/font-012-extralight/color.svg",
+        "mono": "assets/ayah-markers/font-012-extralight/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-012-extralight/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#0b7771"
+        },
+        {
+          "name": "c5",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 21.1404,
+          "y": 36.8473,
+          "w": 58.9392,
+          "h": 26.4579,
+          "cx": 50.61,
+          "cy": 50.076249999999995,
+          "r": 28.8368
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1402,
+        "upem_scale": 0.07624741,
+        "codepoint": "U+E021",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "200",
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfSGyfuXqAJQI.woff2",
+          "upem": 1000,
+          "advance": 1402,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-012-light",
+      "type": "ayah-markers",
+      "style": "font-012-light",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 99.9238 100",
+      "aspect": 0.999238,
+      "variants": {
+        "color": "assets/ayah-markers/font-012-light/color.svg",
+        "mono": "assets/ayah-markers/font-012-light/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-012-light/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#0b7771"
+        },
+        {
+          "name": "c5",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 20.7972,
+          "y": 36.8092,
+          "w": 59.6255,
+          "h": 26.5341,
+          "cx": 50.60995,
+          "cy": 50.076249999999995,
+          "r": 28.3335
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1390,
+        "upem_scale": 0.07624741,
+        "codepoint": "U+E022",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "300",
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCflmyfuXqAJQI.woff2",
+          "upem": 1000,
+          "advance": 1390,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-012-regular-black",
+      "type": "ayah-markers",
+      "style": "font-012-regular-black",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 99.9238 100",
+      "aspect": 0.999238,
+      "variants": {
+        "color": "assets/ayah-markers/font-012-regular-black/color.svg",
+        "mono": "assets/ayah-markers/font-012-regular-black/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-012-regular-black/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#0b7771"
+        },
+        {
+          "name": "c5",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 20.3779,
+          "y": 36.6567,
+          "w": 60.4642,
+          "h": 26.8391,
+          "cx": 50.61,
+          "cy": 50.07625,
+          "r": 27.6702
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1370,
+        "upem_scale": 0.07624741,
+        "codepoint": "U+E023",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyGyfuXqAJQI.woff2",
+          "upem": 1000,
+          "advance": 1370,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "500",
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCf-myfuXqAJQI.woff2",
+          "upem": 1000,
+          "advance": 1370,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "600",
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfFmufuXqAJQI.woff2",
+          "upem": 1000,
+          "advance": 1370,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "700",
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfL2ufuXqAJQI.woff2",
+          "upem": 1000,
+          "advance": 1370,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "800",
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfSGufuXqAJQI.woff2",
+          "upem": 1000,
+          "advance": 1370,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "900",
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfYWufuXqAJQI.woff2",
+          "upem": 1000,
+          "advance": 1370,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-012-thin",
+      "type": "ayah-markers",
+      "style": "font-012-thin",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 99.9238 100",
+      "aspect": 0.999238,
+      "variants": {
+        "color": "assets/ayah-markers/font-012-thin/color.svg",
+        "mono": "assets/ayah-markers/font-012-thin/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-012-thin/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#0b7771"
+        },
+        {
+          "name": "c5",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 21.2929,
+          "y": 36.9236,
+          "w": 58.6343,
+          "h": 26.3054,
+          "cx": 50.61005,
+          "cy": 50.0763,
+          "r": 28.9969
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1410,
+        "upem_scale": 0.07624741,
+        "codepoint": "U+E020",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "100",
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyG2fuXqAJQI.woff2",
+          "upem": 1000,
+          "advance": 1410,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-013-bold",
+      "type": "ayah-markers",
+      "style": "font-013-bold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 79.7683 100",
+      "aspect": 0.797683,
+      "variants": {
+        "color": "assets/ayah-markers/font-013-bold/color.svg",
+        "mono": "assets/ayah-markers/font-013-bold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-013-bold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#0b7771"
+        },
+        {
+          "name": "c5",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.7675,
+          "y": 38.0903,
+          "w": 46.3073,
+          "h": 23.8194,
+          "cx": 39.92115,
+          "cy": 50.0,
+          "r": 19.1924
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 2048,
+        "advance": 2042,
+        "upem_scale": 0.03698663,
+        "codepoint": "U+E027",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "700",
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM79DLlQI-bKn.woff2",
+          "upem": 2048,
+          "advance": 2042,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
+            "reserved_font_names": [
+              "Scheherazade",
+              "SIL"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-013-medium",
+      "type": "ayah-markers",
+      "style": "font-013-medium",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 78.3258 100",
+      "aspect": 0.783258,
+      "variants": {
+        "color": "assets/ayah-markers/font-013-medium/color.svg",
+        "mono": "assets/ayah-markers/font-013-medium/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-013-medium/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#0b7771"
+        },
+        {
+          "name": "c5",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.6011,
+          "y": 38.5711,
+          "w": 45.1237,
+          "h": 22.8577,
+          "cx": 39.162949999999995,
+          "cy": 49.99995,
+          "r": 19.5289
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 2048,
+        "advance": 2003,
+        "upem_scale": 0.03698663,
+        "codepoint": "U+E025",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "500",
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM_dFLlQI-bKn.woff2",
+          "upem": 2048,
+          "advance": 2003,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
+            "reserved_font_names": [
+              "Scheherazade",
+              "SIL"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-013-regular",
+      "type": "ayah-markers",
+      "style": "font-013-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 77.6231 100",
+      "aspect": 0.776231,
+      "variants": {
+        "color": "assets/ayah-markers/font-013-regular/color.svg",
+        "mono": "assets/ayah-markers/font-013-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-013-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#0b7771"
+        },
+        {
+          "name": "c5",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.4531,
+          "y": 38.7931,
+          "w": 44.7168,
+          "h": 22.4139,
+          "cx": 38.811499999999995,
+          "cy": 50.00005,
+          "r": 19.7176
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 2048,
+        "advance": 1984,
+        "upem_scale": 0.03698663,
+        "codepoint": "U+E024",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "400",
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaZrFhTvxVnHDvUkUiHg8jprP4DOwFmO24p.woff2",
+          "upem": 2048,
+          "advance": 1984,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
+            "reserved_font_names": [
+              "Scheherazade",
+              "SIL"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-013-semibold",
+      "type": "ayah-markers",
+      "style": "font-013-semibold",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 79.0656 100",
+      "aspect": 0.790656,
+      "variants": {
+        "color": "assets/ayah-markers/font-013-semibold/color.svg",
+        "mono": "assets/ayah-markers/font-013-semibold/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-013-semibold/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c4",
+          "hex": "#0b7771"
+        },
+        {
+          "name": "c5",
+          "hex": "#48a39b"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.6935,
+          "y": 38.3307,
+          "w": 45.7525,
+          "h": 23.3386,
+          "cx": 39.56975,
+          "cy": 50.0,
+          "r": 19.3477
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 2048,
+        "advance": 2023,
+        "upem_scale": 0.03698663,
+        "codepoint": "U+E026",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "600",
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM9tCLlQI-bKn.woff2",
+          "upem": 2048,
+          "advance": 2023,
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
+            "reserved_font_names": [
+              "Scheherazade",
+              "SIL"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "license": {
+        "id": "OFL-1.1",
+        "status": "confirmed",
+        "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+        "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+        "redistributable": true
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-014-regular",
+      "type": "ayah-markers",
+      "style": "font-014-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 99.9987 100",
+      "aspect": 0.999987,
+      "variants": {
+        "color": "assets/ayah-markers/font-014-regular/color.svg",
+        "mono": "assets/ayah-markers/font-014-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-014-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 25.4034,
+          "y": 34.4653,
+          "w": 49.1868,
+          "h": 31.0653,
+          "cx": 49.9968,
+          "cy": 49.99795,
+          "r": 31.7125
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 690,
+        "upem_scale": 0.12943895,
+        "codepoint": "U+E028",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "DigitalKhattIndoPak",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/digital-khatt-indopak.otf",
+          "upem": 1000,
+          "advance": 690,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        },
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "Indopak",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/digital-khatt-indopak.otf",
+          "upem": 1000,
+          "advance": 690,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        }
+      ],
+      "license": {
+        "id": "unverified",
+        "status": "pending",
+        "note": "From fonts.quran.ws. Terms are not recorded upstream and have not been confirmed, so no licence is asserted. Designs 014-020. These ship in the repository and in dist/ flagged as they are — Abdullah's call, 11 Sep 2026 — and `redistributable: false` is what keeps the npm package private and the release workflow shut. `qa dist --exclude-unconfirmed` drops them when that call needs making at release time.",
+        "redistributable": false
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-015-regular",
+      "type": "ayah-markers",
+      "style": "font-015-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 106.8002 100",
+      "aspect": 1.068002,
+      "variants": {
+        "color": "assets/ayah-markers/font-015-regular/color.svg",
+        "mono": "assets/ayah-markers/font-015-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-015-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 32.1453,
+          "y": 37.1478,
+          "w": 42.5174,
+          "h": 23.6217,
+          "cx": 53.403999999999996,
+          "cy": 48.95865,
+          "r": 32.431
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 1000,
+        "advance": 1173,
+        "upem_scale": 0.08134181,
+        "codepoint": "U+E029",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "DigitalKhattV1",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/digital-khatt-v1.otf",
+          "upem": 1000,
+          "advance": 1173,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        }
+      ],
+      "license": {
+        "id": "unverified",
+        "status": "pending",
+        "note": "From fonts.quran.ws. Terms are not recorded upstream and have not been confirmed, so no licence is asserted. Designs 014-020. These ship in the repository and in dist/ flagged as they are — Abdullah's call, 11 Sep 2026 — and `redistributable: false` is what keeps the npm package private and the release workflow shut. `qa dist --exclude-unconfirmed` drops them when that call needs making at release time.",
+        "redistributable": false
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-016-regular",
+      "type": "ayah-markers",
+      "style": "font-016-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 100.4279 100",
+      "aspect": 1.004279,
+      "variants": {
+        "color": "assets/ayah-markers/font-016-regular/color.svg",
+        "mono": "assets/ayah-markers/font-016-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-016-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 24.1113,
+          "y": 33.3775,
+          "w": 52.3887,
+          "h": 33.4894,
+          "cx": 50.30565,
+          "cy": 50.1222,
+          "r": 26.8881
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 2048,
+        "advance": 1552,
+        "upem_scale": 0.0611232,
+        "codepoint": "U+E02A",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "HafsNastaleeq",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/hafs-nastaleeq.otf",
+          "upem": 2048,
+          "advance": 1552,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        }
+      ],
+      "license": {
+        "id": "unverified",
+        "status": "pending",
+        "note": "From fonts.quran.ws. Terms are not recorded upstream and have not been confirmed, so no licence is asserted. Designs 014-020. These ship in the repository and in dist/ flagged as they are — Abdullah's call, 11 Sep 2026 — and `redistributable: false` is what keeps the npm package private and the release workflow shut. `qa dist --exclude-unconfirmed` drops them when that call needs making at release time.",
+        "redistributable": false
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-017-regular",
+      "type": "ayah-markers",
+      "style": "font-017-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 100.0718 100",
+      "aspect": 1.000718,
+      "variants": {
+        "color": "assets/ayah-markers/font-017-regular/color.svg",
+        "mono": "assets/ayah-markers/font-017-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-017-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 23.802,
+          "y": 35.5992,
+          "w": 52.5397,
+          "h": 28.9453,
+          "cx": 50.07185,
+          "cy": 50.071850000000005,
+          "r": 37.0328
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 2048,
+        "advance": 1399,
+        "upem_scale": 0.07182463,
+        "codepoint": "U+E02B",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "IndopakNastaleeq",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/indopak-nastaleeq.ttf",
+          "upem": 2048,
+          "advance": 1399,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        }
+      ],
+      "license": {
+        "id": "unverified",
+        "status": "pending",
+        "note": "From fonts.quran.ws. Terms are not recorded upstream and have not been confirmed, so no licence is asserted. Designs 014-020. These ship in the repository and in dist/ flagged as they are — Abdullah's call, 11 Sep 2026 — and `redistributable: false` is what keeps the npm package private and the release workflow shut. `qa dist --exclude-unconfirmed` drops them when that call needs making at release time.",
+        "redistributable": false
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-018-regular",
+      "type": "ayah-markers",
+      "style": "font-018-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 82.6654 100",
+      "aspect": 0.826654,
+      "variants": {
+        "color": "assets/ayah-markers/font-018-regular/color.svg",
+        "mono": "assets/ayah-markers/font-018-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-018-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#083a3a"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 22.2203,
+          "y": 33.3112,
+          "w": 38.1661,
+          "h": 33.4768,
+          "cx": 41.30335,
+          "cy": 50.0496,
+          "r": 22.884
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 2048,
+        "advance": 1595,
+        "upem_scale": 0.04894978,
+        "codepoint": "U+E02C",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "UthmanicBazzi",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-bazzi-v20.ttf",
+          "upem": 2048,
+          "advance": 1595,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        },
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "UthmanicDouri",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-douri-v20.ttf",
+          "upem": 2048,
+          "advance": 1595,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        },
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "UthmanicQunbul",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-qunbul-v20.ttf",
+          "upem": 2048,
+          "advance": 1595,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        },
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "UthmanicShuba",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-shuba-v20.ttf",
+          "upem": 2048,
+          "advance": 1595,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        },
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "UthmanicSousi",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-sousi-v20.ttf",
+          "upem": 2048,
+          "advance": 1595,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        }
+      ],
+      "license": {
+        "id": "unverified",
+        "status": "pending",
+        "note": "From fonts.quran.ws. Terms are not recorded upstream and have not been confirmed, so no licence is asserted. Designs 014-020. These ship in the repository and in dist/ flagged as they are — Abdullah's call, 11 Sep 2026 — and `redistributable: false` is what keeps the npm package private and the release workflow shut. `qa dist --exclude-unconfirmed` drops them when that call needs making at release time.",
+        "redistributable": false
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-019-regular",
+      "type": "ayah-markers",
+      "style": "font-019-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 80.6372 100",
+      "aspect": 0.806372,
+      "variants": {
+        "color": "assets/ayah-markers/font-019-regular/color.svg",
+        "mono": "assets/ayah-markers/font-019-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-019-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#083a3a"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 16.4076,
+          "y": 34.7899,
+          "w": 47.8195,
+          "h": 30.4204,
+          "cx": 40.31735,
+          "cy": 50.0001,
+          "r": 26.2155
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 2048,
+        "advance": 1595,
+        "upem_scale": 0.04672155,
+        "codepoint": "U+E02D",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "UthmanicQaloun",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-qaloun-v21.ttf",
+          "upem": 2048,
+          "advance": 1595,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        }
+      ],
+      "license": {
+        "id": "unverified",
+        "status": "pending",
+        "note": "From fonts.quran.ws. Terms are not recorded upstream and have not been confirmed, so no licence is asserted. Designs 014-020. These ship in the repository and in dist/ flagged as they are — Abdullah's call, 11 Sep 2026 — and `redistributable: false` is what keeps the npm package private and the release workflow shut. `qa dist --exclude-unconfirmed` drops them when that call needs making at release time.",
+        "redistributable": false
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
+    {
+      "id": "ayah-markers/font-020-regular",
+      "type": "ayah-markers",
+      "style": "font-020-regular",
+      "lineage": "font",
+      "units": "normalized-100",
+      "riwaya": null,
+      "viewBox": "0 0 71.8536 100",
+      "aspect": 0.718536,
+      "variants": {
+        "color": "assets/ayah-markers/font-020-regular/color.svg",
+        "mono": "assets/ayah-markers/font-020-regular/mono.svg"
+      },
+      "source_crop": "assets/ayah-markers/font-020-regular/source.svg",
+      "palette": [
+        {
+          "name": "c1",
+          "hex": "#fff8e7"
+        },
+        {
+          "name": "c2",
+          "hex": "#f4e9bc"
+        },
+        {
+          "name": "c3",
+          "hex": "#d6ad43"
+        },
+        {
+          "name": "c4",
+          "hex": "#fffdf5"
+        },
+        {
+          "name": "c5",
+          "hex": "#083a3a"
+        },
+        {
+          "name": "c6",
+          "hex": "#0b7771"
+        }
+      ],
+      "stroke_widths_px": null,
+      "slots": [
+        {
+          "role": "ayah-number",
+          "x": 23.8438,
+          "y": 35.3246,
+          "w": 24.1672,
+          "h": 21.1293,
+          "cx": 35.927400000000006,
+          "cy": 45.88925,
+          "r": 18.1202
+        }
+      ],
+      "symmetry": 1,
+      "font": {
+        "upem": 2048,
+        "advance": 1595,
+        "upem_scale": 0.0411076,
+        "codepoint": "U+E02E",
+        "glyph": "U+06DD"
+      },
+      "sources": [
+        {
+          "kind": "font",
+          "source": "fonts.quran.ws",
+          "family": "UthmanicWarsh",
+          "variant": "regular",
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-warsh-v21.ttf",
+          "upem": 2048,
+          "advance": 1595,
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        }
+      ],
+      "license": {
+        "id": "unverified",
+        "status": "pending",
+        "note": "From fonts.quran.ws. Terms are not recorded upstream and have not been confirmed, so no licence is asserted. Designs 014-020. These ship in the repository and in dist/ flagged as they are — Abdullah's call, 11 Sep 2026 — and `redistributable: false` is what keeps the npm package private and the release workflow shut. `qa dist --exclude-unconfirmed` drops them when that call needs making at release time.",
+        "redistributable": false
+      },
+      "pipeline_commit": "quran-assets 3c62644"
+    },
     {
       "id": "ayah-markers/mushaf-douri",
       "type": "ayah-markers",

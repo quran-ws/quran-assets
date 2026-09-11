@@ -1,0 +1,77 @@
+{
+ "asset": "ayah-marker",
+ "style": "font-009-medium",
+ "lineage": "font",
+ "riwaya": null,
+ "viewBox": "0 0 94.9008 100",
+ "slot": "30.0332 37.9719 34.8344 24.0562",
+ "slot_circle": {
+  "cx": "47.4504",
+  "cy": "50",
+  "r": "18.1671"
+ },
+ "palette": [
+  {
+   "class": "c1",
+   "hex": "#fff8e7",
+   "paths": 1
+  },
+  {
+   "class": "c2",
+   "hex": "#f4e9bc",
+   "paths": 1
+  },
+  {
+   "class": "c3",
+   "hex": "#083a3a",
+   "paths": 1
+  }
+ ],
+ "source_parts": {
+  "c1": "fill-base",
+  "c2": "fill-1",
+  "c3": "ink-base"
+ },
+ "mono_paths": 1,
+ "mono_classes": [
+  "c3"
+ ],
+ "stroke_widths_px": null,
+ "symmetry": {
+  "folds": 1
+ },
+ "font": {
+  "upem": 1000,
+  "advance": 929,
+  "upem_scale": 0.099984,
+  "codepoint": "U+E01D",
+  "glyph": "U+06DD"
+ },
+ "provenance": {
+  "family": "Mirza",
+  "glyph": "U+06DD",
+  "codepoint": "U+E01D",
+  "sources": [
+   {
+    "kind": "font",
+    "source": "Google Fonts",
+    "family": "Mirza",
+    "variant": "500",
+    "source_url": "https://fonts.gstatic.com/s/mirza/v19/co3FmWlikiN5EtIpAdO6k6bxog.woff2",
+    "upem": 1000,
+    "advance": 929,
+    "license": {
+     "id": "OFL-1.1",
+     "name": "SIL Open Font License, Version 1.1",
+     "copyright": "Copyright 2015 The Mirza Project Authors (https://github.com/Tarobish/Mirza)",
+     "reserved_font_names": [],
+     "url": "https://github.com/google/fonts/blob/main/ofl/mirza/OFL.txt",
+     "note": null
+    }
+   }
+  ],
+  "extracted": "2026-09-11T23:04:08+0300",
+  "pipeline": "quran-assets 3c62644"
+ },
+ "license_key": "font-ofl"
+}

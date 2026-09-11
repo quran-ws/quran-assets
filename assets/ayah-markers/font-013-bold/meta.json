@@ -1,0 +1,94 @@
+{
+ "asset": "ayah-marker",
+ "style": "font-013-bold",
+ "lineage": "font",
+ "riwaya": null,
+ "viewBox": "0 0 79.7683 100",
+ "slot": "16.7675 38.0903 46.3073 23.8194",
+ "slot_circle": {
+  "cx": "39.9211",
+  "cy": "50",
+  "r": "19.1924"
+ },
+ "palette": [
+  {
+   "class": "c1",
+   "hex": "#fff8e7",
+   "paths": 1
+  },
+  {
+   "class": "c2",
+   "hex": "#f4e9bc",
+   "paths": 1
+  },
+  {
+   "class": "c3",
+   "hex": "#083a3a",
+   "paths": 1
+  },
+  {
+   "class": "c4",
+   "hex": "#0b7771",
+   "paths": 1
+  },
+  {
+   "class": "c5",
+   "hex": "#48a39b",
+   "paths": 1
+  }
+ ],
+ "source_parts": {
+  "c1": "fill-base",
+  "c2": "fill-1",
+  "c3": "ink-base",
+  "c4": "ink-1",
+  "c5": "ink-2"
+ },
+ "mono_paths": 3,
+ "mono_classes": [
+  "c3",
+  "c4",
+  "c5"
+ ],
+ "stroke_widths_px": null,
+ "symmetry": {
+  "folds": 1
+ },
+ "font": {
+  "upem": 2048,
+  "advance": 2042,
+  "upem_scale": 0.03698663,
+  "codepoint": "U+E027",
+  "glyph": "U+06DD"
+ },
+ "provenance": {
+  "family": "Scheherazade New",
+  "glyph": "U+06DD",
+  "codepoint": "U+E027",
+  "sources": [
+   {
+    "kind": "font",
+    "source": "Google Fonts",
+    "family": "Scheherazade New",
+    "variant": "700",
+    "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM79DLlQI-bKn.woff2",
+    "upem": 2048,
+    "advance": 2042,
+    "license": {
+     "id": "OFL-1.1",
+     "name": "SIL Open Font License, Version 1.1",
+     "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
+     "reserved_font_names": [
+      "Scheherazade",
+      "SIL"
+     ],
+     "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
+     "note": null
+    }
+   }
+  ],
+  "extracted": "2026-09-11T23:04:08+0300",
+  "pipeline": "quran-assets 3c62644"
+ },
+ "license_key": "font-ofl"
+}

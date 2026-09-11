@@ -1,5 +1,5 @@
 {
-  "_doc": "Redistribution position per lineage, stamped into catalog.json and dist/LICENSES.md. `status` is the evidence level, not a wish: 'confirmed' needs a written permission or an OFL/CC file in sources/licenses/; 'provisional' is our own release position while permission is pending; 'pending' means we have nothing yet. `qa dist` marks the npm package private while any bundled asset is not 'confirmed'.",
+  "_doc": "Redistribution position per licence key, stamped into catalog.json and dist/LICENSES.md. An asset names its key in meta.json; `qa catalog` copies the block verbatim. `status` is the evidence level, not a wish: 'confirmed' needs written permission or the licence file in sources/licenses/, 'provisional' is our own release position while permission is pending, 'pending' means we have nothing yet. `qa validate` refuses a 'confirmed' claim with no evidence file, and refuses `redistributable` on anything not confirmed. `qa dist` marks the npm package private while any bundled asset is not 'confirmed'.",
   "scan": {
     "id": "CC-BY-NC-SA-4.0",
     "status": "provisional",
@@ -7,10 +7,17 @@
     "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
     "redistributable": false
   },
-  "font": {
+  "font-ofl": {
     "id": "OFL-1.1",
+    "status": "confirmed",
+    "attribution": "Outline taken from the U+06DD glyph of an OFL-1.1 font. The licence and the family's copyright notice must travel with the material — both are in dist/LICENSES.md and in each asset's `sources[].license`.",
+    "note": "SIL Open Font License 1.1, verified from `license: \"OFL\"` in the family's METADATA.pb in google/fonts; the text is in sources/licenses/. Derivatives stay OFL and cannot be relicensed, and no Reserved Font Name may be used for a modified version — which is why marker ids are numeric and the built font carries no family name.",
+    "redistributable": true
+  },
+  "font-unverified": {
+    "id": "unverified",
     "status": "pending",
-    "note": "Font-derived markers: OFL only once the family's licence file is captured in sources/licenses/. Families from fonts.quran.ws stay 'pending' until written confirmation.",
+    "note": "From fonts.quran.ws. Terms are not recorded upstream and have not been confirmed, so no licence is asserted. Designs 014-020. These ship in the repository and in dist/ flagged as they are — Abdullah's call, 11 Sep 2026 — and `redistributable: false` is what keeps the npm package private and the release workflow shut. `qa dist --exclude-unconfirmed` drops them when that call needs making at release time.",
     "redistributable": false
   }
 }

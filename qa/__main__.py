@@ -1,6 +1,6 @@
 """One CLI for the whole repo.
 
-    python -m qa build [--type page-frames] [--style mushaf-qalon] [--to detect] [--force]
+    python -m qa build [--lineage font] [--type page-frames] [--style mushaf-qalon] [--to detect]
     python -m qa catalog          rebuild catalog.json from the meta.json files
     python -m qa optimize         run SVGO over assets/ and refresh path counts
     python -m qa validate         catalog + SVG contract + license checks
@@ -10,7 +10,9 @@
     python -m qa dist             build dist/ for npm and the CDN
 
 `--type` takes the directory name (surah-headers, page-frames, ayah-markers); `--style`
-is the `<lineage>-<name>` style id (`mushaf-qalon`, `font-003-regular`).
+is the `<lineage>-<name>` style id (`mushaf-qalon`, `font-003-regular`). With no
+`--lineage`, `build` runs both: the scan pipeline over the mushaf PDFs and the font
+one over what is committed in qa/font/. `--to` applies to the scan stages only.
 """
 import argparse
 import sys
@@ -24,6 +26,7 @@ def main(argv=None):
 
     build = sub.add_parser("build", help="run the scan pipeline for the selected jobs")
     build.add_argument("--type", choices=sorted(TYPE_DIR.values()))
+    build.add_argument("--lineage", choices=["scan", "font"], help="build one lineage only")
     build.add_argument("--style", help="style id, e.g. mushaf-qalon")
     build.add_argument("--to", default="vectorize", choices=["render", "detect", "clean", "vectorize"], help="stop after this stage")
     build.add_argument("--force", action="store_true", help="ignore cached page renders")
@@ -45,13 +48,22 @@ def main(argv=None):
 
     if args.command == "build":
         from qa.common.catalog import write_catalog
-        from qa.scan.build import build as run_build
-        # jobs are keyed by bare mushaf id; --style is the `<lineage>-<name>` asset id.
-        try:
-            mushaf = split_style(args.style)[1] if args.style else None
-        except ValueError as e:
-            raise SystemExit(f"{e} -- try --style mushaf-{args.style}")
-        run_build(mushaf=mushaf, asset=ASSET_OF_TYPE.get(args.type), to=args.to, force=args.force)
+        # --style names one asset, so it also says which lineage to run.
+        lineage = args.lineage
+        if args.style:
+            try:
+                style_lineage, name = split_style(args.style)
+            except ValueError as e:
+                raise SystemExit(f"{e} -- try --style mushaf-{args.style}")
+            if lineage and lineage != style_lineage:
+                raise SystemExit(f"--style {args.style} is {style_lineage}-derived, not {lineage}")
+            lineage = style_lineage
+        if lineage in (None, "scan"):
+            from qa.scan.build import build as run_scan
+            run_scan(mushaf=(name if args.style else None), asset=ASSET_OF_TYPE.get(args.type), to=args.to, force=args.force)
+        if lineage in (None, "font") and args.type in (None, "ayah-markers"):
+            from qa.font.build import build as run_font
+            print(f"font: {run_font(style=args.style)} markers")
         if not args.no_catalog and args.to == "vectorize":
             print(f"catalog: {write_catalog()} assets -> catalog.json")
         return 0

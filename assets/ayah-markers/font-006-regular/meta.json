@@ -1,0 +1,77 @@
+{
+ "asset": "ayah-marker",
+ "style": "font-006-regular",
+ "lineage": "font",
+ "riwaya": null,
+ "viewBox": "0 0 94.8833 100",
+ "slot": "22.8604 35.7117 49.1626 27.0415",
+ "slot_circle": {
+  "cx": "47.4417",
+  "cy": "49.2325",
+  "r": "26.564"
+ },
+ "palette": [
+  {
+   "class": "c1",
+   "hex": "#fff8e7",
+   "paths": 1
+  },
+  {
+   "class": "c2",
+   "hex": "#f4e9bc",
+   "paths": 1
+  },
+  {
+   "class": "c3",
+   "hex": "#083a3a",
+   "paths": 1
+  }
+ ],
+ "source_parts": {
+  "c1": "fill-base",
+  "c2": "fill-1",
+  "c3": "ink-base"
+ },
+ "mono_paths": 1,
+ "mono_classes": [
+  "c3"
+ ],
+ "stroke_widths_px": null,
+ "symmetry": {
+  "folds": 1
+ },
+ "font": {
+  "upem": 1000,
+  "advance": 1047,
+  "upem_scale": 0.08527766,
+  "codepoint": "U+E014",
+  "glyph": "U+06DD"
+ },
+ "provenance": {
+  "family": "Katibeh",
+  "glyph": "U+06DD",
+  "codepoint": "U+E014",
+  "sources": [
+   {
+    "kind": "font",
+    "source": "Google Fonts",
+    "family": "Katibeh",
+    "variant": "400",
+    "source_url": "https://fonts.gstatic.com/s/katibeh/v22/ZGjXol5MQJog4bxDWC9bVQNd.woff2",
+    "upem": 1000,
+    "advance": 1047,
+    "license": {
+     "id": "OFL-1.1",
+     "name": "SIL Open Font License, Version 1.1",
+     "copyright": "Copyright 2015, 2016 KB-Studio (www.k-b-studio.com|tarobish@gmail.com). Copyright 2015, 2016 Lasse Fister (lasse@graphicore.de). Copyright 2015, 2016 Eduardo Tunni(edu@tipo.net.ar).",
+     "reserved_font_names": [],
+     "url": "https://github.com/google/fonts/blob/main/ofl/katibeh/OFL.txt",
+     "note": null
+    }
+   }
+  ],
+  "extracted": "2026-09-11T23:04:07+0300",
+  "pipeline": "quran-assets 3c62644"
+ },
+ "license_key": "font-ofl"
+}

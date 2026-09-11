@@ -9,3 +9,11 @@ CairoSVG==2.9.1
 svgpathtools==1.8.0
 pytest==9.1.1
 jsonschema==4.26.0
+
+# The font lineage (qa/font). scipy and uharfbuzz are needed by the number-box
+# derivations only; upstream quranpedia/ayah-markers imported all three without
+# declaring any of them.
+fonttools[woff]==4.65.0
+uharfbuzz==0.56.1
+scipy==1.18.1
+requests==2.34.2

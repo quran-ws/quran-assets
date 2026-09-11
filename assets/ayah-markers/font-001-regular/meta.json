@@ -1,0 +1,92 @@
+{
+ "asset": "ayah-marker",
+ "style": "font-001-regular",
+ "lineage": "font",
+ "riwaya": null,
+ "viewBox": "0 0 99.456 100",
+ "slot": "32.7218 40.5624 34.1679 19.1082",
+ "slot_circle": {
+  "cx": "49.8057",
+  "cy": "50.1166",
+  "r": "24.0271"
+ },
+ "palette": [
+  {
+   "class": "c1",
+   "hex": "#fff8e7",
+   "paths": 1
+  },
+  {
+   "class": "c2",
+   "hex": "#f4e9bc",
+   "paths": 1
+  },
+  {
+   "class": "c3",
+   "hex": "#d6ad43",
+   "paths": 1
+  },
+  {
+   "class": "c4",
+   "hex": "#fffdf5",
+   "paths": 1
+  },
+  {
+   "class": "c5",
+   "hex": "#083a3a",
+   "paths": 1
+  }
+ ],
+ "source_parts": {
+  "c1": "fill-base",
+  "c2": "fill-1",
+  "c3": "fill-2",
+  "c4": "fill-3",
+  "c5": "ink-base"
+ },
+ "mono_paths": 1,
+ "mono_classes": [
+  "c5"
+ ],
+ "stroke_widths_px": null,
+ "symmetry": {
+  "folds": 1
+ },
+ "font": {
+  "upem": 1000,
+  "advance": 1250,
+  "upem_scale": 0.07770732,
+  "codepoint": "U+E000",
+  "glyph": "U+06DD"
+ },
+ "provenance": {
+  "family": "Alkalami",
+  "glyph": "U+06DD",
+  "codepoint": "U+E000",
+  "sources": [
+   {
+    "kind": "font",
+    "source": "Google Fonts",
+    "family": "Alkalami",
+    "variant": "400",
+    "source_url": "https://fonts.gstatic.com/s/alkalami/v8/zOL_4pfDmqRL95WXi6eJycF8ug.woff2",
+    "upem": 1000,
+    "advance": 1250,
+    "license": {
+     "id": "OFL-1.1",
+     "name": "SIL Open Font License, Version 1.1",
+     "copyright": "Copyright (c) 2015-2023, SIL International (http://www.sil.org/), with Reserved Font Names \"Alkalami\" and \"SIL\".",
+     "reserved_font_names": [
+      "Alkalami",
+      "SIL"
+     ],
+     "url": "https://github.com/google/fonts/blob/main/ofl/alkalami/OFL.txt",
+     "note": null
+    }
+   }
+  ],
+  "extracted": "2026-09-11T23:04:07+0300",
+  "pipeline": "quran-assets 3c62644"
+ },
+ "license_key": "font-ofl"
+}

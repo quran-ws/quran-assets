@@ -31,6 +31,19 @@ def slices(geometry, directory):
     }
 
 
+def sources(m, lineage):
+    """One entry per thing the asset was made from: a mushaf scan, or each source font.
+
+    A font marker can have several -- one deduplicated outline shared by several weights of
+    a family, or by several families -- and each carries its own licence, which is what lets
+    `license_key` decide per asset rather than per lineage.
+    """
+    provenance = m.get("provenance") or {}
+    if lineage == "font":
+        return [{k: v for k, v in s.items() if v is not None} for s in provenance.get("sources", [])]
+    return [{"kind": "mushaf-scan", **{k: v for k, v in provenance.items() if k != "pipeline"}}]
+
+
 def write_catalog():
     """assets/catalog.json: every generated asset with its provenance, for apps and audits."""
     items = []
@@ -38,7 +51,8 @@ def write_catalog():
         m = json.load(open(meta)); d = "assets/" + str(meta.parent.relative_to(ROOT / "assets"))
         typ, style = meta.parent.parent.name, meta.parent.name
         lineage, _ = split_style(style)
-        crop = "source.jpg" if (meta.parent / "source.jpg").exists() else "source.png"
+        crop_name = "source.svg" if lineage == "font" else None
+        crop = crop_name or ("source.jpg" if (meta.parent / "source.jpg").exists() else "source.png")
         sx = [float(v) for v in m["slot"].split()] if m.get("slot") else None
         items.append({"id": f"{typ}/{style}", "type": typ, "style": style, "lineage": lineage, "units": "normalized-100",
                       "riwaya": m.get("riwaya"), "viewBox": m.get("viewBox"), "aspect": aspect(m.get("viewBox")),
@@ -47,11 +61,15 @@ def write_catalog():
                       "palette": [{"name": p["class"], "hex": p["hex"], **({"stroke": True} if p.get("stroke") else {})} for p in m.get("palette", [])],
                       "stroke_widths_px": m.get("stroke_widths_px"),
                       "slots": [{"role": SLOT_ROLE[typ],
-                                 "x": sx[0], "y": sx[1], "w": sx[2], "h": sx[3], "cx": sx[0] + sx[2] / 2, "cy": sx[1] + sx[3] / 2}] if sx else [],
+                                 "x": sx[0], "y": sx[1], "w": sx[2], "h": sx[3], "cx": sx[0] + sx[2] / 2, "cy": sx[1] + sx[3] / 2,
+                                 # `r`: the largest circle that fits the marker's interior, for an app
+                                 # that would rather place a round badge than a box. Font markers only.
+                                 **({"r": float(m["slot_circle"]["r"])} if m.get("slot_circle") else {})}] if sx else [],
                       "symmetry": m.get("symmetry", {}).get("folds"),
+                      **({"font": m["font"]} if m.get("font") else {}),
                       **({"slices": slices(m["slices"], d)} if m.get("slices") else {}),
-                      "sources": [{"kind": "mushaf-scan", **{k: v for k, v in (m.get("provenance") or {}).items() if k != "pipeline"}}],
-                      "license": dict(LICENSES["scan"]),
+                      "sources": sources(m, lineage),
+                      "license": dict(LICENSES[m.get("license_key", lineage)]),
                       "pipeline_commit": (m.get("provenance") or {}).get("pipeline")})
     json.dump({"generated": time.strftime("%Y-%m-%d"), "schema": "quran-assets/catalog@1", "count": len(items), "assets": items},
               open(ROOT / "catalog.json", "w"), indent=2, ensure_ascii=False)

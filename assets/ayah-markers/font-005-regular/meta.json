@@ -1,0 +1,77 @@
+{
+ "asset": "ayah-marker",
+ "style": "font-005-regular",
+ "lineage": "font",
+ "riwaya": null,
+ "viewBox": "0 0 88.8904 100",
+ "slot": "26.2832 41.6709 36.4058 16.7196",
+ "slot_circle": {
+  "cx": "44.4861",
+  "cy": "50.0307",
+  "r": "21.366"
+ },
+ "palette": [
+  {
+   "class": "c1",
+   "hex": "#fff8e7",
+   "paths": 1
+  },
+  {
+   "class": "c2",
+   "hex": "#f4e9bc",
+   "paths": 1
+  },
+  {
+   "class": "c3",
+   "hex": "#083a3a",
+   "paths": 1
+  }
+ ],
+ "source_parts": {
+  "c1": "fill-base",
+  "c2": "fill-1",
+  "c3": "ink-base"
+ },
+ "mono_paths": 1,
+ "mono_classes": [
+  "c3"
+ ],
+ "stroke_widths_px": null,
+ "symmetry": {
+  "folds": 1
+ },
+ "font": {
+  "upem": 3000,
+  "advance": 4071,
+  "upem_scale": 0.0204596,
+  "codepoint": "U+E013",
+  "glyph": "U+06DD"
+ },
+ "provenance": {
+  "family": "Jomhuria",
+  "glyph": "U+06DD",
+  "codepoint": "U+E013",
+  "sources": [
+   {
+    "kind": "font",
+    "source": "Google Fonts",
+    "family": "Jomhuria",
+    "variant": "400",
+    "source_url": "https://fonts.gstatic.com/s/jomhuria/v23/Dxxp8j-TMXf-llKur1b3OuCrCw.woff2",
+    "upem": 3000,
+    "advance": 4071,
+    "license": {
+     "id": "OFL-1.1",
+     "name": "SIL Open Font License, Version 1.1",
+     "copyright": "Copyright 2015 KB-Studio (www.k-b-studio.com|tarobish@gmail.com). Copyright 2015 Lasse Fister (lasse@graphicore.de). Copyright 2015 Sorkin Type Co (www.sorkintype.com). Copyright 2010-2015 Khaled Hosny (khaledhosny@eglug.org).",
+     "reserved_font_names": [],
+     "url": "https://github.com/google/fonts/blob/main/ofl/jomhuria/OFL.txt",
+     "note": null
+    }
+   }
+  ],
+  "extracted": "2026-09-11T23:04:07+0300",
+  "pipeline": "quran-assets 3c62644"
+ },
+ "license_key": "font-ofl"
+}

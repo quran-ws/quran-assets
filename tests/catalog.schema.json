@@ -314,6 +314,40 @@
               "maximum": 1
             }
           }
+        },
+        "font": {
+          "type": "object",
+          "description": "Font metrics of a font-derived asset, kept because the OTF/TTF build needs UPEM units back after the artwork is normalised to the height-100 viewBox.",
+          "additionalProperties": false,
+          "required": [
+            "upem",
+            "advance",
+            "upem_scale",
+            "codepoint",
+            "glyph"
+          ],
+          "properties": {
+            "upem": {
+              "type": "integer",
+              "exclusiveMinimum": 0
+            },
+            "advance": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "upem_scale": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "codepoint": {
+              "type": "string",
+              "pattern": "^U\\+[0-9A-F]{4,6}$"
+            },
+            "glyph": {
+              "type": "string",
+              "pattern": "^U\\+[0-9A-F]{4,6}$"
+            }
+          }
         }
       }
     },
@@ -348,6 +382,67 @@
           "items": {
             "type": "integer"
           }
+        },
+        "source": {
+          "type": "string"
+        },
+        "family": {
+          "type": "string"
+        },
+        "variant": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "upem": {
+          "type": "integer",
+          "exclusiveMinimum": 0
+        },
+        "advance": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "license": {
+          "type": "object"
+        },
+        "mushaf": {
+          "type": "string"
+        },
+        "riwaya": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "file": {
+          "type": "string"
+        },
+        "archive_item": {
+          "type": "string"
+        },
+        "archive_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "occurrence": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "occurrences_on_page": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pipeline_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "extracted": {
+          "type": "string"
         }
       },
       "allOf": [
