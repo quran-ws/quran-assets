@@ -37,7 +37,9 @@ def main(argv=None):
     sub.add_parser("preview", help="write demo/review.html")
     sub.add_parser("demo", help="write demo/index.html")
     sub.add_parser("validate", help="check the catalog, the SVG contract and licenses")
-    sub.add_parser("dist", help="build dist/ for npm and the CDN")
+    dist = sub.add_parser("dist", help="build dist/ for npm and the CDN")
+    dist.add_argument("--exclude-unconfirmed", action="store_true",
+                      help="leave out assets whose license is not 'confirmed' (default: ship them flagged)")
     sub.add_parser("quality", help="raster review and regression gate (see `qa quality --help`)", add_help=False)
 
     argv = list(sys.argv[1:] if argv is None else argv)
@@ -84,7 +86,7 @@ def main(argv=None):
         return validate()
     if args.command == "dist":
         from qa.common.dist import main as dist
-        dist()
+        dist(exclude_unconfirmed=args.exclude_unconfirmed)
         return 0
     raise SystemExit(f"unknown command {args.command}")
 
