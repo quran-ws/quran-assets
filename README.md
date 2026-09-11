@@ -24,7 +24,7 @@ data-source-file="qalon.pdf"  data-source-page="607"  data-source-box="341 300 1
 
 ## What's here
 
-**79 assets from two lineages, under one contract.**
+**71 assets from two lineages, under one contract.**
 
 *Traced from eight printed mushafs* — three types × eight mushafs = 24, a set per riwāyah
 rather than one generic set: Qālūn, Warsh, al-Dūrī, al-Sūsī, Shuʿbah, and Hafs in three

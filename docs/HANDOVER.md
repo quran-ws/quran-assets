@@ -2,7 +2,7 @@
 
 > **Updated 11 Sep 2026.** The font lineage is merged: `quranpedia/ayah-markers` is in, its 47
 > markers normalised to the same SVG contract as the 24 scan assets, under one naming standard
-> (`<lineage>-<name>`) and one catalog. 79 assets, 0 problems, 389 tests. `qa dist` now also
+> (`<lineage>-<name>`) and one catalog. 71 assets, 0 problems, 389 tests. `qa dist` now also
 > builds `dist/fonts/AyahMarkers.{otf,ttf}`. See PLAN §3 (naming, units — §3's old units
 > position is reversed and says so), §6 (licensing) and §8 phase 4.
 >

@@ -86,7 +86,7 @@ cover it — measured, not assumed. Those ship the number box as `data-slot` and
 `catalog.json → slots[]` only, and `slots[].r`, the largest circle fitting the interior, for an
 app that wants a round badge instead of a box. `qa validate` requires the group for scan assets
 alone. Every asset carries `data-slot` either way, so placing something in the slot is the same
-code for all 79.
+code for all 71.
 
 Every group carries **both** `class` and `data-part` with the same name — pick whichever your
 tooling prefers (`.c2 {…}`, `[data-part="c2"] {…}`).
