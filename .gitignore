@@ -11,3 +11,4 @@ assets/**/candidates/
 dist/
 package-lock.json
 .maestro/
+.gstack/
