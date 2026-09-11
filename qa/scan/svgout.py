@@ -2,8 +2,10 @@
 
 Conventions (same for every asset type / mushaf so apps can treat them uniformly):
   * viewBox is normalised to height 100; width = 100 * aspect. No width/height attrs.
-  * root carries data-mushaf / data-asset / data-variant and, when known, data-slot
-    (x y w h in viewBox units) = the empty cartouche where the app draws the surah name.
+  * root carries data-style / data-lineage / data-asset / data-variant and, when known,
+    data-slot (x y w h in viewBox units) = the empty cartouche where the app draws the
+    surah name. data-style is the `<lineage>-<name>` id; data-mushaf is the bare mushaf id
+    and is present on scan assets only, since a font-derived asset has no mushaf.
   * mono.svg  : <g class="slot" fill="none"> (the name slot, transparent) then
                 <g class="ink" fill="currentColor">; tint with CSS `color`.
   * color.svg : <g class="slot" fill="none"> then one <g class="cN" fill="#hex"> per
@@ -26,6 +28,8 @@ def part(cls, prop="fill", default=None, extra=""):
 
 import json as _json
 
+from qa import style_id
+
 def write_svg(path, paths_or_layers, w_px, h_px, scale, mushaf, asset, variant, slot=None, extra_attrs=None, slot_paths=None, provenance=None, sym=None, norm_h=None):
     # `norm_h` is the height that maps to 100 units: the piece's own height normally, the
     # whole frame's for a 9-slice piece, so the pieces share the frame's coordinate system.
@@ -33,6 +37,7 @@ def write_svg(path, paths_or_layers, w_px, h_px, scale, mushaf, asset, variant, 
     vb_h = h_px * s
     vb_w = w_px * s
     attrs = {"xmlns": "http://www.w3.org/2000/svg", "viewBox": f"0 0 {_fmt(vb_w)} {_fmt(vb_h)}",
+             "data-style": style_id("scan", mushaf), "data-lineage": "scan",
              "data-mushaf": mushaf, "data-asset": asset, "data-variant": variant}
     if slot:
         x0, y0, x1, y1 = slot

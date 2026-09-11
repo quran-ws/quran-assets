@@ -1,6 +1,6 @@
 """One CLI for the whole repo.
 
-    python -m qa build [--type page-frames] [--style qalon] [--to detect] [--force]
+    python -m qa build [--type page-frames] [--style mushaf-qalon] [--to detect] [--force]
     python -m qa catalog          rebuild catalog.json from the meta.json files
     python -m qa optimize         run SVGO over assets/ and refresh path counts
     python -m qa validate         catalog + SVG contract + license checks
@@ -10,12 +10,12 @@
     python -m qa dist             build dist/ for npm and the CDN
 
 `--type` takes the directory name (surah-headers, page-frames, ayah-markers); `--style`
-is the mushaf id for scan assets.
+is the `<lineage>-<name>` style id (`mushaf-qalon`, `font-003-regular`).
 """
 import argparse
 import sys
 
-from qa import ASSET_OF_TYPE, TYPE_DIR
+from qa import ASSET_OF_TYPE, TYPE_DIR, split_style
 
 
 def main(argv=None):
@@ -24,7 +24,7 @@ def main(argv=None):
 
     build = sub.add_parser("build", help="run the scan pipeline for the selected jobs")
     build.add_argument("--type", choices=sorted(TYPE_DIR.values()))
-    build.add_argument("--style", help="mushaf id, e.g. qalon")
+    build.add_argument("--style", help="style id, e.g. mushaf-qalon")
     build.add_argument("--to", default="vectorize", choices=["render", "detect", "clean", "vectorize"], help="stop after this stage")
     build.add_argument("--force", action="store_true", help="ignore cached page renders")
     build.add_argument("--no-catalog", action="store_true", help="skip the catalog rebuild afterwards")
@@ -46,7 +46,12 @@ def main(argv=None):
     if args.command == "build":
         from qa.common.catalog import write_catalog
         from qa.scan.build import build as run_build
-        run_build(mushaf=args.style, asset=ASSET_OF_TYPE.get(args.type), to=args.to, force=args.force)
+        # jobs are keyed by bare mushaf id; --style is the `<lineage>-<name>` asset id.
+        try:
+            mushaf = split_style(args.style)[1] if args.style else None
+        except ValueError as e:
+            raise SystemExit(f"{e} -- try --style mushaf-{args.style}")
+        run_build(mushaf=mushaf, asset=ASSET_OF_TYPE.get(args.type), to=args.to, force=args.force)
         if not args.no_catalog and args.to == "vectorize":
             print(f"catalog: {write_catalog()} assets -> catalog.json")
         return 0

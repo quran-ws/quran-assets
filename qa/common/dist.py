@@ -75,7 +75,7 @@ export const version = "%(version)s";
 export const assets = catalog.assets;
 export const byId = Object.fromEntries(assets.map((a) => [a.id, a]));
 
-/** One asset, e.g. get("surah-headers", "qalon"). */
+/** One asset, e.g. get("surah-headers", "mushaf-qalon"). */
 export function get(type, style) {
   return byId[`${type}/${style}`];
 }
@@ -110,7 +110,7 @@ export function slot(asset, role) {
  * the rounding remainder so the run fits exactly. Frames without slices (a border that does
  * not tile) have no `slices` entry — use their color.svg and scale it.
  *
- *   const svg = await frame(get("page-frames", "qalon"), { width: 210, height: 297 });
+ *   const svg = await frame(get("page-frames", "mushaf-qalon"), { width: 210, height: 297 });
  *   document.body.append(svg);
  *
  * `width`/`height` are the box you want in the returned viewBox's units; anything else

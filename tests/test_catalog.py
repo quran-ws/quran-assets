@@ -4,7 +4,7 @@ import json
 import pytest
 from jsonschema import Draft202012Validator
 
-from qa import ROOT, load_jobs
+from qa import ROOT, TYPE_DIR, load_jobs, split_style, style_id
 from qa.common import validate
 
 CATALOG = json.loads((ROOT / "catalog.json").read_text())
@@ -22,9 +22,16 @@ def test_catalog_matches_the_schema():
 
 def test_every_job_produced_an_entry():
     jobs = load_jobs()["jobs"]
-    types = {"surah-header": "surah-headers", "page-frame": "page-frames", "ayah-marker": "ayah-markers"}
-    expected = {f"{types[j['asset']]}/{j['mushaf']}" for j in jobs}
+    expected = {f"{TYPE_DIR[j['asset']]}/{style_id('scan', j['mushaf'])}" for j in jobs}
     assert expected <= {a["id"] for a in CATALOG["assets"]}
+
+
+def test_every_style_follows_the_naming_standard():
+    """`<lineage>-<name>`, and the prefix agrees with the catalog's own lineage field."""
+    for asset in CATALOG["assets"]:
+        lineage, name = split_style(asset["style"])
+        assert lineage == asset["lineage"], asset["id"]
+        assert name, asset["id"]
 
 
 def test_shipped_svgs_follow_the_contract():

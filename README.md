@@ -28,7 +28,8 @@ Three types × eight mushafs = 24 assets — a set per riwāyah, not one generic
 Qālūn, Warsh, al-Dūrī, al-Sūsī, Shuʿbah, and Hafs in three printings (ʿĀdī, Madinah
 mumtāza, Madinah kabīr).
 
-Each in `assets/<type>/<style>/`: `color.svg` (26 KB for a header, 6 KB for a marker),
+Each in `assets/<type>/<style>/`, where a style id is always `<lineage>-<name>`
+(`mushaf-qalon`): `color.svg` (26 KB for a header, 6 KB for a marker),
 `mono.svg`, `line.svg`, `meta.json`, and the source and cleaned crops. Page frames also
 carry `slices/` — see below.
 
@@ -45,11 +46,11 @@ corner, horizontal unit, vertical unit — and assembles to whatever page you ha
 ```js
 import { get, frame } from "@quran-ws/assets";        // built by `python -m qa dist`
 
-const svg = await frame(get("page-frames", "qalon"), { width: 210, height: 297 });
+const svg = await frame(get("page-frames", "mushaf-qalon"), { width: 210, height: 297 });
 ```
 
 The corner keeps its shape; only the edge runs repeat. Seven of the eight tile;
-`hafs-madinah-kabir` does not, has no `slices` entry, and ships whole — the build
+`mushaf-hafs-madinah-kabir` does not, has no `slices` entry, and ships whole — the build
 measures that rather than guessing (below).
 
 ## The contract
@@ -57,7 +58,7 @@ measures that rather than guessing (below).
 Every file, every type, same shape. viewBox height is 100, so width is the aspect.
 
 ```svg
-<svg viewBox="0 0 863.429 100" data-mushaf="qalon" data-asset="surah-header"
+<svg viewBox="0 0 863.429 100" data-style="mushaf-qalon" data-asset="surah-header"
      data-slot="180.8571 8.5714 501.4286 83.1429">
   <g fill="none"    class="slot" data-part="slot">…</g>   <!-- where the name goes -->
   <g fill="#fff"    class="c1"   data-part="c1">…</g>     <!-- fills, light → dark -->
@@ -74,7 +75,7 @@ is in viewBox units: place the surah name, the ayah number or the page text ther
 
 ```json
 {
-  "id": "surah-headers/qalon", "lineage": "scan", "aspect": 8.63429,
+  "id": "surah-headers/mushaf-qalon", "lineage": "scan", "aspect": 8.63429,
   "slots": [{ "role": "surah-name", "x": 180.86, "y": 8.57, "w": 501.43, "h": 83.14 }],
   "sources": [{ "kind": "mushaf-scan", "riwaya": "Qalun 'an Nafi'", "pdf_page": 607,
                 "sha256": "cbbb52b2…aef8de", "crop_box_px": [341, 300, 1348, 416],

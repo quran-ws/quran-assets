@@ -7,15 +7,20 @@ same page without the <html>/<head> wrapper for hosted artifacts.
 import json, re, html
 from pathlib import Path
 
-from qa import ROOT
+from qa import ROOT, style_id
 A = ROOT / "assets"
 out_body = ROOT / "work" / "demo_body.html"     # the page without <html>/<head>, for hosted artifacts
 out_full = ROOT / "demo" / "index.html"         # the standalone file
 out_body.parent.mkdir(parents=True, exist_ok=True)
 GLYPH = (Path(__file__).resolve().parent / "surah_name_glyph.txt").read_text().strip()
-ORDER = ["hafs-madinah-mumtaza", "hafs-madinah-kabir", "hafs-adi", "shubah", "warsh", "qalon", "douri", "sousi"]
-NAMES = {"hafs-madinah-mumtaza": "Hafs · Madinah (Mumtaza)", "hafs-madinah-kabir": "Hafs · Madinah (Kabir)", "hafs-adi": "Hafs · ʿĀdī",
-         "shubah": "Shuʿbah", "warsh": "Warsh", "qalon": "Qālūn", "douri": "al-Dūrī", "sousi": "al-Sūsī"}
+# Reading order for the scan lineage, by mushaf; ORDER/NAMES are keyed by style id
+# (`mushaf-qalon`), which is what the directories and the catalog use.
+MUSHAFS = ["hafs-madinah-mumtaza", "hafs-madinah-kabir", "hafs-adi", "shubah", "warsh", "qalon", "douri", "sousi"]
+ORDER = [style_id("scan", m) for m in MUSHAFS]
+NAMES = {style_id("scan", k): v for k, v in
+         {"hafs-madinah-mumtaza": "Hafs · Madinah (Mumtaza)", "hafs-madinah-kabir": "Hafs · Madinah (Kabir)",
+          "hafs-adi": "Hafs · ʿĀdī", "shubah": "Shuʿbah", "warsh": "Warsh", "qalon": "Qālūn",
+          "douri": "al-Dūrī", "sousi": "al-Sūsī"}.items()}
 
 def load_svg(p, uid):
     s = p.read_text()

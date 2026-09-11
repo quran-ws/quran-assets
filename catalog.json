@@ -1,23 +1,23 @@
 {
-  "generated": "2026-09-10",
+  "generated": "2026-09-11",
   "schema": "quran-assets/catalog@1",
   "count": 24,
   "assets": [
     {
-      "id": "ayah-markers/douri",
+      "id": "ayah-markers/mushaf-douri",
       "type": "ayah-markers",
-      "style": "douri",
+      "style": "mushaf-douri",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Duri 'an Abi 'Amr",
       "viewBox": "0 0 77.143 100",
       "aspect": 0.77143,
       "variants": {
-        "color": "assets/ayah-markers/douri/color.svg",
-        "mono": "assets/ayah-markers/douri/mono.svg",
-        "line": "assets/ayah-markers/douri/line.svg"
+        "color": "assets/ayah-markers/mushaf-douri/color.svg",
+        "mono": "assets/ayah-markers/mushaf-douri/mono.svg",
+        "line": "assets/ayah-markers/mushaf-douri/line.svg"
       },
-      "source_crop": "assets/ayah-markers/douri/source.png",
+      "source_crop": "assets/ayah-markers/mushaf-douri/source.png",
       "palette": [
         {
           "name": "slot",
@@ -102,20 +102,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "ayah-markers/hafs-adi",
+      "id": "ayah-markers/mushaf-hafs-adi",
       "type": "ayah-markers",
-      "style": "hafs-adi",
+      "style": "mushaf-hafs-adi",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (al-'Adi)",
       "viewBox": "0 0 76.14 100",
       "aspect": 0.7614,
       "variants": {
-        "color": "assets/ayah-markers/hafs-adi/color.svg",
-        "mono": "assets/ayah-markers/hafs-adi/mono.svg",
-        "line": "assets/ayah-markers/hafs-adi/line.svg"
+        "color": "assets/ayah-markers/mushaf-hafs-adi/color.svg",
+        "mono": "assets/ayah-markers/mushaf-hafs-adi/mono.svg",
+        "line": "assets/ayah-markers/mushaf-hafs-adi/line.svg"
       },
-      "source_crop": "assets/ayah-markers/hafs-adi/source.png",
+      "source_crop": "assets/ayah-markers/mushaf-hafs-adi/source.png",
       "palette": [
         {
           "name": "slot",
@@ -200,20 +200,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "ayah-markers/hafs-madinah-kabir",
+      "id": "ayah-markers/mushaf-hafs-madinah-kabir",
       "type": "ayah-markers",
-      "style": "hafs-madinah-kabir",
+      "style": "mushaf-hafs-madinah-kabir",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, large)",
       "viewBox": "0 0 76.754 100",
       "aspect": 0.76754,
       "variants": {
-        "color": "assets/ayah-markers/hafs-madinah-kabir/color.svg",
-        "mono": "assets/ayah-markers/hafs-madinah-kabir/mono.svg",
-        "line": "assets/ayah-markers/hafs-madinah-kabir/line.svg"
+        "color": "assets/ayah-markers/mushaf-hafs-madinah-kabir/color.svg",
+        "mono": "assets/ayah-markers/mushaf-hafs-madinah-kabir/mono.svg",
+        "line": "assets/ayah-markers/mushaf-hafs-madinah-kabir/line.svg"
       },
-      "source_crop": "assets/ayah-markers/hafs-madinah-kabir/source.png",
+      "source_crop": "assets/ayah-markers/mushaf-hafs-madinah-kabir/source.png",
       "palette": [
         {
           "name": "slot",
@@ -294,20 +294,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "ayah-markers/hafs-madinah-mumtaza",
+      "id": "ayah-markers/mushaf-hafs-madinah-mumtaza",
       "type": "ayah-markers",
-      "style": "hafs-madinah-mumtaza",
+      "style": "mushaf-hafs-madinah-mumtaza",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
       "viewBox": "0 0 76.699 100",
       "aspect": 0.76699,
       "variants": {
-        "color": "assets/ayah-markers/hafs-madinah-mumtaza/color.svg",
-        "mono": "assets/ayah-markers/hafs-madinah-mumtaza/mono.svg",
-        "line": "assets/ayah-markers/hafs-madinah-mumtaza/line.svg"
+        "color": "assets/ayah-markers/mushaf-hafs-madinah-mumtaza/color.svg",
+        "mono": "assets/ayah-markers/mushaf-hafs-madinah-mumtaza/mono.svg",
+        "line": "assets/ayah-markers/mushaf-hafs-madinah-mumtaza/line.svg"
       },
-      "source_crop": "assets/ayah-markers/hafs-madinah-mumtaza/source.png",
+      "source_crop": "assets/ayah-markers/mushaf-hafs-madinah-mumtaza/source.png",
       "palette": [
         {
           "name": "slot",
@@ -384,20 +384,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "ayah-markers/qalon",
+      "id": "ayah-markers/mushaf-qalon",
       "type": "ayah-markers",
-      "style": "qalon",
+      "style": "mushaf-qalon",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Qalun 'an Nafi'",
       "viewBox": "0 0 73.162 100",
       "aspect": 0.73162,
       "variants": {
-        "color": "assets/ayah-markers/qalon/color.svg",
-        "mono": "assets/ayah-markers/qalon/mono.svg",
-        "line": "assets/ayah-markers/qalon/line.svg"
+        "color": "assets/ayah-markers/mushaf-qalon/color.svg",
+        "mono": "assets/ayah-markers/mushaf-qalon/mono.svg",
+        "line": "assets/ayah-markers/mushaf-qalon/line.svg"
       },
-      "source_crop": "assets/ayah-markers/qalon/source.png",
+      "source_crop": "assets/ayah-markers/mushaf-qalon/source.png",
       "palette": [
         {
           "name": "slot",
@@ -469,20 +469,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "ayah-markers/shubah",
+      "id": "ayah-markers/mushaf-shubah",
       "type": "ayah-markers",
-      "style": "shubah",
+      "style": "mushaf-shubah",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Shu'bah 'an 'Asim",
       "viewBox": "0 0 76.409 100",
       "aspect": 0.76409,
       "variants": {
-        "color": "assets/ayah-markers/shubah/color.svg",
-        "mono": "assets/ayah-markers/shubah/mono.svg",
-        "line": "assets/ayah-markers/shubah/line.svg"
+        "color": "assets/ayah-markers/mushaf-shubah/color.svg",
+        "mono": "assets/ayah-markers/mushaf-shubah/mono.svg",
+        "line": "assets/ayah-markers/mushaf-shubah/line.svg"
       },
-      "source_crop": "assets/ayah-markers/shubah/source.png",
+      "source_crop": "assets/ayah-markers/mushaf-shubah/source.png",
       "palette": [
         {
           "name": "slot",
@@ -567,20 +567,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "ayah-markers/sousi",
+      "id": "ayah-markers/mushaf-sousi",
       "type": "ayah-markers",
-      "style": "sousi",
+      "style": "mushaf-sousi",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Susi 'an Abi 'Amr",
       "viewBox": "0 0 77.113 100",
       "aspect": 0.77113,
       "variants": {
-        "color": "assets/ayah-markers/sousi/color.svg",
-        "mono": "assets/ayah-markers/sousi/mono.svg",
-        "line": "assets/ayah-markers/sousi/line.svg"
+        "color": "assets/ayah-markers/mushaf-sousi/color.svg",
+        "mono": "assets/ayah-markers/mushaf-sousi/mono.svg",
+        "line": "assets/ayah-markers/mushaf-sousi/line.svg"
       },
-      "source_crop": "assets/ayah-markers/sousi/source.png",
+      "source_crop": "assets/ayah-markers/mushaf-sousi/source.png",
       "palette": [
         {
           "name": "slot",
@@ -657,20 +657,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "ayah-markers/warsh",
+      "id": "ayah-markers/mushaf-warsh",
       "type": "ayah-markers",
-      "style": "warsh",
+      "style": "mushaf-warsh",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Warsh 'an Nafi'",
       "viewBox": "0 0 72.043 100",
       "aspect": 0.72043,
       "variants": {
-        "color": "assets/ayah-markers/warsh/color.svg",
-        "mono": "assets/ayah-markers/warsh/mono.svg",
-        "line": "assets/ayah-markers/warsh/line.svg"
+        "color": "assets/ayah-markers/mushaf-warsh/color.svg",
+        "mono": "assets/ayah-markers/mushaf-warsh/mono.svg",
+        "line": "assets/ayah-markers/mushaf-warsh/line.svg"
       },
-      "source_crop": "assets/ayah-markers/warsh/source.png",
+      "source_crop": "assets/ayah-markers/mushaf-warsh/source.png",
       "palette": [
         {
           "name": "slot",
@@ -750,20 +750,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "page-frames/douri",
+      "id": "page-frames/mushaf-douri",
       "type": "page-frames",
-      "style": "douri",
+      "style": "mushaf-douri",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Duri 'an Abi 'Amr",
       "viewBox": "0 0 65.591 100",
       "aspect": 0.65591,
       "variants": {
-        "color": "assets/page-frames/douri/color.svg",
-        "mono": "assets/page-frames/douri/mono.svg",
-        "line": "assets/page-frames/douri/line.svg"
+        "color": "assets/page-frames/mushaf-douri/color.svg",
+        "mono": "assets/page-frames/mushaf-douri/mono.svg",
+        "line": "assets/page-frames/mushaf-douri/line.svg"
       },
-      "source_crop": "assets/page-frames/douri/source.jpg",
+      "source_crop": "assets/page-frames/mushaf-douri/source.jpg",
       "palette": [
         {
           "name": "slot",
@@ -821,9 +821,9 @@
       "symmetry": 4,
       "slices": {
         "files": {
-          "corner": "assets/page-frames/douri/slices/corner.svg",
-          "edge-h": "assets/page-frames/douri/slices/edge-h.svg",
-          "edge-v": "assets/page-frames/douri/slices/edge-v.svg"
+          "corner": "assets/page-frames/mushaf-douri/slices/corner.svg",
+          "edge-h": "assets/page-frames/mushaf-douri/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/mushaf-douri/slices/edge-v.svg"
         },
         "corner": {
           "w": 13.1291,
@@ -869,20 +869,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "page-frames/hafs-adi",
+      "id": "page-frames/mushaf-hafs-adi",
       "type": "page-frames",
-      "style": "hafs-adi",
+      "style": "mushaf-hafs-adi",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (al-'Adi)",
       "viewBox": "0 0 64.419 100",
       "aspect": 0.64419,
       "variants": {
-        "color": "assets/page-frames/hafs-adi/color.svg",
-        "mono": "assets/page-frames/hafs-adi/mono.svg",
-        "line": "assets/page-frames/hafs-adi/line.svg"
+        "color": "assets/page-frames/mushaf-hafs-adi/color.svg",
+        "mono": "assets/page-frames/mushaf-hafs-adi/mono.svg",
+        "line": "assets/page-frames/mushaf-hafs-adi/line.svg"
       },
-      "source_crop": "assets/page-frames/hafs-adi/source.jpg",
+      "source_crop": "assets/page-frames/mushaf-hafs-adi/source.jpg",
       "palette": [
         {
           "name": "slot",
@@ -940,9 +940,9 @@
       "symmetry": 4,
       "slices": {
         "files": {
-          "corner": "assets/page-frames/hafs-adi/slices/corner.svg",
-          "edge-h": "assets/page-frames/hafs-adi/slices/edge-h.svg",
-          "edge-v": "assets/page-frames/hafs-adi/slices/edge-v.svg"
+          "corner": "assets/page-frames/mushaf-hafs-adi/slices/corner.svg",
+          "edge-h": "assets/page-frames/mushaf-hafs-adi/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/mushaf-hafs-adi/slices/edge-v.svg"
         },
         "corner": {
           "w": 12.7193,
@@ -988,20 +988,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "page-frames/hafs-madinah-kabir",
+      "id": "page-frames/mushaf-hafs-madinah-kabir",
       "type": "page-frames",
-      "style": "hafs-madinah-kabir",
+      "style": "mushaf-hafs-madinah-kabir",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, large)",
       "viewBox": "0 0 63.79 100",
       "aspect": 0.6379,
       "variants": {
-        "color": "assets/page-frames/hafs-madinah-kabir/color.svg",
-        "mono": "assets/page-frames/hafs-madinah-kabir/mono.svg",
-        "line": "assets/page-frames/hafs-madinah-kabir/line.svg"
+        "color": "assets/page-frames/mushaf-hafs-madinah-kabir/color.svg",
+        "mono": "assets/page-frames/mushaf-hafs-madinah-kabir/mono.svg",
+        "line": "assets/page-frames/mushaf-hafs-madinah-kabir/line.svg"
       },
-      "source_crop": "assets/page-frames/hafs-madinah-kabir/source.jpg",
+      "source_crop": "assets/page-frames/mushaf-hafs-madinah-kabir/source.jpg",
       "palette": [
         {
           "name": "slot",
@@ -1078,20 +1078,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "page-frames/hafs-madinah-mumtaza",
+      "id": "page-frames/mushaf-hafs-madinah-mumtaza",
       "type": "page-frames",
-      "style": "hafs-madinah-mumtaza",
+      "style": "mushaf-hafs-madinah-mumtaza",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
       "viewBox": "0 0 69.084 100",
       "aspect": 0.69084,
       "variants": {
-        "color": "assets/page-frames/hafs-madinah-mumtaza/color.svg",
-        "mono": "assets/page-frames/hafs-madinah-mumtaza/mono.svg",
-        "line": "assets/page-frames/hafs-madinah-mumtaza/line.svg"
+        "color": "assets/page-frames/mushaf-hafs-madinah-mumtaza/color.svg",
+        "mono": "assets/page-frames/mushaf-hafs-madinah-mumtaza/mono.svg",
+        "line": "assets/page-frames/mushaf-hafs-madinah-mumtaza/line.svg"
       },
-      "source_crop": "assets/page-frames/hafs-madinah-mumtaza/source.jpg",
+      "source_crop": "assets/page-frames/mushaf-hafs-madinah-mumtaza/source.jpg",
       "palette": [
         {
           "name": "slot",
@@ -1149,9 +1149,9 @@
       "symmetry": 4,
       "slices": {
         "files": {
-          "corner": "assets/page-frames/hafs-madinah-mumtaza/slices/corner.svg",
-          "edge-h": "assets/page-frames/hafs-madinah-mumtaza/slices/edge-h.svg",
-          "edge-v": "assets/page-frames/hafs-madinah-mumtaza/slices/edge-v.svg"
+          "corner": "assets/page-frames/mushaf-hafs-madinah-mumtaza/slices/corner.svg",
+          "edge-h": "assets/page-frames/mushaf-hafs-madinah-mumtaza/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/mushaf-hafs-madinah-mumtaza/slices/edge-v.svg"
         },
         "corner": {
           "w": 15.5485,
@@ -1197,20 +1197,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "page-frames/qalon",
+      "id": "page-frames/mushaf-qalon",
       "type": "page-frames",
-      "style": "qalon",
+      "style": "mushaf-qalon",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Qalun 'an Nafi'",
       "viewBox": "0 0 68.317 100",
       "aspect": 0.68317,
       "variants": {
-        "color": "assets/page-frames/qalon/color.svg",
-        "mono": "assets/page-frames/qalon/mono.svg",
-        "line": "assets/page-frames/qalon/line.svg"
+        "color": "assets/page-frames/mushaf-qalon/color.svg",
+        "mono": "assets/page-frames/mushaf-qalon/mono.svg",
+        "line": "assets/page-frames/mushaf-qalon/line.svg"
       },
-      "source_crop": "assets/page-frames/qalon/source.jpg",
+      "source_crop": "assets/page-frames/mushaf-qalon/source.jpg",
       "palette": [
         {
           "name": "slot",
@@ -1260,9 +1260,9 @@
       "symmetry": 4,
       "slices": {
         "files": {
-          "corner": "assets/page-frames/qalon/slices/corner.svg",
-          "edge-h": "assets/page-frames/qalon/slices/edge-h.svg",
-          "edge-v": "assets/page-frames/qalon/slices/edge-v.svg"
+          "corner": "assets/page-frames/mushaf-qalon/slices/corner.svg",
+          "edge-h": "assets/page-frames/mushaf-qalon/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/mushaf-qalon/slices/edge-v.svg"
         },
         "corner": {
           "w": 9.4557,
@@ -1308,20 +1308,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "page-frames/shubah",
+      "id": "page-frames/mushaf-shubah",
       "type": "page-frames",
-      "style": "shubah",
+      "style": "mushaf-shubah",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Shu'bah 'an 'Asim",
       "viewBox": "0 0 65.7 100",
       "aspect": 0.657,
       "variants": {
-        "color": "assets/page-frames/shubah/color.svg",
-        "mono": "assets/page-frames/shubah/mono.svg",
-        "line": "assets/page-frames/shubah/line.svg"
+        "color": "assets/page-frames/mushaf-shubah/color.svg",
+        "mono": "assets/page-frames/mushaf-shubah/mono.svg",
+        "line": "assets/page-frames/mushaf-shubah/line.svg"
       },
-      "source_crop": "assets/page-frames/shubah/source.jpg",
+      "source_crop": "assets/page-frames/mushaf-shubah/source.jpg",
       "palette": [
         {
           "name": "slot",
@@ -1375,9 +1375,9 @@
       "symmetry": 4,
       "slices": {
         "files": {
-          "corner": "assets/page-frames/shubah/slices/corner.svg",
-          "edge-h": "assets/page-frames/shubah/slices/edge-h.svg",
-          "edge-v": "assets/page-frames/shubah/slices/edge-v.svg"
+          "corner": "assets/page-frames/mushaf-shubah/slices/corner.svg",
+          "edge-h": "assets/page-frames/mushaf-shubah/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/mushaf-shubah/slices/edge-v.svg"
         },
         "corner": {
           "w": 13.1838,
@@ -1423,20 +1423,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "page-frames/sousi",
+      "id": "page-frames/mushaf-sousi",
       "type": "page-frames",
-      "style": "sousi",
+      "style": "mushaf-sousi",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Susi 'an Abi 'Amr",
       "viewBox": "0 0 66.52 100",
       "aspect": 0.6652,
       "variants": {
-        "color": "assets/page-frames/sousi/color.svg",
-        "mono": "assets/page-frames/sousi/mono.svg",
-        "line": "assets/page-frames/sousi/line.svg"
+        "color": "assets/page-frames/mushaf-sousi/color.svg",
+        "mono": "assets/page-frames/mushaf-sousi/mono.svg",
+        "line": "assets/page-frames/mushaf-sousi/line.svg"
       },
-      "source_crop": "assets/page-frames/sousi/source.jpg",
+      "source_crop": "assets/page-frames/mushaf-sousi/source.jpg",
       "palette": [
         {
           "name": "slot",
@@ -1482,9 +1482,9 @@
       "symmetry": 4,
       "slices": {
         "files": {
-          "corner": "assets/page-frames/sousi/slices/corner.svg",
-          "edge-h": "assets/page-frames/sousi/slices/edge-h.svg",
-          "edge-v": "assets/page-frames/sousi/slices/edge-v.svg"
+          "corner": "assets/page-frames/mushaf-sousi/slices/corner.svg",
+          "edge-h": "assets/page-frames/mushaf-sousi/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/mushaf-sousi/slices/edge-v.svg"
         },
         "corner": {
           "w": 11.7389,
@@ -1530,20 +1530,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "page-frames/warsh",
+      "id": "page-frames/mushaf-warsh",
       "type": "page-frames",
-      "style": "warsh",
+      "style": "mushaf-warsh",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Warsh 'an Nafi'",
       "viewBox": "0 0 68.317 100",
       "aspect": 0.68317,
       "variants": {
-        "color": "assets/page-frames/warsh/color.svg",
-        "mono": "assets/page-frames/warsh/mono.svg",
-        "line": "assets/page-frames/warsh/line.svg"
+        "color": "assets/page-frames/mushaf-warsh/color.svg",
+        "mono": "assets/page-frames/mushaf-warsh/mono.svg",
+        "line": "assets/page-frames/mushaf-warsh/line.svg"
       },
-      "source_crop": "assets/page-frames/warsh/source.jpg",
+      "source_crop": "assets/page-frames/mushaf-warsh/source.jpg",
       "palette": [
         {
           "name": "slot",
@@ -1589,9 +1589,9 @@
       "symmetry": 4,
       "slices": {
         "files": {
-          "corner": "assets/page-frames/warsh/slices/corner.svg",
-          "edge-h": "assets/page-frames/warsh/slices/edge-h.svg",
-          "edge-v": "assets/page-frames/warsh/slices/edge-v.svg"
+          "corner": "assets/page-frames/mushaf-warsh/slices/corner.svg",
+          "edge-h": "assets/page-frames/mushaf-warsh/slices/edge-h.svg",
+          "edge-v": "assets/page-frames/mushaf-warsh/slices/edge-v.svg"
         },
         "corner": {
           "w": 9.4557,
@@ -1637,20 +1637,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "surah-headers/douri",
+      "id": "surah-headers/mushaf-douri",
       "type": "surah-headers",
-      "style": "douri",
+      "style": "mushaf-douri",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Duri 'an Abi 'Amr",
       "viewBox": "0 0 857.714 100",
       "aspect": 8.57714,
       "variants": {
-        "color": "assets/surah-headers/douri/color.svg",
-        "mono": "assets/surah-headers/douri/mono.svg",
-        "line": "assets/surah-headers/douri/line.svg"
+        "color": "assets/surah-headers/mushaf-douri/color.svg",
+        "mono": "assets/surah-headers/mushaf-douri/mono.svg",
+        "line": "assets/surah-headers/mushaf-douri/line.svg"
       },
-      "source_crop": "assets/surah-headers/douri/source.png",
+      "source_crop": "assets/surah-headers/mushaf-douri/source.png",
       "palette": [
         {
           "name": "slot",
@@ -1739,20 +1739,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "surah-headers/hafs-adi",
+      "id": "surah-headers/mushaf-hafs-adi",
       "type": "surah-headers",
-      "style": "hafs-adi",
+      "style": "mushaf-hafs-adi",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (al-'Adi)",
       "viewBox": "0 0 872.674 100",
       "aspect": 8.72674,
       "variants": {
-        "color": "assets/surah-headers/hafs-adi/color.svg",
-        "mono": "assets/surah-headers/hafs-adi/mono.svg",
-        "line": "assets/surah-headers/hafs-adi/line.svg"
+        "color": "assets/surah-headers/mushaf-hafs-adi/color.svg",
+        "mono": "assets/surah-headers/mushaf-hafs-adi/mono.svg",
+        "line": "assets/surah-headers/mushaf-hafs-adi/line.svg"
       },
-      "source_crop": "assets/surah-headers/hafs-adi/source.png",
+      "source_crop": "assets/surah-headers/mushaf-hafs-adi/source.png",
       "palette": [
         {
           "name": "slot",
@@ -1836,20 +1836,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "surah-headers/hafs-madinah-kabir",
+      "id": "surah-headers/mushaf-hafs-madinah-kabir",
       "type": "surah-headers",
-      "style": "hafs-madinah-kabir",
+      "style": "mushaf-hafs-madinah-kabir",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, large)",
       "viewBox": "0 0 811.409 100",
       "aspect": 8.11409,
       "variants": {
-        "color": "assets/surah-headers/hafs-madinah-kabir/color.svg",
-        "mono": "assets/surah-headers/hafs-madinah-kabir/mono.svg",
-        "line": "assets/surah-headers/hafs-madinah-kabir/line.svg"
+        "color": "assets/surah-headers/mushaf-hafs-madinah-kabir/color.svg",
+        "mono": "assets/surah-headers/mushaf-hafs-madinah-kabir/mono.svg",
+        "line": "assets/surah-headers/mushaf-hafs-madinah-kabir/line.svg"
       },
-      "source_crop": "assets/surah-headers/hafs-madinah-kabir/source.png",
+      "source_crop": "assets/surah-headers/mushaf-hafs-madinah-kabir/source.png",
       "palette": [
         {
           "name": "slot",
@@ -1930,20 +1930,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "surah-headers/hafs-madinah-mumtaza",
+      "id": "surah-headers/mushaf-hafs-madinah-mumtaza",
       "type": "surah-headers",
-      "style": "hafs-madinah-mumtaza",
+      "style": "mushaf-hafs-madinah-mumtaza",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
       "viewBox": "0 0 854.688 100",
       "aspect": 8.54688,
       "variants": {
-        "color": "assets/surah-headers/hafs-madinah-mumtaza/color.svg",
-        "mono": "assets/surah-headers/hafs-madinah-mumtaza/mono.svg",
-        "line": "assets/surah-headers/hafs-madinah-mumtaza/line.svg"
+        "color": "assets/surah-headers/mushaf-hafs-madinah-mumtaza/color.svg",
+        "mono": "assets/surah-headers/mushaf-hafs-madinah-mumtaza/mono.svg",
+        "line": "assets/surah-headers/mushaf-hafs-madinah-mumtaza/line.svg"
       },
-      "source_crop": "assets/surah-headers/hafs-madinah-mumtaza/source.png",
+      "source_crop": "assets/surah-headers/mushaf-hafs-madinah-mumtaza/source.png",
       "palette": [
         {
           "name": "slot",
@@ -2044,20 +2044,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "surah-headers/qalon",
+      "id": "surah-headers/mushaf-qalon",
       "type": "surah-headers",
-      "style": "qalon",
+      "style": "mushaf-qalon",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Qalun 'an Nafi'",
       "viewBox": "0 0 863.429 100",
       "aspect": 8.63429,
       "variants": {
-        "color": "assets/surah-headers/qalon/color.svg",
-        "mono": "assets/surah-headers/qalon/mono.svg",
-        "line": "assets/surah-headers/qalon/line.svg"
+        "color": "assets/surah-headers/mushaf-qalon/color.svg",
+        "mono": "assets/surah-headers/mushaf-qalon/mono.svg",
+        "line": "assets/surah-headers/mushaf-qalon/line.svg"
       },
-      "source_crop": "assets/surah-headers/qalon/source.png",
+      "source_crop": "assets/surah-headers/mushaf-qalon/source.png",
       "palette": [
         {
           "name": "slot",
@@ -2141,20 +2141,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "surah-headers/shubah",
+      "id": "surah-headers/mushaf-shubah",
       "type": "surah-headers",
-      "style": "shubah",
+      "style": "mushaf-shubah",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Shu'bah 'an 'Asim",
       "viewBox": "0 0 872.674 100",
       "aspect": 8.72674,
       "variants": {
-        "color": "assets/surah-headers/shubah/color.svg",
-        "mono": "assets/surah-headers/shubah/mono.svg",
-        "line": "assets/surah-headers/shubah/line.svg"
+        "color": "assets/surah-headers/mushaf-shubah/color.svg",
+        "mono": "assets/surah-headers/mushaf-shubah/mono.svg",
+        "line": "assets/surah-headers/mushaf-shubah/line.svg"
       },
-      "source_crop": "assets/surah-headers/shubah/source.png",
+      "source_crop": "assets/surah-headers/mushaf-shubah/source.png",
       "palette": [
         {
           "name": "slot",
@@ -2243,20 +2243,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "surah-headers/sousi",
+      "id": "surah-headers/mushaf-sousi",
       "type": "surah-headers",
-      "style": "sousi",
+      "style": "mushaf-sousi",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "al-Susi 'an Abi 'Amr",
       "viewBox": "0 0 782.54 100",
       "aspect": 7.8254,
       "variants": {
-        "color": "assets/surah-headers/sousi/color.svg",
-        "mono": "assets/surah-headers/sousi/mono.svg",
-        "line": "assets/surah-headers/sousi/line.svg"
+        "color": "assets/surah-headers/mushaf-sousi/color.svg",
+        "mono": "assets/surah-headers/mushaf-sousi/mono.svg",
+        "line": "assets/surah-headers/mushaf-sousi/line.svg"
       },
-      "source_crop": "assets/surah-headers/sousi/source.png",
+      "source_crop": "assets/surah-headers/mushaf-sousi/source.png",
       "palette": [
         {
           "name": "slot",
@@ -2333,20 +2333,20 @@
       "pipeline_commit": "quran-assets 3011d73"
     },
     {
-      "id": "surah-headers/warsh",
+      "id": "surah-headers/mushaf-warsh",
       "type": "surah-headers",
-      "style": "warsh",
+      "style": "mushaf-warsh",
       "lineage": "scan",
       "units": "normalized-100",
       "riwaya": "Warsh 'an Nafi'",
       "viewBox": "0 0 863.429 100",
       "aspect": 8.63429,
       "variants": {
-        "color": "assets/surah-headers/warsh/color.svg",
-        "mono": "assets/surah-headers/warsh/mono.svg",
-        "line": "assets/surah-headers/warsh/line.svg"
+        "color": "assets/surah-headers/mushaf-warsh/color.svg",
+        "mono": "assets/surah-headers/mushaf-warsh/mono.svg",
+        "line": "assets/surah-headers/mushaf-warsh/line.svg"
       },
-      "source_crop": "assets/surah-headers/warsh/source.png",
+      "source_crop": "assets/surah-headers/mushaf-warsh/source.png",
       "palette": [
         {
           "name": "slot",

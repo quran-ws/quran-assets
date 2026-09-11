@@ -7,7 +7,7 @@ import json
 import time
 from pathlib import Path
 
-from qa import ROOT, PKG
+from qa import ROOT, PKG, split_style
 
 SLOT_ROLE = {"surah-headers": "surah-name", "page-frames": "text-area", "ayah-markers": "ayah-number"}
 LICENSES = {k: v for k, v in json.loads((PKG / "licenses.json").read_text()).items() if not k.startswith("_")}
@@ -37,9 +37,10 @@ def write_catalog():
     for meta in sorted((ROOT / "assets").glob("*/*/meta.json")):
         m = json.load(open(meta)); d = "assets/" + str(meta.parent.relative_to(ROOT / "assets"))
         typ, style = meta.parent.parent.name, meta.parent.name
+        lineage, _ = split_style(style)
         crop = "source.jpg" if (meta.parent / "source.jpg").exists() else "source.png"
         sx = [float(v) for v in m["slot"].split()] if m.get("slot") else None
-        items.append({"id": f"{typ}/{style}", "type": typ, "style": style, "lineage": "scan", "units": "normalized-100",
+        items.append({"id": f"{typ}/{style}", "type": typ, "style": style, "lineage": lineage, "units": "normalized-100",
                       "riwaya": m.get("riwaya"), "viewBox": m.get("viewBox"), "aspect": aspect(m.get("viewBox")),
                       "variants": {k: f"{d}/{k}.svg" for k in ("color", "mono", "line") if (meta.parent / f"{k}.svg").exists()},
                       "source_crop": f"{d}/{crop}",

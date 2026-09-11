@@ -55,9 +55,16 @@ def check_svg(asset, problems):
             problems.append(f"{asset['id']}/{variant}: width/height must be left to CSS")
         if asset["units"] == "normalized-100" and not root.get("viewBox", "").endswith(" 100"):
             problems.append(f"{asset['id']}/{variant}: normalized-100 assets must have viewBox height 100")
-        for attribute in ("data-mushaf", "data-asset", "data-variant"):
+        for attribute in ("data-style", "data-lineage", "data-asset", "data-variant"):
             if not root.get(attribute):
                 problems.append(f"{asset['id']}/{variant}: root is missing {attribute}")
+        if root.get("data-style") != asset["style"]:
+            problems.append(f"{asset['id']}/{variant}: data-style is {root.get('data-style')!r}, not the style id")
+        # A font-derived asset has no mushaf, so data-mushaf is scan-only rather than universal.
+        if asset["lineage"] == "scan" and not root.get("data-mushaf"):
+            problems.append(f"{asset['id']}/{variant}: a scan asset must carry data-mushaf")
+        if asset["lineage"] != "scan" and root.get("data-mushaf"):
+            problems.append(f"{asset['id']}/{variant}: data-mushaf on a {asset['lineage']}-derived asset")
         if asset["slots"] and not root.get("data-slot"):
             problems.append(f"{asset['id']}/{variant}: root is missing data-slot")
         classes = _classes(root)

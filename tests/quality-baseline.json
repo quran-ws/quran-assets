@@ -1,7 +1,7 @@
 {
   "version": 2,
   "assets": {
-    "ayah-markers/douri": {
+    "ayah-markers/mushaf-douri": {
       "sizes": {
         "360": {
           "ink_iou": 0.3409090909090909,
@@ -50,7 +50,7 @@
         "isolated_ends": 13
       }
     },
-    "ayah-markers/hafs-adi": {
+    "ayah-markers/mushaf-hafs-adi": {
       "sizes": {
         "360": {
           "ink_iou": 0.34676142787917946,
@@ -99,7 +99,7 @@
         "isolated_ends": 11
       }
     },
-    "ayah-markers/hafs-madinah-kabir": {
+    "ayah-markers/mushaf-hafs-madinah-kabir": {
       "sizes": {
         "360": {
           "ink_iou": 0.39881555611857106,
@@ -145,7 +145,7 @@
         "isolated_ends": 15
       }
     },
-    "ayah-markers/hafs-madinah-mumtaza": {
+    "ayah-markers/mushaf-hafs-madinah-mumtaza": {
       "sizes": {
         "360": {
           "ink_iou": 0.355920890856079,
@@ -188,7 +188,7 @@
         "isolated_ends": 16
       }
     },
-    "ayah-markers/qalon": {
+    "ayah-markers/mushaf-qalon": {
       "sizes": {
         "360": {
           "ink_iou": 0.8089420862125699,
@@ -228,7 +228,7 @@
         "isolated_ends": 4
       }
     },
-    "ayah-markers/shubah": {
+    "ayah-markers/mushaf-shubah": {
       "sizes": {
         "360": {
           "ink_iou": 0.3005988450844799,
@@ -277,7 +277,7 @@
         "isolated_ends": 10
       }
     },
-    "ayah-markers/sousi": {
+    "ayah-markers/mushaf-sousi": {
       "sizes": {
         "360": {
           "ink_iou": 0.28261284291655536,
@@ -320,7 +320,7 @@
         "isolated_ends": 13
       }
     },
-    "ayah-markers/warsh": {
+    "ayah-markers/mushaf-warsh": {
       "sizes": {
         "360": {
           "ink_iou": 0.7825495803835154,
@@ -366,7 +366,7 @@
         "isolated_ends": 6
       }
     },
-    "page-frames/douri": {
+    "page-frames/mushaf-douri": {
       "sizes": {
         "360": {
           "ink_iou": 0.6945319412493364,
@@ -418,7 +418,7 @@
         "isolated_ends": 103
       }
     },
-    "page-frames/hafs-adi": {
+    "page-frames/mushaf-hafs-adi": {
       "sizes": {
         "360": {
           "ink_iou": 0.6198426201616334,
@@ -470,7 +470,7 @@
         "isolated_ends": 117
       }
     },
-    "page-frames/hafs-madinah-kabir": {
+    "page-frames/mushaf-hafs-madinah-kabir": {
       "sizes": {
         "360": {
           "ink_iou": 0.651745511958365,
@@ -513,7 +513,7 @@
         "isolated_ends": 304
       }
     },
-    "page-frames/hafs-madinah-mumtaza": {
+    "page-frames/mushaf-hafs-madinah-mumtaza": {
       "sizes": {
         "360": {
           "ink_iou": 0.7938349007314525,
@@ -565,7 +565,7 @@
         "isolated_ends": 222
       }
     },
-    "page-frames/qalon": {
+    "page-frames/mushaf-qalon": {
       "sizes": {
         "360": {
           "ink_iou": 0.7117334058336894,
@@ -611,7 +611,7 @@
         "isolated_ends": 70
       }
     },
-    "page-frames/shubah": {
+    "page-frames/mushaf-shubah": {
       "sizes": {
         "360": {
           "ink_iou": 0.7532842559075934,
@@ -660,7 +660,7 @@
         "isolated_ends": 118
       }
     },
-    "page-frames/sousi": {
+    "page-frames/mushaf-sousi": {
       "sizes": {
         "360": {
           "ink_iou": 0.6561602232619224,
@@ -703,7 +703,7 @@
         "isolated_ends": 232
       }
     },
-    "page-frames/warsh": {
+    "page-frames/mushaf-warsh": {
       "sizes": {
         "360": {
           "ink_iou": 0.6645912427233611,
@@ -746,7 +746,7 @@
         "isolated_ends": 77
       }
     },
-    "surah-headers/douri": {
+    "surah-headers/mushaf-douri": {
       "sizes": {
         "360": {
           "ink_iou": 0.7754172989377845,
@@ -798,7 +798,7 @@
         "isolated_ends": 14
       }
     },
-    "surah-headers/hafs-adi": {
+    "surah-headers/mushaf-hafs-adi": {
       "sizes": {
         "360": {
           "ink_iou": 0.8133978763272954,
@@ -847,7 +847,7 @@
         "isolated_ends": 31
       }
     },
-    "surah-headers/hafs-madinah-kabir": {
+    "surah-headers/mushaf-hafs-madinah-kabir": {
       "sizes": {
         "360": {
           "ink_iou": 0.8392814656197953,
@@ -893,7 +893,7 @@
         "isolated_ends": 39
       }
     },
-    "surah-headers/hafs-madinah-mumtaza": {
+    "surah-headers/mushaf-hafs-madinah-mumtaza": {
       "sizes": {
         "360": {
           "ink_iou": 0.7237569060773481,
@@ -954,7 +954,7 @@
         "isolated_ends": 20
       }
     },
-    "surah-headers/qalon": {
+    "surah-headers/mushaf-qalon": {
       "sizes": {
         "360": {
           "ink_iou": 0.7900749063670413,
@@ -1003,7 +1003,7 @@
         "isolated_ends": 23
       }
     },
-    "surah-headers/shubah": {
+    "surah-headers/mushaf-shubah": {
       "sizes": {
         "360": {
           "ink_iou": 0.8189366351056082,
@@ -1055,7 +1055,7 @@
         "isolated_ends": 27
       }
     },
-    "surah-headers/sousi": {
+    "surah-headers/mushaf-sousi": {
       "sizes": {
         "360": {
           "ink_iou": 0.8380160550458715,
@@ -1098,7 +1098,7 @@
         "isolated_ends": 32
       }
     },
-    "surah-headers/warsh": {
+    "surah-headers/mushaf-warsh": {
       "sizes": {
         "360": {
           "ink_iou": 0.617704280155642,

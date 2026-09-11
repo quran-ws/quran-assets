@@ -2,6 +2,25 @@
 
 All three asset types share one contract so an app can treat them uniformly.
 
+## Naming — `<lineage>-<name>`
+
+Every style id is the lineage, a hyphen, and the lineage's own name for the thing:
+
+| | |
+|---|---|
+| scan-derived (mushaf PDFs) | `mushaf-qalon`, `mushaf-hafs-madinah-kabir` |
+| font-derived (OFL fonts) | `font-003-regular`, `font-010-regular-bold` |
+
+One rule, no exceptions, applied to every type — so a mushaf's header, frame and marker still
+share a style id (`surah-headers/mushaf-qalon`, `page-frames/mushaf-qalon`,
+`ayah-markers/mushaf-qalon`), while the 47 font-derived markers sit in the same
+`assets/ayah-markers/` directory without a second naming vocabulary growing beside the first.
+`qa.style_id` / `qa.split_style` mint and parse it; `catalog.json → lineage` is derived from
+the prefix, never written by hand.
+
+The bare names stay bare where they are not asset ids: `sources/mushafs.json` and
+`qa/jobs/<type>.json` describe mushafs, not assets, and key on `qalon`.
+
 ## File set per asset (`assets/<type>/<style>/`)
 
 | file | what |
@@ -18,7 +37,8 @@ All three asset types share one contract so an app can treat them uniformly.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 <w> 100"
-     data-mushaf="qalon" data-asset="surah-header" data-variant="color"
+     data-style="mushaf-qalon" data-lineage="scan" data-mushaf="qalon"
+     data-asset="surah-header" data-variant="color"
      data-symmetry="4" data-slot="181.9 8.6 504.3 83.6"
      data-source-file="qalon.pdf" data-source-page="607" data-source-box="341 300 1348 416"
      data-source-url="…">
@@ -26,6 +46,10 @@ All three asset types share one contract so an app can treat them uniformly.
               pdf_page, crop_box_px, occurrence, occurrences_on_page, pipeline, extracted… }</metadata>
 ```
 
+* **data-style** is the style id and **data-lineage** is `scan` or `font` — the two attributes
+  every asset carries, whatever it was made from. **data-mushaf** is the bare mushaf id and is
+  present on scan assets only: a font-derived asset has no mushaf. Select on `data-style` unless
+  you specifically mean a mushaf.
 * **viewBox** is normalised to height 100; width = 100 × aspect. No `width`/`height` attributes —
   size it with CSS.
 * **data-slot** = `x y w h` in viewBox units: the empty area the app fills (surah name / page text /

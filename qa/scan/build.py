@@ -4,7 +4,8 @@
 Driven by `python -m qa build` (see `python -m qa build --help`); one job per
 (mushaf, asset type) in qa/jobs/<type>.json.
 
-Outputs land in assets/<type>/<style>/  (type = surah-headers | page-frames | ayah-markers, style = mushaf id):
+Outputs land in assets/<type>/<style>/  (type = surah-headers | page-frames | ayah-markers,
+style = `mushaf-<mushaf id>` -- the `<lineage>-<name>` rule, see qa.style_id):
   source.png   raw crop (title included)          clean.png   title removed (what gets traced)
   mono.svg     single-colour (currentColor)       color.svg   multi-colour layers
   meta.json    page, boxes, palette, slot, viewBox candidates/  every detected occurrence (raw)
@@ -12,7 +13,7 @@ Outputs land in assets/<type>/<style>/  (type = surah-headers | page-frames | ay
 import json, time, hashlib, re
 from pathlib import Path
 import cv2, numpy as np
-from qa import ROOT, SOURCES, TYPE_DIR, JOBS_DIR, git_rev, load_jobs
+from qa import ROOT, SOURCES, TYPE_DIR, JOBS_DIR, git_rev, load_jobs, style_id
 from . import render, detect, clean, slicer, vectorize, svgout, symmetry
 
 def load():
@@ -53,7 +54,7 @@ def provenance(job, s, box, pick, boxes):
 def run_job(job, cfg, src, to="vectorize", force=False, log=print):
     mushaf, asset = job["mushaf"], job["asset"]
     at = cfg["asset_types"][asset]
-    out = ROOT / "assets" / TYPE_DIR.get(asset, asset) / mushaf
+    out = ROOT / "assets" / TYPE_DIR.get(asset, asset) / style_id("scan", mushaf)
     out.mkdir(parents=True, exist_ok=True)
     meta = {"mushaf": mushaf, "asset": asset, "page": job["page"], "source": src[mushaf]["file"],
             "riwaya": src[mushaf].get("riwaya"), "generated": time.strftime("%Y-%m-%d %H:%M")}

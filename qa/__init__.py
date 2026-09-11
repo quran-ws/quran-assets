@@ -18,6 +18,27 @@ SOURCES = Path(os.environ.get("QA_SOURCES_DIR", ROOT / "sources"))  # mushaf PDF
 TYPE_DIR = {"surah-header": "surah-headers", "page-frame": "page-frames", "ayah-marker": "ayah-markers"}
 ASSET_OF_TYPE = {v: k for k, v in TYPE_DIR.items()}
 
+# One naming standard for every asset, both lineages: `<lineage>-<name>`. The two lineages
+# name things differently -- a mushaf id (`qalon`) for a scan asset, a design number and a
+# weight (`003-regular`) for a font one -- and the prefix is what makes those one vocabulary
+# instead of two sitting side by side in assets/ayah-markers/. Applied to every type, so a
+# mushaf's header, frame and marker still share a style id. See docs/CONVENTIONS.md.
+LINEAGE_PREFIX = {"scan": "mushaf", "font": "font"}
+
+
+def style_id(lineage, name):
+    """`("scan", "qalon") -> "mushaf-qalon"`; `("font", "003-regular") -> "font-003-regular"`."""
+    return f"{LINEAGE_PREFIX[lineage]}-{name}"
+
+
+def split_style(style):
+    """The inverse: `"mushaf-qalon" -> ("scan", "qalon")`. Raises on an unprefixed id."""
+    prefix, _, name = style.partition("-")
+    for lineage, known in LINEAGE_PREFIX.items():
+        if prefix == known and name:
+            return lineage, name
+    raise ValueError(f"style {style!r} does not follow <lineage>-<name>")
+
 
 def load_jobs():
     """Merge qa/jobs/<type>.json into one config: {asset_types: {...}, jobs: [...]}.
