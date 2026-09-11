@@ -60,7 +60,9 @@ scan, so no `clean.png`.
 * **data-slot** = `x y w h` in viewBox units: the empty area the app fills (surah name / page text /
   ayah number). `catalog.json` also gives `cx, cy`.
 * **data-symmetry**: `4` (quadrant mirrored both ways), `2` (left/right), `c2` (180° rotation),
-  `1` (traced whole). Mirrored files have `<defs><g id="q">…</g></defs>` + `<use>` elements.
+  `1` (traced whole). Mirrored files have `<defs><g id="q-<style>-<asset>-<variant>">…</g></defs>`
+  + `<use>` elements. The id is unique per file, so any number of assets can be inlined into one
+  document without their `<use>` references crossing — the sprite sheet still namespaces it again.
 * Paths use absolute `M/C/L/Z` (after svgo: relative + `h/v` too) — no transforms except the one
   `scale()` on the quadrant group and the `<use>` matrices.
 

@@ -48,7 +48,9 @@ def load_svg(p, uid):
     s = re.sub(r'<\?xml[^>]*\?>', '', s)
     # scope: add an id so JS can find it; strip nothing else (groups + classes are the API)
     s = s.replace("<svg ", f'<svg id="{uid}" ', 1)
-    s = s.replace('id="q"', f'id="q-{uid}"').replace('href="#q"', f'href="#q-{uid}"')
+    # Ids are unique per file already; the demo shows a file more than once, so scope them again.
+    s = re.sub(r'id="(q-[\w-]+)"', lambda m: f'id="{uid}--{m[1]}"', s)
+    s = re.sub(r'href="#(q-[\w-]+)"', lambda m: f'href="#{uid}--{m[1]}"', s)
     return s.strip()
 
 TYPES = [("surah-header", "Surah headers", "The title frame above every surah. The name slot is transparent; your calligraphic glyph is placed from <code>data-slot</code>."),
@@ -300,7 +302,7 @@ $$('.panel').forEach(p=>{{
     const mono=$('.v-mono',p).hidden===false, lineV=$('.v-line',p).hidden===false; const src=lineV?svgL:(mono?svgM:svgC); const c=src.cloneNode(true); c.removeAttribute('id');
     if(mono){{ const ink=$('.v-mono',p).style.color; if(ink) $$('g.ink',c).forEach(g=>g.setAttribute('fill',ink)); }}
     if(lineV){{ const ink=$('.v-line',p).style.color; if(ink) $$('g.line',c).forEach(g=>g.setAttribute('stroke',ink)); }}
-    c.innerHTML=c.innerHTML.replace(/q-[a-z]-[a-z0-9-]+/g,'q');
+    c.innerHTML=c.innerHTML.replace(/[a-z0-9-]+--(?=q-)/g,'');
     const txt='<?xml version="1.0" encoding="UTF-8"?>\\n'+c.outerHTML; const b=$('.copy',p);
     try{{ await navigator.clipboard.writeText(txt); b.textContent='Copied'; }}catch(err){{ b.textContent='Copy blocked — select the SVG in the page source'; }}
     b.classList.add('done'); setTimeout(()=>{{b.textContent='Copy SVG';b.classList.remove('done')}},1600);

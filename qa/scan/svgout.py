@@ -50,10 +50,13 @@ def write_svg(path, paths_or_layers, w_px, h_px, scale, mushaf, asset, variant, 
     if provenance:
         out.append("<metadata>" + _json.dumps(provenance, ensure_ascii=False).replace("&", "&amp;").replace("<", "&lt;") + "</metadata>")
     t = f'transform="scale({_fmt(s / scale)})"'
+    # The quadrant's id is unique per file, not `q`: consumers inline several assets into one
+    # document, and every `<use href="#{qid}">` on the page would otherwise resolve to the first one.
+    qid = f'q-{attrs["data-style"]}-{asset}-{variant}'
     if sym:
         attrs_sym = f' data-symmetry="{sym["folds"]}"'
         out[0] = out[0][:-1] + attrs_sym + ">"
-        out.append(f'<defs><g id="q" {t}>')
+        out.append(f'<defs><g id="{qid}" {t}>')
     else:
         out.append(f"<g {t}>")
     if variant == "line":
@@ -93,13 +96,13 @@ def write_svg(path, paths_or_layers, w_px, h_px, scale, mushaf, asset, variant, 
     if sym:
         W2, H2 = _fmt(vb_w), _fmt(vb_h)
         out.append("</defs>")
-        out.append('<use href="#q"/>')
+        out.append('<use href="#{qid}"/>')
         f = sym["folds"]
-        if f in (2, 4): out.append(f'<use href="#q" transform="matrix(-1 0 0 1 {W2} 0)"/>')
+        if f in (2, 4): out.append(f'<use href="#{qid}" transform="matrix(-1 0 0 1 {W2} 0)"/>')
         if f == 4:
-            out.append(f'<use href="#q" transform="matrix(1 0 0 -1 0 {H2})"/>')
-            out.append(f'<use href="#q" transform="matrix(-1 0 0 -1 {W2} {H2})"/>')
-        if f == "c2": out.append(f'<use href="#q" transform="matrix(-1 0 0 -1 {W2} {H2})"/>')
+            out.append(f'<use href="#{qid}" transform="matrix(1 0 0 -1 0 {H2})"/>')
+            out.append(f'<use href="#{qid}" transform="matrix(-1 0 0 -1 {W2} {H2})"/>')
+        if f == "c2": out.append(f'<use href="#{qid}" transform="matrix(-1 0 0 -1 {W2} {H2})"/>')
     out.append("</svg>")
     open(path, "w").write("\n".join(out))
     return {"viewBox": attrs["viewBox"], "slot": attrs.get("data-slot")}

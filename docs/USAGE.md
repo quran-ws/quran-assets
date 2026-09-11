@@ -2,7 +2,7 @@
 
 ## Surah header
 ```html
-<div class="header"><!-- inline the SVG or <img src> it -->
+<div class="header"><!-- inline the SVG or <img src> it; ids are unique per file, so inline as many as you like -->
   <svg …data-slot="181.9 8.6 504.3 83.6"…>…</svg>
 </div>
 ```
