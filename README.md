@@ -17,7 +17,6 @@ Use it when designing a Quran application or website and you need ready-made Mus
 
 | | |
 |---|---|
-| **Package** | `@quran.ws/assets` · `0.1.0` |
 | **Assets** | 71 · two lineages |
 | **Provenance** | Scan or font recorded in every file |
 | **Licence** | 40 of 47 font markers OFL-1.1 · scan assets CC BY-NC-SA 4.0, provisional |
