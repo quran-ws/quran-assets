@@ -1,6 +1,6 @@
 """`python -m qa dist` — build dist/ for npm and the CDN.
 
-    dist/package.json          @quran-ws/assets
+    dist/package.json          @quran.ws/assets
     dist/index.js .d.ts        the catalog as a typed module, with url()/get() helpers
     dist/catalog.json          copy of the root catalog, paths rewritten to the package
     dist/assets/...            the SVGs and their meta.json
@@ -24,7 +24,7 @@ from qa.font.fontbuild import main as fontbuild
 DIST = ROOT / "dist"
 NS = "http://www.w3.org/2000/svg"
 ET.register_namespace("", NS)
-PACKAGE = "@quran-ws/assets"
+PACKAGE = "@quran.ws/assets"
 VERSION = "0.1.0"
 
 
@@ -313,6 +313,7 @@ def main(exclude_unconfirmed=False):
         "homepage": "https://assets.quran.ws",
         "repository": {"type": "git", "url": "git+https://github.com/quran-ws/quran-assets.git"},
         "private": bool(unconfirmed),
+        "publishConfig": {"access": "public"},
         "quranAssets": {"pipeline": git_rev(), "assets": catalog["count"],
                         "fontGlyphs": len(font_markers), "unconfirmedLicenses": unconfirmed},
     }

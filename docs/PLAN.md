@@ -126,7 +126,7 @@ the same problem better.
 
 ## 5. Distribution
 
-- **npm** `@quran-ws/assets` (*decided*; `python -m qa dist` builds it): `dist/index.js` +
+- **npm** `@quran.ws/assets` (*decided*; `python -m qa dist` builds it): `dist/index.js` +
   `index.d.ts` (typed catalog, `get`/`ofType`/`url`/`slot`/`frame`), `catalog.json`, `assets/`
   (incl. `slices/`), `sprites/<type>.svg`, `LICENSES.md`. The package is `"private": true`
   while any bundled asset's license is not `confirmed`, and the release workflow refuses to
@@ -162,7 +162,7 @@ Scan-derived assets (headers, frames, markers): the ornament designs are the pub
 ## 8. Phases
 
 **Phase 0 — decisions.** *Taken* (delegated by Abdullah, 10 Sep 2026): package name
-`@quran-ws/assets`; colour API = `class` + `data-part` + presentation attribute (§3, the
+`@quran.ws/assets`; colour API = `class` + `data-part` + presentation attribute (§3, the
 `var()` form was tried and rejected); license position = scan assets `CC-BY-NC-SA-4.0`,
 status `provisional`, redistribution blocked in the build until confirmed (§6, recorded in
 `qa/licenses.json`); the 12 unverified fonts stay `pending` and cannot be marked
@@ -193,7 +193,7 @@ Still not started: juz/hizb/sajdah marks, basmala, a surah-header font.
 
 ## 9. Open questions
 
-- ~~Package name~~ — decided: `@quran-ws/assets`.
+- ~~Package name~~ — decided: `@quran.ws/assets`.
 - ~~Keep `quranpedia/ayah-markers` alive as a mirror, or archive outright?~~ — neither for now:
   it is untouched and read-only. Abdullah, 11 Sep 2026.
 - Is `<use>` mirroring acceptable for opening-spread frames too, or trace left/right pages separately where the scans differ?

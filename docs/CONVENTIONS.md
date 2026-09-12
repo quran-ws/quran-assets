@@ -125,7 +125,7 @@ A frame whose border tiles also ships three pieces in `slices/`, all in the **fr
 
 `catalog.json → slices` gives `corner{w,h}`, `repeat{h,v}`, `corner_mode` and the
 `reconstruction_iou` the pieces scored against the whole frame. Assemble with `frame()` from
-`@quran-ws/assets` (or `qa.common.frame.assemble` in Python): corners at the four corners, the
+`@quran.ws/assets` (or `qa.common.frame.assemble` in Python): corners at the four corners, the
 edge units repeated between them, each stretched by the same rounding remainder so the run fits
 exactly. Frames without a `slices` entry (`hafs-madinah-kabir`, whose border does not tile
 cleanly) ship whole only.
