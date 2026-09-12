@@ -47,8 +47,7 @@ came from"*.
 * Guard rails that did not exist before: `python -m qa validate` (catalog schema, SVG contract,
   license traceability), `python -m qa quality --baseline tests/quality-baseline.json` (raster
   regression gate at 360/1000/4000 px), and 54 tests. CI runs all three.
-* `docs/METHOD.md` explains every stage; `docs/CONVENTIONS.md` the SVG contract;
-  `docs/SESSION-LOG.md` how we got here and what was tried and rejected.
+* `docs/METHOD.md` explains every stage; `docs/CONVENTIONS.md` the SVG contract.
 * Git history before this repo lives in Abdullah's local `quran-surah-header` folder (one
   commit + a large uncommitted round blocked by a stale `.git/HEAD.lock`); this repo starts fresh.
 
