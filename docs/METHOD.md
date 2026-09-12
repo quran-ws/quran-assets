@@ -175,3 +175,26 @@ exactly once, or the duplicated hole contours would double their winding and fil
 in. Codepoints come from `selection.json`, so a subset build leaves gaps rather than shifting
 every glyph off the codepoints the catalog advertises. No Reserved Font Name appears in the
 font's names or glyph names — the OFL forbids one naming a modified version.
+
+## Rebuilding from source
+
+The PDFs are not committed. Fetch them and the 24 scan assets regenerate:
+
+```bash
+bash sources/fetch_mushafs.sh     # ~2 GB from archive.org
+pip install -r requirements.txt   # + poppler and cairo on PATH
+
+python -m qa build                # render → detect → clean → symmetry → vectorize → slice
+python -m qa optimize             # svgo, then rewrite meta.json to match the delivered file
+python -m qa validate             # catalog schema, SVG contract, licence traceability
+python -m qa quality --baseline tests/quality-baseline.json --out work/quality
+```
+
+No manual crop boxes: headers, frames and markers are found on the page by their own
+geometry, with per-job overrides in `qa/jobs/<type>.json`.
+
+The font markers need none of that — `python -m qa build --lineage font` rebuilds all 47
+offline from what is committed, in a second. The expensive half (scraping the families,
+deduplicating outlines, deriving number boxes with HarfBuzz) ran once; its output and the
+two things done by hand — the contour-to-layer assignment and the 47 number centres — live
+in `qa/font/data/`. `python -m qa dist` builds the PUA font from the same files.
