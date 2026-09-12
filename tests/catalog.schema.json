@@ -368,6 +368,13 @@
           "type": "string",
           "format": "uri"
         },
+        "url_mirror": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
         "pdf_page": {
           "type": "integer",
           "minimum": 1
@@ -420,10 +427,16 @@
           "type": "string"
         },
         "archive_item": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "archive_url": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "uri"
         },
         "occurrence": {
