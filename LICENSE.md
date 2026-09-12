@@ -13,7 +13,7 @@ things. Every asset carries its own, in `catalog.json → license`, keyed to a p
 
 40 of them come from families under the **SIL Open Font License 1.1**, verified from
 `license: "OFL"` in the family's `METADATA.pb` in [google/fonts](https://github.com/google/fonts),
-and carry `status: "confirmed", redistributable: true`. The OFL travels with them: the licence
+and carry `status: "confirmed"`. The OFL travels with them: the licence
 text and each family's copyright notice are reproduced in full in the generated
 `dist/LICENSES.md`, from the evidence files in `sources/licenses/`. Three things it requires,
 which the build holds to:
@@ -26,15 +26,15 @@ which the build holds to:
 
 The other 7 (designs `014`–`020`, from `fonts.quran.ws`, including DigitalKhatt, which is
 explicitly not OFL) have terms that are **not recorded upstream and have not been confirmed**.
-No licence is asserted for them. They ship in the repository and in `dist/` flagged
-`status: "pending", redistributable: false`; `qa dist --exclude-unconfirmed` leaves them out.
+No licence is asserted for them. They ship in the repository and in `dist/` as
+`status: "pending"`; `qa dist --exclude-unconfirmed` leaves them out.
 
 ## Scan-derived assets — `assets/*/mushaf-*`
 
 **Not cleared for redistribution.** These are vector tracings of ornaments printed in scanned mushafs whose
 designs belong to their publishers (King Fahd Glorious Qur'an Printing Complex and others).
 The repo's working position, recorded in `qa/licenses.json` and stamped into every catalog
-entry, is **CC BY-NC-SA 4.0, status `provisional`, `redistributable: false`** — a
+entry, is **CC BY-NC-SA 4.0, status `provisional`** — a
 non-commercial release position held while written permission is sought (`docs/PLAN.md` §6,
 option (b) alongside (a)). This is a position, not legal advice, and not a clearance.
 

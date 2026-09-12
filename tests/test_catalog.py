@@ -62,7 +62,7 @@ def test_confirmed_licenses_may_be_redistributed_only_with_evidence(lineage):
     """Evidence is keyed per style for a scan asset and per source family for a font one,
     so the check has to bite on both."""
     asset = json.loads(json.dumps(next(a for a in CATALOG["assets"] if a["lineage"] == lineage)))
-    asset["license"] = {"id": "CC-BY-4.0", "status": "confirmed", "redistributable": True}
+    asset["license"] = {"id": "CC-BY-4.0", "status": "confirmed"}
     asset["style"] = "a-style-with-no-evidence-file"
     asset["sources"] = [dict(s, family="A Family With No Evidence File") for s in asset["sources"]]
     problems = []
@@ -73,7 +73,7 @@ def test_confirmed_licenses_may_be_redistributed_only_with_evidence(lineage):
 def test_a_font_asset_needs_evidence_for_every_source_family():
     """One unverified family in a multi-source outline cannot hide behind a verified sibling."""
     asset = json.loads(json.dumps(next(a for a in CATALOG["assets"] if a["lineage"] == "font")))
-    asset["license"] = {"id": "OFL-1.1", "status": "confirmed", "redistributable": True}
+    asset["license"] = {"id": "OFL-1.1", "status": "confirmed"}
     asset["sources"] = asset["sources"] + [dict(asset["sources"][0], family="Not A Real Family")]
     problems = []
     validate.check_license(asset, problems)

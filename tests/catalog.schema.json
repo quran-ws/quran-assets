@@ -231,9 +231,6 @@
             },
             "note": {
               "type": "string"
-            },
-            "redistributable": {
-              "type": "boolean"
             }
           }
         },

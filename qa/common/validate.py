@@ -114,8 +114,6 @@ def check_license(asset, problems):
     if licence["status"] == "confirmed" and not satisfied:
         missing = ", ".join(n for n in wanted if not (ROOT / "sources/licenses" / n).exists()) or "no source family named"
         problems.append(f"{asset['id']}: license claims 'confirmed' but sources/licenses/{{{missing}}} is missing")
-    if licence["status"] != "confirmed" and licence.get("redistributable"):
-        problems.append(f"{asset['id']}: redistributable is only allowed once the license is confirmed")
     if not asset["sources"]:
         problems.append(f"{asset['id']}: no source recorded, so the license cannot be traced")
 
