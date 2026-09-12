@@ -24,7 +24,7 @@ For a page of *your* aspect, use the slices — the corner keeps its shape and o
 repeat, which is what stretching the whole frame gets wrong:
 
 ```js
-import { get, frame } from "@quran-ws/assets";
+import { get, frame } from "@quran.ws/assets";
 
 const asset = get("page-frames", "mushaf-qalon");
 if (asset.slices) {
@@ -108,7 +108,7 @@ marker.license               // {id:'OFL-1.1', status:'confirmed', …}
 ```
 
 The same data ships as a typed module: `import { assets, byId, get, ofType, url, slot, frame }
-from "@quran-ws/assets"` (`dist/index.d.ts` has the types). One `<symbol>` sheet per type is in
+from "@quran.ws/assets"` (`dist/index.d.ts` has the types). One `<symbol>` sheet per type is in
 `dist/sprites/<type>.svg`; inline the sheet in the DOM and `<use href="#surah-headers-qalon">`
 — an external `<use>` across files is not portable.
 
