@@ -40,11 +40,17 @@ def pipeline_digest() -> str:
     return digest.hexdigest()
 
 def provenance(job, s, box, pick, boxes):
+    # ``url`` is the citation and ``url_mirror``, where present, is the copy that
+    # can actually be fetched: qurancomplex.gov.sa answers inside Saudi Arabia
+    # only, so the authoritative URL and the reachable one are not the same URL
+    # and both are recorded.  archive_item/archive_url stay null for a muṣḥaf
+    # cited to its publisher -- there is no archive.org item behind it.
     m = re.search(r"/items/([^/]+)/", s["url"])
     return {
         "mushaf": s["id"], "riwaya": s.get("riwaya"),
         "file": s["file"], "sha256": file_sha256(SOURCES / s["file"]),
-        "url": s["url"], "archive_item": m.group(1) if m else None,
+        "url": s["url"], "url_mirror": s.get("url_mirror"),
+        "archive_item": m.group(1) if m else None,
         "archive_url": f"https://archive.org/details/{m.group(1)}" if m else None,
         "pdf_page": job["page"], "crop_box_px": list(map(int, box)), "occurrence": pick, "occurrences_on_page": len(boxes),
         "pipeline": "quran-assets " + git_rev(), "pipeline_sha256": pipeline_digest(),

@@ -23,9 +23,10 @@
     "riwaya": "al-Susi 'an Abi 'Amr",
     "file": "sousi.pdf",
     "sha256": "265b50e718bedec3df1a9ece77480baeec22f73137fa3a01ab6efc071a65005a",
-    "url": "https://ia600502.us.archive.org/27/items/Susi-HD/sousi-1.pdf",
-    "archive_item": "Susi-HD",
-    "archive_url": "https://archive.org/details/Susi-HD",
+    "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/sousi-1.pdf",
+    "url_mirror": "https://cdn.quran.ws/KFGQPC/resources/quran-qiraat/sousi-1/sousi-1.pdf",
+    "archive_item": null,
+    "archive_url": null,
     "pdf_page": 300,
     "crop_box_px": [
       67,

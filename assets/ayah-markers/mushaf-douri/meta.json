@@ -53,9 +53,10 @@
     "riwaya": "al-Duri 'an Abi 'Amr",
     "file": "douri.pdf",
     "sha256": "918f24f92104407712224ebb0f3172f8c18f33dbddd1db85d16c3705e4644ea0",
-    "url": "https://dn720805.ca.archive.org/0/items/douri-HD/douri-1.pdf",
-    "archive_item": "douri-HD",
-    "archive_url": "https://archive.org/details/douri-HD",
+    "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/douri-1.pdf",
+    "url_mirror": "https://cdn.quran.ws/KFGQPC/resources/quran-qiraat/douri-1/douri-1.pdf",
+    "archive_item": null,
+    "archive_url": null,
     "pdf_page": 300,
     "crop_box_px": [
       908,

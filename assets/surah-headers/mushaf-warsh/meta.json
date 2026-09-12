@@ -35,9 +35,10 @@
     "riwaya": "Warsh 'an Nafi'",
     "file": "warsh.pdf",
     "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
-    "url": "https://dn711007.ca.archive.org/0/items/Warsh-HD/warsh39-1.pdf",
-    "archive_item": "Warsh-HD",
-    "archive_url": "https://archive.org/details/Warsh-HD",
+    "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/warsh39-1.pdf",
+    "url_mirror": "https://cdn.quran.ws/KFGQPC/resources/quran-qiraat/warsh39-1/warsh39-1.pdf",
+    "archive_item": null,
+    "archive_url": null,
     "pdf_page": 607,
     "crop_box_px": [
       341,
