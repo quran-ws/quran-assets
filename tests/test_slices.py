@@ -63,3 +63,32 @@ def test_assembly_fills_the_requested_box(size):
     # the border must reach all four edges of the box
     assert rows.min() < ink.shape[0] * 0.05 and rows.max() > ink.shape[0] * 0.95
     assert columns.min() < ink.shape[1] * 0.05 and columns.max() > ink.shape[1] * 0.95
+
+
+def test_slices_are_colour_only_and_the_docs_say_so():
+    """A frame offers mono and line whole; its slices are colour and only colour.
+
+    The README carried this until it was slimmed to a card, and then nothing did.
+    It is the kind of fact that surfaces only as a failure: ``asset.slices`` is
+    truthy for a mono request exactly as it is for a colour one, and hands back
+    colour geometry, so a themed reader gets a colour border and no explanation.
+
+    Two assertions, because either half alone can rot. The first pins the
+    behaviour; the second pins the sentence that tells a consumer about it, so
+    the documentation cannot be tidied away again while the behaviour stands.
+    """
+    allowed = {"corner.svg", "edge-h.svg", "edge-v.svg"}
+    for asset in SLICED:
+        directory = ROOT / "assets" / asset["id"] / "slices"
+        present = {path.name for path in directory.iterdir() if path.is_file()}
+        assert present == allowed, (
+            f"{asset['id']}/slices holds {sorted(present)}. If a mono or line slice now "
+            "ships, this repository can tile a themed border — update docs/USAGE.md, "
+            "which currently tells consumers it cannot, and then this test."
+        )
+
+    usage = (ROOT / "docs" / "USAGE.md").read_text(encoding="utf-8")
+    assert "Slices are colour-only" in usage, (
+        "docs/USAGE.md no longer states that slices are colour-only. The behaviour "
+        "asserted above has not changed, so the sentence has to stay."
+    )
