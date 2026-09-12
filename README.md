@@ -2,14 +2,18 @@
 
 <img src=".github/banner.svg" alt="Quran Assets — Pages & Assets, Beta" width="820">
 
-**Surah headers, page frames and ayah markers traced from eight printed mushafs, and ayah markers drawn from Arabic fonts — recolourable SVGs under one contract.**
+**A library of Mushaf visual elements, including surah headers, page frames, and ayah markers, sourced from printed Mushafs and Arabic fonts and provided as recolourable SVGs.**
 
 <a href="https://quran.ws/blocks/quran-assets"><img alt="See it work" src="https://img.shields.io/badge/See_it_work-15705D?style=for-the-badge&labelColor=102F29"></a>
 <a href="https://quran.ws/docs/reference/quran-assets"><img alt="Documentation" src="https://img.shields.io/badge/Documentation-102F29?style=for-the-badge&labelColor=102F29"></a>
 
 </div>
 
-> زخارف المصاحف — عناوين السور وأُطُر الصفحات وعلامات الآيات — مُتَّبعةً من مصاحف مطبوعة ومن خطوط عربية.
+Use it when designing a Quran application or website and you need ready-made Mushaf-style visual elements instead of recreating them yourself.
+
+> مكتبة لعناصر المصحف البصرية، مثل عناوين السور، وأُطر الصفحات، وعلامات الآيات، مستخرجة من مصاحف مطبوعة وخطوط عربية ومتاحة بصيغة SVG قابلة للتلوين.
+>
+> استخدمها عندما تصمم تطبيقًا أو موقعًا قرآنيًا وتحتاج عناصر مصحفية جاهزة ومتناسقة بدل إعادة رسمها من الصفر.
 
 | | |
 |---|---|
