@@ -41,6 +41,25 @@ read `slots[0].y` (the text area's inset) from the catalog. Colours work exactly
 (`.c2{fill:…}`); each piece carries the same class names because all three are traced from one
 quantization of the frame.
 
+**Slices are colour-only.** A frame's `variants` lists `color`, `mono` and `line`, and it is
+natural to assume the slices follow. They do not — a `slices/` directory only ever holds
+`corner.svg`, `edge-h.svg` and `edge-v.svg`, traced from the colour quantization:
+
+```sh
+$ find assets -path '*slices*' -type f | sed 's#.*/slices/##' | sort | uniq -c
+   7 corner.svg
+   7 edge-h.svg
+   7 edge-v.svg
+```
+
+So a tiled border is full colour or it is not tiled. A mono or line border is available only
+whole, at the source page's own aspect — `variants.mono` / `variants.line` with `color.svg`'s
+scaling caveat above. There is nothing to read from the catalog that says this; `asset.slices`
+is truthy for a mono request exactly as it is for a colour one, and returns colour geometry.
+
+Seven of the eight frames have slices at all. `mushaf-hafs-madinah-kabir` has none — its border
+does not tile — which is what the `else` branch in the example above is for.
+
 ## Ayah marker
 55 of them: 8 traced from mushaf scans (`mushaf-qalon`…, one per riwāyah) and 47 taken from the
 `U+06DD` glyph of OFL fonts (`font-003-regular`…, a design number and a weight). Same contract,
