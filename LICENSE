@@ -32,8 +32,8 @@ The assets are the exception, and LICENSE.md governs them. They were traced
 from different things and carry different terms: the font-derived ayah markers
 are under the SIL Open Font License 1.1 of the families they came from, and the
 scan-derived ornaments are held at CC BY-NC-SA 4.0, status provisional,
-redistributable: false, while written permission is sought from the publishers
-whose printed designs they trace. Every asset states its own position in
+while written permission is sought from the publishers whose printed designs
+they trace. Every asset states its own position in
 catalog.json, keyed to qa/licenses.json and traceable to its source. Read
 LICENSE.md before redistributing anything from assets/.
 

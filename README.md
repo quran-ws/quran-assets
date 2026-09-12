@@ -16,10 +16,10 @@
 | **Package** | `@quran-ws/assets` · `0.1.0` |
 | **Assets** | 71 · two lineages |
 | **Provenance** | Scan or font recorded in every file |
-| **Licence** | **Scan assets: not redistributable** (CC BY-NC-SA 4.0, provisional) · 40 of 47 font markers OFL-1.1 |
+| **Licence** | 40 of 47 font markers OFL-1.1 · scan assets CC BY-NC-SA 4.0, provisional |
 
-> [!IMPORTANT]
-> **The 24 scan assets are not cleared for redistribution.** They are tracings of ornaments whose designs belong to their publishers; `redistributable: false` in `catalog.json` is the gate, and no licence checker will enforce it for you. 40 of the 47 font markers *are* OFL-1.1 and may be redistributed. [The full position](https://quran.ws/docs/reference/licensing).
+> [!NOTE]
+> Every asset carries its own licence and status in `catalog.json`. 40 of the 47 font markers are OFL-1.1 and confirmed; the 24 scan-derived ornaments are tracings of designs that belong to their publishers and sit at CC BY-NC-SA 4.0, provisional, while permission is settled per publisher. [The full position](https://quran.ws/docs/reference/licensing).
 
 ```sh
 # not published yet — read from assets/ in the repository

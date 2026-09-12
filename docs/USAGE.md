@@ -95,7 +95,7 @@ qalonHeader.palette          // [{name:'slot',hex:'none'},{name:'c1',hex:'#fffff
 qalonHeader.slots[0]         // {role:'surah-name', x,y,w,h,cx,cy}
 qalonHeader.lineage          // 'scan'  — always equals the style id's prefix
 qalonHeader.sources[0]       // {kind:'mushaf-scan', mushaf, riwaya, file, sha256, archive_url, pdf_page, crop_box_px, …}
-qalonHeader.license          // {id:'CC-BY-NC-SA-4.0', status:'provisional', redistributable:false, …}
+qalonHeader.license          // {id:'CC-BY-NC-SA-4.0', status:'provisional', …}
 cat.assets.find(a => a.id === 'page-frames/mushaf-qalon').slices
                              // {files:{corner,'edge-h','edge-v'}, corner:{w,h}, repeat:{h,v}, corner_mode, reconstruction_iou}
 
@@ -104,7 +104,7 @@ marker.variants              // {color, mono} — no `line`: a font marker has n
 marker.slots[0]              // {role:'ayah-number', x,y,w,h,cx,cy,r}
 marker.font                  // {upem:1000, advance, upem_scale, codepoint:'U+E00A', glyph:'U+06DD'}
 marker.sources[0]            // {kind:'font', source, family, variant, source_url, upem, advance, license}
-marker.license               // {id:'OFL-1.1', status:'confirmed', redistributable:true, …}
+marker.license               // {id:'OFL-1.1', status:'confirmed', …}
 ```
 
 The same data ships as a typed module: `import { assets, byId, get, ofType, url, slot, frame }
