@@ -161,7 +161,7 @@ for asset, title, blurb in TYPES:
     panels.append(f"""
 <section class="panel p-{asset}" data-m="{m}" data-asset="{asset}" data-lineage="{lineage}" data-slot="{meta['slot']}">
   <header class="ph">
-    <div><h2>{NAMES.get(m) or font_name(m)}</h2><p class="meta">{html.escape(meta.get('riwaya') or '')}{' · ' if meta.get('riwaya') else ''}viewBox {meta['viewBox']} · {len(pal)} groups · {folds_txt}</p><p class="meta src">{srcline}</p></div>
+    <div><h2>{NAMES.get(m) or font_name(m)}</h2><p class="meta">{html.escape(meta.get('riwayah') or '')}{' · ' if meta.get('riwayah') else ''}viewBox {meta['viewBox']} · {len(pal)} groups · {folds_txt}</p><p class="meta src">{srcline}</p></div>
     <div class="seg" role="group" aria-label="Variant"><button class="on" data-v="color">Colour</button><button data-v="mono">Mono</button>{'<button data-v="line">Line</button>' if line else ''}{'<button data-v="orig">Original</button>' if orig else ''}</div>
   </header>
   <div class="stage">

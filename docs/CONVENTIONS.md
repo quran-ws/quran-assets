@@ -47,7 +47,7 @@ scan, so no `clean.png`.
      data-symmetry="4" data-slot="181.9 8.6 504.3 83.6"
      data-source-file="qalon.pdf" data-source-page="607" data-source-box="341 300 1348 416"
      data-source-url="…">
-  <metadata>{ …JSON provenance: mushaf, riwaya, file, sha256, url, archive_item, archive_url,
+  <metadata>{ …JSON provenance: mushaf, riwayah, file, sha256, url, archive_item, archive_url,
               pdf_page, crop_box_px, occurrence, occurrences_on_page, pipeline, extracted… }</metadata>
 ```
 
@@ -105,7 +105,7 @@ the file must be right on its own.
 
 ## meta.json (per asset)
 
-`mushaf, asset, page, riwaya, page_px, boxes` (all detections on the page), `pick`, `slot_px`,
+`mushaf, asset, page, riwayah, page_px, boxes` (all detections on the page), `pick`, `slot_px`,
 `slot_fill`, `viewBox`, `slot`, `palette[{class, hex, paths, stroke?}]`, `mono_paths`,
 `stroke_widths_px` (in *source* pixels), `symmetry{folds, deskew_deg, axes_px, residual, baseline}`,
 `provenance{…}`, and for a sliced page frame `slices{files, corner_px, edge_h_px, edge_v_px,

@@ -3,7 +3,7 @@
   "asset": "surah-header",
   "page": 607,
   "source": "qalon.pdf",
-  "riwaya": "Qalun 'an Nafi'",
+  "riwayah": "Qalun 'an Nafi'",
   "generated": "2026-09-10 02:09",
   "page_px": [
     1531,
@@ -32,7 +32,7 @@
   "pick": 0,
   "provenance": {
     "mushaf": "qalon",
-    "riwaya": "Qalun 'an Nafi'",
+    "riwayah": "Qalun 'an Nafi'",
     "file": "qalon.pdf",
     "sha256": "cbbb52b2a195fd43f9e8ac167a8e9a4173593e9b3dc22a83298550be27aef8de",
     "url": "https://dn760102.eu.archive.org/0/items/quran-qalon/%D9%85%D8%B5%D8%AD%D9%81%20%D9%82%D8%A7%D9%84%D9%88%D9%86.pdf",

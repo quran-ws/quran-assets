@@ -3,7 +3,7 @@
   "asset": "surah-header",
   "page": 607,
   "source": "sousi.pdf",
-  "riwaya": "al-Susi 'an Abi 'Amr",
+  "riwayah": "al-Susi 'an Abi 'Amr",
   "generated": "2026-09-10 02:10",
   "page_px": [
     1532,
@@ -32,7 +32,7 @@
   "pick": 0,
   "provenance": {
     "mushaf": "sousi",
-    "riwaya": "al-Susi 'an Abi 'Amr",
+    "riwayah": "al-Susi 'an Abi 'Amr",
     "file": "sousi.pdf",
     "sha256": "265b50e718bedec3df1a9ece77480baeec22f73137fa3a01ab6efc071a65005a",
     "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/sousi-1.pdf",

@@ -3,7 +3,7 @@
   "asset": "page-frame",
   "page": 300,
   "source": "douri.pdf",
-  "riwaya": "al-Duri 'an Abi 'Amr",
+  "riwayah": "al-Duri 'an Abi 'Amr",
   "generated": "2026-09-10 02:09",
   "page_px": [
     1532,
@@ -20,7 +20,7 @@
   "pick": 0,
   "provenance": {
     "mushaf": "douri",
-    "riwaya": "al-Duri 'an Abi 'Amr",
+    "riwayah": "al-Duri 'an Abi 'Amr",
     "file": "douri.pdf",
     "sha256": "918f24f92104407712224ebb0f3172f8c18f33dbddd1db85d16c3705e4644ea0",
     "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/douri-1.pdf",

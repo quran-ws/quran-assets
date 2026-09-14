@@ -55,7 +55,7 @@ def write_catalog():
         crop = crop_name or ("source.jpg" if (meta.parent / "source.jpg").exists() else "source.png")
         sx = [float(v) for v in m["slot"].split()] if m.get("slot") else None
         items.append({"id": f"{typ}/{style}", "type": typ, "style": style, "lineage": lineage, "units": "normalized-100",
-                      "riwaya": m.get("riwaya"), "viewBox": m.get("viewBox"), "aspect": aspect(m.get("viewBox")),
+                      "riwayah": m.get("riwayah"), "viewBox": m.get("viewBox"), "aspect": aspect(m.get("viewBox")),
                       "variants": {k: f"{d}/{k}.svg" for k in ("color", "mono", "line") if (meta.parent / f"{k}.svg").exists()},
                       "source_crop": f"{d}/{crop}",
                       "palette": [{"name": p["class"], "hex": p["hex"], **({"stroke": True} if p.get("stroke") else {})} for p in m.get("palette", [])],

@@ -113,7 +113,7 @@ qalonHeader.variants.color   // "assets/surah-headers/mushaf-qalon/color.svg"
 qalonHeader.palette          // [{name:'slot',hex:'none'},{name:'c1',hex:'#ffffff'},…,{name:'line',hex:'#353941',stroke:true}]
 qalonHeader.slots[0]         // {role:'surah-name', x,y,w,h,cx,cy}
 qalonHeader.lineage          // 'scan'  — always equals the style id's prefix
-qalonHeader.sources[0]       // {kind:'mushaf-scan', mushaf, riwaya, file, sha256, archive_url, pdf_page, crop_box_px, …}
+qalonHeader.sources[0]       // {kind:'mushaf-scan', mushaf, riwayah, file, sha256, archive_url, pdf_page, crop_box_px, …}
 qalonHeader.license          // {id:'CC-BY-NC-SA-4.0', status:'provisional', …}
 cat.assets.find(a => a.id === 'page-frames/mushaf-qalon').slices
                              // {files:{corner,'edge-h','edge-v'}, corner:{w,h}, repeat:{h,v}, corner_mode, reconstruction_iou}

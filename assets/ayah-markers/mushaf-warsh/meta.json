@@ -3,7 +3,7 @@
   "asset": "ayah-marker",
   "page": 300,
   "source": "warsh.pdf",
-  "riwaya": "Warsh 'an Nafi'",
+  "riwayah": "Warsh 'an Nafi'",
   "generated": "2026-09-10 02:05",
   "page_px": [
     1531,
@@ -56,7 +56,7 @@
   "pick": 0,
   "provenance": {
     "mushaf": "warsh",
-    "riwaya": "Warsh 'an Nafi'",
+    "riwayah": "Warsh 'an Nafi'",
     "file": "warsh.pdf",
     "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
     "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/warsh39-1.pdf",
