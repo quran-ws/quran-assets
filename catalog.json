@@ -9,7 +9,7 @@
       "style": "font-001-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 99.456 100",
       "aspect": 0.99456,
       "variants": {
@@ -96,7 +96,7 @@
       "style": "font-002-bold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 109.1572 100",
       "aspect": 1.091572,
       "variants": {
@@ -176,7 +176,7 @@
       "style": "font-002-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 109.2553 100",
       "aspect": 1.092553,
       "variants": {
@@ -273,7 +273,7 @@
       "style": "font-003-black",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 91.5949 100",
       "aspect": 0.915949,
       "variants": {
@@ -349,7 +349,7 @@
       "style": "font-003-bold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 92.5977 100",
       "aspect": 0.925977,
       "variants": {
@@ -425,7 +425,7 @@
       "style": "font-003-extrabold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 92.0535 100",
       "aspect": 0.920535,
       "variants": {
@@ -501,7 +501,7 @@
       "style": "font-003-extralight",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 95.1466 100",
       "aspect": 0.951466,
       "variants": {
@@ -577,7 +577,7 @@
       "style": "font-003-light",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 94.5887 100",
       "aspect": 0.945887,
       "variants": {
@@ -653,7 +653,7 @@
       "style": "font-003-medium",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 93.5151 100",
       "aspect": 0.935151,
       "variants": {
@@ -729,7 +729,7 @@
       "style": "font-003-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 94.0423 100",
       "aspect": 0.940423,
       "variants": {
@@ -805,7 +805,7 @@
       "style": "font-003-semibold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 92.9348 100",
       "aspect": 0.929348,
       "variants": {
@@ -881,7 +881,7 @@
       "style": "font-003-thin",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 95.7361 100",
       "aspect": 0.957361,
       "variants": {
@@ -957,7 +957,7 @@
       "style": "font-004-bold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 100 100",
       "aspect": 1.0,
       "variants": {
@@ -1035,7 +1035,7 @@
       "style": "font-004-extralight",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 100 100",
       "aspect": 1.0,
       "variants": {
@@ -1113,7 +1113,7 @@
       "style": "font-004-light",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 100 100",
       "aspect": 1.0,
       "variants": {
@@ -1191,7 +1191,7 @@
       "style": "font-004-medium",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 100 100",
       "aspect": 1.0,
       "variants": {
@@ -1269,7 +1269,7 @@
       "style": "font-004-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 100 100",
       "aspect": 1.0,
       "variants": {
@@ -1347,7 +1347,7 @@
       "style": "font-004-semibold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 100 100",
       "aspect": 1.0,
       "variants": {
@@ -1425,7 +1425,7 @@
       "style": "font-004-thin",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 100 100",
       "aspect": 1.0,
       "variants": {
@@ -1503,7 +1503,7 @@
       "style": "font-005-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 88.8904 100",
       "aspect": 0.888904,
       "variants": {
@@ -1579,7 +1579,7 @@
       "style": "font-006-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 94.8833 100",
       "aspect": 0.948833,
       "variants": {
@@ -1655,7 +1655,7 @@
       "style": "font-007-bold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 106.0827 100",
       "aspect": 1.060827,
       "variants": {
@@ -1731,7 +1731,7 @@
       "style": "font-007-medium",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 101.4854 100",
       "aspect": 1.014854,
       "variants": {
@@ -1807,7 +1807,7 @@
       "style": "font-007-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 100 100",
       "aspect": 1.0,
       "variants": {
@@ -1883,7 +1883,7 @@
       "style": "font-008-black",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 108.9445 100",
       "aspect": 1.089445,
       "variants": {
@@ -1965,7 +1965,7 @@
       "style": "font-008-bold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 107.6104 100",
       "aspect": 1.076104,
       "variants": {
@@ -2047,7 +2047,7 @@
       "style": "font-008-extralight",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 104.103 100",
       "aspect": 1.04103,
       "variants": {
@@ -2129,7 +2129,7 @@
       "style": "font-008-light",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 104.1668 100",
       "aspect": 1.041668,
       "variants": {
@@ -2211,7 +2211,7 @@
       "style": "font-008-medium",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 105 100",
       "aspect": 1.05,
       "variants": {
@@ -2293,7 +2293,7 @@
       "style": "font-009-medium",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 94.9008 100",
       "aspect": 0.949008,
       "variants": {
@@ -2369,7 +2369,7 @@
       "style": "font-010-regular-bold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 85.9377 100",
       "aspect": 0.859377,
       "variants": {
@@ -2500,7 +2500,7 @@
       "style": "font-011-regular-bold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 80.5112 100",
       "aspect": 0.805112,
       "variants": {
@@ -2639,7 +2639,7 @@
       "style": "font-012-extralight",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 99.9238 100",
       "aspect": 0.999238,
       "variants": {
@@ -2723,7 +2723,7 @@
       "style": "font-012-light",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 99.9238 100",
       "aspect": 0.999238,
       "variants": {
@@ -2807,7 +2807,7 @@
       "style": "font-012-regular-black",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 99.9238 100",
       "aspect": 0.999238,
       "variants": {
@@ -2976,7 +2976,7 @@
       "style": "font-012-thin",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 99.9238 100",
       "aspect": 0.999238,
       "variants": {
@@ -3060,7 +3060,7 @@
       "style": "font-013-bold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 79.7683 100",
       "aspect": 0.797683,
       "variants": {
@@ -3147,7 +3147,7 @@
       "style": "font-013-medium",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 78.3258 100",
       "aspect": 0.783258,
       "variants": {
@@ -3234,7 +3234,7 @@
       "style": "font-013-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 77.6231 100",
       "aspect": 0.776231,
       "variants": {
@@ -3321,7 +3321,7 @@
       "style": "font-013-semibold",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 79.0656 100",
       "aspect": 0.790656,
       "variants": {
@@ -3408,7 +3408,7 @@
       "style": "font-014-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 99.9987 100",
       "aspect": 0.999987,
       "variants": {
@@ -3500,7 +3500,7 @@
       "style": "font-015-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 106.8002 100",
       "aspect": 1.068002,
       "variants": {
@@ -3575,7 +3575,7 @@
       "style": "font-016-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 100.4279 100",
       "aspect": 1.004279,
       "variants": {
@@ -3650,7 +3650,7 @@
       "style": "font-017-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 100.0718 100",
       "aspect": 1.000718,
       "variants": {
@@ -3721,7 +3721,7 @@
       "style": "font-018-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 82.6654 100",
       "aspect": 0.826654,
       "variants": {
@@ -3864,7 +3864,7 @@
       "style": "font-019-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 80.6372 100",
       "aspect": 0.806372,
       "variants": {
@@ -3935,7 +3935,7 @@
       "style": "font-020-regular",
       "lineage": "font",
       "units": "normalized-100",
-      "riwaya": null,
+      "riwayah": null,
       "viewBox": "0 0 71.8536 100",
       "aspect": 0.718536,
       "variants": {
@@ -4022,7 +4022,7 @@
       "style": "mushaf-douri",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "al-Duri 'an Abi 'Amr",
+      "riwayah": "al-Duri 'an Abi 'Amr",
       "viewBox": "0 0 77.143 100",
       "aspect": 0.77143,
       "variants": {
@@ -4086,7 +4086,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "douri",
-          "riwaya": "al-Duri 'an Abi 'Amr",
+          "riwayah": "al-Duri 'an Abi 'Amr",
           "file": "douri.pdf",
           "sha256": "918f24f92104407712224ebb0f3172f8c18f33dbddd1db85d16c3705e4644ea0",
           "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/douri-1.pdf",
@@ -4120,7 +4120,7 @@
       "style": "mushaf-hafs-adi",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+      "riwayah": "Hafs 'an 'Asim (al-'Adi)",
       "viewBox": "0 0 76.14 100",
       "aspect": 0.7614,
       "variants": {
@@ -4184,7 +4184,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "hafs-adi",
-          "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+          "riwayah": "Hafs 'an 'Asim (al-'Adi)",
           "file": "hafs-adi.pdf",
           "sha256": "1cd2a1544860791a0b795e904680f4ad51bee0f692c35c1f764dc833bd1fe5f8",
           "url": "https://dn720703.ca.archive.org/0/items/quran-pdf-download-hafs/%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20-%20%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D8%B9%D8%A7%D8%AF%D9%8A.pdf",
@@ -4217,7 +4217,7 @@
       "style": "mushaf-hafs-madinah-kabir",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+      "riwayah": "Hafs 'an 'Asim (Madinah, large)",
       "viewBox": "0 0 76.754 100",
       "aspect": 0.76754,
       "variants": {
@@ -4277,7 +4277,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "hafs-madinah-kabir",
-          "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+          "riwayah": "Hafs 'an 'Asim (Madinah, large)",
           "file": "hafs-madinah-kabir.pdf",
           "sha256": "369fc3ef1df33320a53554c25a6ba1b860a3882e63b12ed00bcf215d68e07cb3",
           "url": "https://dn721901.ca.archive.org/0/items/20240716_20240716_0926/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A8%D8%AD%D8%AC%D9%85%20%D9%83%D8%A8%D9%8A%D8%B1.pdf",
@@ -4310,7 +4310,7 @@
       "style": "mushaf-hafs-madinah-mumtaza",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+      "riwayah": "Hafs 'an 'Asim (Madinah, mumtaza)",
       "viewBox": "0 0 76.699 100",
       "aspect": 0.76699,
       "variants": {
@@ -4366,7 +4366,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "hafs-madinah-mumtaza",
-          "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+          "riwayah": "Hafs 'an 'Asim (Madinah, mumtaza)",
           "file": "hafs-madinah-mumtaza.pdf",
           "sha256": "e90a6c6285a77400e4316b775f1badbb66d72a5a6f2d1722bc482ef702b4903a",
           "url": "https://dn721909.ca.archive.org/0/items/20240718_20240718_0417/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A7%D9%84%D9%85%D9%85%D8%AA%D8%A7%D8%B2%D8%A9.pdf",
@@ -4399,7 +4399,7 @@
       "style": "mushaf-qalon",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Qalun 'an Nafi'",
+      "riwayah": "Qalun 'an Nafi'",
       "viewBox": "0 0 73.162 100",
       "aspect": 0.73162,
       "variants": {
@@ -4450,7 +4450,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "qalon",
-          "riwaya": "Qalun 'an Nafi'",
+          "riwayah": "Qalun 'an Nafi'",
           "file": "qalon.pdf",
           "sha256": "cbbb52b2a195fd43f9e8ac167a8e9a4173593e9b3dc22a83298550be27aef8de",
           "url": "https://dn760102.eu.archive.org/0/items/quran-qalon/%D9%85%D8%B5%D8%AD%D9%81%20%D9%82%D8%A7%D9%84%D9%88%D9%86.pdf",
@@ -4483,7 +4483,7 @@
       "style": "mushaf-shubah",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Shu'bah 'an 'Asim",
+      "riwayah": "Shu'bah 'an 'Asim",
       "viewBox": "0 0 76.409 100",
       "aspect": 0.76409,
       "variants": {
@@ -4547,7 +4547,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "shubah",
-          "riwaya": "Shu'bah 'an 'Asim",
+          "riwayah": "Shu'bah 'an 'Asim",
           "file": "shubah.pdf",
           "sha256": "bb74604d31b3a983aa75d5bb41261ae92c40946be9fbf73452f1206c8a2a4d2b",
           "url": "https://dn721608.ca.archive.org/0/items/20240908_20240908_1247/%D9%85%D8%B5%D8%AD%D9%81%20%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%B4%D8%B9%D8%A8%D8%A9%20%D8%B9%D9%86%20%D8%B9%D8%A7%D8%B5%D9%85%20%D8%B9%D9%86%20%D8%B2%D8%B1%20%20%D8%B9%D9%86%20%D8%B9%D9%84%D9%8A%20%D9%88%D8%B9%D8%AB%D9%85%D8%A7%D9%86%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%86%D8%A8%D9%8A%20%D8%B5%D9%84%D9%89%20%D8%A7%D9%84%D9%84%D9%87%20%D8%B9%D9%84%D9%8A%D9%87%20%D9%88%D8%B3%D9%84%D9%85.pdf",
@@ -4580,7 +4580,7 @@
       "style": "mushaf-sousi",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "al-Susi 'an Abi 'Amr",
+      "riwayah": "al-Susi 'an Abi 'Amr",
       "viewBox": "0 0 77.113 100",
       "aspect": 0.77113,
       "variants": {
@@ -4636,7 +4636,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "sousi",
-          "riwaya": "al-Susi 'an Abi 'Amr",
+          "riwayah": "al-Susi 'an Abi 'Amr",
           "file": "sousi.pdf",
           "sha256": "265b50e718bedec3df1a9ece77480baeec22f73137fa3a01ab6efc071a65005a",
           "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/sousi-1.pdf",
@@ -4670,7 +4670,7 @@
       "style": "mushaf-warsh",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Warsh 'an Nafi'",
+      "riwayah": "Warsh 'an Nafi'",
       "viewBox": "0 0 72.043 100",
       "aspect": 0.72043,
       "variants": {
@@ -4729,7 +4729,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "warsh",
-          "riwaya": "Warsh 'an Nafi'",
+          "riwayah": "Warsh 'an Nafi'",
           "file": "warsh.pdf",
           "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
           "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/warsh39-1.pdf",
@@ -4763,7 +4763,7 @@
       "style": "mushaf-douri",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "al-Duri 'an Abi 'Amr",
+      "riwayah": "al-Duri 'an Abi 'Amr",
       "viewBox": "0 0 65.591 100",
       "aspect": 0.65591,
       "variants": {
@@ -4848,7 +4848,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "douri",
-          "riwaya": "al-Duri 'an Abi 'Amr",
+          "riwayah": "al-Duri 'an Abi 'Amr",
           "file": "douri.pdf",
           "sha256": "918f24f92104407712224ebb0f3172f8c18f33dbddd1db85d16c3705e4644ea0",
           "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/douri-1.pdf",
@@ -4882,7 +4882,7 @@
       "style": "mushaf-hafs-adi",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+      "riwayah": "Hafs 'an 'Asim (al-'Adi)",
       "viewBox": "0 0 64.419 100",
       "aspect": 0.64419,
       "variants": {
@@ -4967,7 +4967,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "hafs-adi",
-          "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+          "riwayah": "Hafs 'an 'Asim (al-'Adi)",
           "file": "hafs-adi.pdf",
           "sha256": "1cd2a1544860791a0b795e904680f4ad51bee0f692c35c1f764dc833bd1fe5f8",
           "url": "https://dn720703.ca.archive.org/0/items/quran-pdf-download-hafs/%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20-%20%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D8%B9%D8%A7%D8%AF%D9%8A.pdf",
@@ -5000,7 +5000,7 @@
       "style": "mushaf-hafs-madinah-kabir",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+      "riwayah": "Hafs 'an 'Asim (Madinah, large)",
       "viewBox": "0 0 63.79 100",
       "aspect": 0.6379,
       "variants": {
@@ -5056,7 +5056,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "hafs-madinah-kabir",
-          "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+          "riwayah": "Hafs 'an 'Asim (Madinah, large)",
           "file": "hafs-madinah-kabir.pdf",
           "sha256": "369fc3ef1df33320a53554c25a6ba1b860a3882e63b12ed00bcf215d68e07cb3",
           "url": "https://dn721901.ca.archive.org/0/items/20240716_20240716_0926/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A8%D8%AD%D8%AC%D9%85%20%D9%83%D8%A8%D9%8A%D8%B1.pdf",
@@ -5089,7 +5089,7 @@
       "style": "mushaf-hafs-madinah-mumtaza",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+      "riwayah": "Hafs 'an 'Asim (Madinah, mumtaza)",
       "viewBox": "0 0 69.084 100",
       "aspect": 0.69084,
       "variants": {
@@ -5174,7 +5174,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "hafs-madinah-mumtaza",
-          "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+          "riwayah": "Hafs 'an 'Asim (Madinah, mumtaza)",
           "file": "hafs-madinah-mumtaza.pdf",
           "sha256": "e90a6c6285a77400e4316b775f1badbb66d72a5a6f2d1722bc482ef702b4903a",
           "url": "https://dn721909.ca.archive.org/0/items/20240718_20240718_0417/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A7%D9%84%D9%85%D9%85%D8%AA%D8%A7%D8%B2%D8%A9.pdf",
@@ -5207,7 +5207,7 @@
       "style": "mushaf-qalon",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Qalun 'an Nafi'",
+      "riwayah": "Qalun 'an Nafi'",
       "viewBox": "0 0 68.317 100",
       "aspect": 0.68317,
       "variants": {
@@ -5284,7 +5284,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "qalon",
-          "riwaya": "Qalun 'an Nafi'",
+          "riwayah": "Qalun 'an Nafi'",
           "file": "qalon.pdf",
           "sha256": "cbbb52b2a195fd43f9e8ac167a8e9a4173593e9b3dc22a83298550be27aef8de",
           "url": "https://dn760102.eu.archive.org/0/items/quran-qalon/%D9%85%D8%B5%D8%AD%D9%81%20%D9%82%D8%A7%D9%84%D9%88%D9%86.pdf",
@@ -5317,7 +5317,7 @@
       "style": "mushaf-shubah",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Shu'bah 'an 'Asim",
+      "riwayah": "Shu'bah 'an 'Asim",
       "viewBox": "0 0 65.7 100",
       "aspect": 0.657,
       "variants": {
@@ -5398,7 +5398,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "shubah",
-          "riwaya": "Shu'bah 'an 'Asim",
+          "riwayah": "Shu'bah 'an 'Asim",
           "file": "shubah.pdf",
           "sha256": "bb74604d31b3a983aa75d5bb41261ae92c40946be9fbf73452f1206c8a2a4d2b",
           "url": "https://dn721608.ca.archive.org/0/items/20240908_20240908_1247/%D9%85%D8%B5%D8%AD%D9%81%20%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%B4%D8%B9%D8%A8%D8%A9%20%D8%B9%D9%86%20%D8%B9%D8%A7%D8%B5%D9%85%20%D8%B9%D9%86%20%D8%B2%D8%B1%20%20%D8%B9%D9%86%20%D8%B9%D9%84%D9%8A%20%D9%88%D8%B9%D8%AB%D9%85%D8%A7%D9%86%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%86%D8%A8%D9%8A%20%D8%B5%D9%84%D9%89%20%D8%A7%D9%84%D9%84%D9%87%20%D8%B9%D9%84%D9%8A%D9%87%20%D9%88%D8%B3%D9%84%D9%85.pdf",
@@ -5431,7 +5431,7 @@
       "style": "mushaf-sousi",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "al-Susi 'an Abi 'Amr",
+      "riwayah": "al-Susi 'an Abi 'Amr",
       "viewBox": "0 0 66.52 100",
       "aspect": 0.6652,
       "variants": {
@@ -5504,7 +5504,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "sousi",
-          "riwaya": "al-Susi 'an Abi 'Amr",
+          "riwayah": "al-Susi 'an Abi 'Amr",
           "file": "sousi.pdf",
           "sha256": "265b50e718bedec3df1a9ece77480baeec22f73137fa3a01ab6efc071a65005a",
           "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/sousi-1.pdf",
@@ -5538,7 +5538,7 @@
       "style": "mushaf-warsh",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Warsh 'an Nafi'",
+      "riwayah": "Warsh 'an Nafi'",
       "viewBox": "0 0 68.317 100",
       "aspect": 0.68317,
       "variants": {
@@ -5611,7 +5611,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "warsh",
-          "riwaya": "Warsh 'an Nafi'",
+          "riwayah": "Warsh 'an Nafi'",
           "file": "warsh.pdf",
           "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
           "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/warsh39-1.pdf",
@@ -5645,7 +5645,7 @@
       "style": "mushaf-douri",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "al-Duri 'an Abi 'Amr",
+      "riwayah": "al-Duri 'an Abi 'Amr",
       "viewBox": "0 0 857.714 100",
       "aspect": 8.57714,
       "variants": {
@@ -5713,7 +5713,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "douri",
-          "riwaya": "al-Duri 'an Abi 'Amr",
+          "riwayah": "al-Duri 'an Abi 'Amr",
           "file": "douri.pdf",
           "sha256": "918f24f92104407712224ebb0f3172f8c18f33dbddd1db85d16c3705e4644ea0",
           "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/douri-1.pdf",
@@ -5747,7 +5747,7 @@
       "style": "mushaf-hafs-adi",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+      "riwayah": "Hafs 'an 'Asim (al-'Adi)",
       "viewBox": "0 0 872.674 100",
       "aspect": 8.72674,
       "variants": {
@@ -5810,7 +5810,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "hafs-adi",
-          "riwaya": "Hafs 'an 'Asim (al-'Adi)",
+          "riwayah": "Hafs 'an 'Asim (al-'Adi)",
           "file": "hafs-adi.pdf",
           "sha256": "1cd2a1544860791a0b795e904680f4ad51bee0f692c35c1f764dc833bd1fe5f8",
           "url": "https://dn720703.ca.archive.org/0/items/quran-pdf-download-hafs/%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20-%20%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D8%B9%D8%A7%D8%AF%D9%8A.pdf",
@@ -5843,7 +5843,7 @@
       "style": "mushaf-hafs-madinah-kabir",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+      "riwayah": "Hafs 'an 'Asim (Madinah, large)",
       "viewBox": "0 0 811.409 100",
       "aspect": 8.11409,
       "variants": {
@@ -5903,7 +5903,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "hafs-madinah-kabir",
-          "riwaya": "Hafs 'an 'Asim (Madinah, large)",
+          "riwayah": "Hafs 'an 'Asim (Madinah, large)",
           "file": "hafs-madinah-kabir.pdf",
           "sha256": "369fc3ef1df33320a53554c25a6ba1b860a3882e63b12ed00bcf215d68e07cb3",
           "url": "https://dn721901.ca.archive.org/0/items/20240716_20240716_0926/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A8%D8%AD%D8%AC%D9%85%20%D9%83%D8%A8%D9%8A%D8%B1.pdf",
@@ -5936,7 +5936,7 @@
       "style": "mushaf-hafs-madinah-mumtaza",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+      "riwayah": "Hafs 'an 'Asim (Madinah, mumtaza)",
       "viewBox": "0 0 854.688 100",
       "aspect": 8.54688,
       "variants": {
@@ -6016,7 +6016,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "hafs-madinah-mumtaza",
-          "riwaya": "Hafs 'an 'Asim (Madinah, mumtaza)",
+          "riwayah": "Hafs 'an 'Asim (Madinah, mumtaza)",
           "file": "hafs-madinah-mumtaza.pdf",
           "sha256": "e90a6c6285a77400e4316b775f1badbb66d72a5a6f2d1722bc482ef702b4903a",
           "url": "https://dn721909.ca.archive.org/0/items/20240718_20240718_0417/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%81%D8%B5%20-%20%D8%A7%D9%84%D9%85%D9%85%D8%AA%D8%A7%D8%B2%D8%A9.pdf",
@@ -6049,7 +6049,7 @@
       "style": "mushaf-qalon",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Qalun 'an Nafi'",
+      "riwayah": "Qalun 'an Nafi'",
       "viewBox": "0 0 863.429 100",
       "aspect": 8.63429,
       "variants": {
@@ -6112,7 +6112,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "qalon",
-          "riwaya": "Qalun 'an Nafi'",
+          "riwayah": "Qalun 'an Nafi'",
           "file": "qalon.pdf",
           "sha256": "cbbb52b2a195fd43f9e8ac167a8e9a4173593e9b3dc22a83298550be27aef8de",
           "url": "https://dn760102.eu.archive.org/0/items/quran-qalon/%D9%85%D8%B5%D8%AD%D9%81%20%D9%82%D8%A7%D9%84%D9%88%D9%86.pdf",
@@ -6145,7 +6145,7 @@
       "style": "mushaf-shubah",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Shu'bah 'an 'Asim",
+      "riwayah": "Shu'bah 'an 'Asim",
       "viewBox": "0 0 872.674 100",
       "aspect": 8.72674,
       "variants": {
@@ -6213,7 +6213,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "shubah",
-          "riwaya": "Shu'bah 'an 'Asim",
+          "riwayah": "Shu'bah 'an 'Asim",
           "file": "shubah.pdf",
           "sha256": "bb74604d31b3a983aa75d5bb41261ae92c40946be9fbf73452f1206c8a2a4d2b",
           "url": "https://dn721608.ca.archive.org/0/items/20240908_20240908_1247/%D9%85%D8%B5%D8%AD%D9%81%20%D8%B1%D9%88%D8%A7%D9%8A%D8%A9%20%D8%B4%D8%B9%D8%A8%D8%A9%20%D8%B9%D9%86%20%D8%B9%D8%A7%D8%B5%D9%85%20%D8%B9%D9%86%20%D8%B2%D8%B1%20%20%D8%B9%D9%86%20%D8%B9%D9%84%D9%8A%20%D9%88%D8%B9%D8%AB%D9%85%D8%A7%D9%86%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%86%D8%A8%D9%8A%20%D8%B5%D9%84%D9%89%20%D8%A7%D9%84%D9%84%D9%87%20%D8%B9%D9%84%D9%8A%D9%87%20%D9%88%D8%B3%D9%84%D9%85.pdf",
@@ -6246,7 +6246,7 @@
       "style": "mushaf-sousi",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "al-Susi 'an Abi 'Amr",
+      "riwayah": "al-Susi 'an Abi 'Amr",
       "viewBox": "0 0 782.54 100",
       "aspect": 7.8254,
       "variants": {
@@ -6302,7 +6302,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "sousi",
-          "riwaya": "al-Susi 'an Abi 'Amr",
+          "riwayah": "al-Susi 'an Abi 'Amr",
           "file": "sousi.pdf",
           "sha256": "265b50e718bedec3df1a9ece77480baeec22f73137fa3a01ab6efc071a65005a",
           "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/sousi-1.pdf",
@@ -6336,7 +6336,7 @@
       "style": "mushaf-warsh",
       "lineage": "scan",
       "units": "normalized-100",
-      "riwaya": "Warsh 'an Nafi'",
+      "riwayah": "Warsh 'an Nafi'",
       "viewBox": "0 0 863.429 100",
       "aspect": 8.63429,
       "variants": {
@@ -6400,7 +6400,7 @@
         {
           "kind": "mushaf-scan",
           "mushaf": "warsh",
-          "riwaya": "Warsh 'an Nafi'",
+          "riwayah": "Warsh 'an Nafi'",
           "file": "warsh.pdf",
           "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
           "url": "https://qurancomplex.gov.sa/wp-content/uploads/isdarat/qiraat/warsh39-1.pdf",

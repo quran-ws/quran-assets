@@ -21,7 +21,7 @@ for meta in sorted((ROOT / "assets").glob("*/*/meta.json")):
                   f'<figcaption>source.svg — the extracted outline</figcaption></figure>')
     else:
         src = "source.jpg" if (meta.parent / "source.jpg").exists() else "source.png"
-        where = f"{m.get('riwaya','')} · p{m['page']}"
+        where = f"{m.get('riwayah','')} · p{m['page']}"
         before = (f'<figure><img src="{d}/{src}"><figcaption>source crop</figcaption></figure>'
                   f'<figure><img src="{d}/clean.png"><figcaption>clean (title removed)</figcaption></figure>')
     rows.append(f"""

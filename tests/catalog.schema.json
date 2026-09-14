@@ -75,7 +75,7 @@
             "font-upem"
           ]
         },
-        "riwaya": {
+        "riwayah": {
           "type": [
             "string",
             "null"
@@ -417,7 +417,7 @@
         "mushaf": {
           "type": "string"
         },
-        "riwaya": {
+        "riwayah": {
           "type": [
             "string",
             "null"

@@ -107,7 +107,7 @@ def write(directory, marker, view_box, parts, norm, provenance):
     attrs = dict(base, **{"data-variant": "mono"})
     (directory / "mono.svg").write_text(_svg(_ordered(attrs), provenance, norm["scale"], min_x, min_y, mono_group))
 
-    return {"asset": "ayah-marker", "style": style, "lineage": "font", "riwaya": None,
+    return {"asset": "ayah-marker", "style": style, "lineage": "font", "riwayah": None,
             "viewBox": norm["viewBox"], "slot": norm["slot"], "slot_circle": norm["slot_circle"],
             "palette": [{k: v for k, v in p.items() if k != "part"} for p in norm["palette"]],
             "source_parts": {p["class"]: p["part"] for p in norm["palette"]},

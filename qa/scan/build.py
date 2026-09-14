@@ -47,7 +47,7 @@ def provenance(job, s, box, pick, boxes):
     # cited to its publisher -- there is no archive.org item behind it.
     m = re.search(r"/items/([^/]+)/", s["url"])
     return {
-        "mushaf": s["id"], "riwaya": s.get("riwaya"),
+        "mushaf": s["id"], "riwayah": s.get("riwayah"),
         "file": s["file"], "sha256": file_sha256(SOURCES / s["file"]),
         "url": s["url"], "url_mirror": s.get("url_mirror"),
         "archive_item": m.group(1) if m else None,
@@ -63,7 +63,7 @@ def run_job(job, cfg, src, to="vectorize", force=False, log=print):
     out = ROOT / "assets" / TYPE_DIR.get(asset, asset) / style_id("scan", mushaf)
     out.mkdir(parents=True, exist_ok=True)
     meta = {"mushaf": mushaf, "asset": asset, "page": job["page"], "source": src[mushaf]["file"],
-            "riwaya": src[mushaf].get("riwaya"), "generated": time.strftime("%Y-%m-%d %H:%M")}
+            "riwayah": src[mushaf].get("riwayah"), "generated": time.strftime("%Y-%m-%d %H:%M")}
     # 1 render
     page_png = render.page_image(SOURCES / src[mushaf]["file"], job["page"], ROOT / "work" / "pages", force=force)
     bgr = cv2.imread(str(page_png)); meta["page_px"] = [bgr.shape[1], bgr.shape[0]]

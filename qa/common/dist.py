@@ -106,7 +106,7 @@ export function get(type, style) {
 
 /** Every asset of a type, in catalog order; optionally of one lineage.
  *  ofType("ayah-markers") is all 55; ofType("ayah-markers", "scan") is the 8 traced from
- *  mushaf scans, which are the ones that match a riwaya. */
+ *  mushaf scans, which are the ones that match a riwayah. */
 export function ofType(type, lineage) {
   return assets.filter((a) => a.type === type && (!lineage || a.lineage === lineage));
 }
@@ -222,7 +222,7 @@ export interface Asset {
   lineage: Lineage;
   units: "normalized-100" | "font-upem";
   font?: FontMetrics;
-  riwaya?: string | null;
+  riwayah?: string | null;
   viewBox: string;
   aspect: number;
   variants: Partial<Record<Variant, string>>;
