@@ -235,7 +235,7 @@ def medallion_text(bgr, light=175, s_max=60, **_):
     out = erase_isolated_text(out, exclude=filled)
     return out, (int(x), int(y), int(x + w), int(y + h)), tuple(int(v) for v in bg[::-1]), filled
 
-def erase_isolated_text(bgr, exclude=None, max_h=0.03, ring=6, light=185, light_frac=0.7, **_):
+def erase_isolated_text(bgr, exclude=None, max_h=0.05, max_w=0.25, ring=6, light=185, light_frac=0.7, **_):
     H, W = bgr.shape[:2]
     hsv = cv2.cvtColor(bgr, cv2.COLOR_BGR2HSV)
     ink = ((bgr.min(axis=2) < 150) & (hsv[..., 1] < 90)).astype(np.uint8)
@@ -245,9 +245,15 @@ def erase_isolated_text(bgr, exclude=None, max_h=0.03, ring=6, light=185, light_
     lightm = (bgr.min(axis=2) > light) & (hsv[..., 1] < 60)
     out = bgr.copy(); k = np.ones((2 * ring + 1, 2 * ring + 1), np.uint8)
     erase = np.zeros((H, W), bool)
+    mn = bgr.min(axis=2)
     for i in range(1, n):
         x, y, w, h, a = stats[i]
-        if h > max_h * H or w > 0.12 * W or a < 12: continue
+        if a < 12: continue
+        small = h <= 0.03 * H and w <= 0.12 * W
+        if not small:
+            # bigger pieces (whole words) qualify only if near-black: grey ornament is not text
+            if h > max_h * H or w > max_w * W: continue
+            if np.median(mn[y:y+h, x:x+w][lab[y:y+h, x:x+w] == i]) > 80: continue
         x0, y0, x1, y1 = max(0, x - ring), max(0, y - ring), min(W, x + w + ring), min(H, y + h + ring)
         comp = (lab[y0:y1, x0:x1] == i).astype(np.uint8)
         halo = cv2.dilate(comp, k).astype(bool) & ~comp.astype(bool)

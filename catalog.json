@@ -4839,38 +4839,46 @@
         },
         {
           "name": "c3",
-          "hex": "#dcdcdc"
+          "hex": "#dbdbdb"
         },
         {
           "name": "c4",
-          "hex": "#9cd6f8"
+          "hex": "#9bd4f7"
         },
         {
           "name": "c5",
-          "hex": "#bdb3b0"
+          "hex": "#bbb5b4"
         },
         {
           "name": "c6",
-          "hex": "#56bcf1"
+          "hex": "#53baef"
         },
         {
           "name": "c7",
-          "hex": "#ad9e9a"
+          "hex": "#ab9d9d"
         },
         {
           "name": "c8",
-          "hex": "#6f4230"
+          "hex": "#828185"
+        },
+        {
+          "name": "c9",
+          "hex": "#635f60"
+        },
+        {
+          "name": "c10",
+          "hex": "#6e4232"
+        },
+        {
+          "name": "c11",
+          "hex": "#243e50"
         },
         {
           "name": "line",
-          "hex": "#3e3d41",
-          "stroke": true
+          "hex": "#302e33"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        5.0
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -4902,8 +4910,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:45:37+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:37:23+0300"
         }
       ],
       "license": {
@@ -4913,7 +4921,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-douri-right",
@@ -4941,42 +4949,50 @@
         },
         {
           "name": "c2",
-          "hex": "#c4e9fb"
+          "hex": "#c0e6fb"
         },
         {
           "name": "c3",
-          "hex": "#dcdcdc"
+          "hex": "#dbdbdb"
         },
         {
           "name": "c4",
-          "hex": "#96d5f9"
+          "hex": "#bbb5b4"
         },
         {
           "name": "c5",
-          "hex": "#bdb3b0"
+          "hex": "#78c8f4"
         },
         {
           "name": "c6",
-          "hex": "#52bdf3"
+          "hex": "#ac9d9b"
         },
         {
           "name": "c7",
-          "hex": "#ad9e9a"
+          "hex": "#37afe8"
         },
         {
           "name": "c8",
-          "hex": "#6f4230"
+          "hex": "#757274"
+        },
+        {
+          "name": "c9",
+          "hex": "#704331"
+        },
+        {
+          "name": "c10",
+          "hex": "#643c2e"
+        },
+        {
+          "name": "c11",
+          "hex": "#274153"
         },
         {
           "name": "line",
-          "hex": "#403e41",
-          "stroke": true
+          "hex": "#302e33"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        4.2
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -5008,8 +5024,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:44:50+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:37:37+0300"
         }
       ],
       "license": {
@@ -5019,7 +5035,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-hafs-adi-left",
@@ -5047,7 +5063,7 @@
         },
         {
           "name": "c2",
-          "hex": "#dbe7d5"
+          "hex": "#dfe9db"
         },
         {
           "name": "c3",
@@ -5055,26 +5071,42 @@
         },
         {
           "name": "c4",
-          "hex": "#e15c9b"
+          "hex": "#b8c2b4"
         },
         {
           "name": "c5",
-          "hex": "#62a730"
+          "hex": "#c592aa"
         },
         {
           "name": "c6",
-          "hex": "#588d28"
+          "hex": "#62a730"
+        },
+        {
+          "name": "c7",
+          "hex": "#558d24"
+        },
+        {
+          "name": "c8",
+          "hex": "#696667"
+        },
+        {
+          "name": "c9",
+          "hex": "#d12480"
+        },
+        {
+          "name": "c10",
+          "hex": "#40691e"
+        },
+        {
+          "name": "c11",
+          "hex": "#27371a"
         },
         {
           "name": "line",
-          "hex": "#323831",
-          "stroke": true
+          "hex": "#2f3030"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        4.2
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -5106,8 +5138,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T06:41:33+0000"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:35:17+0300"
         }
       ],
       "license": {
@@ -5117,7 +5149,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-hafs-adi-right",
@@ -5149,30 +5181,46 @@
         },
         {
           "name": "c3",
-          "hex": "#efb9d0"
+          "hex": "#efbdd3"
         },
         {
           "name": "c4",
-          "hex": "#a6c099"
+          "hex": "#b8c2b4"
         },
         {
           "name": "c5",
-          "hex": "#62a730"
+          "hex": "#c290a7"
         },
         {
           "name": "c6",
-          "hex": "#568c2a"
+          "hex": "#62a730"
+        },
+        {
+          "name": "c7",
+          "hex": "#568e26"
+        },
+        {
+          "name": "c8",
+          "hex": "#6b6768"
+        },
+        {
+          "name": "c9",
+          "hex": "#d12480"
+        },
+        {
+          "name": "c10",
+          "hex": "#416a1f"
+        },
+        {
+          "name": "c11",
+          "hex": "#28371c"
         },
         {
           "name": "line",
-          "hex": "#353732",
-          "stroke": true
+          "hex": "#2f3030"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        5.0
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -5204,8 +5252,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T06:39:55+0000"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:37:52+0300"
         }
       ],
       "license": {
@@ -5215,7 +5263,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-hafs-madinah-kabir-left",
@@ -5243,38 +5291,50 @@
         },
         {
           "name": "c2",
-          "hex": "#dbeaf3"
+          "hex": "#dae7ee"
         },
         {
           "name": "c3",
-          "hex": "#edc6d8"
+          "hex": "#dcc4d2"
         },
         {
           "name": "c4",
-          "hex": "#a5d8f4"
+          "hex": "#a4d6f0"
         },
         {
           "name": "c5",
-          "hex": "#98b3c1"
+          "hex": "#96a7b4"
         },
         {
           "name": "c6",
-          "hex": "#dc89b0"
+          "hex": "#d580a7"
         },
         {
           "name": "c7",
-          "hex": "#0a94dd"
+          "hex": "#6e7d8c"
+        },
+        {
+          "name": "c8",
+          "hex": "#0093dc"
+        },
+        {
+          "name": "c9",
+          "hex": "#3b6381"
+        },
+        {
+          "name": "c10",
+          "hex": "#6b3d56"
+        },
+        {
+          "name": "c11",
+          "hex": "#244662"
         },
         {
           "name": "line",
-          "hex": "#33566e",
-          "stroke": true
+          "hex": "#2d2f32"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        4.39
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -5306,8 +5366,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:38:22+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:38:13+0300"
         }
       ],
       "license": {
@@ -5317,7 +5377,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-hafs-madinah-kabir-right",
@@ -5345,38 +5405,50 @@
         },
         {
           "name": "c2",
-          "hex": "#d9eaf3"
+          "hex": "#dae7ee"
         },
         {
           "name": "c3",
-          "hex": "#ecc9da"
+          "hex": "#dcc4d2"
         },
         {
           "name": "c4",
-          "hex": "#a4d7f3"
+          "hex": "#a4d6f0"
         },
         {
           "name": "c5",
-          "hex": "#e2a0bf"
+          "hex": "#96a7b4"
         },
         {
           "name": "c6",
-          "hex": "#d575a1"
+          "hex": "#d580a7"
         },
         {
           "name": "c7",
-          "hex": "#0095e0"
+          "hex": "#6e7d8c"
+        },
+        {
+          "name": "c8",
+          "hex": "#0093dc"
+        },
+        {
+          "name": "c9",
+          "hex": "#3b6381"
+        },
+        {
+          "name": "c10",
+          "hex": "#6b3d56"
+        },
+        {
+          "name": "c11",
+          "hex": "#244662"
         },
         {
           "name": "line",
-          "hex": "#32556d",
-          "stroke": true
+          "hex": "#2d2f32"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        4.39
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -5408,8 +5480,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:37:40+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:38:30+0300"
         }
       ],
       "license": {
@@ -5419,7 +5491,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-hafs-madinah-mumtaza-left",
@@ -5447,46 +5519,50 @@
         },
         {
           "name": "c2",
-          "hex": "#e0dedb"
+          "hex": "#dfddda"
         },
         {
           "name": "c3",
-          "hex": "#f9e662"
+          "hex": "#f8e561"
         },
         {
           "name": "c4",
-          "hex": "#deb3af"
+          "hex": "#dab2af"
         },
         {
           "name": "c5",
-          "hex": "#c8a34e"
+          "hex": "#c6a34e"
         },
         {
           "name": "c6",
-          "hex": "#6fb795"
+          "hex": "#71b594"
         },
         {
           "name": "c7",
-          "hex": "#db7b71"
+          "hex": "#da7d73"
         },
         {
           "name": "c8",
-          "hex": "#cf731e"
+          "hex": "#cd741d"
         },
         {
           "name": "c9",
-          "hex": "#4a8064"
+          "hex": "#4a7f61"
+        },
+        {
+          "name": "c10",
+          "hex": "#b64f32"
+        },
+        {
+          "name": "c11",
+          "hex": "#361f16"
         },
         {
           "name": "line",
-          "hex": "#2f302c",
-          "stroke": true
+          "hex": "#292d2a"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        4.0
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -5518,8 +5594,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:43:38+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:33:54+0300"
         }
       ],
       "license": {
@@ -5529,7 +5605,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-hafs-madinah-mumtaza-right",
@@ -5557,23 +5633,23 @@
         },
         {
           "name": "c2",
-          "hex": "#e3e0db"
+          "hex": "#dfddda"
         },
         {
           "name": "c3",
-          "hex": "#f9e65f"
+          "hex": "#f8e561"
         },
         {
           "name": "c4",
-          "hex": "#deb3af"
+          "hex": "#dab2af"
         },
         {
           "name": "c5",
-          "hex": "#c8a34e"
+          "hex": "#c6a34e"
         },
         {
           "name": "c6",
-          "hex": "#6fb795"
+          "hex": "#71b594"
         },
         {
           "name": "c7",
@@ -5581,22 +5657,26 @@
         },
         {
           "name": "c8",
-          "hex": "#cf731e"
+          "hex": "#cd741d"
         },
         {
           "name": "c9",
-          "hex": "#4a8064"
+          "hex": "#4a7f61"
+        },
+        {
+          "name": "c10",
+          "hex": "#b64f32"
+        },
+        {
+          "name": "c11",
+          "hex": "#361f16"
         },
         {
           "name": "line",
-          "hex": "#31312e",
-          "stroke": true
+          "hex": "#2a2d2b"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        4.0
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -5628,8 +5708,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:42:26+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:38:46+0300"
         }
       ],
       "license": {
@@ -5639,7 +5719,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-qalon-left",
@@ -5667,42 +5747,50 @@
         },
         {
           "name": "c2",
-          "hex": "#e7dee8"
+          "hex": "#e6dde7"
         },
         {
           "name": "c3",
-          "hex": "#c3cedc"
+          "hex": "#c4ceda"
         },
         {
           "name": "c4",
-          "hex": "#ecaac9"
+          "hex": "#eba4c4"
         },
         {
           "name": "c5",
-          "hex": "#aab4c1"
+          "hex": "#afb4bf"
         },
         {
           "name": "c6",
-          "hex": "#839bb7"
+          "hex": "#849bb5"
         },
         {
           "name": "c7",
-          "hex": "#00649a"
+          "hex": "#d65796"
         },
         {
           "name": "c8",
-          "hex": "#3c4a58"
+          "hex": "#728091"
+        },
+        {
+          "name": "c9",
+          "hex": "#62606b"
+        },
+        {
+          "name": "c10",
+          "hex": "#006399"
+        },
+        {
+          "name": "c11",
+          "hex": "#343f52"
         },
         {
           "name": "line",
-          "hex": "#564d69",
-          "stroke": true
+          "hex": "#323235"
         }
       ],
-      "stroke_widths_px": [
-        1.4,
-        3.6
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -5734,8 +5822,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T06:36:24+0000"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:39:08+0300"
         }
       ],
       "license": {
@@ -5745,7 +5833,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-qalon-right",
@@ -5773,38 +5861,50 @@
         },
         {
           "name": "c2",
-          "hex": "#e7dee8"
+          "hex": "#e6dde7"
         },
         {
           "name": "c3",
-          "hex": "#c3cedc"
+          "hex": "#c3cdd9"
         },
         {
           "name": "c4",
-          "hex": "#ecaac9"
+          "hex": "#eda3c4"
         },
         {
           "name": "c5",
-          "hex": "#aab4c1"
+          "hex": "#a9b3bf"
         },
         {
           "name": "c6",
-          "hex": "#839bb7"
+          "hex": "#849bb5"
         },
         {
           "name": "c7",
-          "hex": "#00649a"
+          "hex": "#d65796"
+        },
+        {
+          "name": "c8",
+          "hex": "#728091"
+        },
+        {
+          "name": "c9",
+          "hex": "#62606b"
+        },
+        {
+          "name": "c10",
+          "hex": "#006399"
+        },
+        {
+          "name": "c11",
+          "hex": "#343f52"
         },
         {
           "name": "line",
-          "hex": "#564d69",
-          "stroke": true
+          "hex": "#323235"
         }
       ],
-      "stroke_widths_px": [
-        1.4,
-        3.6
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -5836,8 +5936,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T06:35:01+0000"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:34:52+0300"
         }
       ],
       "license": {
@@ -5847,7 +5947,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-shubah-left",
@@ -5875,42 +5975,50 @@
         },
         {
           "name": "c2",
-          "hex": "#fce3d1"
+          "hex": "#fcdfca"
         },
         {
           "name": "c3",
-          "hex": "#e3dcdd"
+          "hex": "#dfdadb"
         },
         {
           "name": "c4",
-          "hex": "#fdceaa"
+          "hex": "#fcba7d"
         },
         {
           "name": "c5",
-          "hex": "#fcb775"
+          "hex": "#c7b3b2"
         },
         {
           "name": "c6",
-          "hex": "#cbb0b1"
+          "hex": "#c09a99"
         },
         {
           "name": "c7",
-          "hex": "#c39b9a"
+          "hex": "#967d78"
         },
         {
           "name": "c8",
-          "hex": "#9e2d26"
+          "hex": "#655451"
+        },
+        {
+          "name": "c9",
+          "hex": "#9c2e26"
+        },
+        {
+          "name": "c10",
+          "hex": "#6f3219"
+        },
+        {
+          "name": "c11",
+          "hex": "#402220"
         },
         {
           "name": "line",
-          "hex": "#4a3b3b",
-          "stroke": true
+          "hex": "#342d2e"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        4.2
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -5942,8 +6050,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:47:06+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:39:25+0300"
         }
       ],
       "license": {
@@ -5953,7 +6061,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-shubah-right",
@@ -5981,42 +6089,50 @@
         },
         {
           "name": "c2",
-          "hex": "#fce3d1"
+          "hex": "#fcdfca"
         },
         {
           "name": "c3",
-          "hex": "#e3dcdd"
+          "hex": "#e2dadc"
         },
         {
           "name": "c4",
-          "hex": "#fecda8"
+          "hex": "#fcba7d"
         },
         {
           "name": "c5",
-          "hex": "#feb676"
+          "hex": "#c7b3b2"
         },
         {
           "name": "c6",
-          "hex": "#cbb0b1"
+          "hex": "#bf9998"
         },
         {
           "name": "c7",
-          "hex": "#c29a99"
+          "hex": "#917873"
         },
         {
           "name": "c8",
-          "hex": "#9e2d26"
+          "hex": "#63514f"
+        },
+        {
+          "name": "c9",
+          "hex": "#9c2e26"
+        },
+        {
+          "name": "c10",
+          "hex": "#6f3217"
+        },
+        {
+          "name": "c11",
+          "hex": "#3f221f"
         },
         {
           "name": "line",
-          "hex": "#493a3a",
-          "stroke": true
+          "hex": "#352d2e"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        4.2
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -6048,8 +6164,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:46:20+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:39:40+0300"
         }
       ],
       "license": {
@@ -6059,7 +6175,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-sousi-left",
@@ -6087,34 +6203,50 @@
         },
         {
           "name": "c2",
-          "hex": "#fed2c1"
+          "hex": "#facfc0"
         },
         {
           "name": "c3",
-          "hex": "#dececa"
+          "hex": "#d9dadc"
         },
         {
           "name": "c4",
-          "hex": "#bbc1cc"
+          "hex": "#bfc3cc"
         },
         {
           "name": "c5",
-          "hex": "#fe9d67"
+          "hex": "#fa9254"
         },
         {
           "name": "c6",
-          "hex": "#003b6d"
+          "hex": "#b0a2a2"
+        },
+        {
+          "name": "c7",
+          "hex": "#777579"
+        },
+        {
+          "name": "c8",
+          "hex": "#4f4d51"
+        },
+        {
+          "name": "c9",
+          "hex": "#003d6f"
+        },
+        {
+          "name": "c10",
+          "hex": "#003561"
+        },
+        {
+          "name": "c11",
+          "hex": "#081e32"
         },
         {
           "name": "line",
-          "hex": "#38353d",
-          "stroke": true
+          "hex": "#323134"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        4.6
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -6146,8 +6278,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:39:59+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:34:17+0300"
         }
       ],
       "license": {
@@ -6157,7 +6289,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-sousi-right",
@@ -6185,30 +6317,50 @@
         },
         {
           "name": "c2",
-          "hex": "#ffcab4"
+          "hex": "#fed0c0"
         },
         {
           "name": "c3",
-          "hex": "#dfcec8"
+          "hex": "#ddd0cd"
         },
         {
           "name": "c4",
-          "hex": "#bac0cb"
+          "hex": "#bfc3cc"
         },
         {
           "name": "c5",
-          "hex": "#003b6d"
+          "hex": "#fa9256"
+        },
+        {
+          "name": "c6",
+          "hex": "#afa1a1"
+        },
+        {
+          "name": "c7",
+          "hex": "#777579"
+        },
+        {
+          "name": "c8",
+          "hex": "#524c4f"
+        },
+        {
+          "name": "c9",
+          "hex": "#003d6f"
+        },
+        {
+          "name": "c10",
+          "hex": "#003561"
+        },
+        {
+          "name": "c11",
+          "hex": "#0a1d30"
         },
         {
           "name": "line",
-          "hex": "#35333b",
-          "stroke": true
+          "hex": "#323134"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        4.29
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -6240,8 +6392,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:39:10+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:35:35+0300"
         }
       ],
       "license": {
@@ -6251,7 +6403,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-warsh-left",
@@ -6279,46 +6431,50 @@
         },
         {
           "name": "c2",
-          "hex": "#eee0e8"
+          "hex": "#ece1e8"
         },
         {
           "name": "c3",
-          "hex": "#e9c5d0"
+          "hex": "#ebc4d0"
         },
         {
           "name": "c4",
-          "hex": "#e9b1c2"
+          "hex": "#c5cdd1"
         },
         {
           "name": "c5",
-          "hex": "#89cff6"
+          "hex": "#e8b0c1"
         },
         {
           "name": "c6",
-          "hex": "#d4a9bf"
+          "hex": "#d4a8bc"
         },
         {
           "name": "c7",
-          "hex": "#9d9ea0"
+          "hex": "#6ec3f2"
         },
         {
           "name": "c8",
-          "hex": "#ae8391"
+          "hex": "#9e9fa1"
         },
         {
           "name": "c9",
-          "hex": "#1aa9eb"
+          "hex": "#ab818f"
+        },
+        {
+          "name": "c10",
+          "hex": "#069fe3"
+        },
+        {
+          "name": "c11",
+          "hex": "#604e56"
         },
         {
           "name": "line",
-          "hex": "#49464b",
-          "stroke": true
+          "hex": "#363337"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        5.39
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -6350,8 +6506,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:41:37+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:34:36+0300"
         }
       ],
       "license": {
@@ -6361,7 +6517,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "opening-pages/mushaf-warsh-right",
@@ -6389,46 +6545,50 @@
         },
         {
           "name": "c2",
-          "hex": "#eee0e8"
+          "hex": "#ece1e8"
         },
         {
           "name": "c3",
-          "hex": "#e9c5d0"
+          "hex": "#ebc4d0"
         },
         {
           "name": "c4",
-          "hex": "#e9b1c2"
+          "hex": "#c9cacb"
         },
         {
           "name": "c5",
-          "hex": "#86cef7"
+          "hex": "#e8b0c1"
         },
         {
           "name": "c6",
-          "hex": "#d4a9bf"
+          "hex": "#81cbf5"
         },
         {
           "name": "c7",
-          "hex": "#9d9ea0"
+          "hex": "#d4a8bc"
         },
         {
           "name": "c8",
-          "hex": "#ae8391"
+          "hex": "#9e9fa1"
         },
         {
           "name": "c9",
-          "hex": "#16a8ea"
+          "hex": "#ab818f"
+        },
+        {
+          "name": "c10",
+          "hex": "#12a2e5"
+        },
+        {
+          "name": "c11",
+          "hex": "#604e56"
         },
         {
           "name": "line",
-          "hex": "#4a474c",
-          "stroke": true
+          "hex": "#363337"
         }
       ],
-      "stroke_widths_px": [
-        2.0,
-        5.39
-      ],
+      "stroke_widths_px": null,
       "slots": [
         {
           "role": "text-area",
@@ -6460,8 +6620,8 @@
           ],
           "occurrence": 0,
           "occurrences_on_page": 1,
-          "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-          "extracted": "2026-09-21T09:40:50+0300"
+          "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+          "extracted": "2026-09-21T10:39:55+0300"
         }
       ],
       "license": {
@@ -6471,7 +6631,7 @@
         "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice.",
         "redistributable": false
       },
-      "pipeline_commit": "quran-assets 591e8f5"
+      "pipeline_commit": "quran-assets 59505f3"
     },
     {
       "id": "page-frames/mushaf-douri",

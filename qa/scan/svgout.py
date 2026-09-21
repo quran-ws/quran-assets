@@ -30,7 +30,7 @@ import json as _json
 
 from qa import style_id
 
-def write_svg(path, paths_or_layers, w_px, h_px, scale, mushaf, asset, variant, slot=None, extra_attrs=None, slot_paths=None, provenance=None, sym=None, norm_h=None):
+def write_svg(path, paths_or_layers, w_px, h_px, scale, mushaf, asset, variant, slot=None, extra_attrs=None, slot_paths=None, provenance=None, sym=None, norm_h=None, line_filled=False):
     # `norm_h` is the height that maps to 100 units: the piece's own height normally, the
     # whole frame's for a 9-slice piece, so the pieces share the frame's coordinate system.
     s = 100.0 / (norm_h or h_px)
@@ -64,9 +64,13 @@ def write_svg(path, paths_or_layers, w_px, h_px, scale, mushaf, asset, variant, 
             out.append(part("slot", default="none") + ">")
             out += [f'<path d="{d}"/>' for d in slot_paths]
             out.append("</g>")
-        out.append(part("line", "stroke", "currentColor", ' fill="none"') + ' stroke-linecap="round" stroke-linejoin="round">')
-        for g in paths_or_layers:
-            out.append(f'<g stroke-width="{g["width"]}">' + "".join(f'<path d="{d}"/>' for d in g["paths"]) + "</g>")
+        if line_filled:
+            out.append(part("line", default="currentColor") + ">")
+            out += [f'<path d="{d}"/>' for d in paths_or_layers]
+        else:
+            out.append(part("line", "stroke", "currentColor", ' fill="none"') + ' stroke-linecap="round" stroke-linejoin="round">')
+            for g in paths_or_layers:
+                out.append(f'<g stroke-width="{g["width"]}">' + "".join(f'<path d="{d}"/>' for d in g["paths"]) + "</g>")
         out.append("</g>")
     elif variant == "mono":
         if slot_paths:

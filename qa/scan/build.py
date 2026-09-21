@@ -115,6 +115,9 @@ def run_job(job, cfg, src, to="vectorize", force=False, log=print):
     if layers and layers[-1].get("stroke"):
         svgout.write_svg(out / "line.svg", layers[-1]["groups"], w, h, scale, mushaf, asset, "line", slot, slot_paths=slot_paths, provenance=meta["provenance"], sym=sym)
         meta["stroke_widths_px"] = [round(g["width"] / scale, 2) for g in layers[-1]["groups"]]
+    elif layers and layers[-1].get("cls") == "line":
+        svgout.write_svg(out / "line.svg", layers[-1]["paths"], w, h, scale, mushaf, asset, "line", slot,
+                         slot_paths=slot_paths, provenance=meta["provenance"], sym=sym, line_filled=True)
     meta["viewBox"] = m1["viewBox"]; meta["slot"] = m1["slot"]
     meta["palette"] = [{"class": l["cls"], "hex": l["hex"], "paths": len(l["paths"]), **({"stroke": True} if l.get("stroke") else {})} for l in layers]
     meta["mono_paths"] = len(mono)

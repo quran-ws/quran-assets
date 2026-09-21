@@ -27,7 +27,7 @@ The bare names stay bare where they are not asset ids: `sources/mushafs.json` an
 |---|---|
 | `color.svg` | full-colour, recolourable by group |
 | `mono.svg` | one-colour silhouette, `currentColor` |
-| `line.svg` | linework only, constant-width strokes, `currentColor` |
+| `line.svg` | linework only, `currentColor`; strokes or filled contours |
 | `meta.json` | palette, slot, viewBox, stroke widths, symmetry, provenance, detection boxes |
 | `source.png` / `source.jpg` | the raw crop from the scan (title / text / number included) |
 | `clean.png` / `clean.jpg` | the cleaned crop that was traced |
@@ -80,6 +80,8 @@ scan, so no `clean.png`.
 
 `mono.svg`: `<g class="slot">` + `<g class="ink" data-part="ink" fill="currentColor">`.
 `line.svg`: `<g class="slot">` + `<g class="line" data-part="line" stroke="currentColor">`.
+Opening pages use filled contours (`fill="currentColor"`) to preserve fine line widths;
+their color palette omits `stroke: true`, so recolor those line groups with `fill`.
 
 **The slot group is a scan thing.** A traced cartouche leaves its middle empty, so a transparent
 group there is real geometry and `.slot{fill:…}` tints it. A font-derived marker's interior is

@@ -12,10 +12,23 @@
     "cleaner": "medallion_text",
     "symmetry": "none",
     "vectorize": {
-      "k": 8,
+      "k": 10,
       "scale": 2,
-      "min_frac": 0.02,
-      "stroke_prune_factor": 0.75
+      "min_frac": 0.003,
+      "merge_de": 8,
+      "strokes": false,
+      "line_mode": "threshold",
+      "line_dark": 80,
+      "line_s_max": 45,
+      "smooth": 0.9,
+      "min_px": 24,
+      "line_min_px": 16,
+      "median": 3,
+      "open_px": 0,
+      "light_min_px": 0,
+      "filter_speckle": 8,
+      "length_threshold": 4,
+      "preserve_neutral": true
     }
   },
   "jobs": [

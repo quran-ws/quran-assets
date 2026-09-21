@@ -5,7 +5,7 @@
   "side": "right",
   "source": "hafs-adi.pdf",
   "riwaya": "Hafs 'an 'Asim (al-'Adi)",
-  "generated": "2026-09-21 06:39",
+  "generated": "2026-09-21 10:37",
   "page_px": [
     1341,
     2189
@@ -36,9 +36,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 1,
-    "pipeline": "quran-assets 591e8f5",
-    "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-    "extracted": "2026-09-21T06:39:55+0000"
+    "pipeline": "quran-assets 59505f3",
+    "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+    "extracted": "2026-09-21T10:37:52+0300"
   },
   "slot_px": [
     169,
@@ -47,10 +47,6 @@
     1454
   ],
   "slot_fill": "#e0e9db",
-  "stroke_widths_px": [
-    2.0,
-    5.0
-  ],
   "viewBox": "0 0 61.2608 100",
   "slot": "7.7204 34.3536 32.0694 32.0694",
   "palette": [
@@ -62,39 +58,63 @@
     {
       "class": "c1",
       "hex": "#ffffff",
-      "paths": 171
+      "paths": 245
     },
     {
       "class": "c2",
       "hex": "#dfe9db",
-      "paths": 94
+      "paths": 952
     },
     {
       "class": "c3",
-      "hex": "#efb9d0",
-      "paths": 282
+      "hex": "#efbdd3",
+      "paths": 732
     },
     {
       "class": "c4",
-      "hex": "#a6c099",
-      "paths": 70
+      "hex": "#b8c2b4",
+      "paths": 1138
     },
     {
       "class": "c5",
-      "hex": "#62a730",
-      "paths": 178
+      "hex": "#c290a7",
+      "paths": 567
     },
     {
       "class": "c6",
-      "hex": "#568c2a",
-      "paths": 156
+      "hex": "#62a730",
+      "paths": 582
+    },
+    {
+      "class": "c7",
+      "hex": "#568e26",
+      "paths": 481
+    },
+    {
+      "class": "c8",
+      "hex": "#6b6768",
+      "paths": 198
+    },
+    {
+      "class": "c9",
+      "hex": "#d12480",
+      "paths": 399
+    },
+    {
+      "class": "c10",
+      "hex": "#416a1f",
+      "paths": 712
+    },
+    {
+      "class": "c11",
+      "hex": "#28371c",
+      "paths": 2706
     },
     {
       "class": "line",
-      "hex": "#353732",
-      "paths": 14900,
-      "stroke": true
+      "hex": "#2f3030",
+      "paths": 1626
     }
   ],
-  "mono_paths": 16
+  "mono_paths": 27
 }

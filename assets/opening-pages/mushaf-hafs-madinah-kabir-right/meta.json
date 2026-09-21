@@ -5,7 +5,7 @@
   "side": "right",
   "source": "hafs-madinah-kabir.pdf",
   "riwaya": "Hafs 'an 'Asim (Madinah, large)",
-  "generated": "2026-09-21 09:37",
+  "generated": "2026-09-21 10:38",
   "page_px": [
     1153,
     1654
@@ -36,9 +36,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 1,
-    "pipeline": "quran-assets 591e8f5",
-    "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-    "extracted": "2026-09-21T09:37:40+0300"
+    "pipeline": "quran-assets 59505f3",
+    "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+    "extracted": "2026-09-21T10:38:30+0300"
   },
   "slot_px": [
     294,
@@ -47,10 +47,6 @@
     961
   ],
   "slot_fill": "#ddeffc",
-  "stroke_widths_px": [
-    2.0,
-    4.39
-  ],
   "viewBox": "0 0 72.3973 100",
   "slot": "20.137 33.9726 31.8493 31.8493",
   "palette": [
@@ -62,44 +58,63 @@
     {
       "class": "c1",
       "hex": "#ffffff",
-      "paths": 155
+      "paths": 2925
     },
     {
       "class": "c2",
-      "hex": "#d9eaf3",
-      "paths": 8
+      "hex": "#dae7ee",
+      "paths": 1890
     },
     {
       "class": "c3",
-      "hex": "#ecc9da",
-      "paths": 3
+      "hex": "#dcc4d2",
+      "paths": 756
     },
     {
       "class": "c4",
-      "hex": "#a4d7f3",
-      "paths": 198
+      "hex": "#a4d6f0",
+      "paths": 775
     },
     {
       "class": "c5",
-      "hex": "#e2a0bf",
-      "paths": 108
+      "hex": "#96a7b4",
+      "paths": 1347
     },
     {
       "class": "c6",
-      "hex": "#d575a1",
-      "paths": 219
+      "hex": "#d580a7",
+      "paths": 756
     },
     {
       "class": "c7",
-      "hex": "#0095e0",
-      "paths": 253
+      "hex": "#6e7d8c",
+      "paths": 1206
+    },
+    {
+      "class": "c8",
+      "hex": "#0093dc",
+      "paths": 733
+    },
+    {
+      "class": "c9",
+      "hex": "#3b6381",
+      "paths": 1018
+    },
+    {
+      "class": "c10",
+      "hex": "#6b3d56",
+      "paths": 588
+    },
+    {
+      "class": "c11",
+      "hex": "#244662",
+      "paths": 1806
     },
     {
       "class": "line",
-      "hex": "#32556d",
-      "paths": 16872,
-      "stroke": true
+      "hex": "#2d2f32",
+      "paths": 323
     }
   ],
-  "mono_paths": 2
+  "mono_paths": 6
 }

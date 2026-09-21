@@ -10,7 +10,7 @@ import vtracer
 from . import strokes as _strokes
 
 VTRACER_KEYS = {"filter_speckle", "corner_threshold", "length_threshold", "max_iterations", "splice_threshold", "path_precision", "mode"}
-COLOR_KEYS = {"stroke_prune_factor", "strokes", "line_mode", "line_min_px", "paper_thresh", "line_dark", "line_s_max", "min_px", "merge_de", "min_frac", "white_layer", "smooth", "median", "open_px", "light_thresh", "light_min_px"}
+COLOR_KEYS = {"stroke_prune_factor", "strokes", "line_mode", "line_min_px", "paper_thresh", "line_dark", "line_s_max", "min_px", "merge_de", "min_frac", "white_layer", "smooth", "median", "open_px", "light_thresh", "light_min_px", "preserve_neutral"}
 
 PATH_RE = re.compile(r'<path\b([^>]*)>', re.S)
 ATTR_RE = re.compile(r'([\w:-]+)="([^"]*)"')
@@ -168,8 +168,13 @@ def quantize(bgr, k=8, exclude=None, merge_de=11.0, min_frac=0.03, seed=1, assig
     centers = centers[roots]
     if assign is not None:   # fit on the smoothed image, assign by the sharp one
         lab2 = cv2.cvtColor(assign, cv2.COLOR_BGR2LAB).reshape(-1, 3).astype(np.float32)[sel]
-        d = ((lab2[:, None, :] - centers[None, :, :]) ** 2).sum(-1)
-        lbl = d.argmin(1).astype(np.int32)
+        # Full opening pages have millions of pixels; bound the temporary
+        # pixel-by-palette array without changing nearest-colour assignment.
+        lbl = np.empty(len(lab2), np.int32)
+        for start in range(0, len(lab2), 100000):
+            chunk = lab2[start:start + 100000]
+            d = ((chunk[:, None, :] - centers[None, :, :]) ** 2).sum(-1)
+            lbl[start:start + len(chunk)] = d.argmin(1)
     labels = np.full(len(lab), -1, np.int32); labels[sel] = lbl
     centers_bgr = cv2.cvtColor(centers.reshape(1, -1, 3).astype(np.uint8), cv2.COLOR_LAB2BGR)[0]
     return labels.reshape(bgr.shape[:2]), centers_bgr
@@ -214,7 +219,7 @@ SMOOTH_TRACE = dict(corner_threshold=60, length_threshold=6.0, splice_threshold=
 def trace_color(bgr, k=8, scale=3, paper_thresh=232, line_dark=125, line_s_max=70, min_px=60, merge_de=11.0,
                 min_frac=0.03, white_layer=True, smooth=1.7, median=5, open_px=3,
                 light_thresh=200, light_min_px=600, slot_mask=None, strokes=True, prescaled=False,
-                line_mode="auto", line_min_px=20, stroke_prune_factor=2.5, crops=None, **opts):
+                line_mode="auto", line_min_px=20, stroke_prune_factor=2.5, crops=None, preserve_neutral=False, **opts):
     """Layers bottom->top: fills sorted light->dark (each grown 1px so it tucks under its
     neighbours), then the dark linework on top. Paper *outside* the frame is transparent;
     paper inside it becomes a 'white' fill layer when white_layer is on.
@@ -242,6 +247,8 @@ def trace_color(bgr, k=8, scale=3, paper_thresh=232, line_dark=125, line_s_max=7
     # Neutral edge shades belong to antialiasing, not separate printed inks.
     # Keep broad neutral fills; absorb only clusters that have no solid core.
     for index, center in enumerate(centers):
+        if preserve_neutral:
+            continue
         if int(center.max()) - int(center.min()) > 20 or center.min() >= 232:
             continue
         mask = labels == index

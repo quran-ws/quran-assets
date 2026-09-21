@@ -60,3 +60,35 @@ def test_merging_clusters_does_not_inflate_minor_color_threshold():
     labels, centers = quantize(image, k=4, merge_de=11, min_frac=.08)
     assert len(centers) == 3
     assert labels[85, 50] != labels[95, 50]
+
+
+def test_filled_line_variant_preserves_contours_and_slot(tmp_path):
+    import xml.etree.ElementTree as ET
+    from qa.scan.svgout import write_svg
+    path = tmp_path / 'line.svg'
+    contour = 'M0 0L10 0L10 2L0 2Z'
+    write_svg(path, [contour], 100, 100, 1, 'qalon', 'opening-page', 'line',
+              slot_paths=['M20 20L30 20L30 30Z'], line_filled=True)
+    root = ET.parse(path).getroot()
+    ns = '{http://www.w3.org/2000/svg}'
+    groups = {g.get('class'): g for g in root.iter(ns + 'g')}
+    assert root.get('data-variant') == 'line'
+    assert groups['line'].get('fill') == 'currentColor'
+    assert groups['line'].get('stroke') is None
+    assert groups['line'].find(ns + 'path').get('d') == contour
+    assert groups['slot'].get('fill') == 'none'
+
+
+def test_fine_neutral_ornament_is_preserved(monkeypatch):
+    from qa.scan import vectorize
+    image = np.full((80, 80, 3), (160, 190, 220), np.uint8)
+    image[::8] = 150
+    monkeypatch.setattr(vectorize, '_trace_mask', lambda *args, **kwargs: ['M0 0L1 1'])
+    layers = vectorize.trace_color(
+        image, k=2, scale=1, line_mode='threshold', line_dark=80,
+        strokes=False, smooth=0, min_px=1, median=0, open_px=0,
+        preserve_neutral=True)
+    neutral = [layer for layer in layers if layer['cls'] != 'line'
+               and layer['hex'].startswith('#')
+               and max(bytes.fromhex(layer['hex'][1:])) - min(bytes.fromhex(layer['hex'][1:])) < 10]
+    assert neutral and neutral[0]['paths']

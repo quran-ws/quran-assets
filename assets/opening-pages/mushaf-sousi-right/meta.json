@@ -5,7 +5,7 @@
   "side": "right",
   "source": "sousi.pdf",
   "riwaya": "al-Susi 'an Abi 'Amr",
-  "generated": "2026-09-21 09:39",
+  "generated": "2026-09-21 10:35",
   "page_px": [
     1532,
     2303
@@ -36,9 +36,9 @@
     ],
     "occurrence": 0,
     "occurrences_on_page": 1,
-    "pipeline": "quran-assets 591e8f5",
-    "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
-    "extracted": "2026-09-21T09:39:10+0300"
+    "pipeline": "quran-assets 59505f3",
+    "pipeline_sha256": "95ec6801844a5d5b7aaf29f9db768f683f2f4dbecceeca55fa8da5bc3402646f",
+    "extracted": "2026-09-21T10:35:35+0300"
   },
   "slot_px": [
     177,
@@ -47,10 +47,6 @@
     1429
   ],
   "slot_fill": "#e1e3e7",
-  "stroke_widths_px": [
-    2.0,
-    4.29
-  ],
   "viewBox": "0 0 63.4705 100",
   "slot": "8.2788 34.0037 32.8344 32.8344",
   "palette": [
@@ -62,34 +58,63 @@
     {
       "class": "c1",
       "hex": "#ffffff",
-      "paths": 143
+      "paths": 149
     },
     {
       "class": "c2",
-      "hex": "#ffcab4",
-      "paths": 443
+      "hex": "#fed0c0",
+      "paths": 755
     },
     {
       "class": "c3",
-      "hex": "#dfcec8",
-      "paths": 42
+      "hex": "#ddd0cd",
+      "paths": 827
     },
     {
       "class": "c4",
-      "hex": "#bac0cb",
-      "paths": 406
+      "hex": "#bfc3cc",
+      "paths": 856
     },
     {
       "class": "c5",
-      "hex": "#003b6d",
-      "paths": 147
+      "hex": "#fa9256",
+      "paths": 414
+    },
+    {
+      "class": "c6",
+      "hex": "#afa1a1",
+      "paths": 284
+    },
+    {
+      "class": "c7",
+      "hex": "#777579",
+      "paths": 254
+    },
+    {
+      "class": "c8",
+      "hex": "#524c4f",
+      "paths": 873
+    },
+    {
+      "class": "c9",
+      "hex": "#003d6f",
+      "paths": 1076
+    },
+    {
+      "class": "c10",
+      "hex": "#003561",
+      "paths": 295
+    },
+    {
+      "class": "c11",
+      "hex": "#0a1d30",
+      "paths": 1588
     },
     {
       "class": "line",
-      "hex": "#35333b",
-      "paths": 16192,
-      "stroke": true
+      "hex": "#323134",
+      "paths": 1388
     }
   ],
-  "mono_paths": 16
+  "mono_paths": 27
 }
