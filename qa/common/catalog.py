@@ -9,7 +9,7 @@ from pathlib import Path
 
 from qa import ROOT, PKG, split_style
 
-SLOT_ROLE = {"surah-headers": "surah-name", "page-frames": "text-area", "ayah-markers": "ayah-number"}
+SLOT_ROLE = {"surah-headers": "surah-name", "page-frames": "text-area", "ayah-markers": "ayah-number", "opening-pages": "text-area"}
 LICENSES = {k: v for k, v in json.loads((PKG / "licenses.json").read_text()).items() if not k.startswith("_")}
 
 

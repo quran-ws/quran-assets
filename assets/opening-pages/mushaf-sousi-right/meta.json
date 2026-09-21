@@ -1,0 +1,95 @@
+{
+  "mushaf": "sousi",
+  "asset": "opening-page",
+  "page": 4,
+  "side": "right",
+  "source": "sousi.pdf",
+  "riwaya": "al-Susi 'an Abi 'Amr",
+  "generated": "2026-09-21 09:39",
+  "page_px": [
+    1532,
+    2303
+  ],
+  "boxes": [
+    [
+      26,
+      82,
+      1383,
+      2220
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "sousi",
+    "riwaya": "al-Susi 'an Abi 'Amr",
+    "file": "sousi.pdf",
+    "sha256": "265b50e718bedec3df1a9ece77480baeec22f73137fa3a01ab6efc071a65005a",
+    "url": "https://ia600502.us.archive.org/27/items/Susi-HD/sousi-1.pdf",
+    "archive_item": "Susi-HD",
+    "archive_url": "https://archive.org/details/Susi-HD",
+    "pdf_page": 4,
+    "crop_box_px": [
+      26,
+      82,
+      1383,
+      2220
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 1,
+    "pipeline": "quran-assets 591e8f5",
+    "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
+    "extracted": "2026-09-21T09:39:10+0300"
+  },
+  "slot_px": [
+    177,
+    727,
+    879,
+    1429
+  ],
+  "slot_fill": "#e1e3e7",
+  "stroke_widths_px": [
+    2.0,
+    4.29
+  ],
+  "viewBox": "0 0 63.4705 100",
+  "slot": "8.2788 34.0037 32.8344 32.8344",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#ffffff",
+      "paths": 143
+    },
+    {
+      "class": "c2",
+      "hex": "#ffcab4",
+      "paths": 443
+    },
+    {
+      "class": "c3",
+      "hex": "#dfcec8",
+      "paths": 42
+    },
+    {
+      "class": "c4",
+      "hex": "#bac0cb",
+      "paths": 406
+    },
+    {
+      "class": "c5",
+      "hex": "#003b6d",
+      "paths": 147
+    },
+    {
+      "class": "line",
+      "hex": "#35333b",
+      "paths": 16192,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 16
+}

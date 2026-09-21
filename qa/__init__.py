@@ -15,7 +15,7 @@ JOBS_DIR = PKG / "jobs"
 SOURCES = Path(os.environ.get("QA_SOURCES_DIR", ROOT / "sources"))  # mushaf PDFs, not committed
 
 # `<type>` in assets/<type>/<style> for each job's asset name, and back.
-TYPE_DIR = {"surah-header": "surah-headers", "page-frame": "page-frames", "ayah-marker": "ayah-markers"}
+TYPE_DIR = {"surah-header": "surah-headers", "page-frame": "page-frames", "ayah-marker": "ayah-markers", "opening-page": "opening-pages"}
 ASSET_OF_TYPE = {v: k for k, v in TYPE_DIR.items()}
 
 # One naming standard for every asset, both lineages: `<lineage>-<name>`. The two lineages

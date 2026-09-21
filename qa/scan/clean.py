@@ -209,7 +209,56 @@ def marker(bgr, white_thresh=205, grow=2, **_):
         out = bgr.copy()
     return cartouche_text(out, seed_band=0.3)
 
+def medallion_text(bgr, light=175, s_max=60, **_):
+    """Opening-spread page: the central medallion is the biggest light region that does not
+    touch the crop edge; the text inside it is its holes. Flatten the whole medallion
+    interior to its own fill (the outline stays); it becomes the slot."""
+    H, W = bgr.shape[:2]
+    hsv = cv2.cvtColor(bgr, cv2.COLOR_BGR2HSV)
+    lightm = ((bgr.min(axis=2) > light) & (hsv[..., 1] < s_max)).astype(np.uint8)
+    lightm = cv2.morphologyEx(lightm, cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
+    n, lab, stats, _ = cv2.connectedComponentsWithStats(lightm, 4)
+    best = None
+    for i in range(1, n):
+        x, y, w, h, a = stats[i]
+        if x == 0 or y == 0 or x + w == W or y + h == H: continue
+        if best is None or a > best[1]: best = (i, a)
+    if best is None: return bgr.copy(), None, None, None
+    comp = lab == best[0]
+    x, y, w, h, _ = stats[best[0]]
+    filled = _fill_holes(comp)
+    inner = cv2.erode(filled.astype(np.uint8), np.ones((3, 3), np.uint8)).astype(bool)
+    bg = np.median(bgr[comp].reshape(-1, 3), axis=0)
+    out = bgr.copy(); out[inner] = bg
+    # the small surah-name cartouches elsewhere on the page: letters are small dark
+    # unsaturated blobs sitting on a light field (ornament lines belong to big outlines)
+    out = erase_isolated_text(out, exclude=filled)
+    return out, (int(x), int(y), int(x + w), int(y + h)), tuple(int(v) for v in bg[::-1]), filled
+
+def erase_isolated_text(bgr, exclude=None, max_h=0.03, ring=6, light=185, light_frac=0.7, **_):
+    H, W = bgr.shape[:2]
+    hsv = cv2.cvtColor(bgr, cv2.COLOR_BGR2HSV)
+    ink = ((bgr.min(axis=2) < 150) & (hsv[..., 1] < 90)).astype(np.uint8)
+    if exclude is not None: ink[exclude] = 0
+    ink = cv2.morphologyEx(ink, cv2.MORPH_CLOSE, np.ones((3, 3), np.uint8))
+    n, lab, stats, _ = cv2.connectedComponentsWithStats(ink, 8)
+    lightm = (bgr.min(axis=2) > light) & (hsv[..., 1] < 60)
+    out = bgr.copy(); k = np.ones((2 * ring + 1, 2 * ring + 1), np.uint8)
+    erase = np.zeros((H, W), bool)
+    for i in range(1, n):
+        x, y, w, h, a = stats[i]
+        if h > max_h * H or w > 0.12 * W or a < 12: continue
+        x0, y0, x1, y1 = max(0, x - ring), max(0, y - ring), min(W, x + w + ring), min(H, y + h + ring)
+        comp = (lab[y0:y1, x0:x1] == i).astype(np.uint8)
+        halo = cv2.dilate(comp, k).astype(bool) & ~comp.astype(bool)
+        lf = lightm[y0:y1, x0:x1][halo].mean() if halo.any() else 0
+        if lf < light_frac: continue
+        erase[y0:y1, x0:x1] |= cv2.dilate(comp, np.ones((3, 3), np.uint8)).astype(bool)
+    if erase.any():
+        out = cv2.inpaint(out, erase.astype(np.uint8), 3, cv2.INPAINT_TELEA)
+    return out
+
 def none(bgr, **_):
     return bgr.copy(), None, None, None
 
-CLEANERS = {"cartouche_text": cartouche_text, "frame_interior": frame_interior, "marker": marker, "none": none}
+CLEANERS = {"cartouche_text": cartouche_text, "frame_interior": frame_interior, "marker": marker, "medallion_text": medallion_text, "none": none}

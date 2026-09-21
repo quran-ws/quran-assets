@@ -40,7 +40,9 @@ def styles_for(asset_type):
     if not directory.exists():
         return []
     built = {d.name for d in directory.iterdir() if (d / "meta.json").exists()}
-    return [m for m in ORDER if m in built] + sorted(m for m in built if m.startswith("font-"))
+    scan = [m for m in ORDER if m in built]
+    scan += [m for base in ORDER for m in sorted(built) if m.startswith(base + "-") and m not in scan]   # per-side styles (opening pages)
+    return scan + sorted(m for m in built if m.startswith("font-"))
 
 
 def load_svg(p, uid):
@@ -55,6 +57,7 @@ def load_svg(p, uid):
 
 TYPES = [("surah-header", "Surah headers", "The title frame above every surah. The name slot is transparent; your calligraphic glyph is placed from <code>data-slot</code>."),
          ("page-frame", "Page frames", "The decorative border of every page, interior blanked; <code>data-slot</code> is the text area. Running heads and page-number boxes are removed and the ornament healed."),
+         ("opening-page", "Opening pages", "The al-Fatiha / al-Baqara spread: the whole page ornament, traced as-is (no mirroring, no tiling), with the central medallion and the surah-name cartouche blanked. <code>data-slot</code> is the medallion. One asset per side."),
          ("ayah-marker", "Ayah markers", "The verse-end ornament with the number removed; <code>data-slot</code> is where the number goes.")]
 import base64, io
 try:
@@ -121,18 +124,23 @@ aspect, not stretched to it. Page geometry and text are the mushaf's own.</p>
 sections = []
 for asset, title, blurb in TYPES:
   panels = []
-  type_dir = {"surah-header": "surah-headers", "page-frame": "page-frames", "ayah-marker": "ayah-markers"}[asset]
+  type_dir = {"surah-header": "surah-headers", "page-frame": "page-frames", "ayah-marker": "ayah-markers", "opening-page": "opening-pages"}[asset]
   for m in styles_for(type_dir):
     d = A / type_dir / m
     meta = json.loads((d / "meta.json").read_text())
     lineage = "font" if m.startswith("font-") else "scan"
     uid = f"{asset}-{m}"
-    color = load_svg(d / "color.svg", f"c-{uid}")
-    mono = load_svg(d / "mono.svg", f"m-{uid}")
-    line = load_svg(d / "line.svg", f"l-{uid}") if (d / "line.svg").exists() else ""
+    if asset == "opening-page":   # full-page tracings are ~2 MB each: reference, don't inline
+        rel = f"../assets/{type_dir}/{m}"
+        color = f'<img src="{rel}/color.svg" alt="">'; mono = f'<img src="{rel}/mono.svg" alt="">'
+        line = f'<img src="{rel}/line.svg" alt="">' if (d / "line.svg").exists() else ""
+    else:
+        color = load_svg(d / "color.svg", f"c-{uid}")
+        mono = load_svg(d / "mono.svg", f"m-{uid}")
+        line = load_svg(d / "line.svg", f"l-{uid}") if (d / "line.svg").exists() else ""
     # A font marker has no constant-width linework and no scan to show beside it: its
     # "original" is the outline, which is what the colour variant already draws.
-    orig = orig_data_uri(d / ("source.jpg" if (d / "source.jpg").exists() else "source.png")) if lineage == "scan" else ""
+    orig = (f"../assets/{type_dir}/{m}/" + ("source.jpg" if (d / "source.jpg").exists() else "source.png")) if asset == "opening-page" else (orig_data_uri(d / ("source.jpg" if (d / "source.jpg").exists() else "source.png")) if lineage == "scan" else "")
     pal = [p for p in meta["palette"]]
     chips = "".join(
         f'<label class="chip" data-cls="{p["class"]}"><input type="color" value="{"#ffffff" if p["hex"]=="none" else p["hex"]}" data-cls="{p["class"]}" data-default="{p["hex"]}">'
@@ -215,7 +223,7 @@ input[type=color]{{width:26px;height:26px;border:1px solid var(--line);border-ra
 h2{{font:700 24px/1.2 Amiri,Georgia,serif;margin:0}} .meta{{margin:2px 0 0;color:var(--mute);font-size:12.5px;font-family:"IBM Plex Mono",monospace}}
 .seg{{display:flex;border:1px solid var(--line);border-radius:4px;overflow:hidden;flex:none}} .seg button{{font:500 13px "IBM Plex Sans";padding:6px 12px;border:0;background:transparent;color:var(--mute);cursor:pointer}} .seg button.on{{background:var(--acc);color:#fff}}
 .stage{{position:relative;margin:0 20px;background:var(--stage-bg,var(--stage));border:1px solid var(--line);border-radius:4px;padding:18px 3%}}
-.stage svg,.stage img{{width:100%;height:auto;display:block}} .p-page-frame .stage{{padding:0;width:min(100%,480px);margin:0 auto;border:0;background:transparent}} .p-page-frame .stage svg,.p-page-frame .stage img{{width:100%}} .p-ayah-marker .stage{{padding:0;width:200px;margin:0 auto;border:0;background:transparent}} .p-ayah-marker .stage svg,.p-ayah-marker .stage img{{width:100%}} .num{{font:700 var(--nsz,28px) Amiri,serif;color:var(--name-color,#1e2126);line-height:1}} h2.sec{{font:700 28px/1.2 Amiri,Georgia,serif;margin:34px 0 4px;border-bottom:1px solid var(--line);padding-bottom:8px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}} h2.sec small{{font:13px 'IBM Plex Sans';color:var(--mute)}} h2.sec .seg.lineage{{margin-left:auto;align-self:center}} .v-mono{{color:#1d3f6e}} .v-line{{color:#1e2126}}
+.stage svg,.stage img{{width:100%;height:auto;display:block}} .p-opening-page .stage{{padding:0;width:min(100%,480px);margin:0 auto;border:0;background:transparent}} .p-opening-page .stage svg,.p-opening-page .stage img{{width:100%}} .p-page-frame .stage{{padding:0;width:min(100%,480px);margin:0 auto;border:0;background:transparent}} .p-page-frame .stage svg,.p-page-frame .stage img{{width:100%}} .p-ayah-marker .stage{{padding:0;width:200px;margin:0 auto;border:0;background:transparent}} .p-ayah-marker .stage svg,.p-ayah-marker .stage img{{width:100%}} .num{{font:700 var(--nsz,28px) Amiri,serif;color:var(--name-color,#1e2126);line-height:1}} h2.sec{{font:700 28px/1.2 Amiri,Georgia,serif;margin:34px 0 4px;border-bottom:1px solid var(--line);padding-bottom:8px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}} h2.sec small{{font:13px 'IBM Plex Sans';color:var(--mute)}} h2.sec .seg.lineage{{margin-left:auto;align-self:center}} .v-mono{{color:#1d3f6e}} .v-line{{color:#1e2126}}
 .name{{position:absolute;display:flex;align-items:center;justify-content:center;pointer-events:none;box-sizing:border-box}}
 .stage .name{{left:calc(3% + var(--nx,0%) * 0.94)}}
 .name svg{{width:56%;height:58%;display:block;fill:var(--name-color,#1e2126)}}
@@ -257,7 +265,7 @@ button:focus-visible,input:focus-visible{{outline:2px solid var(--focus);outline
 <script>
 (function(){{
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
-function setFill(svg,cls,val){{ $$('g.'+cls,svg).forEach(g=>g.setAttribute(cls==='line'?'stroke':'fill',val)); }}
+function setFill(svg,cls,val){{ if(!svg) return; $$('g.'+cls,svg).forEach(g=>g.setAttribute(cls==='line'?'stroke':'fill',val)); }}
 function applyGlobal(){{
   const bg=$('#bg').value, nc=$('#nc').value, show=$('#shownm').checked;
   document.documentElement.style.setProperty('--stage-bg',bg);

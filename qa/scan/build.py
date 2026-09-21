@@ -54,9 +54,10 @@ def provenance(job, s, box, pick, boxes):
 def run_job(job, cfg, src, to="vectorize", force=False, log=print):
     mushaf, asset = job["mushaf"], job["asset"]
     at = cfg["asset_types"][asset]
-    out = ROOT / "assets" / TYPE_DIR.get(asset, asset) / style_id("scan", mushaf)
+    name = mushaf + ("-" + job["side"] if job.get("side") else "")     # opening pages: one asset per side
+    out = ROOT / "assets" / TYPE_DIR.get(asset, asset) / style_id("scan", name)
     out.mkdir(parents=True, exist_ok=True)
-    meta = {"mushaf": mushaf, "asset": asset, "page": job["page"], "source": src[mushaf]["file"],
+    meta = {"mushaf": mushaf, "asset": asset, "page": job["page"], **({"side": job["side"]} if job.get("side") else {}), "source": src[mushaf]["file"],
             "riwaya": src[mushaf].get("riwaya"), "generated": time.strftime("%Y-%m-%d %H:%M")}
     # 1 render
     page_png = render.page_image(SOURCES / src[mushaf]["file"], job["page"], ROOT / "work" / "pages", force=force)
@@ -171,7 +172,8 @@ def _fmt_units(value, height_px):
 
 def build(mushaf=None, asset=None, to="vectorize", force=False):
     cfg, src = load()
-    jobs = [j for j in cfg["jobs"] if (not mushaf or j["mushaf"] == mushaf) and (not asset or j["asset"] == asset)]
+    def job_name(j): return j["mushaf"] + ("-" + j["side"] if j.get("side") else "")   # opening pages carry a side suffix
+    jobs = [j for j in cfg["jobs"] if (not mushaf or job_name(j) == mushaf or j["mushaf"] == mushaf) and (not asset or j["asset"] == asset)]
     if not jobs:
         raise SystemExit("no jobs match that --mushaf/--asset selection")
     for j in jobs:

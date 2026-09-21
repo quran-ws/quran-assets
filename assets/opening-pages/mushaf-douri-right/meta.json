@@ -1,0 +1,110 @@
+{
+  "mushaf": "douri",
+  "asset": "opening-page",
+  "page": 4,
+  "side": "right",
+  "source": "douri.pdf",
+  "riwaya": "al-Duri 'an Abi 'Amr",
+  "generated": "2026-09-21 09:44",
+  "page_px": [
+    1532,
+    2189
+  ],
+  "boxes": [
+    [
+      59,
+      44,
+      1380,
+      2152
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "douri",
+    "riwaya": "al-Duri 'an Abi 'Amr",
+    "file": "douri.pdf",
+    "sha256": "918f24f92104407712224ebb0f3172f8c18f33dbddd1db85d16c3705e4644ea0",
+    "url": "https://dn720805.ca.archive.org/0/items/douri-HD/douri-1.pdf",
+    "archive_item": "douri-HD",
+    "archive_url": "https://archive.org/details/douri-HD",
+    "pdf_page": 4,
+    "crop_box_px": [
+      59,
+      44,
+      1380,
+      2152
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 1,
+    "pipeline": "quran-assets 591e8f5",
+    "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
+    "extracted": "2026-09-21T09:44:50+0300"
+  },
+  "slot_px": [
+    134,
+    698,
+    855,
+    1419
+  ],
+  "slot_fill": "#e1dbdb",
+  "stroke_widths_px": [
+    2.0,
+    4.2
+  ],
+  "viewBox": "0 0 62.666 100",
+  "slot": "6.3567 33.112 34.203 34.203",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#ffffff",
+      "paths": 160
+    },
+    {
+      "class": "c2",
+      "hex": "#c4e9fb",
+      "paths": 73
+    },
+    {
+      "class": "c3",
+      "hex": "#dcdcdc",
+      "paths": 72
+    },
+    {
+      "class": "c4",
+      "hex": "#96d5f9",
+      "paths": 302
+    },
+    {
+      "class": "c5",
+      "hex": "#bdb3b0",
+      "paths": 100
+    },
+    {
+      "class": "c6",
+      "hex": "#52bdf3",
+      "paths": 285
+    },
+    {
+      "class": "c7",
+      "hex": "#ad9e9a",
+      "paths": 26
+    },
+    {
+      "class": "c8",
+      "hex": "#6f4230",
+      "paths": 135
+    },
+    {
+      "class": "line",
+      "hex": "#403e41",
+      "paths": 15761,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 12
+}

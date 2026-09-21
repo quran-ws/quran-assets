@@ -1,0 +1,103 @@
+{
+  "_doc": "Opening spread (al-Fatiha / start of al-Baqara): the full-page ornament with the central medallion's text blanked. One asset per side; 'side' becomes a style suffix (mushaf-qalon-right). Traced whole (symmetry none): these are backgrounds, not tiles.",
+  "asset": "opening-page",
+  "defaults": {
+    "detector": "page_frame",
+    "detect": {
+      "s_min": 12,
+      "close": 15,
+      "min_frac": 0.5,
+      "pad": 0.004
+    },
+    "cleaner": "medallion_text",
+    "symmetry": "none",
+    "vectorize": {
+      "k": 8,
+      "scale": 2,
+      "min_frac": 0.02,
+      "stroke_prune_factor": 0.75
+    }
+  },
+  "jobs": [
+    {
+      "mushaf": "qalon",
+      "page": 4,
+      "side": "right"
+    },
+    {
+      "mushaf": "qalon",
+      "page": 5,
+      "side": "left"
+    },
+    {
+      "mushaf": "hafs-adi",
+      "page": 4,
+      "side": "right"
+    },
+    {
+      "mushaf": "hafs-adi",
+      "page": 5,
+      "side": "left"
+    },
+    {
+      "mushaf": "hafs-madinah-kabir",
+      "page": 2,
+      "side": "right"
+    },
+    {
+      "mushaf": "hafs-madinah-kabir",
+      "page": 3,
+      "side": "left"
+    },
+    {
+      "mushaf": "sousi",
+      "page": 4,
+      "side": "right"
+    },
+    {
+      "mushaf": "sousi",
+      "page": 5,
+      "side": "left"
+    },
+    {
+      "mushaf": "warsh",
+      "page": 4,
+      "side": "right"
+    },
+    {
+      "mushaf": "warsh",
+      "page": 5,
+      "side": "left"
+    },
+    {
+      "mushaf": "hafs-madinah-mumtaza",
+      "page": 2,
+      "side": "right"
+    },
+    {
+      "mushaf": "hafs-madinah-mumtaza",
+      "page": 3,
+      "side": "left"
+    },
+    {
+      "mushaf": "douri",
+      "page": 4,
+      "side": "right"
+    },
+    {
+      "mushaf": "douri",
+      "page": 5,
+      "side": "left"
+    },
+    {
+      "mushaf": "shubah",
+      "page": 4,
+      "side": "right"
+    },
+    {
+      "mushaf": "shubah",
+      "page": 5,
+      "side": "left"
+    }
+  ]
+}

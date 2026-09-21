@@ -1,0 +1,115 @@
+{
+  "mushaf": "warsh",
+  "asset": "opening-page",
+  "page": 5,
+  "side": "left",
+  "source": "warsh.pdf",
+  "riwaya": "Warsh 'an Nafi'",
+  "generated": "2026-09-21 09:41",
+  "page_px": [
+    1532,
+    2189
+  ],
+  "boxes": [
+    [
+      66,
+      148,
+      1467,
+      2038
+    ]
+  ],
+  "pick": 0,
+  "provenance": {
+    "mushaf": "warsh",
+    "riwaya": "Warsh 'an Nafi'",
+    "file": "warsh.pdf",
+    "sha256": "f33a6e55530548d9cbf7e0ab6d8154ba46eea12d227208ce849915b808850074",
+    "url": "https://dn711007.ca.archive.org/0/items/Warsh-HD/warsh39-1.pdf",
+    "archive_item": "Warsh-HD",
+    "archive_url": "https://archive.org/details/Warsh-HD",
+    "pdf_page": 5,
+    "crop_box_px": [
+      66,
+      148,
+      1467,
+      2038
+    ],
+    "occurrence": 0,
+    "occurrences_on_page": 1,
+    "pipeline": "quran-assets 591e8f5",
+    "pipeline_sha256": "291841f8d861fb090e7e90344a269aaa46b8c748d2432b2247bbd97efdd5913d",
+    "extracted": "2026-09-21T09:41:37+0300"
+  },
+  "slot_px": [
+    319,
+    560,
+    1082,
+    1330
+  ],
+  "slot_fill": "#ffffff",
+  "stroke_widths_px": [
+    2.0,
+    5.39
+  ],
+  "viewBox": "0 0 74.127 100",
+  "slot": "16.8783 29.6296 40.3704 40.7407",
+  "palette": [
+    {
+      "class": "slot",
+      "hex": "none",
+      "paths": 1
+    },
+    {
+      "class": "c1",
+      "hex": "#ffffff",
+      "paths": 27
+    },
+    {
+      "class": "c2",
+      "hex": "#eee0e8",
+      "paths": 131
+    },
+    {
+      "class": "c3",
+      "hex": "#e9c5d0",
+      "paths": 130
+    },
+    {
+      "class": "c4",
+      "hex": "#e9b1c2",
+      "paths": 238
+    },
+    {
+      "class": "c5",
+      "hex": "#89cff6",
+      "paths": 535
+    },
+    {
+      "class": "c6",
+      "hex": "#d4a9bf",
+      "paths": 93
+    },
+    {
+      "class": "c7",
+      "hex": "#9d9ea0",
+      "paths": 49
+    },
+    {
+      "class": "c8",
+      "hex": "#ae8391",
+      "paths": 68
+    },
+    {
+      "class": "c9",
+      "hex": "#1aa9eb",
+      "paths": 438
+    },
+    {
+      "class": "line",
+      "hex": "#49464b",
+      "paths": 14628,
+      "stroke": true
+    }
+  ],
+  "mono_paths": 20
+}
