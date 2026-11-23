@@ -114,7 +114,7 @@ qalonHeader.palette          // [{name:'slot',hex:'none'},{name:'c1',hex:'#fffff
 qalonHeader.slots[0]         // {role:'surah-name', x,y,w,h,cx,cy}
 qalonHeader.lineage          // 'scan'  — always equals the style id's prefix
 qalonHeader.sources[0]       // {kind:'mushaf-scan', mushaf, riwayah, file, sha256, archive_url, pdf_page, crop_box_px, …}
-qalonHeader.license          // {id:'CC-BY-NC-SA-4.0', status:'provisional', …}
+qalonHeader.license          // {id:'LicenseRef-KFGQPC', status:'confirmed', …}
 cat.assets.find(a => a.id === 'page-frames/mushaf-qalon').slices
                              // {files:{corner,'edge-h','edge-v'}, corner:{w,h}, repeat:{h,v}, corner_mode, reconstruction_iou}
 
@@ -131,5 +131,6 @@ from "@quran.ws/assets"` (`dist/index.d.ts` has the types). One `<symbol>` sheet
 `dist/sprites/<type>.svg`; inline the sheet in the DOM and `<use href="#surah-headers-qalon">`
 — an external `<use>` across files is not portable.
 
-Check `license.status` before you ship anything: today every scan-derived asset is
-`provisional`, and the npm package is marked private for exactly that reason.
+Check `license.status` before you ship anything: 7 font-derived markers are
+`pending`, so the npm package is marked private. The scan-derived assets are `confirmed` for
+any purpose other than printing.

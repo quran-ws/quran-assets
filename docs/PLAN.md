@@ -151,6 +151,8 @@ produces a publishable 40-asset package today.
 
 Scan-derived assets (headers, frames, markers): the ornament designs are the publishers' (KFGQPC and others); the traced SVGs are derivative works. Options, roughly in order of safety: (a) ask the publishers; (b) release under a clearly non-commercial license (CC BY-NC-SA) with attribution to each mushaf and the archive.org item, said so per asset in the catalog; (c) keep scan assets in the repo but out of npm until (a) resolves. Suggested: (b)+(a) in parallel. Not legal advice — check with the non-profit's counsel, since this ships under the quran.ws name.
 
+*Decided 23 Nov 2026 (Abdullah):* the eight mushafs are prints of the King Fahd Complex, which permits reuse and republication for any purpose other than printing. The scan assets are `confirmed` as `LicenseRef-KFGQPC`. This replaces the provisional position above and in Phase 0.
+
 ## 7. Migration mechanics
 
 1. ~~Finish the pending commit in `quran-surah-header`~~ — superseded: this repo starts fresh with the current state; the old folder keeps its own history locally.

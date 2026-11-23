@@ -31,18 +31,17 @@ No licence is asserted for them. They ship in the repository and in `dist/` as
 
 ## Scan-derived assets — `assets/*/mushaf-*`
 
-**Not cleared for redistribution.** These are vector tracings of ornaments printed in scanned mushafs whose
-designs belong to their publishers (King Fahd Glorious Qur'an Printing Complex and others).
-The repo's working position, recorded in `qa/licenses.json` and stamped into every catalog
-entry, is **CC BY-NC-SA 4.0, status `provisional`** — a
-non-commercial release position held while written permission is sought (`docs/PLAN.md` §6,
-option (b) alongside (a)). This is a position, not legal advice, and not a clearance.
+These are vector tracings of ornaments in eight mushafs printed by the King Fahd Glorious
+Qur'an Printing Complex. The designs belong to the Complex. **The Complex permits reuse and
+republication for any purpose other than printing.** The owner of quran-ws recorded this
+position on 2026-11-23. Each of the eight mushafs has an evidence file in `sources/licenses/`,
+and the catalogue gives the licence as `LicenseRef-KFGQPC`, status `confirmed`.
 
 What that means in practice:
 
 * The npm package `qa dist` builds is marked `"private": true` while any bundled asset's
-  license status is not `confirmed`, and the release workflow refuses to publish it. The scan
-  assets alone are enough to keep it private, so as things stand nothing ships by default.
+  license status is not `confirmed`, and the release workflow refuses to publish it. The 7
+  unverified font markers keep it private; `qa dist --exclude-unconfirmed` leaves them out.
 * `python -m qa validate` refuses to let an asset claim `confirmed` without an evidence file in
   `sources/licenses/` — `<style>.txt` for a scan asset, since permission is per mushaf, and one
   file per source family for a font one, since one OFL text covers every weight taken from that
@@ -51,8 +50,9 @@ What that means in practice:
 * Each asset records its source (mushaf, archive.org item, PDF sha256, page, crop box) in
   `meta.json`, in the SVG `<metadata>` and in `catalog.json`, so the decision can be made per
   source rather than for the whole set.
-* Attribution, when a release does happen, is the mushaf and its archive.org item, listed per
-  asset in the generated `dist/LICENSES.md`.
+* Attribution is the Complex and the mushaf, listed per asset in the generated
+  `dist/LICENSES.md`.
+* This record does not permit printing. Ask the Complex.
 
 `demo/page/604.svg` comes from the separate quran-svg-pipeline repository and is not covered by
 the above; see `demo/page/README.md`.

@@ -7,10 +7,10 @@
     "byte-for-byte the PDF the Complex publishes -- each sha256 matches the one",
     "recorded in quran-ws/kfgqpc-resources at commit 925b9434, and the files were",
     "re-hashed here to confirm it.",
-    "qalon and shubah stay on archive.org deliberately: their scans are NOT the",
-    "Complex's publication. qalon here is cbbb52b2.. against the published",
+    "qalon and shubah stay on archive.org deliberately: both are prints of the Complex",
+    "(their closing pages name it), but these files are not the ones it publishes online. qalon here is cbbb52b2.. against the published",
     "57386a90.., and shubah is bb74604d.. against 51cc438e.. -- different files, so",
-    "citing them to the Complex would be false."
+    "citing these files to the Complex's site would be false."
   ],
   "sources": [
     {"id": "qalon",          "riwayah": "Qalun 'an Nafi'",             "file": "qalon.pdf",          "header_page": 607, "url": "https://dn760102.eu.archive.org/0/items/quran-qalon/%D9%85%D8%B5%D8%AD%D9%81%20%D9%82%D8%A7%D9%84%D9%88%D9%86.pdf"},
