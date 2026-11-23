@@ -1,0 +1,74 @@
+Mushaf: qalon (Qalun 'an Nafi')
+Printer: King Fahd Glorious Qur'an Printing Complex, Madinah
+
+Source file: https://dn760102.eu.archive.org/0/items/quran-qalon/%D9%85%D8%B5%D8%AD%D9%81%20%D9%82%D8%A7%D9%84%D9%88%D9%86.pdf
+sha256: cbbb52b2a195fd43f9e8ac167a8e9a4173593e9b3dc22a83298550be27aef8de
+The PDF was read on 2026-11-23 and its sha256 matched the one below. Its closing pages name the
+King Fahd Glorious Qur'an Printing Complex as the printer and rights holder, with the seal of
+the Complex's mushaf review committee. The file itself is a copy hosted by archive.org.
+
+Evidence for `license.status: "confirmed"` on the ornaments traced from this mushaf, see
+qa/common/validate.py. It has two parts.
+
+1. The position of the Complex, as recorded by the owner of quran-ws on 2026-11-23: the
+   Complex permits all reuse and republication, for any purpose other than printing.
+   No letter from the Complex is held in this repository.
+
+2. The Complex's own published usage rights for Mushaf al-Madinah, in full below. Where the
+   two parts differ on printing, this record follows the narrower one: no printing.
+
+───────────────────────────────────────────────────────────── حقوق الاستخدام ───
+
+بناء على موافقة معالي وزير الشؤون الإسلامية والدعوة والإرشاد، المشرف العام على
+مجمع الملك فهد لطباعة المصحف الشريف، يتشـرَّف المجمع بإتاحة نسخة رقمية كاملة من
+مصحف المدينة النبوية المطبوع في المجمع، وذلك بالصيغ التالية:
+
+رسم المتجهات Illustrator
+وثيقة بي دي إف PDF
+صور ذات جودة عالية Images
+خط حاسوبي True Type Font
+
+ويمكن استخدام النسخة المذكورة مجاناً في المجالات الشخصية والأعمال الفردية كافة،
+وأعمال الجهات الحكومية والجهات والمؤسسات الخاصة والأهلية، وأعمال الطباعة
+الورقية*، والنشـر المكتبي والإعلامي، ومواقع الإنترنت والبرامج الحاسوبية وغيرها،
+وذلك داخل المملكة العربية السعودية وخارجها.
+
+نسأل الله أن ينفع المسلمين بهذا العمل المبارك.
+
+والحمد لله رب العالمين
+
+* أعمال طباعة المصاحف داخل المملكة واستيرادها من الخارج لغرض البيع التجاري
+تخضع للأمر السامي الكريم ذي الرقم 136/8 المؤرخ في 1/2/1406هـ وأكّد على ذلك
+الأمر السامي الكريم رقم 9/ب/46356 بتاريخ 28/9/1424هـ. والذي وجه بمنع طباعة
+المصاحف في الداخل في غير المجمع، وكذلك منع استيرادها من الخارج لغرض البيع
+التجاري.
+
+
+──────────────────────────────────────────────────────────────── Copyright ────
+
+Based on the approval of His Excellency the Minister of Islamic Affairs,
+Endowments, Da'wah and Guidance, General Supervisor of the King Fahd Qur'an
+Printing Complex.
+
+The Qur'an Printing Complex is honored to present to the Muslim public a
+complete free digital copy of Mus'haf al-Madinah published by the Complex, in
+the following formats:
+
+  • Adobe Illustrator files
+  • PDF files
+  • High quality images
+  • True Type Font
+
+Mus'haf al-Madinah in these previous formats can be used for free in all
+personal, individual businesses, in works of governmental departments &
+agencies, in the publications of both private and national institutions, also
+suitable for Qur'an printing,* digital publishing, & for media use, can be used
+also in websites, software, and other similar intermediates.
+
+We ask Allah that He renders this blessed project beneficial to all Muslims.
+
+* Printing of Qur'anic copies in the Kingdom, and their import from outside for
+sale are subject to the Royal Decree No 136/8 dated 1/2/1406 AH which has been
+reiterated by the Royal Decree No 9/B/46356 dated 28/9/1424 AH which prohibit
+printing of Qur'anic copies in the Kingdom except in the Complex, likewise
+their import from outside for sale.

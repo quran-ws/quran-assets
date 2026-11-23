@@ -1,10 +1,10 @@
 {
   "_doc": "Redistribution position per licence key, stamped into catalog.json and dist/LICENSES.md. An asset names its key in meta.json; `qa catalog` copies the block verbatim. `status` is the evidence level, not a wish: 'confirmed' needs written permission or the licence file in sources/licenses/, 'provisional' is our own release position while permission is pending, 'pending' means we have nothing yet. `qa validate` refuses a 'confirmed' claim with no evidence file. `qa dist` marks the npm package private while any bundled asset is not 'confirmed'.",
   "scan": {
-    "id": "CC-BY-NC-SA-4.0",
-    "status": "provisional",
-    "attribution": "Traced from a printed mushaf; the ornament design belongs to its publisher. Attribute the mushaf and its archive.org item (both in each asset's `sources`).",
-    "note": "Derivative works of publisher ornaments (KFGQPC and others). Released non-commercially while written permission is sought — PLAN.md §6, option (b) alongside (a). Not legal advice."
+    "id": "LicenseRef-KFGQPC",
+    "status": "confirmed",
+    "attribution": "Traced from a mushaf printed by the King Fahd Glorious Qur'an Printing Complex; the ornament design belongs to the Complex. Name the Complex and the mushaf (both in each asset's `sources`).",
+    "note": "The Complex permits reuse and republication for any purpose other than printing. The evidence is in sources/licenses/, one file per mushaf. Printing is not permitted by this record: ask the Complex."
   },
   "font-ofl": {
     "id": "OFL-1.1",

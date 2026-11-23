@@ -19,10 +19,10 @@ Use it when designing a Quran application or website and you need ready-made Mus
 |---|---|
 | **Assets** | 71 · two lineages |
 | **Provenance** | Scan or font recorded in every file |
-| **Licence** | 40 of 47 font markers OFL-1.1 · scan assets CC BY-NC-SA 4.0, provisional |
+| **Licence** | 40 of 47 font markers OFL-1.1 · scan assets by permission of the King Fahd Complex, not for printing |
 
 > [!NOTE]
-> Every asset carries its own licence and status in `catalog.json`. 40 of the 47 font markers are OFL-1.1 and confirmed; the 24 scan-derived ornaments are tracings of designs that belong to their publishers and sit at CC BY-NC-SA 4.0, provisional, while permission is settled per publisher. [The full position](https://quran.ws/docs/reference/licensing).
+> Every asset carries its own licence and status in `catalog.json`. 40 of the 47 font markers are OFL-1.1 and confirmed; the 24 scan-derived ornaments are tracings of mushafs printed by the King Fahd Glorious Qur'an Printing Complex, which permits reuse and republication for any purpose other than printing. [The full position](https://quran.ws/docs/reference/licensing).
 
 ```sh
 # not published yet — read from assets/ in the repository
